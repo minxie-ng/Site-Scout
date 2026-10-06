@@ -1,3 +1,5 @@
+import { selectedLabelPositions } from "./map-layout.mjs";
+
 const svgNS = "http://www.w3.org/2000/svg";
 const map = document.querySelector("#point-map");
 const inspection = document.querySelector("#inspection");
@@ -41,13 +43,18 @@ function plot() {
     group.addEventListener("keydown", event => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); select(index); } });
     svgElement("polyline", { points: positions.map(point => `${point.x},${point.y}`).join(" "), class: "point-line" }, group);
     if (index === selected) svgElement("circle", { cx: anchor.x, cy: anchor.y, r: 49, class: "point-halo" }, group);
+    const labels = index === selected ? selectedLabelPositions(positions) : [];
     positions.forEach((point, blockIndex) => {
       svgElement("circle", { cx: point.x, cy: point.y, r: index === selected ? 10 : 8, class: `point-marker${index === selected ? " active" : ""}` }, group);
-      const blockText = svgElement("text", { x: point.x + 15, y: point.y - 11, class: `point-label${index === selected ? " active" : ""}` }, group);
-      blockText.textContent = cluster.blocks[blockIndex].id;
+      if (index === selected) {
+        const label = labels[blockIndex];
+        svgElement("line", { x1: point.x, y1: point.y, x2: label.x, y2: label.y - 4, class: "label-leader" }, group);
+        const blockText = svgElement("text", { x: label.x, y: label.y, "text-anchor": label.anchor, class: "point-label active" }, group);
+        blockText.textContent = cluster.blocks[blockIndex].id;
+      }
     });
     const labelX = index === 0 ? anchor.x - 175 : index === 1 ? anchor.x - 164 : anchor.x + 38;
-    const labelY = index === 0 ? anchor.y + 75 : index === 1 ? anchor.y - 42 : anchor.y + 93;
+    const labelY = index === 0 ? anchor.y + 75 : index === 1 ? anchor.y - 42 : anchor.y + 50;
     const name = svgElement("text", { x: labelX, y: labelY, class: `map-group-label${index === selected ? "" : " muted"}` }, group);
     name.textContent = cluster.name.split(":")[0];
     const sub = svgElement("text", { x: labelX, y: labelY + 18, class: "map-group-sub" }, group);
