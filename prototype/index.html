@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102633">
+  <title>Site Scout — Punggol evidence preview</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Site Scout home"><span class="brand-mark">S<span>↗</span></span><span>site scout<small>LOCATION INTELLIGENCE</small></span></a>
+      <div class="topbar-right"><span id="snapshot-pill" class="snapshot-pill"><span class="live-dot"></span> ASSEMBLED · 06 OCT 2026</span><a href="#sources" class="text-link">Evidence & sources <span aria-hidden="true">↗</span></a></div>
+    </header>
+
+    <main id="top">
+      <section class="intro" aria-labelledby="page-title">
+        <div class="intro-copy"><p class="eyebrow">PUNGGOL / SECOND-OUTLET STUDY / PREVIEW 01</p><h1 id="page-title">A place to investigate.<br><em>Not yet a place to lease.</em></h1><p id="intro-summary" class="lede">Compare three precise groups of HDB blocks for a hypothetical reformer Pilates studio. The points are verified; the business case still needs evidence.</p></div>
+        <div id="status-card" class="status-card"><span class="status-icon" aria-hidden="true">!</span><div><strong>Decision withheld</strong><p>Insufficient evidence for a real expansion recommendation.</p></div><span class="status-arrow" aria-hidden="true">↘</span></div>
+      </section>
+
+      <section class="workspace" aria-label="Block-cluster comparison">
+        <div class="map-panel">
+          <div class="panel-heading"><div><p class="eyebrow">01 / LOCATION EVIDENCE</p><h2 id="map-title">Nine blocks. Three groups.</h2></div><span id="map-tag" class="map-tag">ADDRESS-POINT PLOT</span></div>
+          <div class="plot-wrap"><svg id="point-map" viewBox="0 0 760 530" role="img" aria-label="Schematic plot of the nine source-backed HDB block address points in Punggol"></svg><div id="map-north" class="north" aria-hidden="true">N ↑</div><div id="map-scale-note" class="scale-note">Position from WGS84 coordinates · no basemap or route distance</div></div>
+          <div id="map-footer" class="map-footer"><span><i class="legend-dot selected"></i>Selected blocks</span><span><i class="legend-dot"></i>Other candidate blocks</span><span>Point-to-point layout only</span></div>
+        </div>
+
+        <aside class="inspection-panel" aria-live="polite"><div class="panel-heading"><div><p class="eyebrow">02 / CLOSE INSPECTION</p><h2 id="selection-title">Loading evidence…</h2></div></div><div id="inspection"></div></aside>
+      </section>
+
+      <section class="comparison" aria-labelledby="compare-title"><div class="section-heading"><div><p class="eyebrow">03 / SIDE BY SIDE</p><h2 id="compare-title">The candidates</h2></div><p id="compare-instruction">Choose a group to inspect its block-level sources.</p></div><div id="cluster-cards" class="cluster-cards"></div></section>
+
+      <section class="next-step" aria-label="What remains to investigate"><div><p class="eyebrow">THE NEXT DECISION</p><h2>What would change this from a map to a decision?</h2></div><div class="next-grid"><div><span>01</span><strong>Find a viable unit</strong><p>Confirm a specific premises, rent quote, size and permitted Pilates use.</p></div><div><span>02</span><strong>Map real competition</strong><p>Verify nearby reformer offerings and their actual catchments.</p></div><div><span>03</span><strong>Test the studio economics</strong><p>Replace the synthetic profile with owner-confirmed prices, costs and capacity.</p></div></div></section>
+
+      <section id="sources" class="sources" aria-labelledby="sources-title"><div class="section-heading"><div><p class="eyebrow">EVIDENCE POLICY</p><h2 id="sources-title">What this preview can say</h2></div></div><div class="source-grid"><div><span class="fact-label">OBSERVED</span><p>HDB identifies each named block as residential. OneMap supplies address-point coordinates. Open an individual block above for direct source links and retrieval dates.</p></div><div><span class="fact-label derived">DERIVED</span><p>These three non-exhaustive groups were selected from nearby points. The Sapphire and Ripples anchors are about 413 m apart in a straight line and may share customers.</p></div><div><span class="fact-label assumed">SYNTHETIC</span><p>The reformer Pilates operator is a demo fixture. Its prices, rent and demand are not claims about a real business or these blocks.</p></div></div><p class="source-footnote">Feed assembled 6 October 2026 · Singapore. Individual source retrieval dates appear beside each block. OneMap responses include authentication warnings and are treated as dated replays. HDB published dwelling units are not occupancy or demand. Sources: <a href="https://data.gov.sg/datasets/d_17f5382f26140b1fdae0ba2ef6239d2f/view" target="_blank" rel="noopener noreferrer">HDB Property Information</a>, <a href="https://www.onemap.gov.sg/apidocs/" target="_blank" rel="noopener noreferrer">OneMap Search</a>. Data reuse is subject to <a href="https://data.gov.sg/open-data-licence" target="_blank" rel="noopener noreferrer">Singapore Open Data Licence</a> and applicable OneMap terms.</p></section>
+    </main>
+    <footer><span>site scout / evidence before confidence</span><span>Local prototype · no live recommendations</span></footer>
+  </div>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

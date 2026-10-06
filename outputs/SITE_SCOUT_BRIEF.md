@@ -1,6 +1,6 @@
 # Site Scout — product brief and gate checklist
 
-Updated: 5 October 2026. Status: product refinement; implementation has not started.
+Updated: 6 October 2026. Status: implementation in progress; Gate 2 remains open.
 
 This file is the current source of truth. Approved choices are distinguished from proposals. Singapore source coverage, competitor capabilities, and grant terms remain unverified. Direct public-page retrieval succeeded for the user-supplied Jev article and official documentation on 5 October 2026, after the default research tools failed. This verifies published documentation, not runtime performance or account access. Do not describe competitive novelty or commercial readiness as established.
 
@@ -186,7 +186,7 @@ Exit: a manually assembled, defensible three-cluster comparison is possible. If 
 
 ## Immediate next work
 
-Complete Gate 1's remaining details and perform Gate 2 with a small, real evidence sample. Default proposed demo: synthetic reformer Pilates studio planning its second location, subject to intake confirmation. Do not start an all-Singapore crawler or claim commercial readiness before these gates are satisfied.
+Complete Gate 2's remaining evidence and offline comparison checks, and visually inspect the bounded local prototype. The demo profile is a synthetic reformer Pilates studio planning its second location, subject to intake confirmation. Do not start an all-Singapore crawler or claim commercial readiness before these gates are satisfied.
 
 Supporting sources of truth:
 - `outputs/SOURCE_REGISTER.md` records evidence availability, limitations, and fallbacks.
@@ -212,6 +212,8 @@ Proposed total spending envelopes, in the user's stated budget currency: $25 gen
 MVP contains one business profile, one region, three areas, three research roles, a small number of source families, a scenario engine, one optional Jev check, and one complete visual workflow. All-industry support, ASEAN, autonomous outreach, subscriptions, learned demand prediction, and continuous whole-city monitoring are deferred.
 
 ## Change log
+
+- 6 October 2026: the user explicitly prioritized seeing and testing a visual prototype before Gate 2 is complete. Permit a bounded, local-first **Gate 2 visualization spike** using the three hash-checked HDB block-cluster snapshots and a clearly labelled synthetic studio profile. This changes work order, not the evidence contract or the product promise: no recommendation, market ranking, walkability claim, live OneMap claim, or project-to-block join may be presented as established. Keep Gate 2 and downstream gates open until their acceptance checks pass. The spike should help expose usability and geographic-overlap problems early, as the delivery proposal already anticipated.
 
 - 5 October 2026: the user made the location output more specific: compare a few named neighbouring HDB blocks per candidate instead of recommending whole towns such as Punggol or Clementi. The approved unit is now a block cluster with explicit member blocks, verified coordinates, and a stated boundary/anchor. Broad-area demographics remain context only; unsupported development-to-block joins and unverified premises-use claims cannot drive a micro-area recommendation. The output remains an investigation target, not approval of a lease. Gate 2 must prove three such clusters before the UI presents them.
 - 5 October 2026: the user raised the hackathon bar from an illustrative demo toward a dependable product for real business decisions. The product promise is narrowed to real-operator **screening and investigation decisions**, not lease approval or a demand forecast. The synthetic profile remains a clearly labelled test/demo fixture; actual recommendations require owner-confirmed inputs, dated evidence, sensitivity checks, and abstention when material facts are missing. The user then chose public/synthetic data and no operator tester before submission, so real-world accuracy cannot be claimed as validated. This changes the acceptance bar and work priority, not the two-week deadline, $50 budget, or approved three-area Singapore scope. In particular, no current source audit justifies a live site approval.

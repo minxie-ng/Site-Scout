@@ -1,0 +1,146 @@
+{
+  "snapshotDate": "2026-10-06",
+  "decision": "insufficient_evidence",
+  "clusters": [
+    {
+      "id": "punggol-point-cove-442a-442b-443a",
+      "name": "Punggol Point Cove: Blocks 442A, 442B, 443A",
+      "evidenceStatus": "candidate_cluster",
+      "blocks": [
+        {
+          "id": "442A",
+          "latitude": 1.419635402182583,
+          "longitude": 103.9128224429809,
+          "units": 194,
+          "completed": 2025,
+          "postal": "821442",
+          "oneMapUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=821442&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "hdbUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&filters=%7B%22blk_no%22%3A%22442A%22%7D",
+          "oneMapRetrievedAt": "2026-10-05T08:35:52Z",
+          "hdbRetrievedAt": "2026-10-06T04:03:06Z"
+        },
+        {
+          "id": "442B",
+          "latitude": 1.419030120414359,
+          "longitude": 103.9128831725031,
+          "units": 129,
+          "completed": 2024,
+          "postal": "822442",
+          "oneMapUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=442B%20New%20Punggol%20Road&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "hdbUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&filters=%7B%22blk_no%22%3A%22442B%22%7D",
+          "oneMapRetrievedAt": "2026-10-06T03:50:15Z",
+          "hdbRetrievedAt": "2026-10-06T04:03:21Z"
+        },
+        {
+          "id": "443A",
+          "latitude": 1.418699970052094,
+          "longitude": 103.9123514239558,
+          "units": 188,
+          "completed": 2024,
+          "postal": "821443",
+          "oneMapUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=443A%20New%20Punggol%20Road&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "hdbUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&filters=%7B%22blk_no%22%3A%22443A%22%7D",
+          "oneMapRetrievedAt": "2026-10-06T03:50:15Z",
+          "hdbRetrievedAt": "2026-10-06T04:03:21Z"
+        }
+      ],
+      "linkedDevelopmentIds": [],
+      "linkedCompetitorIds": []
+    },
+    {
+      "id": "punggol-sapphire-267a-267b-267c",
+      "name": "Punggol Sapphire: Blocks 267A, 267B, 267C",
+      "evidenceStatus": "candidate_cluster",
+      "blocks": [
+        {
+          "id": "267A",
+          "latitude": 1.404559094024332,
+          "longitude": 103.8975048896151,
+          "units": 89,
+          "completed": 2011,
+          "postal": "821267",
+          "oneMapUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=267A%20PUNGGOL%20FIELD&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "hdbUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&filters=%7B%22blk_no%22%3A%22267A%22%7D",
+          "oneMapRetrievedAt": "2026-10-06T04:21:12Z",
+          "hdbRetrievedAt": "2026-10-06T04:21:51Z"
+        },
+        {
+          "id": "267B",
+          "latitude": 1.404432738983831,
+          "longitude": 103.8979324283428,
+          "units": 89,
+          "completed": 2011,
+          "postal": "822267",
+          "oneMapUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=267B%20PUNGGOL%20FIELD&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "hdbUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&filters=%7B%22blk_no%22%3A%22267B%22%7D",
+          "oneMapRetrievedAt": "2026-10-06T04:21:27Z",
+          "hdbRetrievedAt": "2026-10-06T04:21:51Z"
+        },
+        {
+          "id": "267C",
+          "latitude": 1.404290801956713,
+          "longitude": 103.8983192907335,
+          "units": 58,
+          "completed": 2011,
+          "postal": "823267",
+          "oneMapUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=267C%20PUNGGOL%20FIELD&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "hdbUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&filters=%7B%22blk_no%22%3A%22267C%22%7D",
+          "oneMapRetrievedAt": "2026-10-06T04:21:32Z",
+          "hdbRetrievedAt": "2026-10-06T04:21:51Z"
+        }
+      ],
+      "linkedDevelopmentIds": [],
+      "linkedCompetitorIds": []
+    },
+    {
+      "id": "punggol-ripples-211a-211b-211c",
+      "name": "Punggol Ripples: Blocks 211A, 211B, 211C",
+      "evidenceStatus": "candidate_cluster",
+      "blocks": [
+        {
+          "id": "211A",
+          "latitude": 1.401759847011012,
+          "longitude": 103.899944347349,
+          "units": 112,
+          "completed": 2013,
+          "postal": "821211",
+          "oneMapUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=211A%20PUNGGOL%20WALK&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "hdbUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&filters=%7B%22blk_no%22%3A%22211A%22%7D",
+          "oneMapRetrievedAt": "2026-10-06T04:53:00Z",
+          "hdbRetrievedAt": "2026-10-06T04:53:00Z"
+        },
+        {
+          "id": "211B",
+          "latitude": 1.40116989540272,
+          "longitude": 103.8999208781727,
+          "units": 129,
+          "completed": 2013,
+          "postal": "822211",
+          "oneMapUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=211B%20PUNGGOL%20WALK&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "hdbUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&filters=%7B%22blk_no%22%3A%22211B%22%7D",
+          "oneMapRetrievedAt": "2026-10-06T04:53:00Z",
+          "hdbRetrievedAt": "2026-10-06T04:53:00Z"
+        },
+        {
+          "id": "211C",
+          "latitude": 1.400760492755734,
+          "longitude": 103.8996135596005,
+          "units": 119,
+          "completed": 2013,
+          "postal": "823211",
+          "oneMapUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=211C%20PUNGGOL%20WALK&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "hdbUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&filters=%7B%22blk_no%22%3A%22211C%22%7D",
+          "oneMapRetrievedAt": "2026-10-06T04:53:00Z",
+          "hdbRetrievedAt": "2026-10-06T04:53:00Z"
+        }
+      ],
+      "linkedDevelopmentIds": [],
+      "linkedCompetitorIds": []
+    }
+  ],
+  "caveats": [
+    "The second and third block groups are about 413 m apart and may share a customer catchment.",
+    "Published HDB dwelling units are not occupied homes or Pilates customers.",
+    "OneMap responses are dated replays with authentication-token warnings; live anonymous access is unproven."
+  ]
+}
