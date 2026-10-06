@@ -6,26 +6,31 @@ This file is the current source of truth. Approved choices are distinguished fro
 
 ## Approved decisions
 
-- Singapore SME expansion and timing advisor; begin with a synthetic Pilates studio.
-- Compare three neighbourhoods in one region, with actionable follow-up detail.
-- Main demonstration: a neighbourhood becomes worth investigating in a later launch window. Separate safety demonstration: reject all options when none is suitable.
+- Singapore SME expansion and timing advisor for a real operator; use the synthetic Pilates studio only as a labelled demonstration fixture until an operator supplies and confirms their own inputs.
+- Compare three named clusters of nearby HDB blocks within one Singapore region. Each candidate must list its included blocks and a defensible map anchor; broad town names are context, not the recommendation unit.
+- Main demonstration: one block cluster becomes worth investigating in a later launch window. Separate safety demonstration: reject all options when none is suitable.
 - Intake captures business model, customers, prices, budget, current locations, and time horizon; ask targeted follow-up questions when needed.
 - Explain assumptions, show dated sources, and allow go / wait / no-go outcomes.
 - Prepare a recommendation memo and investigation plan; obtain approval before external actions.
 - Develop through gates with acceptance checks. Future industry adaptation and ASEAN expansion remain longer-term ambitions.
 - Delivery constraints: one builder, two weeks remaining, $50 total budget as stated by the user. Billing currency and any existing API credits are not yet established; do not purchase services automatically.
+- Hackathon entry: Track 4, “Solving a Business Problem,” selected by the user. Official Devpost deadline: 19 October 2026 at 11:45 pm Singapore time (15:45 UTC). Submission requires a public GitHub repository, a fully deployed and functional project, and a Devpost write-up with pictures. The published rules require individual builds; no specific technology is mandated in the rules inspected on 5 October 2026. Sources: https://ai-lodge-hackathon-2026.devpost.com/ and https://ai-lodge-hackathon-2026.devpost.com/rules .
 - Approved demo profile: group reformer Pilates with the synthetic operating assumptions and decision thresholds documented in `outputs/DEMO_BUSINESS_PROFILE.md`.
+- The hackathon target is dependable **screening for real business investigations**: identify when to investigate, wait, rule out, or abstain for one owner-supplied business profile. Do not claim lease approval, guaranteed demand, or live current evidence when those have not been established.
+- No Pilates operator or manager will supply private operating figures or test the product before submission; the user chose public/synthetic data for the hackathon. The real-input pathway may be implemented and tested with synthetic fixtures, but real-world recommendation accuracy and operator usefulness remain unvalidated claims.
 
 ## Product promise
 
 Help a Pilates studio owner decide where and when to investigate a second location, what conditions would make it viable, and what evidence must be collected before committing capital.
 
-A neighbourhood recommendation is not approval of a particular lease. Exact premises require separate checks for availability, rent, permitted use, size, access, fit-out, and other relevant constraints. Opening windows are conditional scenarios, not guaranteed dates.
+For a real owner, require them to enter or confirm decision-critical operating inputs before any area result. Present the source date and assumptions beside each recommendation, rerun adverse rent/utilisation/timing cases, and return `insufficient_evidence` when a missing or conflicting input could change the conclusion. A synthetic fixture may demonstrate the workflow but cannot be presented as a recommendation for an actual business.
+
+A block-cluster recommendation is not approval of a particular lease. Exact premises require separate checks for availability, rent, permitted use, size, access, fit-out, and other relevant constraints. Opening windows are conditional scenarios, not guaranteed dates. A planning-area statistic cannot be presented as a fact about the selected blocks.
 
 ## Proposed distinguishing workflow
 
 1. Complete a short intake, then ask only decision-relevant follow-up questions. Display the resulting business assumptions for correction.
-2. Compare three neighbourhoods using a dated evidence snapshot, spatial calculations, studio economics, and explicit constraints.
+2. Compare three explicitly bounded HDB block clusters using a dated evidence snapshot, spatial calculations, studio economics, and explicit constraints.
 3. Show current conditions and future scenarios, including delayed housing completion, slower occupancy, different rent, and lower utilisation.
 4. Explain why an area qualifies, fails, or remains unresolved. Distinguish a commercially weak result from insufficient evidence.
 5. Identify the unknown most capable of changing the decision and propose an investigation: obtain a rent quote, inspect access, sample class availability, or run a local demand test.
@@ -82,6 +87,8 @@ The user confirmed TypeSafe AI's Jev, linking https://typesafe.ai/blog/introduci
 
 The core application must work through a provider interface with a validated structured-LLM fallback if Jev access is unavailable. Label the active provider honestly. Confirm account access by Day 2; time-box the Jev experiment to half a day. Pin the model version when testing thresholds.
 
+Verified on 5 October 2026: OpenRouter exposes the actual Jev 1.13 structured System One/Decisions API under `typesafe/jev-1.13`, accessible with an OpenRouter key. This is distinct from OpenRouter's `typesafe/jev-router`, which routes general chat requests. A separate direct TypeSafe account is unnecessary for the hackathon Jev experiment while OpenRouter access works. Keep the two API routes as provider choices and benchmark either route before positive claims are automatically accepted.
+
 TypeSafe's published limitations specifically include numerical precision, date comparisons, adversarial input, option-order effects, and large irrelevant contexts. Schema-valid output does not guarantee a factually correct decision. Keep Jev outside the authority path for tool permissions and final economic constraints. A citation check establishes support within the supplied text, not the underlying truth or completeness of that source.
 
 Read sources:
@@ -100,12 +107,12 @@ For the experiment, prepare 30 manually labelled claim/passage pairs covering co
 
 ## Experience and demonstration
 
-Proposed main screen: neighbourhood map; quarter selector; three comparable decision cards; business assumptions; source drawer; next action. Show scenario assumptions beside results and accessible colours and labels for investigate / wait / reject / insufficient evidence.
+Proposed main screen: HDB block-cluster map; quarter selector; three comparable decision cards; business assumptions; source drawer; next action. Show scenario assumptions beside results and accessible colours and labels for investigate / wait / reject / insufficient evidence.
 
 Proposed demonstration sequence:
 
 1. Owner completes intake and confirms the structured brief.
-2. Three neighbourhoods appear with evidence-backed explanations.
+2. Three named HDB block clusters appear with their member blocks and evidence-backed explanations.
 3. A future scenario makes one area worth investigating.
 4. A housing delay or rent change alters the decision; the map, economics, explanation, and action calendar update consistently.
 5. The system identifies the missing fact that could change the conclusion and drafts an investigation plan.
@@ -125,10 +132,10 @@ Public-source aggregation is reproducible by competitors. Proprietary outcome co
 
 - [x] Main category: Pilates studio.
 - [x] Synthetic operator with editable assumptions.
-- [x] Three neighbourhoods in one Singapore region.
+- [x] Three named HDB block clusters within one Singapore region; exact candidate blocks remain subject to Gate 2 evidence coverage.
 - [x] Conditional opening window and valid abstention outcomes.
 - [x] Confirm duration, team, and budget: two weeks, solo, $50.
-- [ ] Confirm exact submission time and any mandatory technology/submission rules.
+- [x] Confirm exact submission time and mandatory submission rules from Devpost; no mandated technology found in the inspected rules.
 - [x] Resolve “jev” model reference: TypeSafe AI Jev; official article and docs read.
 - [x] Confirm studio subtype and complete demonstration business profile.
 - [ ] Select region after a source audit establishes useful coverage.
@@ -136,12 +143,12 @@ Public-source aggregation is reproducible by competitors. Proprietary outcome co
 ### Gate 2 — Evidence feasibility
 
 - [ ] Retrieve sample records for every core source and document access conditions.
-- [ ] Demonstrate usable coordinates, dates/status, and coverage for proposed neighbourhoods.
+- [ ] Demonstrate usable coordinates, explicit block membership, dates/status, and source coverage for three proposed block clusters. Do not infer a project-to-block join from a town label.
 - [ ] Establish whether competitors, prices, housing pipeline, access, and rent evidence are actually obtainable.
 - [ ] Create a source register with refresh, uncertainty, fallback, and attribution requirements.
 - [ ] Remove unsupported claims or make them editable assumptions.
 
-Exit: a manually assembled, defensible three-area comparison is possible. If it is not, narrow or revise the promise before building the UI.
+Exit: a manually assembled, defensible three-cluster comparison is possible. If it is not, narrow or revise the promise before building the UI.
 
 ### Gate 3 — Reproducible decision engine
 
@@ -161,6 +168,8 @@ Exit: a manually assembled, defensible three-area comparison is possible. If it 
 
 ### Gate 5 — Product and reliability
 
+- [ ] A real operator can enter and confirm their own business inputs; missing decision-critical values block a recommendation.
+- [ ] Every displayed outcome survives deterministic scenario and provenance checks; material evidence gaps or contradictory premises facts trigger abstention and a named next investigation.
 - [ ] Complete intake → comparison → scenario → investigation plan → memo flow.
 - [ ] Reproduce the same result from the same versioned evidence and assumptions.
 - [ ] Isolate each business's uploaded data and restrict external actions.
@@ -201,3 +210,11 @@ Use an early rough map once coordinate samples exist to catch geographic errors;
 Proposed total spending envelopes, in the user's stated budget currency: $25 general LLM research/generation/evaluation; $5 Jev experiment; $10 data/map contingency; $10 reserve. Aim to use no-cost hosting and permitted public sources, subject to terms and limits. These are caps, not verified quotations. Track per-run usage, cap tool calls and retries, cache source snapshots, and stop optional experiments before exhausting the budget.
 
 MVP contains one business profile, one region, three areas, three research roles, a small number of source families, a scenario engine, one optional Jev check, and one complete visual workflow. All-industry support, ASEAN, autonomous outreach, subscriptions, learned demand prediction, and continuous whole-city monitoring are deferred.
+
+## Change log
+
+- 5 October 2026: the user made the location output more specific: compare a few named neighbouring HDB blocks per candidate instead of recommending whole towns such as Punggol or Clementi. The approved unit is now a block cluster with explicit member blocks, verified coordinates, and a stated boundary/anchor. Broad-area demographics remain context only; unsupported development-to-block joins and unverified premises-use claims cannot drive a micro-area recommendation. The output remains an investigation target, not approval of a lease. Gate 2 must prove three such clusters before the UI presents them.
+- 5 October 2026: the user raised the hackathon bar from an illustrative demo toward a dependable product for real business decisions. The product promise is narrowed to real-operator **screening and investigation decisions**, not lease approval or a demand forecast. The synthetic profile remains a clearly labelled test/demo fixture; actual recommendations require owner-confirmed inputs, dated evidence, sensitivity checks, and abstention when material facts are missing. The user then chose public/synthetic data and no operator tester before submission, so real-world accuracy cannot be claimed as validated. This changes the acceptance bar and work priority, not the two-week deadline, $50 budget, or approved three-area Singapore scope. In particular, no current source audit justifies a live site approval.
+- 5 October 2026: the user explicitly prioritized integrating Jev now, ahead of the remaining Gate 2 evidence work. An optional bounded direct TypeSafe adapter was added, but subsequent credential verification showed the available key belongs to OpenRouter. Direct System One access remains unavailable; OpenRouter's `typesafe/jev-router` is a different general model-routing interface. This scheduling exception does not change the evidence gate or business decision rules. Keep deterministic checks and abstention, do not infer production reliability or mark Gate 2 complete, and resume the source audit after this slice.
+- 5 October 2026: corrected the earlier provider assumption after reading current OpenRouter Jev documentation and making one successful structured Jev 1.13 call using the user's OpenRouter key. OpenRouter exposes actual Jev via its System One/Decisions API as well as the separate `jev-router` chat-routing product. A separate TypeSafe purchase is not required for this experiment. Added the OpenRouter System One route to the bounded adapter; positive support remains review-only pending the labelled benchmark.
+- 5 October 2026: recorded the user's Track 4 choice and the official Devpost deadline and submission rules. This closes Gate 1's submission-rules item and makes a public repository, working deployment, and illustrated write-up explicit delivery requirements. No application or evidence decision changed. The deadline was verified from the event page's displayed Singapore time and matching UTC timestamp; the rules page was checked for individual-build and deployment requirements.

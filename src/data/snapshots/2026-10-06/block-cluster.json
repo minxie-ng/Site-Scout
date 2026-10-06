@@ -1,0 +1,93 @@
+{
+  "id": "punggol-point-cove-442a-442b-443a",
+  "schemaVersion": 1,
+  "evidenceStatus": "candidate_cluster",
+  "name": "Punggol Point Cove: Blocks 442A, 442B, 443A",
+  "selection": {
+    "provenance": "derived_value",
+    "sourceIds": ["onemap-821442", "onemap-442b-new-punggol-road", "onemap-443a-new-punggol-road"],
+    "rule": "Manually selected these three named blocks because their OneMap address points are within 125 metres of each other pairwise and share the Punggol Point Cove building label and New Punggol Road.",
+    "maxPairwiseMetres": 125,
+    "limitation": "This is a non-exhaustive sample of nearby block address points, not a pedestrian catchment, full precinct boundary, or proof that any block belongs to Punggol Point Cove Phase 2."
+  },
+  "members": [
+    {
+      "blockId": "442A",
+      "roadName": "NEW PUNGGOL ROAD",
+      "buildingName": "PUNGGOL POINT COVE",
+      "postalCode": "821442",
+      "latitude": 1.419635402182583,
+      "longitude": 103.9128224429809,
+      "provenance": "observed_fact",
+      "sourceId": "onemap-821442"
+    },
+    {
+      "blockId": "442B",
+      "roadName": "NEW PUNGGOL ROAD",
+      "buildingName": "PUNGGOL POINT COVE",
+      "postalCode": "822442",
+      "latitude": 1.419030120414359,
+      "longitude": 103.9128831725031,
+      "provenance": "observed_fact",
+      "sourceId": "onemap-442b-new-punggol-road"
+    },
+    {
+      "blockId": "443A",
+      "roadName": "NEW PUNGGOL ROAD",
+      "buildingName": "PUNGGOL POINT COVE",
+      "postalCode": "821443",
+      "latitude": 1.418699970052094,
+      "longitude": 103.9123514239558,
+      "provenance": "observed_fact",
+      "sourceId": "onemap-443a-new-punggol-road"
+    }
+  ],
+  "linkedDevelopmentIds": [],
+  "linkedCompetitorIds": [],
+  "sources": [
+    {
+      "id": "onemap-821442",
+      "publisher": "Singapore Land Authority",
+      "title": "OneMap Search API response for postal code 821442",
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=821442&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-05T08:35:52Z",
+      "publicationDate": null,
+      "geographicScope": "Block 442A New Punggol Road, Singapore 821442",
+      "accessStatus": "public_response_with_auth_warning",
+      "licenceAccessNote": "OneMap Search requires token-based authentication according to its API docs. This stored response includes an authentication warning; use only as a dated replay until account access is verified. The linked open-data licence requires conspicuous attribution and a current licence link.",
+      "snapshotPath": "src/data/snapshots/2026-10-05/original/onemap-821442.json",
+      "snapshotSha256": "d3ea050f819e5d181404c6a40c776d86c71bf93153d2380df92c50ef5ffc7ad5"
+    },
+    {
+      "id": "onemap-442b-new-punggol-road",
+      "publisher": "Singapore Land Authority",
+      "title": "OneMap Search API response for Block 442B New Punggol Road",
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=442B%20New%20Punggol%20Road&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-06T03:50:15Z",
+      "publicationDate": null,
+      "geographicScope": "Block 442B New Punggol Road, Singapore 822442",
+      "accessStatus": "public_response_without_token_for_one_request",
+      "licenceAccessNote": "OneMap Search requires token-based authentication according to its API docs. This one response returned data without an inline warning, but other requests were rate-limited; stable anonymous access is unproven. The linked open-data licence requires conspicuous attribution and a current licence link.",
+      "snapshotPath": "src/data/snapshots/2026-10-06/original/onemap-442b.json",
+      "snapshotSha256": "c53f2846ece9ea249003f0907f6960dc8d74846e0aeb14032725557e4b61cb9b"
+    },
+    {
+      "id": "onemap-443a-new-punggol-road",
+      "publisher": "Singapore Land Authority",
+      "title": "OneMap Search API response for Block 443A New Punggol Road",
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=443A%20New%20Punggol%20Road&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-06T03:50:15Z",
+      "publicationDate": null,
+      "geographicScope": "Block 443A New Punggol Road, Singapore 821443",
+      "accessStatus": "public_response_without_token_for_one_request",
+      "licenceAccessNote": "OneMap Search requires token-based authentication according to its API docs. This one response returned data without an inline warning, but other requests were rate-limited; stable anonymous access is unproven. The linked open-data licence requires conspicuous attribution and a current licence link.",
+      "snapshotPath": "src/data/snapshots/2026-10-06/original/onemap-443a.json",
+      "snapshotSha256": "3033f51fe25a7fd53ba9d8afe99be442426707329101af99311397b553a5c8f3"
+    }
+  ],
+  "fallback": {
+    "trigger": "The OneMap Search endpoint is unavailable, rate-limited, or requires an account/token that is not configured.",
+    "action": "Load these SHA-256-verified checked-in responses and label the cluster as a 5–6 October 2026 replay of block address points.",
+    "limitation": "The replay does not prove current addresses, live API access, pedestrian routes, local demand, or any block-to-Phase 2 relationship."
+  }
+}

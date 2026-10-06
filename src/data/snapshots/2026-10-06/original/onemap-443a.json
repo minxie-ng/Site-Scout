@@ -1,0 +1,19 @@
+{
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "PUNGGOL POINT COVE",
+      "BLK_NO": "443A",
+      "ROAD_NAME": "NEW PUNGGOL ROAD",
+      "BUILDING": "PUNGGOL POINT COVE",
+      "ADDRESS": "443A NEW PUNGGOL ROAD PUNGGOL POINT COVE SINGAPORE 821443",
+      "POSTAL": "821443",
+      "X": "36795.22007489204",
+      "Y": "44498.30110114999",
+      "LATITUDE": "1.418699970052094",
+      "LONGITUDE": "103.9123514239558"
+    }
+  ]
+}

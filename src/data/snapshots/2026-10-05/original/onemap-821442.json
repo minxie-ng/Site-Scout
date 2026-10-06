@@ -1,0 +1,20 @@
+{
+  "error": "Authentication token missing. Please create an account and generate or renew your API Token.",
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "PUNGGOL POINT COVE",
+      "BLK_NO": "442A",
+      "ROAD_NAME": "NEW PUNGGOL ROAD",
+      "BUILDING": "PUNGGOL POINT COVE",
+      "ADDRESS": "442A NEW PUNGGOL ROAD PUNGGOL POINT COVE SINGAPORE 821442",
+      "POSTAL": "821442",
+      "X": "36847.6342039872",
+      "Y": "44601.73836388253",
+      "LATITUDE": "1.419635402182583",
+      "LONGITUDE": "103.9128224429809"
+    }
+  ]
+}
