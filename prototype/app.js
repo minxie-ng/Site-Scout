@@ -1,10 +1,12 @@
 import { selectedLabelPositions } from "./map-layout.mjs";
+import { factorCards } from "./factor-readiness.mjs";
 
 const svgNS = "http://www.w3.org/2000/svg";
 const map = document.querySelector("#point-map");
 const inspection = document.querySelector("#inspection");
 const cards = document.querySelector("#cluster-cards");
 const title = document.querySelector("#selection-title");
+const factorGrid = document.querySelector("#factor-grid");
 let clusters = [];
 let selected = 0;
 
@@ -106,6 +108,8 @@ try {
   if (!response.ok) throw new Error(`Evidence feed returned HTTP ${response.status}`);
   const feed = await response.json();
   if (feed.decision !== "insufficient_evidence" || !Array.isArray(feed.clusters) || feed.clusters.length !== 3 || feed.clusters.some(cluster => cluster.blocks.length !== 3 || cluster.linkedDevelopmentIds.length || cluster.linkedCompetitorIds.length)) throw new Error("Evidence feed failed the prototype contract");
+  if (!Array.isArray(feed.factors) || feed.factors.map(factor => factor.id).join(",") !== "rent,premises_use,competitors,access,demographics,future_housing") throw new Error("Factor evidence is incomplete");
+  factorGrid.innerHTML = factorCards(feed.factors);
   clusters = feed.clusters;
   select(0);
 } catch (error) {
@@ -116,6 +120,7 @@ try {
   document.querySelector("#intro-summary").textContent = "The dated block snapshot could not be loaded, so this preview cannot show or compare verified points.";
   document.querySelector("#status-card").textContent = "Decision withheld · evidence unavailable";
   document.querySelector("#sources").hidden = true;
+  document.querySelector("#factor-readiness").hidden = true;
   document.querySelector("#map-title").textContent = "Evidence unavailable";
   document.querySelector("#map-scale-note").textContent = "No points loaded · no map comparison available";
   document.querySelector("#snapshot-pill").textContent = "EVIDENCE UNAVAILABLE";

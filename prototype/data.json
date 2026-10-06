@@ -138,6 +138,80 @@
       "linkedCompetitorIds": []
     }
   ],
+  "factors": [
+    {
+      "id": "rent",
+      "title": "Rent and available units",
+      "status": "research_only",
+      "summary": "One Hougang asking-rent listing was found; it is outside these Punggol block groups.",
+      "blocker": "No listing/price date, consistent exact floor, or confirmed current quote for a candidate unit.",
+      "scope": "106 Hougang Avenue 1, Singapore",
+      "sourceName": "PropNex listing",
+      "sourceUrl": "https://www.propnex.com/listing-details/964412/106-hougang-avenue-1",
+      "retrievedOn": "2026-10-05",
+      "linkedClusterIds": []
+    },
+    {
+      "id": "premises_use",
+      "title": "Pilates premises rules",
+      "status": "research_only",
+      "summary": "URA says to check intended and allowable use before leasing; a different use needs planning permission.",
+      "blocker": "No exact unit or authority confirmation that group reformer Pilates is permitted there.",
+      "scope": "Singapore-wide rule, not a unit approval",
+      "sourceName": "URA business-owner guidance",
+      "sourceUrl": "https://www.ura.gov.sg/Corporate/Guidelines/Development-Control/Planning-Permission/Change-of-Use",
+      "retrievedOn": "2026-10-06",
+      "linkedClusterIds": []
+    },
+    {
+      "id": "competitors",
+      "title": "Relevant competitors",
+      "status": "research_only",
+      "summary": "An operator advertises a Punggol Coast Mall outlet; its local service mix remains unchecked.",
+      "blocker": "Outlet-specific price, current classes, coordinate, and overlap with each block group are unverified.",
+      "scope": "Punggol Coast Mall outlet, Singapore; brand-level offer",
+      "sourceName": "am Pilates contact page",
+      "sourceUrl": "https://www.ampilates.sg/contact",
+      "retrievedOn": "2026-10-05",
+      "linkedClusterIds": []
+    },
+    {
+      "id": "access",
+      "title": "Access and travel",
+      "status": "research_only",
+      "summary": "OneMap returned Punggol Coast station and exit address points.",
+      "blocker": "No verified walking route, travel time, or block-to-station linkage for any candidate group.",
+      "scope": "Punggol Coast station, Singapore",
+      "sourceName": "OneMap station search",
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=Punggol%20Coast%20MRT%20Station&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedOn": "2026-10-06",
+      "linkedClusterIds": []
+    },
+    {
+      "id": "demographics",
+      "title": "Population context",
+      "status": "research_only",
+      "summary": "Official 2020 census figures are available by Punggol planning area and subzone.",
+      "blocker": "Historical subzone counts cannot be assigned to these blocks or treated as Pilates demand.",
+      "scope": "Punggol planning area and subzones, Singapore",
+      "sourceName": "SingStat census dataset",
+      "sourceUrl": "https://data.gov.sg/datasets/d_9e035622439b5d25a63d7ea0699c9451/view",
+      "retrievedOn": "2026-10-06",
+      "linkedClusterIds": []
+    },
+    {
+      "id": "future_housing",
+      "title": "Future housing",
+      "status": "research_only",
+      "summary": "HDB's Matilda Riverside brochure describes seven residential blocks and 962 sale flats.",
+      "blocker": "No official calendar completion month, current status, occupancy date, or proven candidate catchment join.",
+      "scope": "Matilda Riverside, Punggol, Singapore",
+      "sourceName": "HDB Matilda Riverside brochure",
+      "sourceUrl": "https://assets.hdb.gov.sg/residential/buying-a-flat/finding-a-flat/sales-brochure/24FEBBTO_pdf_selection/matilda_riverside.pdf",
+      "retrievedOn": "2026-10-06",
+      "linkedClusterIds": []
+    }
+  ],
   "caveats": [
     "The second and third block groups are about 413 m apart and may share a customer catchment.",
     "Published HDB dwelling units are not occupied homes or Pilates customers.",
