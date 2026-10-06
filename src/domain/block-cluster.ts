@@ -3,7 +3,7 @@ import { readFileSync, realpathSync } from "node:fs";
 import { resolve, sep } from "node:path";
 import { z } from "zod";
 
-const reviewedMetadataSha256 = "be1532ef33bc59629faf3437153b0fde7bf8a854611ae054916468a13cfcbcef";
+const reviewedMetadataSha256 = "0be981c8e944125e4e081725baa5d9f2f9fb55dbb7a29fa32c31c162849e551d";
 const reviewedSources = {
   "onemap-821442": {
     path: "src/data/snapshots/2026-10-05/original/onemap-821442.json",
@@ -17,6 +17,11 @@ const reviewedSources = {
     path: "src/data/snapshots/2026-10-06/original/onemap-443a.json",
     sha256: "3033f51fe25a7fd53ba9d8afe99be442426707329101af99311397b553a5c8f3",
   },
+} as const;
+const reviewedHdbSources = {
+  "hdb-property-442a": { path: "src/data/snapshots/2026-10-06/original/hdb-property-442a.json", sha256: "c5022fbd8207675c944bbd2e12368f70e832e9f9261ea30668cf0d2e496cd8b6" },
+  "hdb-property-442b": { path: "src/data/snapshots/2026-10-06/original/hdb-property-442b.json", sha256: "499b445301cc93c1c5f4cb0d30c25cb930f7b210036b9ef8e1dcaffdc58563b4" },
+  "hdb-property-443a": { path: "src/data/snapshots/2026-10-06/original/hdb-property-443a.json", sha256: "010ec6e779598d89cbce42aff223c10076912c35e21d34f3413e1361d457b956" },
 } as const;
 
 const sourceSchema = z.object({
@@ -42,6 +47,13 @@ const memberSchema = z.object({
   longitude: z.number().min(103.6).max(104.1),
   provenance: z.literal("observed_fact"),
   sourceId: z.string().min(1),
+  hdbResidentialEvidence: z.object({
+    sourceId: z.string().min(1),
+    street: z.literal("NEW PUNGGOL RD"),
+    residential: z.literal("Y"),
+    totalDwellingUnits: z.number().int().positive(),
+    yearCompleted: z.number().int().min(1937).max(2026),
+  }).strict(),
 }).strict();
 
 const clusterSchema = z.object({
@@ -60,6 +72,7 @@ const clusterSchema = z.object({
   linkedDevelopmentIds: z.array(z.string()).length(0),
   linkedCompetitorIds: z.array(z.string()).length(0),
   sources: z.array(sourceSchema).length(3),
+  hdbSources: z.array(sourceSchema).length(3),
   fallback: z.object({
     trigger: z.string().min(1),
     action: z.string().min(1),
@@ -78,7 +91,7 @@ function metresBetween(a: BlockCluster["members"][number], b: BlockCluster["memb
   return 2 * 6_371_000 * Math.asin(Math.sqrt(h));
 }
 
-function checkedOneMapSource(path: string, sha256: string): unknown | null {
+function checkedJsonSource(path: string, sha256: string): unknown | null {
   try {
     const root = realpathSync(resolve(process.cwd(), "src/data/snapshots"));
     const file = realpathSync(resolve(process.cwd(), path));
@@ -114,7 +127,7 @@ export function parseBlockCluster(input: unknown): z.ZodSafeParseResult<BlockClu
     if (!reviewed || source.snapshotPath !== reviewed.path || source.snapshotSha256 !== reviewed.sha256) {
       return fail("Source path or reviewed digest differs");
     }
-    const response = checkedOneMapSource(source.snapshotPath, source.snapshotSha256) as {
+    const response = checkedJsonSource(source.snapshotPath, source.snapshotSha256) as {
       found?: number;
       results?: Array<{ BLK_NO?: string; ROAD_NAME?: string; BUILDING?: string; POSTAL?: string; LATITUDE?: string; LONGITUDE?: string }>;
     } | null;
@@ -128,6 +141,30 @@ export function parseBlockCluster(input: unknown): z.ZodSafeParseResult<BlockClu
     }
   }
   if (new Set(cluster.members.map(member => member.sourceId)).size !== 3) return fail("Each block needs its own source");
+  if (new Set(cluster.hdbSources.map(source => source.id)).size !== 3 ||
+    new Set(cluster.members.map(member => member.hdbResidentialEvidence.sourceId)).size !== 3) {
+    return fail("Each block needs its own HDB property source");
+  }
+  for (const source of cluster.hdbSources) {
+    const reviewed = reviewedHdbSources[source.id as keyof typeof reviewedHdbSources];
+    if (!reviewed || source.snapshotPath !== reviewed.path || source.snapshotSha256 !== reviewed.sha256) {
+      return fail("HDB source path or reviewed digest differs");
+    }
+    const response = checkedJsonSource(source.snapshotPath, source.snapshotSha256) as {
+      success?: boolean;
+      result?: { records?: Array<{ blk_no?: string; street?: string; residential?: string; total_dwelling_units?: string; year_completed?: string }> };
+    } | null;
+    const member = cluster.members.find(item => item.hdbResidentialEvidence.sourceId === source.id);
+    if (!response?.success || !member || !Array.isArray(response.result?.records)) return fail("HDB property response is missing or invalid");
+    const rows = response.result.records.filter(row => row.blk_no === member.blockId && row.street === "NEW PUNGGOL RD");
+    if (rows.length !== 1) return fail("HDB block-and-street identity is absent or ambiguous");
+    const row = rows[0];
+    const evidence = member.hdbResidentialEvidence;
+    if (row.residential !== "Y" || evidence.residential !== row.residential || evidence.street !== row.street ||
+      Number(row.total_dwelling_units) !== evidence.totalDwellingUnits || Number(row.year_completed) !== evidence.yearCompleted) {
+      return fail("HDB residential claim differs from the integrity-checked block-and-street row");
+    }
+  }
   if (cluster.selection.sourceIds.join(",") !== cluster.members.map(member => member.sourceId).join(",")) {
     return fail("Derived selection must cite every member point source");
   }

@@ -17,6 +17,8 @@ describe("one reviewed HDB block-location cluster", () => {
     expect(result.data.members.map(member => member.blockId)).toEqual(["442A", "442B", "443A"]);
     expect(result.data.selection.provenance).toBe("derived_value");
     expect(result.data.selection.sourceIds).toEqual(result.data.members.map(member => member.sourceId));
+    expect(result.data.members.map(member => member.hdbResidentialEvidence?.yearCompleted)).toEqual([2025, 2024, 2024]);
+    expect(result.data.members.every(member => member.hdbResidentialEvidence?.residential === "Y")).toBe(true);
     expect(result.data.linkedDevelopmentIds).toEqual([]);
     expect(result.data.linkedCompetitorIds).toEqual([]);
   });
@@ -75,5 +77,25 @@ describe("one reviewed HDB block-location cluster", () => {
     const record = fixture();
     record.selection.sourceIds = ["onemap-821442", "onemap-442b-new-punggol-road"];
     expect(parseBlockCluster(record).success).toBe(false);
+  });
+
+  it("requires HDB evidence for the exact block-and-street identity", () => {
+    const wrongStreet = fixture();
+    wrongStreet.members[0].hdbResidentialEvidence.street = "BT BATOK WEST AVE 8";
+    expect(parseBlockCluster(wrongStreet).success).toBe(false);
+
+    const missing = fixture();
+    delete missing.members[1].hdbResidentialEvidence;
+    expect(parseBlockCluster(missing).success).toBe(false);
+  });
+
+  it("rejects a nonresidential HDB claim or altered HDB source digest", () => {
+    const nonresidential = fixture();
+    nonresidential.members[1].hdbResidentialEvidence.residential = "N";
+    expect(parseBlockCluster(nonresidential).success).toBe(false);
+
+    const altered = fixture();
+    altered.hdbSources[0].snapshotSha256 = "0".repeat(64);
+    expect(parseBlockCluster(altered).success).toBe(false);
   });
 });

@@ -19,7 +19,8 @@
       "latitude": 1.419635402182583,
       "longitude": 103.9128224429809,
       "provenance": "observed_fact",
-      "sourceId": "onemap-821442"
+      "sourceId": "onemap-821442",
+      "hdbResidentialEvidence": {"sourceId": "hdb-property-442a", "street": "NEW PUNGGOL RD", "residential": "Y", "totalDwellingUnits": 194, "yearCompleted": 2025}
     },
     {
       "blockId": "442B",
@@ -29,7 +30,8 @@
       "latitude": 1.419030120414359,
       "longitude": 103.9128831725031,
       "provenance": "observed_fact",
-      "sourceId": "onemap-442b-new-punggol-road"
+      "sourceId": "onemap-442b-new-punggol-road",
+      "hdbResidentialEvidence": {"sourceId": "hdb-property-442b", "street": "NEW PUNGGOL RD", "residential": "Y", "totalDwellingUnits": 129, "yearCompleted": 2024}
     },
     {
       "blockId": "443A",
@@ -39,7 +41,8 @@
       "latitude": 1.418699970052094,
       "longitude": 103.9123514239558,
       "provenance": "observed_fact",
-      "sourceId": "onemap-443a-new-punggol-road"
+      "sourceId": "onemap-443a-new-punggol-road",
+      "hdbResidentialEvidence": {"sourceId": "hdb-property-443a", "street": "NEW PUNGGOL RD", "residential": "Y", "totalDwellingUnits": 188, "yearCompleted": 2024}
     }
   ],
   "linkedDevelopmentIds": [],
@@ -83,6 +86,47 @@
       "licenceAccessNote": "OneMap Search requires token-based authentication according to its API docs. This one response returned data without an inline warning, but other requests were rate-limited; stable anonymous access is unproven. The linked open-data licence requires conspicuous attribution and a current licence link.",
       "snapshotPath": "src/data/snapshots/2026-10-06/original/onemap-443a.json",
       "snapshotSha256": "3033f51fe25a7fd53ba9d8afe99be442426707329101af99311397b553a5c8f3"
+    }
+  ],
+  "hdbSources": [
+    {
+      "id": "hdb-property-442a",
+      "publisher": "Housing & Development Board",
+      "title": "HDB Property Information API response for block 442A",
+      "sourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&filters=%7B%22blk_no%22%3A%22442A%22%7D",
+      "retrievedAt": "2026-10-06T04:03:06Z",
+      "publicationDate": null,
+      "geographicScope": "Block 442A New Punggol Road, Singapore; response also includes same-number blocks on other streets",
+      "accessStatus": "public_no_auth",
+      "licenceAccessNote": "HDB Property Information on data.gov.sg is under the Singapore Open Data Licence, requiring conspicuous source attribution and licence link. Data are a dated table replay; 6 July 2026 catalogue update is not a row-level effective date.",
+      "snapshotPath": "src/data/snapshots/2026-10-06/original/hdb-property-442a.json",
+      "snapshotSha256": "c5022fbd8207675c944bbd2e12368f70e832e9f9261ea30668cf0d2e496cd8b6"
+    },
+    {
+      "id": "hdb-property-442b",
+      "publisher": "Housing & Development Board",
+      "title": "HDB Property Information API response for block 442B",
+      "sourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&filters=%7B%22blk_no%22%3A%22442B%22%7D",
+      "retrievedAt": "2026-10-06T04:03:21Z",
+      "publicationDate": null,
+      "geographicScope": "Block 442B New Punggol Road, Singapore; response also includes same-number blocks on other streets",
+      "accessStatus": "public_no_auth",
+      "licenceAccessNote": "HDB Property Information on data.gov.sg is under the Singapore Open Data Licence, requiring conspicuous source attribution and licence link. Data are a dated table replay; 6 July 2026 catalogue update is not a row-level effective date.",
+      "snapshotPath": "src/data/snapshots/2026-10-06/original/hdb-property-442b.json",
+      "snapshotSha256": "499b445301cc93c1c5f4cb0d30c25cb930f7b210036b9ef8e1dcaffdc58563b4"
+    },
+    {
+      "id": "hdb-property-443a",
+      "publisher": "Housing & Development Board",
+      "title": "HDB Property Information API response for block 443A",
+      "sourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&filters=%7B%22blk_no%22%3A%22443A%22%7D",
+      "retrievedAt": "2026-10-06T04:03:21Z",
+      "publicationDate": null,
+      "geographicScope": "Block 443A New Punggol Road, Singapore; response also includes same-number blocks on other streets",
+      "accessStatus": "public_no_auth",
+      "licenceAccessNote": "HDB Property Information on data.gov.sg is under the Singapore Open Data Licence, requiring conspicuous source attribution and licence link. Data are a dated table replay; 6 July 2026 catalogue update is not a row-level effective date.",
+      "snapshotPath": "src/data/snapshots/2026-10-06/original/hdb-property-443a.json",
+      "snapshotSha256": "010ec6e779598d89cbce42aff223c10076912c35e21d34f3413e1361d457b956"
     }
   ],
   "fallback": {
