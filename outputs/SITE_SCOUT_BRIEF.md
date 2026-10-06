@@ -1,6 +1,6 @@
 # Site Scout — product brief and gate checklist
 
-Updated: 6 October 2026. Status: implementation in progress; Gate 2 remains open.
+Updated: 7 October 2026. Status: Gate 2 source-feasibility exit reviewed and closed; Gate 3 has not started.
 
 This file is the current source of truth. Approved choices are distinguished from proposals. Singapore source coverage, competitor capabilities, and grant terms remain unverified. Direct public-page retrieval succeeded for the user-supplied Jev article and official documentation on 5 October 2026, after the default research tools failed. This verifies published documentation, not runtime performance or account access. Do not describe competitive novelty or commercial readiness as established.
 
@@ -138,17 +138,19 @@ Public-source aggregation is reproducible by competitors. Proprietary outcome co
 - [x] Confirm exact submission time and mandatory submission rules from Devpost; no mandated technology found in the inspected rules.
 - [x] Resolve “jev” model reference: TypeSafe AI Jev; official article and docs read.
 - [x] Confirm studio subtype and complete demonstration business profile.
-- [ ] Select region after a source audit establishes useful coverage.
+- [x] Select Punggol as the bounded demo evidence region after the source audit established nine checked HDB block points and documented factor-source feasibility. This is not a finding that Punggol is the strongest commercial market; the three candidate groups currently all abstain.
 
 ### Gate 2 — Evidence feasibility
 
-- [ ] Retrieve sample records for every core source and document access conditions.
-- [ ] Demonstrate usable coordinates, explicit block membership, dates/status, and source coverage for three proposed block clusters. Do not infer a project-to-block join from a town label.
-- [ ] Establish whether competitors, prices, housing pipeline, access, and rent evidence are actually obtainable.
-- [ ] Create a source register with refresh, uncertainty, fallback, and attribution requirements.
-- [ ] Remove unsupported claims or make them editable assumptions.
+- [x] Retrieve bounded samples for every core source family and document access conditions, including negative findings and research-only pages; see `SOURCE_REGISTER.md` and `GATE2_EXIT_AUDIT.md`.
+- [x] Demonstrate checked coordinates, explicit block membership, dates/status, and source scope for three proposed Punggol block clusters. No project-to-block join is inferred from a town label.
+- [x] Establish which competitor, price, housing-pipeline, access, and rent claims are obtainable at usable scope and which are not; keep the latter out of positive decisions.
+- [x] Create a source register with refresh, uncertainty, fallback, access/rights, and attribution requirements.
+- [x] Remove unsupported cluster claims from the offline comparison or classify them as prominent, editable assumptions for later scenarios. All three current candidates return `insufficient_evidence`.
 
 Exit: a manually assembled, defensible three-cluster comparison is possible. If it is not, narrow or revise the promise before building the UI.
+
+Gate 2 tests **source feasibility and safe comparison**, not whether a real premises is ready to lease or whether a positive location recommendation is possible. A comparison that names all three clusters, validates their block points, preserves source scope, separates observed facts from assumptions, and returns `insufficient_evidence` for all three can satisfy the exit. A failed source search is an explicit feasibility finding when the source register records the search, access/rights limit, fallback, and decision impact. An unverified competitor price, future completion month, current rent, premises approval, walking route, or live OneMap token cannot be silently used in a positive result. These remain required investigations before any real positive decision, with Gate 3 enforcing abstention and adverse scenarios. Gate 2 closure does not establish market completeness, independent customer catchments, commercial readiness, or real-world recommendation accuracy.
 
 ### Gate 3 — Reproducible decision engine
 
@@ -186,7 +188,7 @@ Exit: a manually assembled, defensible three-cluster comparison is possible. If 
 
 ## Immediate next work
 
-Complete Gate 2's remaining evidence and offline comparison checks, and visually inspect the bounded local prototype. The demo profile is a synthetic reformer Pilates studio planning its second location, subject to intake confirmation. Do not start an all-Singapore crawler or claim commercial readiness before these gates are satisfied.
+Start Gate 3 with the deterministic economics and decision contract, using the reviewed three-cluster snapshot and synthetic studio assumptions. Preserve the current all-abstain outcome whenever missing local competitor, premises, access, or future-timing evidence could change a real decision. The demo profile remains synthetic and subject to intake confirmation. The unchecked positive-use evidence upgrades in `IMPLEMENTATION_PLAN.md` remain required before a real positive location recommendation; Gate 2 closure does not establish commercial readiness.
 
 Supporting sources of truth:
 - `outputs/SOURCE_REGISTER.md` records evidence availability, limitations, and fallbacks.
@@ -213,6 +215,7 @@ MVP contains one business profile, one region, three areas, three research roles
 
 ## Change log
 
+- 7 October 2026: corrected and closed Gate 2's source-feasibility boundary after the user asked to proceed. The earlier exit audit treated current exact-unit rent and approved Pilates use, complete local competitor coverage, a live OneMap token, and a verified future completion month as prerequisites to **source feasibility**, despite the existing evidence contract explicitly allowing prominent, adjustable rent and demand assumptions and valid `insufficient_evidence` outcomes. These remain blockers for a real positive decision and later evidence upgrades. The reviewed offline comparison of three Punggol block groups abstains for all three and passes the focused acceptance command; independent specification and separate code-quality reviews approved with no unresolved Gate 2 findings. This does not change the product promise or authorize a positive recommendation; it prevents the source gate from absorbing later decision-engine and premises-due-diligence work.
 - 6 October 2026: the user asked to stop deepening the HDB/BTO audit and make rent, premises policy, competitors, access, demographics, and other business factors visible. Prioritize a bounded Gate 2 factor-readiness view using the already audited samples, clearly scoped as research leads with missing decision links. Housing timing remains `insufficient_evidence`; no factor becomes a score, lease approval, or real recommendation merely by appearing in the prototype. This changes the immediate work order and preview presentation, not the approved screening promise or Gate 2 exit criteria.
 
 - 6 October 2026: the user explicitly prioritized seeing and testing a visual prototype before Gate 2 is complete. Permit a bounded, local-first **Gate 2 visualization spike** using the three hash-checked HDB block-cluster snapshots and a clearly labelled synthetic studio profile. This changes work order, not the evidence contract or the product promise: no recommendation, market ranking, walkability claim, live OneMap claim, or project-to-block join may be presented as established. Keep Gate 2 and downstream gates open until their acceptance checks pass. The spike should help expose usability and geographic-overlap problems early, as the delivery proposal already anticipated.
