@@ -6,6 +6,7 @@ import { z } from "zod";
 const reviewedClusters = {
   "punggol-point-cove-442a-442b-443a": { metadataSha256: "0be981c8e944125e4e081725baa5d9f2f9fb55dbb7a29fa32c31c162849e551d", blockIds: "442A,442B,443A", hdbStreet: "NEW PUNGGOL RD", maxPairwiseMetres: 125 },
   "punggol-sapphire-267a-267b-267c": { metadataSha256: "d37d303c4bc45038407d2f14669942ed0d02a787bf6a32c2c260cbc13d151e01", blockIds: "267A,267B,267C", hdbStreet: "PUNGGOL FIELD", maxPairwiseMetres: 100 },
+  "punggol-ripples-211a-211b-211c": { metadataSha256: "acb69b19775d8c145b118699d58e476e0d29e646548b97726c28f77fa34e421c", blockIds: "211A,211B,211C", hdbStreet: "PUNGGOL WALK", maxPairwiseMetres: 125 },
 } as const;
 const reviewedSources = {
   "onemap-821442": {
@@ -23,6 +24,9 @@ const reviewedSources = {
   "onemap-267a": { path: "src/data/snapshots/2026-10-06/original/onemap-267a.json", sha256: "3f4732e6841b75865a3bd8ff4e002cfb23b867de43680ab1c817840ca1561f52" },
   "onemap-267b": { path: "src/data/snapshots/2026-10-06/original/onemap-267b.json", sha256: "801625a8352f2289fa2ff5526f7c20692429bfa4d1260cd3d0377ac82fc2abe4" },
   "onemap-267c": { path: "src/data/snapshots/2026-10-06/original/onemap-267c.json", sha256: "21d72f7069ad4c67d8a0b1add14f4ab99dc8fce8e37c011691bd0a160330bfb3" },
+  "onemap-211a": { path: "src/data/snapshots/2026-10-06/original/onemap-211a.json", sha256: "69c09eec349be9db9a87c87b09e29d219fced544a8d946e58cf21be7a8bb6601" },
+  "onemap-211b": { path: "src/data/snapshots/2026-10-06/original/onemap-211b.json", sha256: "8eee61b9e9dcb5806edd21b67b17492d82a500746397e837f2e8e73a5afa58d5" },
+  "onemap-211c": { path: "src/data/snapshots/2026-10-06/original/onemap-211c.json", sha256: "7452433aca88224c2dc28cdccf3ddc3de2fc8e36ad50db9c5b7f7c0c879ef83b" },
 } as const;
 const reviewedHdbSources = {
   "hdb-property-442a": { path: "src/data/snapshots/2026-10-06/original/hdb-property-442a.json", sha256: "c5022fbd8207675c944bbd2e12368f70e832e9f9261ea30668cf0d2e496cd8b6" },
@@ -31,6 +35,9 @@ const reviewedHdbSources = {
   "hdb-property-267a": { path: "src/data/snapshots/2026-10-06/original/hdb-property-267a.json", sha256: "ef9603edaf293ce06df065dda46a1a57300d5fb69a9f999f4a291b21485b66cc" },
   "hdb-property-267b": { path: "src/data/snapshots/2026-10-06/original/hdb-property-267b.json", sha256: "d378b2c2eefc131daa0bc1c3aca72b8f627181f3fc01ae308d1cdbcf2c5c68e8" },
   "hdb-property-267c": { path: "src/data/snapshots/2026-10-06/original/hdb-property-267c.json", sha256: "9a1869e6bfecf8e36708e62d0a59958ee967dca075e2ff6ca3f01ea13161b7e6" },
+  "hdb-property-211a": { path: "src/data/snapshots/2026-10-06/original/hdb-property-211a.json", sha256: "5f4219ba25d50e4cdc91a3bed1d4ddee1a20b507ec7c1f2dffc0185172a06595" },
+  "hdb-property-211b": { path: "src/data/snapshots/2026-10-06/original/hdb-property-211b.json", sha256: "7e8ee73e0e95f0fb96f8b5c121cc6db0cb1684a8640aa8393e856f16d8f58c04" },
+  "hdb-property-211c": { path: "src/data/snapshots/2026-10-06/original/hdb-property-211c.json", sha256: "7fe3d2c708ebfe6c2091dcafbb6d374763a3896d59d24ec06214e6d3ab3f63c6" },
 } as const;
 
 const sourceSchema = z.object({
@@ -66,7 +73,7 @@ const memberSchema = z.object({
 }).strict();
 
 const clusterSchema = z.object({
-  id: z.enum(["punggol-point-cove-442a-442b-443a", "punggol-sapphire-267a-267b-267c"]),
+  id: z.enum(["punggol-point-cove-442a-442b-443a", "punggol-sapphire-267a-267b-267c", "punggol-ripples-211a-211b-211c"]),
   schemaVersion: z.literal(1),
   evidenceStatus: z.literal("candidate_cluster"),
   name: z.string().min(1),

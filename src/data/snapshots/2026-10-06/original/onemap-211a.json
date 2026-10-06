@@ -1,0 +1,32 @@
+{
+  "error": "Authentication token missing. Please create an account and generate or renew your API Token.",
+  "found": 2,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "BUSY BEES",
+      "BLK_NO": "211A",
+      "ROAD_NAME": "PUNGGOL WALK",
+      "BUILDING": "BUSY BEES",
+      "ADDRESS": "211A PUNGGOL WALK BUSY BEES",
+      "POSTAL": "NIL",
+      "X": "35414.54460530076",
+      "Y": "42625.10270014405",
+      "LATITUDE": "1.401759842904774",
+      "LONGITUDE": "103.8999443560523"
+    },
+    {
+      "SEARCHVAL": "PUNGGOL RIPPLES",
+      "BLK_NO": "211A",
+      "ROAD_NAME": "PUNGGOL WALK",
+      "BUILDING": "PUNGGOL RIPPLES",
+      "ADDRESS": "211A PUNGGOL WALK PUNGGOL RIPPLES SINGAPORE 821211",
+      "POSTAL": "821211",
+      "X": "35414.54363672528",
+      "Y": "42625.10315416381",
+      "LATITUDE": "1.401759847011012",
+      "LONGITUDE": "103.899944347349"
+    }
+  ]
+}

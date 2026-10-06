@@ -1,0 +1,20 @@
+{
+  "error": "Authentication token missing. Please create an account and generate or renew your API Token.",
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "PUNGGOL RIPPLES",
+      "BLK_NO": "211B",
+      "ROAD_NAME": "PUNGGOL WALK",
+      "BUILDING": "PUNGGOL RIPPLES",
+      "ADDRESS": "211B PUNGGOL WALK PUNGGOL RIPPLES SINGAPORE 822211",
+      "POSTAL": "822211",
+      "X": "35411.93368902523",
+      "Y": "42559.8691719044",
+      "LATITUDE": "1.40116989540272",
+      "LONGITUDE": "103.8999208781727"
+    }
+  ]
+}
