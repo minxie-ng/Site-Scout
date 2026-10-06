@@ -1,0 +1,32 @@
+{
+  "error": "Authentication token missing. Please create an account and generate or renew your API Token.",
+  "found": 2,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "MY FIRST SKOOL",
+      "BLK_NO": "267A",
+      "ROAD_NAME": "PUNGGOL FIELD",
+      "BUILDING": "MY FIRST SKOOL",
+      "ADDRESS": "267A PUNGGOL FIELD MY FIRST SKOOL",
+      "POSTAL": "NIL",
+      "X": "35143.05701499525",
+      "Y": "42934.62158823758",
+      "LATITUDE": "1.40455908718089",
+      "LONGITUDE": "103.8975048942387"
+    },
+    {
+      "SEARCHVAL": "PUNGGOL SAPPHIRE",
+      "BLK_NO": "267A",
+      "ROAD_NAME": "PUNGGOL FIELD",
+      "BUILDING": "PUNGGOL SAPPHIRE",
+      "ADDRESS": "267A PUNGGOL FIELD PUNGGOL SAPPHIRE SINGAPORE 821267",
+      "POSTAL": "821267",
+      "X": "35143.05650043953",
+      "Y": "42934.62234493718",
+      "LATITUDE": "1.404559094024332",
+      "LONGITUDE": "103.8975048896151"
+    }
+  ]
+}
