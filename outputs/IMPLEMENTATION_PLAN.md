@@ -8,6 +8,8 @@
 
 **Tech Stack:** Next.js with TypeScript, Zod, Vitest, MapLibre GL, Turf.js, a small checked-in JSON/GeoJSON demo snapshot, Vercel Hobby for personal hackathon hosting, OpenRouter-compatible general LLM adapter, and optional direct TypeSafe Jev adapter.
 
+**Current handoff (7 October 2026):** Gate 2 source feasibility is closed; Gate 3 remains open. Pure economics and straight-line distance/radius calculations are reviewed. The next unchecked task is test-first cluster membership and evidence-scope validation. See the latest session note at the end of this file; older notes document their own historical status and do not override this handoff.
+
 ---
 
 ## File map
@@ -84,7 +86,7 @@ Gate 2 acceptance: `npm test -- --run tests/gate2-comparison.test.ts tests/map-s
 
 - [x] Write failing tests for monthly capacity, contribution, break-even visits, and break-even utilisation. Acceptance: focused tests passed 6/6 on 7 October 2026 after observed red failures.
 - [x] Implement pure financial functions; reject non-positive contribution and impossible utilisation. Acceptance: full tests passed 77/77 and independent specification and quality re-reviews approved on 7 October 2026.
-- [ ] Write failing tests for Haversine distance and radius membership using known coordinate pairs.
+- [x] Write failing tests for Haversine distance and radius membership using known coordinate pairs. Acceptance: red 4/4 on stubs, then focused 4/4 and full 81/81 green on 7 October 2026 after independent reviews.
 - [ ] Write failing tests for cluster membership, duplicate blocks, missing block coordinates, and broad-area evidence incorrectly assigned to a block cluster.
 - [ ] Implement spatial functions with Turf.js and retain units in function names/types.
 - [ ] Write fixture tests where rent increase, delayed development, and lower utilisation change the outcome predictably.
@@ -446,3 +448,12 @@ Acceptance: a fresh checkout runs from documented commands; the deployed demo co
 - Independent reviews: specification review approved the initial bounded formula slice. A different code-quality reviewer raised the two findings above; both were fixed test-first. Specification re-review then approved the average-month API and explicit impossible-capacity status, followed by code-quality re-review approval with no unresolved findings.
 - Dependency, cost, and limits: no new dependency or paid API call; measured external spend **$0**. The approved fixture yields 129.9 average classes, 1,299 average sellable seat visits, S$32 contribution per paid visit, S$26,443.50 average monthly fixed cost at base synthetic rent, 827 required paid visits, and about 63.7% average utilisation. Capacity is not demand. Real rent, actual enrolment, current premises rights, and user-confirmed economics remain unverified, so these figures cannot support a positive real-location recommendation. No end-to-end response-time benchmark or Jev latency test has yet been run; the pure arithmetic itself is synchronous.
 - Exact next task: write failing `tests/spatial.test.ts` cases for Haversine distance and radius membership using known coordinate pairs, then implement only those deterministic spatial functions with explicit units; run focused/full tests and TypeScript checks and obtain independent specification followed by different independent code-quality review. Do not start the UI or turn the synthetic economics into a real Punggol go decision.
+
+### 7 October 2026 — Gate 3 straight-line distance and radius slice
+
+- Status: this bounded spatial slice is complete; **Gate 3 remains open**. `src/engine/spatial.ts` now provides deterministic great-circle distance in metres and inclusive radius membership. It validates global latitude/longitude bounds and finite nonnegative radii. The result is straight-line surface distance, not a walking route, transit journey, access score, or estimate of footfall. No map provider or new data source was connected.
+- Red/green TDD: `tests/spatial.test.ts` was added first. The focused command initially failed because the module was absent; with named stubs it failed all **4/4** behavior tests on `not implemented`. The minimal implementation then passed the focused **4/4** tests, including zero distance, a known one-degree equatorial arc, boundary inclusion/exclusion, and invalid inputs.
+- Final commands: `npm test -- --run tests/spatial.test.ts` passed **4/4**; `npm test` passed **81/81** across 15 files; `npx tsc --noEmit` and `git diff --check` passed. No build script is configured. `npm audit --json` failed under sandbox DNS, then the network retry passed with **zero vulnerabilities across 64 dependencies**.
+- Independent reviews: an independent specification reviewer approved the scoped behavior and evidence limits with no unresolved findings, noting that the brief header was stale. The header and immediate-next-work text were synchronized. A different independent code-quality reviewer approved coordinate/radius validation, bounded Haversine arithmetic, and inclusive membership with no unresolved findings.
+- Dependency, cost, and limits: no new package, paid API call, or purchase; measured external spend **$0**. The plan's later Turf.js/cluster-functions checkbox remains open because this slice contains only pure Haversine/radius behavior. OneMap block points are dated replays; verified walking routes, station travel times, and block-scale footfall remain absent. These functions must not turn those missing facts into a positive recommendation.
+- Exact next task: write failing tests for cluster membership, duplicate block IDs, missing member coordinates, and attempted assignment of broad-area evidence to a block cluster. Then implement only the deterministic cluster/evidence-scope behavior needed to pass them, run focused/full tests and TypeScript checks, and obtain independent specification followed by different code-quality review. Keep Gate 3 open and do not start UI or claim verified walking accessibility.

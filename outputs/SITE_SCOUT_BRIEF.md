@@ -1,6 +1,6 @@
 # Site Scout — product brief and gate checklist
 
-Updated: 7 October 2026. Status: Gate 2 source-feasibility exit reviewed and closed; Gate 3 has not started.
+Updated: 7 October 2026. Status: Gate 2 source-feasibility exit reviewed and closed; Gate 3 deterministic engine work is in progress.
 
 This file is the current source of truth. Approved choices are distinguished from proposals. Singapore source coverage, competitor capabilities, and grant terms remain unverified. Direct public-page retrieval succeeded for the user-supplied Jev article and official documentation on 5 October 2026, after the default research tools failed. This verifies published documentation, not runtime performance or account access. Do not describe competitive novelty or commercial readiness as established.
 
@@ -188,7 +188,7 @@ Gate 2 tests **source feasibility and safe comparison**, not whether a real prem
 
 ## Immediate next work
 
-Start Gate 3 with the deterministic economics and decision contract, using the reviewed three-cluster snapshot and synthetic studio assumptions. Preserve the current all-abstain outcome whenever missing local competitor, premises, access, or future-timing evidence could change a real decision. The demo profile remains synthetic and subject to intake confirmation. The unchecked positive-use evidence upgrades in `IMPLEMENTATION_PLAN.md` remain required before a real positive location recommendation; Gate 2 closure does not establish commercial readiness.
+Continue Gate 3 with tested cluster membership and evidence-scope rules after the completed pure economics and straight-line distance slices. Preserve the current all-abstain outcome whenever missing local competitor, premises, access, or future-timing evidence could change a real decision. The demo profile remains synthetic and subject to intake confirmation. The unchecked positive-use evidence upgrades in `IMPLEMENTATION_PLAN.md` remain required before a real positive location recommendation; Gate 2 closure does not establish commercial readiness.
 
 Supporting sources of truth:
 - `outputs/SOURCE_REGISTER.md` records evidence availability, limitations, and fallbacks.
