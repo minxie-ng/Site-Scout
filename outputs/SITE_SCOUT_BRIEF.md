@@ -188,7 +188,7 @@ Gate 2 tests **source feasibility and safe comparison**, not whether a real prem
 
 ## Immediate next work
 
-Continue Gate 3 with test-first rent, utilisation, and synthetic development-delay scenarios after the completed pure economics and spatial-rule slices. Preserve the current all-abstain outcome whenever missing local competitor, premises, access, or future-timing evidence could change a real decision. The demo profile remains synthetic and subject to intake confirmation. The unchecked positive-use evidence upgrades in `IMPLEMENTATION_PLAN.md` remain required before a real positive location recommendation; Gate 2 closure does not establish commercial readiness.
+Continue Gate 3 with evidence-gated outcome tests using the completed pure economics, spatial rules, and synthetic rent/utilisation/development-delay signals. Preserve the current all-abstain outcome whenever missing local competitor, premises, access, or future-timing evidence could change a real decision. The demo profile remains synthetic and subject to intake confirmation. The unchecked positive-use evidence upgrades in `IMPLEMENTATION_PLAN.md` remain required before a real positive location recommendation; Gate 2 closure does not establish commercial readiness.
 
 Supporting sources of truth:
 - `outputs/SOURCE_REGISTER.md` records evidence availability, limitations, and fallbacks.
