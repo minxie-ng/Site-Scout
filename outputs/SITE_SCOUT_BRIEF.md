@@ -188,7 +188,7 @@ Gate 2 tests **source feasibility and safe comparison**, not whether a real prem
 
 ## Immediate next work
 
-Continue Gate 3 by testing portfolio-level hard constraints and abstention after the reviewed single-cluster and synthetic-only outcome slice. Preserve the current all-abstain outcome whenever missing local competitor, premises, access, or future-timing evidence could change a real decision. The demo profile remains synthetic and subject to intake confirmation. The unchecked positive-use evidence upgrades in `IMPLEMENTATION_PLAN.md` remain required before a real positive location recommendation; Gate 2 closure does not establish commercial readiness.
+Continue Gate 3 by testing which uncertain input should be investigated next, after the reviewed portfolio-level hard constraints and abstention slice. Preserve the current all-abstain outcome whenever missing local competitor, premises, access, or future-timing evidence could change a real decision. The demo profile remains synthetic and subject to intake confirmation. The unchecked positive-use evidence upgrades in `IMPLEMENTATION_PLAN.md` remain required before a real positive location recommendation; Gate 2 closure does not establish commercial readiness.
 
 Supporting sources of truth:
 - `outputs/SOURCE_REGISTER.md` records evidence availability, limitations, and fallbacks.

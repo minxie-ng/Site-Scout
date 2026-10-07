@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { describe, expect, it } from "vitest";
 import { parseBusinessProfile } from "../src/domain/business";
-import { decideHypotheticalScenario, decideReviewedCluster } from "../src/engine/decision";
+import { decideHypotheticalPortfolio, decideHypotheticalScenario, decideReviewedCluster, decideReviewedPortfolio } from "../src/engine/decision";
 
 const read = (path: string) => JSON.parse(readFileSync(resolve(process.cwd(), path), "utf8"));
 const parsed = parseBusinessProfile(read("src/data/demo/business-profile.json"));
@@ -14,6 +14,65 @@ const reviewedInput = () => ({
   competitorLeads: read(snapshotBase + "competitor-leads.json"),
   development: read("src/data/snapshots/2026-10-05/developments.json"),
   factorFeed: read("prototype/data.json"),
+});
+
+describe("Gate 3 portfolio hard constraints", () => {
+  it("preserves three source-validated abstentions and selects no real winner", () => {
+    const result = decideReviewedPortfolio(reviewedInput());
+    expect(result).toMatchObject({ outcome: "insufficient_evidence", basis: "reviewed_gate2_snapshot", selectedCandidateId: null });
+    expect(result.candidates).toHaveLength(3);
+    expect(result.candidates.every(candidate => candidate.outcome === "insufficient_evidence")).toBe(true);
+  });
+
+  it("returns no_go only when all three synthetic candidates fail hard economics", () => {
+    const infeasibleProfile = structuredClone(profile);
+    infeasibleProfile.economics.monthlyRent.low = 30_000;
+    infeasibleProfile.economics.monthlyRent.base = 31_000;
+    infeasibleProfile.economics.monthlyRent.high = 32_000;
+    const candidates = [30_000, 31_000, 32_000].map((monthlyRentSgd, index) => ({
+      id: `synthetic-${index + 1}`,
+      scenario: { ...syntheticScenario, monthlyRentSgd },
+    }));
+    expect(decideHypotheticalPortfolio(infeasibleProfile, candidates)).toMatchObject({
+      outcome: "no_go", basis: "synthetic_fixture_only", selectedCandidateId: null,
+      candidates: [{ outcome: "no_go" }, { outcome: "no_go" }, { outcome: "no_go" }],
+    });
+  });
+
+  it("does not manufacture a winner from mixed hypothetical results", () => {
+    const candidates = [
+      { id: "synthetic-a", scenario: { ...syntheticScenario, openingInvestmentSgd: 300_000 } },
+      { id: "synthetic-b", scenario: { ...syntheticScenario, availableRunwayMonths: 8 } },
+      { id: "synthetic-c", scenario: { ...syntheticScenario, developmentDelayMonths: 6 } },
+    ];
+    expect(decideHypotheticalPortfolio(profile, candidates)).toMatchObject({
+      outcome: "insufficient_evidence", basis: "synthetic_fixture_only", selectedCandidateId: null,
+    });
+  });
+
+  it("rejects duplicate synthetic candidate IDs and tampered reviewed sources", () => {
+    const candidates = [1, 2, 3].map(() => ({ id: "synthetic-a", scenario: syntheticScenario }));
+    expect(() => decideHypotheticalPortfolio(profile, candidates)).toThrow(/unique|duplicate/i);
+    const input = reviewedInput();
+    input.clusters[0].members[0].latitude += 0.01;
+    expect(() => decideReviewedPortfolio(input)).toThrow(/evidence validation|source|coordinate/i);
+  });
+
+  it("rejects sparse candidate arrays", () => {
+    const sparse = new Array(3) as Array<{ id: string; scenario: typeof syntheticScenario }>;
+    sparse[0] = { id: "synthetic-a", scenario: syntheticScenario };
+    sparse[2] = { id: "synthetic-c", scenario: syntheticScenario };
+    expect(() => decideHypotheticalPortfolio(profile, sparse)).toThrow(/three actual candidates|missing candidate/i);
+  });
+
+  it("rejects ambiguous whitespace-padded IDs", () => {
+    const padded = [
+      { id: "synthetic-a", scenario: syntheticScenario },
+      { id: " synthetic-a", scenario: syntheticScenario },
+      { id: "synthetic-c", scenario: syntheticScenario },
+    ];
+    expect(() => decideHypotheticalPortfolio(profile, padded)).toThrow(/whitespace|unique/i);
+  });
 });
 const syntheticScenario = {
   monthlyRentSgd: 13_000,

@@ -65,3 +65,35 @@ export function decideHypotheticalScenario(profile: BusinessProfile, input: Hypo
   }
   return { outcome: "investigate" as const, basis, reasonCode: "synthetic_constraints_pass" as const };
 }
+
+export function decideReviewedPortfolio(input: Parameters<typeof assembleGate2Comparison>[0]) {
+  const comparison = assembleGate2Comparison(input);
+  return {
+    outcome: comparison.decision,
+    basis: "reviewed_gate2_snapshot" as const,
+    selectedCandidateId: null,
+    reasonCode: "missing_local_decision_evidence" as const,
+    candidates: comparison.clusters.map(cluster => ({ id: cluster.id, outcome: cluster.decision })),
+  };
+}
+
+export function decideHypotheticalPortfolio(profile: BusinessProfile, candidates: readonly { id: string; scenario: HypotheticalDecisionInput }[]) {
+  if (!Array.isArray(candidates) || candidates.length !== 3) throw new RangeError("Exactly three synthetic candidates are required");
+  for (let index = 0; index < 3; index++) {
+    if (!Object.hasOwn(candidates, index) || !candidates[index]) throw new RangeError("Three actual candidates are required; a candidate is missing");
+  }
+  const ids = candidates.map(candidate => candidate.id);
+  if (ids.some(id => typeof id !== "string" || !id.trim() || id !== id.trim())) {
+    throw new RangeError("Synthetic candidate IDs must be nonempty and have no surrounding whitespace");
+  }
+  if (new Set(ids).size !== 3) throw new RangeError("Synthetic candidate IDs must be unique");
+  const results = candidates.map(candidate => ({ id: candidate.id, ...decideHypotheticalScenario(profile, candidate.scenario) }));
+  const allFail = results.every(candidate => candidate.outcome === "no_go");
+  return {
+    outcome: allFail ? "no_go" as const : "insufficient_evidence" as const,
+    basis: "synthetic_fixture_only" as const,
+    selectedCandidateId: null,
+    reasonCode: allFail ? "all_synthetic_candidates_fail" as const : "selection_requires_evidence_and_comparison" as const,
+    candidates: results,
+  };
+}
