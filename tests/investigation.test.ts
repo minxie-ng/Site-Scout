@@ -15,6 +15,8 @@ const base = {
   developmentDelayMonths: 0,
   proposedOpeningMonths: 24,
   developmentProvenance: "synthetic_assumption" as const,
+  occupancyLagMonths: 0,
+  occupancyProvenance: "synthetic_assumption" as const,
   openingInvestmentSgd: 200_000,
   availableRunwayMonths: 9,
   premisesUseAssumption: "assumed_permitted" as const,

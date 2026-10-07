@@ -81,6 +81,8 @@ const syntheticScenario = {
   developmentDelayMonths: 0,
   proposedOpeningMonths: 24,
   developmentProvenance: "synthetic_assumption" as const,
+  occupancyLagMonths: 0,
+  occupancyProvenance: "synthetic_assumption" as const,
   openingInvestmentSgd: 200_000,
   availableRunwayMonths: 9,
   premisesUseAssumption: "assumed_permitted" as const,
@@ -109,6 +111,29 @@ describe("Gate 3 evidence-gated decision outcomes", () => {
     expect(decideHypotheticalScenario(profile, { ...syntheticScenario, monthlyRentSgd: 30_000 })).toMatchObject({ outcome: "wait", basis: "synthetic_fixture_only", reasonCode: "rent_terms_need_improvement", reviewCondition: "Obtain a lower rent assumption or quote", reviewMonthsFromAnalysis: 1 });
     expect(decideHypotheticalScenario(profile, { ...syntheticScenario, paidVisitUtilisation: 0.6 })).toMatchObject({ outcome: "wait", basis: "synthetic_fixture_only", reasonCode: "paid_visits_need_validation", reviewCondition: "Validate a paid-visit level that covers costs", reviewMonthsFromAnalysis: 1 });
     expect(decideHypotheticalScenario(profile, { ...syntheticScenario, developmentDelayMonths: 6 })).toMatchObject({ outcome: "wait", basis: "synthetic_fixture_only", reasonCode: "synthetic_completion_after_opening", reviewCondition: "Recheck the synthetic development completion assumption", reviewMonthsFromAnalysis: 26 });
+  });
+
+  it("waits when synthetic occupancy follows opening despite project completion by opening", () => {
+    expect(decideHypotheticalScenario(profile, { ...syntheticScenario, occupancyLagMonths: 6 })).toMatchObject({
+      outcome: "wait",
+      basis: "synthetic_fixture_only",
+      reasonCode: "synthetic_occupancy_after_opening",
+      reviewCondition: "Recheck the synthetic occupancy timing assumption",
+      reviewMonthsFromAnalysis: 26,
+    });
+    expect(decideHypotheticalScenario(profile, syntheticScenario).outcome).toBe("investigate");
+    expect(decideReviewedPortfolio(reviewedInput())).toMatchObject({ outcome: "insufficient_evidence", selectedCandidateId: null });
+  });
+
+  it("does not set a housing review month before both delayed completion and occupancy", () => {
+    expect(decideHypotheticalScenario(profile, {
+      ...syntheticScenario, developmentDelayMonths: 6, occupancyLagMonths: 6,
+    })).toMatchObject({
+      outcome: "wait",
+      reasonCode: "synthetic_completion_after_opening",
+      reviewCondition: "Recheck synthetic completion and occupancy timing assumptions",
+      reviewMonthsFromAnalysis: 32,
+    });
   });
 
   it("does not call a base-rent threshold breach no_go when low rent can still pass the stress policy", () => {

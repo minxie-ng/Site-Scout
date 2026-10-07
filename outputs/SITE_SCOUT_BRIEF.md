@@ -159,7 +159,7 @@ Gate 2 tests **source feasibility and safe comparison**, not whether a real prem
 - [ ] Specify spatial catchments, scoring rationale, hard constraints, and abstention rules.
 - [ ] Separate future supply from existing population and remove duplicate project records.
 - [x] Implement and hand-check operating economics and capacity constraints for the approved synthetic class-only profile; real-operator economics remain unvalidated. See `outputs/GATE3_ACCEPTANCE_AUDIT.md`.
-- [ ] Demonstrate coherent changes under rent, utilisation, occupancy, and delay scenarios.
+- [x] Demonstrate coherent changes under rent, utilisation, occupancy, and delay scenarios for the explicitly synthetic fixture. Occupancy is modelled as an assumed lag after completion, not observed residents or local demand; real clusters continue to abstain.
 - [ ] Define ranking sensitivity without presenting arbitrary scores as probabilities.
 
 ### Gate 4 — Agent investigation
@@ -190,7 +190,7 @@ Gate 2 tests **source feasibility and safe comparison**, not whether a real prem
 
 ## Immediate next work
 
-Continue Gate 3 by testing an explicitly synthetic **housing occupancy** lag or fraction separately from project completion and studio paid-visit utilisation. The 7 October acceptance audit checked only the synthetic class-only economics criterion; the other four Gate 3 boxes remain open. Preserve the current all-abstain outcome whenever missing local competitor, premises, access, occupancy, or future-timing evidence could change a real decision. The demo profile remains synthetic and subject to intake confirmation. The unchecked positive-use evidence upgrades in `IMPLEMENTATION_PLAN.md` remain required before a real positive location recommendation; Gate 2 closure does not establish commercial readiness.
+Continue Gate 3 by specifying typed future-project identity and writing a failing duplicate-project test before any second future event enters comparison. The synthetic class-only economics and four adverse-scenario criteria are checked; spatial/catchment comparison policy, future-supply identity/deduplication, and ranking sensitivity remain open. Preserve the current all-abstain outcome whenever missing local competitor, premises, access, occupancy, or future-timing evidence could change a real decision. The demo profile remains synthetic and subject to intake confirmation. The unchecked positive-use evidence upgrades in `IMPLEMENTATION_PLAN.md` remain required before a real positive location recommendation; Gate 2 closure does not establish commercial readiness.
 
 Supporting sources of truth:
 - `outputs/SOURCE_REGISTER.md` records evidence availability, limitations, and fallbacks.
@@ -217,6 +217,7 @@ MVP contains one business profile, one region, three areas, three research roles
 
 ## Change log
 
+- 7 October 2026: reviewed Gate 3 tests now separate an explicitly synthetic occupancy lag from project completion and studio paid-visit utilisation. The timing outcome waits until the later occupancy start when both completion and occupancy are delayed. Rent, utilisation, completion delay, and occupancy lag each change the labelled synthetic outcome coherently, so the scenario criterion is checked with that limitation. No occupied-home count, actual demand, or real candidate decision is inferred; other Gate 3 criteria remain open.
 - 7 October 2026: the reviewed Gate 3 acceptance audit hand-checked the approved synthetic class-only operating model and its capacity/hard constraints, so only that Gate 3 criterion is checked. Four criteria remain open: spatial catchment/comparison policy, future-supply identity and deduplication, a distinct housing-occupancy scenario, and eventual ranking sensitivity among comparable candidates. This is a status correction from the tested implementation, not evidence of real-operator viability or permission to recommend a site.
 - 7 October 2026: the user explicitly requested Firecrawl for collecting web data. Authorize a small optional `/v2/scrape` connector now as a scheduling exception while Gate 3 sensitivity work remains open. The connector must be capped, credential-gated, and unable to promote extracted markdown into decision evidence without the existing source contract. This adds a retrieval option, not a new source of truth, live-data claim, paid-plan purchase, or permission to scrape sites whose terms prohibit it. Resume the earliest unfinished Gate 3 item afterward.
 - 7 October 2026: the reviewed Gate 3 spatial rules now use small deterministic functions for great-circle metres, radius inclusion, exact block-and-street membership, and evidence-scope exclusion. The earlier implementation-plan suggestion to add Turf.js is deferred unless validated polygon or routing geometry actually requires it; adding an unused dependency would not improve these point and identity checks. This changes an implementation proposal, not the approved block-cluster decision unit or the requirement to verify walking accessibility before using it in a positive recommendation.

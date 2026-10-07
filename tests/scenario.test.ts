@@ -16,6 +16,8 @@ const baseScenario = {
   developmentDelayMonths: 0,
   proposedOpeningMonths: 24,
   developmentProvenance: "synthetic_assumption" as const,
+  occupancyLagMonths: 0,
+  occupancyProvenance: "synthetic_assumption" as const,
 };
 
 describe("Gate 3 synthetic adverse scenarios", () => {
@@ -40,6 +42,29 @@ describe("Gate 3 synthetic adverse scenarios", () => {
     expect(base).toMatchObject({ projectedDevelopmentCompletionMonths: 20, timingCondition: "synthetic_event_by_opening" });
     expect(delayed).toMatchObject({ projectedDevelopmentCompletionMonths: 26, timingCondition: "synthetic_event_after_opening" });
     expect(delayed.monthlyOperatingSurplusSgd).toBe(base.monthlyOperatingSurplusSgd);
+  });
+
+  it("keeps synthetic occupancy later than completion without changing paid visits or economics", () => {
+    const base = runSyntheticScenario(profile, baseScenario);
+    const lagged = runSyntheticScenario(profile, { ...baseScenario, occupancyLagMonths: 6 });
+    expect(base).toMatchObject({ projectedDevelopmentCompletionMonths: 20, syntheticOccupancyStartMonths: 20, occupancyCondition: "synthetic_occupancy_by_opening" });
+    expect(lagged).toMatchObject({
+      projectedDevelopmentCompletionMonths: 20,
+      syntheticOccupancyStartMonths: 26,
+      occupancyCondition: "synthetic_occupancy_after_opening",
+      occupancyProvenance: "synthetic_assumption",
+    });
+    expect(lagged.paidVisitsPerAverageMonth).toBe(base.paidVisitsPerAverageMonth);
+    expect(lagged.monthlyOperatingSurplusSgd).toBe(base.monthlyOperatingSurplusSgd);
+  });
+
+  it("rejects missing or invalid synthetic occupancy assumptions", () => {
+    expect(() => runSyntheticScenario(profile, { ...baseScenario, occupancyLagMonths: -1 })).toThrow(/occupancy/i);
+    expect(() => runSyntheticScenario(profile, { ...baseScenario, occupancyLagMonths: 1.5 })).toThrow(/occupancy/i);
+    expect(() => runSyntheticScenario(profile, { ...baseScenario, occupancyProvenance: "observed" as never })).toThrow(/occupancy|synthetic/i);
+    const missing = { ...baseScenario } as Record<string, unknown>;
+    delete missing.occupancyLagMonths;
+    expect(() => runSyntheticScenario(profile, missing as typeof baseScenario)).toThrow(/occupancy/i);
   });
 
   it("rejects invalid utilisation, delay, and out-of-horizon opening inputs", () => {

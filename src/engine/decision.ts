@@ -60,8 +60,15 @@ export function decideHypotheticalScenario(profile: BusinessProfile, input: Hypo
   }
   if (scenario.timingCondition === "synthetic_event_after_opening") {
     return { outcome: "wait" as const, basis, reasonCode: "synthetic_completion_after_opening" as const,
-      reviewCondition: "Recheck the synthetic development completion assumption" as const,
-      reviewMonthsFromAnalysis: scenario.projectedDevelopmentCompletionMonths };
+      reviewCondition: scenario.syntheticOccupancyStartMonths > scenario.projectedDevelopmentCompletionMonths
+        ? "Recheck synthetic completion and occupancy timing assumptions" as const
+        : "Recheck the synthetic development completion assumption" as const,
+      reviewMonthsFromAnalysis: scenario.syntheticOccupancyStartMonths };
+  }
+  if (scenario.occupancyCondition === "synthetic_occupancy_after_opening") {
+    return { outcome: "wait" as const, basis, reasonCode: "synthetic_occupancy_after_opening" as const,
+      reviewCondition: "Recheck the synthetic occupancy timing assumption" as const,
+      reviewMonthsFromAnalysis: scenario.syntheticOccupancyStartMonths };
   }
   return { outcome: "investigate" as const, basis, reasonCode: "synthetic_constraints_pass" as const };
 }
