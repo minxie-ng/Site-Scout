@@ -1,4 +1,7 @@
 type Coordinate = { latitude: number; longitude: number };
+type BlockIdentity = { blockId: string; roadName: string };
+type BlockMember = BlockIdentity & Partial<Coordinate>;
+type EvidenceGeography = ({ kind: "block" } & BlockIdentity) | { kind: "planning_area"; name: string };
 
 const EARTH_RADIUS_METERS = 6_371_000;
 
@@ -29,4 +32,32 @@ export function isWithinRadiusMeters(origin: Coordinate, destination: Coordinate
     throw new RangeError("Radius in metres must be nonnegative and finite");
   }
   return haversineDistanceMeters(origin, destination) <= radiusMeters;
+}
+
+function validateMembers(members: readonly BlockMember[]): void {
+  if (members.length === 0) throw new RangeError("Cluster must contain at least one block");
+  const blockIds = new Set<string>();
+  for (const member of members) {
+    if (!member.blockId?.trim() || !member.roadName?.trim()) throw new RangeError("Block ID and road name are required");
+    if (blockIds.has(member.blockId)) throw new RangeError("Duplicate block ID in cluster");
+    blockIds.add(member.blockId);
+    if (typeof member.latitude !== "number" || !Number.isFinite(member.latitude) || member.latitude < 1.1 || member.latitude > 1.5) {
+      throw new RangeError("Member latitude must be a valid Singapore coordinate");
+    }
+    if (typeof member.longitude !== "number" || !Number.isFinite(member.longitude) || member.longitude < 103.6 || member.longitude > 104.1) {
+      throw new RangeError("Member longitude must be a valid Singapore coordinate");
+    }
+  }
+}
+
+/** Exact published block identity; this does not create a walking or market catchment. */
+export function clusterContainsBlock(members: readonly BlockMember[], target: BlockIdentity): boolean {
+  validateMembers(members);
+  return members.some(member => member.blockId === target.blockId && member.roadName === target.roadName);
+}
+
+/** Broad-area evidence remains context and cannot become a block-cluster claim. */
+export function evidenceAppliesToCluster(members: readonly BlockMember[], geography: EvidenceGeography): boolean {
+  validateMembers(members);
+  return geography.kind === "block" && clusterContainsBlock(members, geography);
 }
