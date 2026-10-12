@@ -1,0 +1,19 @@
+{
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "116 ALJUNIED AVENUE 2 SINGAPORE 380116",
+      "BLK_NO": "116",
+      "ROAD_NAME": "ALJUNIED AVENUE 2",
+      "BUILDING": "NIL",
+      "ADDRESS": "116 ALJUNIED AVENUE 2 SINGAPORE 380116",
+      "POSTAL": "380116",
+      "X": "33940.8930935096",
+      "Y": "33722.21814057417",
+      "LATITUDE": "1.321245705462542",
+      "LONGITUDE": "103.8867006198313"
+    }
+  ]
+}

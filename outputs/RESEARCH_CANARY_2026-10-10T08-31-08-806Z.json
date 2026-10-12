@@ -1,0 +1,6 @@
+{
+  "observedAt": "2026-10-10T08:31:08.806Z",
+  "status": "preflight_failed",
+  "reason": "cap_unavailable",
+  "model": "mistralai/mistral-nemo"
+}

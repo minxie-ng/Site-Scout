@@ -1,0 +1,19 @@
+{
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "246 BANGKIT ROAD SINGAPORE 670246",
+      "BLK_NO": "246",
+      "ROAD_NAME": "BANGKIT ROAD",
+      "BUILDING": "NIL",
+      "ADDRESS": "246 BANGKIT ROAD SINGAPORE 670246",
+      "POSTAL": "670246",
+      "X": "21314.57014891785",
+      "Y": "40370.64532568678",
+      "LATITUDE": "1.381371528116627",
+      "LONGITUDE": "103.7732450099232"
+    }
+  ]
+}

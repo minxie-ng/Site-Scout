@@ -1,0 +1,16 @@
+{
+  "observedAt": "2026-10-11T04:41:16.880Z",
+  "kind": "checked_replay_jev_canary",
+  "status": "jev_assisted",
+  "elapsedMs": 1352.1125419999998,
+  "outcome": "insufficient_evidence",
+  "jev": {
+    "available": true,
+    "attemptedChecks": 1,
+    "checkedClaims": 1,
+    "knownReportedCostUsd": 0.000079506,
+    "unknownChargeChecks": 0,
+    "reportedCostUsd": 0.000079506,
+    "reviewRequired": true
+  }
+}

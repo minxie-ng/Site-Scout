@@ -1,7 +1,38 @@
 import { describe, expect, it, vi } from 'vitest';
 import { checkClaimWithJev } from '../src/providers/typesafe';
+import { parseResearchOutput } from '../src/providers/research';
 
 const input = { claim: 'The project has 1,179 flats.', quote: '1,179 flats', passage: 'The project has 1,179 flats in six blocks.' };
+
+describe('research-role output contract', () => {
+  const structured = {
+    claims: [{ text: 'A dated official record lists 511 homes.', evidenceIds: ['hdb-point-cove'], evidenceExcerpt: '511 homes' }],
+    conflicts: [{ description: 'Completion date differs across sources.', evidenceIds: ['hdb-point-cove', 'other-release'] }],
+    unknowns: ['Walking catchment for the sampled blocks'],
+    nextInvestigation: 'Verify walking routes from the candidate blocks.',
+  };
+
+  it('accepts structured output with evidence IDs from the supplied inventory', () => {
+    expect(parseResearchOutput(structured, ['hdb-point-cove', 'other-release'])).toEqual(structured);
+  });
+
+  it('rejects prose-only responses and factual claims without an inventory-bound citation', () => {
+    expect(() => parseResearchOutput('This area looks promising.', ['hdb-point-cove'])).toThrow();
+    expect(() => parseResearchOutput({ ...structured, claims: [{ text: 'A dated official record lists 511 homes.', evidenceIds: [] }] }, ['hdb-point-cove', 'other-release'])).toThrow();
+    expect(() => parseResearchOutput({ ...structured, claims: [{ text: 'A dated official record lists 511 homes.', evidenceIds: ['invented'] }] }, ['hdb-point-cove', 'other-release'])).toThrow();
+  });
+
+  it('permits no claims when research is inconclusive but requires an unknown and next check', () => {
+    expect(parseResearchOutput({ claims: [], conflicts: [], unknowns: ['No local rent quote'], nextInvestigation: 'Ask the landlord for a dated quote.' }, [])).toMatchObject({ claims: [] });
+    expect(() => parseResearchOutput({ claims: [], conflicts: [], unknowns: [], nextInvestigation: '' }, [])).toThrow();
+  });
+
+  it('requires an excerpt for every factual claim before source-aware review', () => {
+    const cited = { ...structured, claims: [{ text: 'A dated official record lists 511 homes.', evidenceIds: ['hdb-point-cove'], evidenceExcerpt: '511 homes' }] };
+    expect(parseResearchOutput(cited, ['hdb-point-cove', 'other-release']).claims[0]).toMatchObject({ evidenceExcerpt: '511 homes' });
+    expect(() => parseResearchOutput({ ...structured, claims: [{ text: 'A dated official record lists 511 homes.', evidenceIds: ['hdb-point-cove'] }] }, ['hdb-point-cove', 'other-release'])).toThrow();
+  });
+});
 
 describe('direct Jev claim check', () => {
   it('abstains without a key and makes no request', async () => {

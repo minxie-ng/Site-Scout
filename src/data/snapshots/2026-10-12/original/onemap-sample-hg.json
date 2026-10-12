@@ -1,0 +1,19 @@
+{
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "978C BUANGKOK CRESCENT SINGAPORE 533978",
+      "BLK_NO": "978C",
+      "ROAD_NAME": "BUANGKOK CRESCENT",
+      "BUILDING": "NIL",
+      "ADDRESS": "978C BUANGKOK CRESCENT SINGAPORE 533978",
+      "POSTAL": "533978",
+      "X": "33055.04358567763",
+      "Y": "40220.61137979291",
+      "LATITUDE": "1.380015003143619",
+      "LONGITUDE": "103.8787418899409"
+    }
+  ]
+}

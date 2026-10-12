@@ -1,0 +1,19 @@
+{
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "THE BEO CRESCENT",
+      "BLK_NO": "38",
+      "ROAD_NAME": "BEO CRESCENT",
+      "BUILDING": "THE BEO CRESCENT",
+      "ADDRESS": "38 BEO CRESCENT THE BEO CRESCENT SINGAPORE 160038",
+      "POSTAL": "160038",
+      "X": "27329.0727948742",
+      "Y": "30107.26714056358",
+      "LATITUDE": "1.288553931845632",
+      "LONGITUDE": "103.8272900233828"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "353B ADMIRALTY DRIVE SINGAPORE 752353",
+      "BLK_NO": "353B",
+      "ROAD_NAME": "ADMIRALTY DRIVE",
+      "BUILDING": "NIL",
+      "ADDRESS": "353B ADMIRALTY DRIVE SINGAPORE 752353",
+      "POSTAL": "752353",
+      "X": "26440.71770334989",
+      "Y": "47977.40802817978",
+      "LATITUDE": "1.450165067157284",
+      "LONGITUDE": "103.8193068495328"
+    }
+  ]
+}

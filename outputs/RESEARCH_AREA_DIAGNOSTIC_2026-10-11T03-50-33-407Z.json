@@ -1,0 +1,76 @@
+{
+  "observedAt": "2026-10-11T03:50:33.407Z",
+  "status": "ran",
+  "mode": "diagnostic_area",
+  "model": "mistralai/mistral-nemo",
+  "tariff": {
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "retrievedAt": "2026-10-11T03:50:28.045Z",
+    "inputUsdPerToken": 2.9e-8,
+    "outputUsdPerToken": 3e-8,
+    "requestUsd": 0
+  },
+  "keyCap": {
+    "limitUsd": 0.1,
+    "remainingUsdBeforeRun": 0.09900539800000001,
+    "resetAt": null
+  },
+  "comparison": {
+    "status": "unevaluated",
+    "kind": "bounded_agent_comparison",
+    "comparisonProtocol": "full_seven_case",
+    "caseProvenance": "checked_replay",
+    "automaticPositiveAcceptance": false,
+    "superiorityEstablished": false,
+    "maxCallsPerCaseArm": 3,
+    "reason": "incomplete_run",
+    "cases": [],
+    "attempts": [
+      {
+        "caseId": "stale_tool",
+        "arm": "roles",
+        "role": "area",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "mistralai/mistral-nemo",
+        "servedModel": "mistralai/mistral-nemo",
+        "reportedCostUsd": 0.000023059,
+        "latencyMs": 4845.617542,
+        "evidenceHash": "5e882d94742253dbc96b9175aabe6127904b1ed24185b46f4526e01093a7ca4f",
+        "reachedBridge": false
+      }
+    ],
+    "total": {
+      "attemptedCalls": 1,
+      "unattemptedCalls": 27,
+      "completedCalls": 1,
+      "failedCalls": 0,
+      "cancelledCalls": 0,
+      "lateOutputsAdmitted": 0,
+      "unknownChargeAttempts": 0,
+      "knownReportedCostUsd": 0.000023059,
+      "reportedCostUsd": null,
+      "uniqueSupportedEvidenceIds": null,
+      "unsupportedClaimsAdmitted": null,
+      "claimsAdmittedToCalculation": null,
+      "latencyMs": 4927.881875,
+      "latencyScope": "generation_and_checked_bridge",
+      "baseline": {
+        "attemptedCalls": 0,
+        "completedCalls": 0,
+        "failedCalls": 0,
+        "uniqueSupportedEvidenceIds": null,
+        "reportedCostUsd": null,
+        "latencyMs": 0
+      },
+      "roles": {
+        "attemptedCalls": 1,
+        "completedCalls": 1,
+        "failedCalls": 0,
+        "uniqueSupportedEvidenceIds": null,
+        "reportedCostUsd": null,
+        "latencyMs": 0
+      }
+    }
+  }
+}

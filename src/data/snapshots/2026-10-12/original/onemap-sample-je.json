@@ -1,0 +1,19 @@
+{
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "JURONG EAST VISTA",
+      "BLK_NO": "240A",
+      "ROAD_NAME": "JURONG EAST AVENUE 1",
+      "BUILDING": "JURONG EAST VISTA",
+      "ADDRESS": "240A JURONG EAST AVENUE 1 JURONG EAST VISTA SINGAPORE 601240",
+      "POSTAL": "601240",
+      "X": "17874.95168094989",
+      "Y": "35907.05815364048",
+      "LATITUDE": "1.341003499455424",
+      "LONGITUDE": "103.742339009867"
+    }
+  ]
+}

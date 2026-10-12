@@ -1,0 +1,19 @@
+{
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "LINEAR GREEN @ BEDOK",
+      "BLK_NO": "219B",
+      "ROAD_NAME": "BEDOK CENTRAL",
+      "BUILDING": "LINEAR GREEN @ BEDOK",
+      "ADDRESS": "219B BEDOK CENTRAL LINEAR GREEN @ BEDOK SINGAPORE 462219",
+      "POSTAL": "462219",
+      "X": "39155.76767058764",
+      "Y": "34184.35622358695",
+      "LATITUDE": "1.325423654840167",
+      "LONGITUDE": "103.9335591342279"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "ANG MO KIO 22",
+      "BLK_NO": "207",
+      "ROAD_NAME": "ANG MO KIO AVENUE 1",
+      "BUILDING": "ANG MO KIO 22",
+      "ADDRESS": "207 ANG MO KIO AVENUE 1 ANG MO KIO 22 SINGAPORE 560207",
+      "POSTAL": "560207",
+      "X": "29060.48557822965",
+      "Y": "38651.05297693983",
+      "LATITUDE": "1.365820895043816",
+      "LONGITUDE": "103.842847772078"
+    }
+  ]
+}

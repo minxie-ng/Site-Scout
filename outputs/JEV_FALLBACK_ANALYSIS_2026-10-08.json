@@ -1,0 +1,174 @@
+{
+  "observedAt": "2026-10-08T06:34:01.001Z",
+  "provenance": "synthetic_fixture",
+  "baselineTiming": {
+    "method": "sequential in-process precheckClaim over locked fixture; performance.now wall time; excludes I/O and model calls",
+    "iterations": 1000,
+    "casesPerIteration": 30,
+    "totalEvaluations": 30000,
+    "elapsedMs": 25.838082999999983,
+    "meanCaseMs": 0.0008612694333333328
+  },
+  "jev": {
+    "full": {
+      "total": 30,
+      "confusion": {
+        "supported": {
+          "supported": 9,
+          "contradicted": 0,
+          "not_established": 0,
+          "review": 0
+        },
+        "contradicted": {
+          "supported": 0,
+          "contradicted": 4,
+          "not_established": 5,
+          "review": 0
+        },
+        "not_established": {
+          "supported": 0,
+          "contradicted": 1,
+          "not_established": 11,
+          "review": 0
+        }
+      },
+      "falseSupported": 0,
+      "supportedSuggested": 9,
+      "threeClassErrors": 6
+    },
+    "heldOut": {
+      "total": 10,
+      "confusion": {
+        "supported": {
+          "supported": 3,
+          "contradicted": 0,
+          "not_established": 0,
+          "review": 0
+        },
+        "contradicted": {
+          "supported": 0,
+          "contradicted": 2,
+          "not_established": 1,
+          "review": 0
+        },
+        "not_established": {
+          "supported": 0,
+          "contradicted": 0,
+          "not_established": 4,
+          "review": 0
+        }
+      },
+      "falseSupported": 0,
+      "supportedSuggested": 3,
+      "threeClassErrors": 1
+    }
+  },
+  "finalReview": {
+    "full": {
+      "total": 30,
+      "confusion": {
+        "supported": {
+          "supported": 0,
+          "contradicted": 0,
+          "not_established": 0,
+          "review": 9
+        },
+        "contradicted": {
+          "supported": 0,
+          "contradicted": 3,
+          "not_established": 5,
+          "review": 1
+        },
+        "not_established": {
+          "supported": 0,
+          "contradicted": 1,
+          "not_established": 10,
+          "review": 1
+        }
+      },
+      "falseSupported": 0,
+      "supportedSuggested": 0,
+      "threeClassErrors": 17
+    },
+    "heldOut": {
+      "total": 10,
+      "confusion": {
+        "supported": {
+          "supported": 0,
+          "contradicted": 0,
+          "not_established": 0,
+          "review": 3
+        },
+        "contradicted": {
+          "supported": 0,
+          "contradicted": 2,
+          "not_established": 1,
+          "review": 0
+        },
+        "not_established": {
+          "supported": 0,
+          "contradicted": 0,
+          "not_established": 4,
+          "review": 0
+        }
+      },
+      "falseSupported": 0,
+      "supportedSuggested": 0,
+      "threeClassErrors": 4
+    }
+  },
+  "baseline": {
+    "full": {
+      "total": 30,
+      "confusion": {
+        "supported": {
+          "supported": 0,
+          "contradicted": 0,
+          "not_established": 0,
+          "review": 9
+        },
+        "contradicted": {
+          "supported": 0,
+          "contradicted": 0,
+          "not_established": 5,
+          "review": 4
+        },
+        "not_established": {
+          "supported": 0,
+          "contradicted": 0,
+          "not_established": 5,
+          "review": 7
+        }
+      },
+      "falseSupported": 0,
+      "supportedSuggested": 0,
+      "threeClassErrors": 25
+    },
+    "heldOut": {
+      "total": 10,
+      "confusion": {
+        "supported": {
+          "supported": 0,
+          "contradicted": 0,
+          "not_established": 0,
+          "review": 3
+        },
+        "contradicted": {
+          "supported": 0,
+          "contradicted": 0,
+          "not_established": 1,
+          "review": 2
+        },
+        "not_established": {
+          "supported": 0,
+          "contradicted": 0,
+          "not_established": 3,
+          "review": 1
+        }
+      },
+      "falseSupported": 0,
+      "supportedSuggested": 0,
+      "threeClassErrors": 7
+    }
+  }
+}

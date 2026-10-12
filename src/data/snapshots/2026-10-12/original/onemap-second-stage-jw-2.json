@@ -1,0 +1,19 @@
+{
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "BOON LAY GROVE",
+      "BLK_NO": "183C",
+      "ROAD_NAME": "BOON LAY AVENUE",
+      "BUILDING": "BOON LAY GROVE",
+      "ADDRESS": "183C BOON LAY AVENUE BOON LAY GROVE SINGAPORE 643183",
+      "POSTAL": "643183",
+      "X": "14175.55212859623",
+      "Y": "36753.48624599539",
+      "LATITUDE": "1.34865680572114",
+      "LONGITUDE": "103.709097367424"
+    }
+  ]
+}

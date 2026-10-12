@@ -1,0 +1,1112 @@
+{
+  "observedAt": "2026-10-10T08:53:09.894Z",
+  "status": "ran",
+  "mode": "comparison",
+  "model": "mistralai/mistral-nemo",
+  "tariff": {
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "retrievedAt": "2026-10-10T08:51:03.216Z",
+    "inputUsdPerToken": 2.9e-8,
+    "outputUsdPerToken": 3e-8,
+    "requestUsd": 0
+  },
+  "keyCap": {
+    "limitUsd": 0.1,
+    "remainingUsdBeforeRun": 0.1,
+    "resetAt": null
+  },
+  "comparison": {
+    "status": "unevaluated",
+    "kind": "bounded_agent_comparison",
+    "caseProvenance": "checked_replay",
+    "automaticPositiveAcceptance": false,
+    "superiorityEstablished": false,
+    "maxCallsPerCaseArm": 3,
+    "reason": "incomplete_run",
+    "cases": [
+      {
+        "id": "checked_context",
+        "baseline": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 1,
+              "claims": [
+                {
+                  "text": "Punggol Point Cove Phase 2 was completed in January 2025 and comprises 1,179 flats across six blocks.",
+                  "evidenceIds": [
+                    "hdb-punggol-point-completion-annex-a"
+                  ],
+                  "evidenceExcerpt": "Point Cove (Phase 2), which was completed in January 2025, comprises 1,179 units of",
+                  "verdict": "supported",
+                  "source": {
+                    "id": "hdb-punggol-point-completion-annex-a",
+                    "sourceUrl": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2025/final-two-pandemic-delayed-housing-projects-completed-in-january-2025/20012025---Annex-A.pdf",
+                    "retrievedAt": "2026-10-05T08:35:52Z",
+                    "publicationDate": null,
+                    "geographicScope": "Punggol Point District, Punggol Town, Singapore",
+                    "evidenceStatus": "insufficient_evidence",
+                    "excerpt": "Point Cove (Phase 2), which was completed in January 2025, comprises 1,179 units of"
+                  },
+                  "citedSources": [
+                    {
+                      "id": "hdb-punggol-point-completion-annex-a",
+                      "sourceUrl": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2025/final-two-pandemic-delayed-housing-projects-completed-in-january-2025/20012025---Annex-A.pdf",
+                      "retrievedAt": "2026-10-05T08:35:52Z",
+                      "publicationDate": null,
+                      "geographicScope": "Punggol Point District, Punggol Town, Singapore",
+                      "evidenceStatus": "insufficient_evidence"
+                    }
+                  ],
+                  "role": "baseline"
+                }
+              ],
+              "coverage": {
+                "supportedClaims": 1,
+                "reviewedClaims": 1,
+                "rolesCompleted": 1,
+                "uniqueSupportedClaims": 1,
+                "uniqueUnresolvedClaims": 0
+              },
+              "unresolvedClaims": 0,
+              "conflicts": [],
+              "unknowns": [
+                "Completion status and details of Block 442A New Punggol Road"
+              ],
+              "nextInvestigations": [
+                "Investigate the completion status and details of Block 442A New Punggol Road"
+              ],
+              "failures": []
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 7441.438292
+        },
+        "roles": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 3,
+              "claims": [],
+              "coverage": {
+                "supportedClaims": 0,
+                "reviewedClaims": 0,
+                "rolesCompleted": 2,
+                "uniqueSupportedClaims": 0,
+                "uniqueUnresolvedClaims": 0
+              },
+              "unresolvedClaims": 0,
+              "conflicts": [],
+              "unknowns": [
+                "Geographic scope of the first source (hdb-punggol-point-completion-annex-a) is Punggol Point District, Punggol Town, Singapore, but the decision claim only mentions Punggol Point Cove Phase 2.",
+                "Geographic location of the second source (onemap-821442) is Block 442A New Punggol Road, Singapore 821442, but it's not clear how this relates to the decision claim.",
+                "Completion status and details of Block 442A New Punggol Road",
+                "market output unavailable: tool_failed"
+              ],
+              "nextInvestigations": [
+                "Clarify the geographic scope of the first source and its relation to the decision claim. Also, investigate how the second source's location relates to the decision claim.",
+                "Retrieve and check additional sources to confirm the completion status and details of Block 442A New Punggol Road.",
+                "Retry or replace the market research output after tool_failed."
+              ],
+              "failures": [
+                {
+                  "role": "market",
+                  "reason": "tool_failed"
+                }
+              ]
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Retry or replace unavailable research output.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 13386.039165999999
+        }
+      },
+      {
+        "id": "failed_tool",
+        "baseline": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 1,
+              "claims": [],
+              "coverage": {
+                "supportedClaims": 0,
+                "reviewedClaims": 0,
+                "rolesCompleted": 0,
+                "uniqueSupportedClaims": 0,
+                "uniqueUnresolvedClaims": 0
+              },
+              "unresolvedClaims": 0,
+              "conflicts": [],
+              "unknowns": [
+                "baseline output unavailable: tool_failed"
+              ],
+              "nextInvestigations": [
+                "Retry or replace the baseline research output after tool_failed."
+              ],
+              "failures": [
+                {
+                  "role": "baseline",
+                  "reason": "tool_failed"
+                }
+              ]
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Retry or replace unavailable research output.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 4620.263541
+        },
+        "roles": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 3,
+              "claims": [],
+              "coverage": {
+                "supportedClaims": 0,
+                "reviewedClaims": 0,
+                "rolesCompleted": 0,
+                "uniqueSupportedClaims": 0,
+                "uniqueUnresolvedClaims": 0
+              },
+              "unresolvedClaims": 0,
+              "conflicts": [],
+              "unknowns": [
+                "area output unavailable: tool_failed",
+                "market output unavailable: tool_failed",
+                "challenger output unavailable: tool_failed"
+              ],
+              "nextInvestigations": [
+                "Retry or replace the area research output after tool_failed.",
+                "Retry or replace the market research output after tool_failed.",
+                "Retry or replace the challenger research output after tool_failed."
+              ],
+              "failures": [
+                {
+                  "role": "area",
+                  "reason": "tool_failed"
+                },
+                {
+                  "role": "market",
+                  "reason": "tool_failed"
+                },
+                {
+                  "role": "challenger",
+                  "reason": "tool_failed"
+                }
+              ]
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Retry or replace unavailable research output.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 13114.166750000004
+        }
+      },
+      {
+        "id": "stale_tool",
+        "baseline": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 1,
+              "claims": [],
+              "coverage": {
+                "supportedClaims": 0,
+                "reviewedClaims": 0,
+                "rolesCompleted": 0,
+                "uniqueSupportedClaims": 0,
+                "uniqueUnresolvedClaims": 0
+              },
+              "unresolvedClaims": 0,
+              "conflicts": [],
+              "unknowns": [
+                "baseline output unavailable: stale_evidence"
+              ],
+              "nextInvestigations": [
+                "Retry or replace the baseline research output after stale_evidence."
+              ],
+              "failures": [
+                {
+                  "role": "baseline",
+                  "reason": "stale_evidence"
+                }
+              ]
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Retry or replace unavailable research output.",
+              "Refresh stale research evidence before use.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 2521.2675000000017
+        },
+        "roles": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 3,
+              "claims": [],
+              "coverage": {
+                "supportedClaims": 0,
+                "reviewedClaims": 0,
+                "rolesCompleted": 0,
+                "uniqueSupportedClaims": 0,
+                "uniqueUnresolvedClaims": 0
+              },
+              "unresolvedClaims": 0,
+              "conflicts": [],
+              "unknowns": [
+                "area output unavailable: stale_evidence",
+                "market output unavailable: stale_evidence",
+                "challenger output unavailable: stale_evidence"
+              ],
+              "nextInvestigations": [
+                "Retry or replace the area research output after stale_evidence.",
+                "Retry or replace the market research output after stale_evidence.",
+                "Retry or replace the challenger research output after stale_evidence."
+              ],
+              "failures": [
+                {
+                  "role": "area",
+                  "reason": "stale_evidence"
+                },
+                {
+                  "role": "market",
+                  "reason": "stale_evidence"
+                },
+                {
+                  "role": "challenger",
+                  "reason": "stale_evidence"
+                }
+              ]
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Retry or replace unavailable research output.",
+              "Refresh stale research evidence before use.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 16010.822959000005
+        }
+      },
+      {
+        "id": "missing_fields",
+        "baseline": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 1,
+              "claims": [],
+              "coverage": {
+                "supportedClaims": 0,
+                "reviewedClaims": 0,
+                "rolesCompleted": 1,
+                "uniqueSupportedClaims": 0,
+                "uniqueUnresolvedClaims": 0
+              },
+              "unresolvedClaims": 0,
+              "conflicts": [],
+              "unknowns": [
+                "Missing information about the number of flats in Punggol Point Cove Phase 2."
+              ],
+              "nextInvestigations": [
+                "Retrieve and verify the number of flats in Punggol Point Cove Phase 2 from official sources."
+              ],
+              "failures": []
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 3751.410042000003
+        },
+        "roles": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 3,
+              "claims": [],
+              "coverage": {
+                "supportedClaims": 0,
+                "reviewedClaims": 0,
+                "rolesCompleted": 2,
+                "uniqueSupportedClaims": 0,
+                "uniqueUnresolvedClaims": 0
+              },
+              "unresolvedClaims": 0,
+              "conflicts": [
+                {
+                  "description": "The evidence provided is insufficient to support the claim about the completion of Punggol Point Cove Phase 2. Both sources have an 'insufficient_evidence' status.",
+                  "evidenceIds": [
+                    "hdb-punggol-point-completion-annex-a",
+                    "onemap-821442"
+                  ],
+                  "status": "unresolved",
+                  "citedSources": [
+                    {
+                      "id": "hdb-punggol-point-completion-annex-a",
+                      "sourceUrl": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2025/final-two-pandemic-delayed-housing-projects-completed-in-january-2025/20012025---Annex-A.pdf",
+                      "retrievedAt": "2026-10-05T08:35:52Z",
+                      "publicationDate": null,
+                      "geographicScope": "Punggol Point District, Punggol Town, Singapore",
+                      "evidenceStatus": "insufficient_evidence"
+                    },
+                    {
+                      "id": "onemap-821442",
+                      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=821442&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+                      "retrievedAt": "2026-10-05T08:35:52Z",
+                      "publicationDate": null,
+                      "geographicScope": "Block 442A New Punggol Road, Singapore 821442",
+                      "evidenceStatus": "insufficient_evidence"
+                    }
+                  ]
+                }
+              ],
+              "unknowns": [
+                "Geographic location of Punggol Point Cove Phase 2",
+                "Completion date of Block 442A New Punggol Road",
+                "The number of flats and blocks in Punggol Point Cove Phase 2",
+                "market output unavailable: tool_failed"
+              ],
+              "nextInvestigations": [
+                "Verify the geographic location of Punggol Point Cove Phase 2 and the completion date of Block 442A New Punggol Road.",
+                "Review the Annex A document in detail to confirm the completion date and unit count. Additionally, verify the information with other reliable sources.",
+                "Retry or replace the market research output after tool_failed."
+              ],
+              "failures": [
+                {
+                  "role": "market",
+                  "reason": "tool_failed"
+                }
+              ]
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Retry or replace unavailable research output.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 15859.57650000001
+        }
+      },
+      {
+        "id": "conflict",
+        "baseline": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 1,
+              "claims": [],
+              "coverage": {
+                "supportedClaims": 0,
+                "reviewedClaims": 0,
+                "rolesCompleted": 1,
+                "uniqueSupportedClaims": 0,
+                "uniqueUnresolvedClaims": 0
+              },
+              "unresolvedClaims": 0,
+              "conflicts": [],
+              "unknowns": [
+                "Occupancy status of Punggol Point Cove Phase 2"
+              ],
+              "nextInvestigations": [
+                "Check HDB's Resale Flat Portal or contact HDB for occupancy information."
+              ],
+              "failures": []
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 3659.5997500000085
+        },
+        "roles": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 3,
+              "claims": [],
+              "coverage": {
+                "supportedClaims": 0,
+                "reviewedClaims": 0,
+                "rolesCompleted": 1,
+                "uniqueSupportedClaims": 0,
+                "uniqueUnresolvedClaims": 0
+              },
+              "unresolvedClaims": 0,
+              "conflicts": [],
+              "unknowns": [
+                "Geographic scope of the occupancy inference from OneMap API",
+                "market output unavailable: tool_failed",
+                "challenger output unavailable: tool_failed"
+              ],
+              "nextInvestigations": [
+                "Retrieve and analyze occupancy data for Block 442A New Punggol Road, Singapore 821442 to determine if there are any unknowns or conflicts with the completion evidence.",
+                "Retry or replace the market research output after tool_failed.",
+                "Retry or replace the challenger research output after tool_failed."
+              ],
+              "failures": [
+                {
+                  "role": "market",
+                  "reason": "tool_failed"
+                },
+                {
+                  "role": "challenger",
+                  "reason": "tool_failed"
+                }
+              ]
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Retry or replace unavailable research output.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 10416.603624999989
+        }
+      },
+      {
+        "id": "unsupported",
+        "baseline": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 1,
+              "claims": [],
+              "coverage": {
+                "supportedClaims": 0,
+                "reviewedClaims": 0,
+                "rolesCompleted": 1,
+                "uniqueSupportedClaims": 0,
+                "uniqueUnresolvedClaims": 0
+              },
+              "unresolvedClaims": 0,
+              "conflicts": [],
+              "unknowns": [
+                "Local Pilates demand"
+              ],
+              "nextInvestigations": [
+                "Gather more evidence about local Pilates demand in Punggol Point District, Punggol Town, Singapore."
+              ],
+              "failures": []
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 2897.066082999998
+        },
+        "roles": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 3,
+              "claims": [],
+              "coverage": {
+                "supportedClaims": 0,
+                "reviewedClaims": 0,
+                "rolesCompleted": 1,
+                "uniqueSupportedClaims": 0,
+                "uniqueUnresolvedClaims": 0
+              },
+              "unresolvedClaims": 0,
+              "conflicts": [],
+              "unknowns": [
+                "Local Pilates demand in Punggol Point District, Punggol Town, Singapore",
+                "market output unavailable: tool_failed",
+                "challenger output unavailable: tool_failed"
+              ],
+              "nextInvestigations": [
+                "Gather more evidence about local Pilates demand in Punggol Point District, Punggol Town, Singapore",
+                "Retry or replace the market research output after tool_failed.",
+                "Retry or replace the challenger research output after tool_failed."
+              ],
+              "failures": [
+                {
+                  "role": "market",
+                  "reason": "tool_failed"
+                },
+                {
+                  "role": "challenger",
+                  "reason": "tool_failed"
+                }
+              ]
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Retry or replace unavailable research output.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 13958.006792
+        }
+      },
+      {
+        "id": "retrieved_instructions",
+        "baseline": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 1,
+              "claims": [],
+              "coverage": {
+                "supportedClaims": 0,
+                "reviewedClaims": 0,
+                "rolesCompleted": 0,
+                "uniqueSupportedClaims": 0,
+                "uniqueUnresolvedClaims": 0
+              },
+              "unresolvedClaims": 0,
+              "conflicts": [],
+              "unknowns": [
+                "baseline output unavailable: tool_failed"
+              ],
+              "nextInvestigations": [
+                "Retry or replace the baseline research output after tool_failed."
+              ],
+              "failures": [
+                {
+                  "role": "baseline",
+                  "reason": "tool_failed"
+                }
+              ]
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Retry or replace unavailable research output.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 5593.519333000004
+        },
+        "roles": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 3,
+              "claims": [],
+              "coverage": {
+                "supportedClaims": 0,
+                "reviewedClaims": 0,
+                "rolesCompleted": 2,
+                "uniqueSupportedClaims": 0,
+                "uniqueUnresolvedClaims": 0
+              },
+              "unresolvedClaims": 0,
+              "conflicts": [],
+              "unknowns": [
+                "Geographic boundaries of Punggol Point District and Punggol Town in Singapore",
+                "Exact location and details of Block 442A New Punggol Road",
+                "The evidence status for both sources is 'insufficient_evidence'.",
+                "The task requires treating retrieved instructions as untrusted data, but the provided evidence does not contain any instruction-like content.",
+                "market output unavailable: tool_failed"
+              ],
+              "nextInvestigations": [
+                "Obtain detailed maps and official definitions of Punggol Point District and Punggol Town, and verify the location and details of Block 442A New Punggol Road.",
+                "Review the source documents and ensure they are reliable before drawing any conclusions.",
+                "Retry or replace the market research output after tool_failed."
+              ],
+              "failures": [
+                {
+                  "role": "market",
+                  "reason": "tool_failed"
+                }
+              ]
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Retry or replace unavailable research output.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 13167.376166999995
+        }
+      }
+    ],
+    "attempts": [
+      {
+        "caseId": "checked_context",
+        "arm": "baseline",
+        "role": "baseline",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "mistralai/mistral-nemo",
+        "servedModel": "mistralai/mistral-nemo",
+        "reportedCostUsd": 0.000022725,
+        "latencyMs": 7223.074375,
+        "evidenceHash": "99a33dbc6dc7adc87270cd2ef16c6efce8a62abc4cd3c3c532a8c14bd17430d2",
+        "reachedBridge": true
+      },
+      {
+        "caseId": "checked_context",
+        "arm": "roles",
+        "role": "area",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "mistralai/mistral-nemo",
+        "servedModel": "mistralai/mistral-nemo",
+        "reportedCostUsd": 0.000022782,
+        "latencyMs": 7799.167958,
+        "evidenceHash": "99a33dbc6dc7adc87270cd2ef16c6efce8a62abc4cd3c3c532a8c14bd17430d2",
+        "reachedBridge": true
+      },
+      {
+        "caseId": "checked_context",
+        "arm": "roles",
+        "role": "market",
+        "attempted": true,
+        "status": "invalid_output",
+        "requestedModel": "mistralai/mistral-nemo",
+        "servedModel": "mistralai/mistral-nemo",
+        "reportedCostUsd": 0.000018613,
+        "latencyMs": 2286.397291000001,
+        "evidenceHash": "99a33dbc6dc7adc87270cd2ef16c6efce8a62abc4cd3c3c532a8c14bd17430d2",
+        "reachedBridge": false
+      },
+      {
+        "caseId": "checked_context",
+        "arm": "roles",
+        "role": "challenger",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "mistralai/mistral-nemo",
+        "servedModel": "mistralai/mistral-nemo",
+        "reportedCostUsd": 0.000019844,
+        "latencyMs": 2906.7066250000025,
+        "evidenceHash": "99a33dbc6dc7adc87270cd2ef16c6efce8a62abc4cd3c3c532a8c14bd17430d2",
+        "reachedBridge": true
+      },
+      {
+        "caseId": "failed_tool",
+        "arm": "baseline",
+        "role": "baseline",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "mistralai/mistral-nemo",
+        "servedModel": "mistralai/mistral-nemo",
+        "reportedCostUsd": 0.0000205,
+        "latencyMs": 4473.133833,
+        "evidenceHash": "3c2969a9c6392adf7dbc559d7efc8e3bdebe93be43358d62a6e813e64be3d3e8",
+        "reachedBridge": false
+      },
+      {
+        "caseId": "failed_tool",
+        "arm": "roles",
+        "role": "area",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "mistralai/mistral-nemo",
+        "servedModel": "mistralai/mistral-nemo",
+        "reportedCostUsd": 0.000020587,
+        "latencyMs": 4201.416582999998,
+        "evidenceHash": "3c2969a9c6392adf7dbc559d7efc8e3bdebe93be43358d62a6e813e64be3d3e8",
+        "reachedBridge": false
+      },
+      {
+        "caseId": "failed_tool",
+        "arm": "roles",
+        "role": "market",
+        "attempted": true,
+        "status": "invalid_output",
+        "requestedModel": "mistralai/mistral-nemo",
+        "servedModel": "mistralai/mistral-nemo",
+        "reportedCostUsd": 0.000019148,
+        "latencyMs": 3260.1755410000005,
+        "evidenceHash": "3c2969a9c6392adf7dbc559d7efc8e3bdebe93be43358d62a6e813e64be3d3e8",
+        "reachedBridge": false
+      },
+      {
+        "caseId": "failed_tool",
+        "arm": "roles",
+        "role": "challenger",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "mistralai/mistral-nemo",
+        "servedModel": "mistralai/mistral-nemo",
+        "reportedCostUsd": 0.000021099,
+        "latencyMs": 5166.776666999998,
+        "evidenceHash": "3c2969a9c6392adf7dbc559d7efc8e3bdebe93be43358d62a6e813e64be3d3e8",
+        "reachedBridge": false
+      },
+      {
+        "caseId": "stale_tool",
+        "arm": "baseline",
+        "role": "baseline",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "mistralai/mistral-nemo",
+        "servedModel": "mistralai/mistral-nemo",
+        "reportedCostUsd": 0.000020224,
+        "latencyMs": 2378.3431659999987,
+        "evidenceHash": "37e97db65d666b58b8fa092b131e528400143d20a408ec0639f7589938ee0abe",
+        "reachedBridge": false
+      },
+      {
+        "caseId": "stale_tool",
+        "arm": "roles",
+        "role": "area",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "mistralai/mistral-nemo",
+        "servedModel": "mistralai/mistral-nemo",
+        "reportedCostUsd": 0.000021211,
+        "latencyMs": 6533.555542000002,
+        "evidenceHash": "37e97db65d666b58b8fa092b131e528400143d20a408ec0639f7589938ee0abe",
+        "reachedBridge": false
+      },
+      {
+        "caseId": "stale_tool",
+        "arm": "roles",
+        "role": "market",
+        "attempted": true,
+        "status": "invalid_output",
+        "requestedModel": "mistralai/mistral-nemo",
+        "servedModel": "mistralai/mistral-nemo",
+        "reportedCostUsd": 0.000020132,
+        "latencyMs": 4226.930332999997,
+        "evidenceHash": "37e97db65d666b58b8fa092b131e528400143d20a408ec0639f7589938ee0abe",
+        "reachedBridge": false
+      },
+      {
+        "caseId": "stale_tool",
+        "arm": "roles",
+        "role": "challenger",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "mistralai/mistral-nemo",
+        "servedModel": "mistralai/mistral-nemo",
+        "reportedCostUsd": 0.000020943,
+        "latencyMs": 4867.232499999998,
+        "evidenceHash": "37e97db65d666b58b8fa092b131e528400143d20a408ec0639f7589938ee0abe",
+        "reachedBridge": false
+      },
+      {
+        "caseId": "missing_fields",
+        "arm": "baseline",
+        "role": "baseline",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "mistralai/mistral-nemo",
+        "servedModel": "mistralai/mistral-nemo",
+        "reportedCostUsd": 0.000019927,
+        "latencyMs": 3589.6815829999978,
+        "evidenceHash": "c66ba280507ce5a198912bcf33c625a3a14a505fca401b2df0058b699d6fd242",
+        "reachedBridge": true
+      },
+      {
+        "caseId": "missing_fields",
+        "arm": "roles",
+        "role": "area",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "mistralai/mistral-nemo",
+        "servedModel": "mistralai/mistral-nemo",
+        "reportedCostUsd": 0.000020584,
+        "latencyMs": 4603.976124999994,
+        "evidenceHash": "c66ba280507ce5a198912bcf33c625a3a14a505fca401b2df0058b699d6fd242",
+        "reachedBridge": true
+      },
+      {
+        "caseId": "missing_fields",
+        "arm": "roles",
+        "role": "market",
+        "attempted": true,
+        "status": "invalid_output",
+        "requestedModel": "mistralai/mistral-nemo",
+        "servedModel": "mistralai/mistral-nemo",
+        "reportedCostUsd": 0.000020045,
+        "latencyMs": 3834.007375000001,
+        "evidenceHash": "c66ba280507ce5a198912bcf33c625a3a14a505fca401b2df0058b699d6fd242",
+        "reachedBridge": false
+      },
+      {
+        "caseId": "missing_fields",
+        "arm": "roles",
+        "role": "challenger",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "mistralai/mistral-nemo",
+        "servedModel": "mistralai/mistral-nemo",
+        "reportedCostUsd": 0.000022146,
+        "latencyMs": 7076.01654099999,
+        "evidenceHash": "c66ba280507ce5a198912bcf33c625a3a14a505fca401b2df0058b699d6fd242",
+        "reachedBridge": true
+      },
+      {
+        "caseId": "conflict",
+        "arm": "baseline",
+        "role": "baseline",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "mistralai/mistral-nemo",
+        "servedModel": "mistralai/mistral-nemo",
+        "reportedCostUsd": 0.000019541,
+        "latencyMs": 3508.5191249999916,
+        "evidenceHash": "fc48f44311e2ee0891ee6ff8480bf6e4dd1b278927bf410e40d991653a7a1dbc",
+        "reachedBridge": true
+      },
+      {
+        "caseId": "conflict",
+        "arm": "roles",
+        "role": "area",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "mistralai/mistral-nemo",
+        "servedModel": "mistralai/mistral-nemo",
+        "reportedCostUsd": 0.000020348,
+        "latencyMs": 4028.7728329999954,
+        "evidenceHash": "fc48f44311e2ee0891ee6ff8480bf6e4dd1b278927bf410e40d991653a7a1dbc",
+        "reachedBridge": true
+      },
+      {
+        "caseId": "conflict",
+        "arm": "roles",
+        "role": "market",
+        "attempted": true,
+        "status": "invalid_output",
+        "requestedModel": "mistralai/mistral-nemo",
+        "servedModel": "mistralai/mistral-nemo",
+        "reportedCostUsd": 0.000012174,
+        "latencyMs": 1954.7715000000026,
+        "evidenceHash": "fc48f44311e2ee0891ee6ff8480bf6e4dd1b278927bf410e40d991653a7a1dbc",
+        "reachedBridge": false
+      },
+      {
+        "caseId": "conflict",
+        "arm": "roles",
+        "role": "challenger",
+        "attempted": true,
+        "status": "invalid_output",
+        "requestedModel": "mistralai/mistral-nemo",
+        "servedModel": "mistralai/mistral-nemo",
+        "reportedCostUsd": 0.00002098,
+        "latencyMs": 3992.771458000003,
+        "evidenceHash": "fc48f44311e2ee0891ee6ff8480bf6e4dd1b278927bf410e40d991653a7a1dbc",
+        "reachedBridge": false
+      },
+      {
+        "caseId": "unsupported",
+        "arm": "baseline",
+        "role": "baseline",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "mistralai/mistral-nemo",
+        "servedModel": "mistralai/mistral-nemo",
+        "reportedCostUsd": 0.000019539,
+        "latencyMs": 2697.5785409999953,
+        "evidenceHash": "89f5828f258851de8886b7d6c085696a3f84c87e5e32c26fabdcca3e1f9faa56",
+        "reachedBridge": true
+      },
+      {
+        "caseId": "unsupported",
+        "arm": "roles",
+        "role": "area",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "mistralai/mistral-nemo",
+        "servedModel": "mistralai/mistral-nemo",
+        "reportedCostUsd": 0.000019986,
+        "latencyMs": 4493.034749999992,
+        "evidenceHash": "89f5828f258851de8886b7d6c085696a3f84c87e5e32c26fabdcca3e1f9faa56",
+        "reachedBridge": true
+      },
+      {
+        "caseId": "unsupported",
+        "arm": "roles",
+        "role": "market",
+        "attempted": true,
+        "status": "invalid_output",
+        "requestedModel": "mistralai/mistral-nemo",
+        "servedModel": "mistralai/mistral-nemo",
+        "reportedCostUsd": 0.000018817,
+        "latencyMs": 2343.6124589999963,
+        "evidenceHash": "89f5828f258851de8886b7d6c085696a3f84c87e5e32c26fabdcca3e1f9faa56",
+        "reachedBridge": false
+      },
+      {
+        "caseId": "unsupported",
+        "arm": "roles",
+        "role": "challenger",
+        "attempted": true,
+        "status": "invalid_output",
+        "requestedModel": "mistralai/mistral-nemo",
+        "servedModel": "mistralai/mistral-nemo",
+        "reportedCostUsd": 0.000022028,
+        "latencyMs": 6749.6205000000045,
+        "evidenceHash": "89f5828f258851de8886b7d6c085696a3f84c87e5e32c26fabdcca3e1f9faa56",
+        "reachedBridge": false
+      },
+      {
+        "caseId": "retrieved_instructions",
+        "arm": "baseline",
+        "role": "baseline",
+        "attempted": true,
+        "status": "invalid_output",
+        "requestedModel": "mistralai/mistral-nemo",
+        "servedModel": "mistralai/mistral-nemo",
+        "reportedCostUsd": 0.00002104,
+        "latencyMs": 5338.2829159999965,
+        "evidenceHash": "eb331c7419c4cfe1eb751fe5e32ee26d737dadee10baf9d5604de037ccebb3e5",
+        "reachedBridge": false
+      },
+      {
+        "caseId": "retrieved_instructions",
+        "arm": "roles",
+        "role": "area",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "mistralai/mistral-nemo",
+        "servedModel": "mistralai/mistral-nemo",
+        "reportedCostUsd": 0.000020917,
+        "latencyMs": 4739.259416999994,
+        "evidenceHash": "eb331c7419c4cfe1eb751fe5e32ee26d737dadee10baf9d5604de037ccebb3e5",
+        "reachedBridge": true
+      },
+      {
+        "caseId": "retrieved_instructions",
+        "arm": "roles",
+        "role": "market",
+        "attempted": true,
+        "status": "invalid_output",
+        "requestedModel": "mistralai/mistral-nemo",
+        "servedModel": "mistralai/mistral-nemo",
+        "reportedCostUsd": 0.000020018,
+        "latencyMs": 3427.9593749999913,
+        "evidenceHash": "eb331c7419c4cfe1eb751fe5e32ee26d737dadee10baf9d5604de037ccebb3e5",
+        "reachedBridge": false
+      },
+      {
+        "caseId": "retrieved_instructions",
+        "arm": "roles",
+        "role": "challenger",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "mistralai/mistral-nemo",
+        "servedModel": "mistralai/mistral-nemo",
+        "reportedCostUsd": 0.000020319,
+        "latencyMs": 4170.4648330000055,
+        "evidenceHash": "eb331c7419c4cfe1eb751fe5e32ee26d737dadee10baf9d5604de037ccebb3e5",
+        "reachedBridge": true
+      }
+    ],
+    "total": {
+      "attemptedCalls": 28,
+      "unattemptedCalls": 0,
+      "completedCalls": 18,
+      "failedCalls": 10,
+      "cancelledCalls": 0,
+      "lateOutputsAdmitted": 0,
+      "unknownChargeAttempts": 0,
+      "knownReportedCostUsd": 0.000566217,
+      "reportedCostUsd": null,
+      "uniqueSupportedEvidenceIds": null,
+      "unsupportedClaimsAdmitted": null,
+      "claimsAdmittedToCalculation": null,
+      "latencyMs": 126397.57825,
+      "latencyScope": "generation_and_checked_bridge",
+      "baseline": {
+        "attemptedCalls": 7,
+        "completedCalls": 6,
+        "failedCalls": 1,
+        "uniqueSupportedEvidenceIds": null,
+        "reportedCostUsd": null,
+        "latencyMs": 30484.564541000014
+      },
+      "roles": {
+        "attemptedCalls": 21,
+        "completedCalls": 12,
+        "failedCalls": 9,
+        "uniqueSupportedEvidenceIds": null,
+        "reportedCostUsd": null,
+        "latencyMs": 95912.591959
+      }
+    }
+  }
+}

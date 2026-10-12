@@ -1,0 +1,19 @@
+{
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "PARC LUMIERE",
+      "BLK_NO": "167B",
+      "ROAD_NAME": "SIMEI LANE",
+      "BUILDING": "PARC LUMIERE",
+      "ADDRESS": "167B SIMEI LANE PARC LUMIERE SINGAPORE 522167",
+      "POSTAL": "522167",
+      "X": "42058.52167037409",
+      "Y": "36143.00507746451",
+      "LATITUDE": "1.343135737054431",
+      "LONGITUDE": "103.9596428008806"
+    }
+  ]
+}

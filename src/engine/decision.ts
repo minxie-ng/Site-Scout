@@ -1,6 +1,8 @@
 import type { BusinessProfile } from "../domain/business";
 import { assembleGate2Comparison } from "../domain/gate2-comparison";
 import { runSyntheticScenario, type SyntheticScenarioInput } from "./scenario";
+import { runBoundedInvestigation } from "../providers/bounded-investigation";
+import { parseDevelopmentRecord } from "../domain/evidence";
 
 type HypotheticalDecisionInput = SyntheticScenarioInput & {
   openingInvestmentSgd: number;
@@ -19,6 +21,41 @@ export function decideReviewedCluster(input: Parameters<typeof assembleGate2Comp
     basis: "reviewed_gate2_snapshot" as const,
     reasonCode: "missing_local_decision_evidence" as const,
   };
+}
+
+/** Adds checked research diagnostics to the existing real-cluster abstention. */
+export function decideReviewedClusterWithInvestigation(
+  input: Parameters<typeof assembleGate2Comparison>[0],
+  clusterId: string,
+  request: Parameters<typeof runBoundedInvestigation>[1],
+) {
+  const safeNextInvestigations = (investigation: ReturnType<typeof runBoundedInvestigation>) => {
+    if (investigation.failures.some(failure => failure.reason === "invalid_source")) {
+      return ["Restore and validate the source snapshot."];
+    }
+    const steps = ["Verify the phase-to-block relationship with an official source."];
+    if (investigation.failures.length > 0) steps.push("Retry or replace unavailable research output.");
+    if (investigation.failures.some(failure => failure.reason === "stale_evidence")) {
+      steps.push("Refresh stale research evidence before use.");
+    }
+    if (investigation.unresolvedClaims > 0) steps.push("Verify unsupported research claims against cited sources.");
+    if (investigation.conflicts.length > 0 || investigation.unknowns.length > 0) {
+      steps.push("Resolve cited conflicts and missing local decision evidence.");
+    }
+    return steps;
+  };
+  if (!parseDevelopmentRecord(input.development).success) {
+    const investigation = runBoundedInvestigation(input.development, request);
+    return { clusterId: null, outcome: "insufficient_evidence" as const, basis: "unvalidated_source" as const,
+      reasonCode: "research_source_unavailable" as const, investigation, nextInvestigations: safeNextInvestigations(investigation) };
+  }
+  const decision = decideReviewedCluster(input, clusterId);
+  const investigation = runBoundedInvestigation(input.development, request);
+  if (investigation.failures.some(failure => failure.reason === "invalid_source")) {
+    return { clusterId: null, outcome: "insufficient_evidence" as const, basis: "unvalidated_source" as const,
+      reasonCode: "research_source_unavailable" as const, investigation, nextInvestigations: safeNextInvestigations(investigation) };
+  }
+  return { ...decision, investigation, nextInvestigations: safeNextInvestigations(investigation) };
 }
 
 /** Hypothetical fixture only; its outcome is never a recommendation for a real cluster. */

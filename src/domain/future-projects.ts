@@ -81,10 +81,17 @@ export function reconcileSyntheticProjectMilestones(input: unknown): {
     }
     project.milestones.push({ recordId: event.recordId, milestone: event.milestone, month: event.month });
   }
+  for (const project of projects.values()) {
+    project.milestones.sort((a, b) => milestoneOrder.indexOf(a.milestone) - milestoneOrder.indexOf(b.milestone));
+    for (let index = 1; index < project.milestones.length; index++) {
+      if (project.milestones[index - 1]!.month > project.milestones[index]!.month) {
+        throw new Error("Synthetic project milestone chronology is impossible");
+      }
+    }
+  }
   return {
     basis: "synthetic_fixture_only",
     projects: [...projects.values()].sort((a, b) => a.canonicalProjectId < b.canonicalProjectId ? -1 : a.canonicalProjectId > b.canonicalProjectId ? 1 : 0)
-      .map(project => ({ ...project, milestones: project.milestones.sort((a, b) =>
-        milestoneOrder.indexOf(a.milestone) - milestoneOrder.indexOf(b.milestone)) })),
+      .map(project => ({ ...project, milestones: project.milestones })),
   };
 }

@@ -1,0 +1,19 @@
+{
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "5 CHANGI VILLAGE ROAD SINGAPORE 500005",
+      "BLK_NO": "5",
+      "ROAD_NAME": "CHANGI VILLAGE ROAD",
+      "BUILDING": "NIL",
+      "ADDRESS": "5 CHANGI VILLAGE ROAD SINGAPORE 500005",
+      "POSTAL": "500005",
+      "X": "45085.62620275747",
+      "Y": "41198.42289183289",
+      "LATITUDE": "1.38885339963624",
+      "LONGITUDE": "103.986845986484"
+    }
+  ]
+}

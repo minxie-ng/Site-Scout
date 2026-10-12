@@ -85,6 +85,15 @@ export const developmentRecordSchema = z.object({
 
 export type DevelopmentRecord = z.infer<typeof developmentRecordSchema>;
 
+/** Returns only a rehashed extraction from the pinned reviewed source. */
+export function readReviewedExtraction(input: unknown, sourceId: string): string | null {
+  const parsed = parseDevelopmentRecord(input);
+  if (!parsed.success) return null;
+  const source = parsed.data.sources.find(item => item.id === sourceId);
+  if (!source?.extractionPath || !source.extractionSha256) return null;
+  return readCheckedFile(source.extractionPath, source.extractionSha256, extractionPrefix, extractionRoot);
+}
+
 function metadataDigest(record: DevelopmentRecord): string {
   const metadata = {
     developmentArea: record.development.area,

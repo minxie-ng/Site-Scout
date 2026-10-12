@@ -1,0 +1,75 @@
+{
+  "observedAt": "2026-10-09T05:57:28.661Z",
+  "status": "ran",
+  "mode": "canary",
+  "model": "qwen/qwen3.7-flash",
+  "tariff": {
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "retrievedAt": "2026-10-09T05:57:24.131Z",
+    "inputUsdPerToken": 3e-8,
+    "outputUsdPerToken": 1.3e-7,
+    "requestUsd": 0
+  },
+  "keyCap": {
+    "limitUsd": 0.01,
+    "remainingUsdBeforeRun": 0.00740034,
+    "resetAt": null
+  },
+  "comparison": {
+    "status": "unevaluated",
+    "kind": "bounded_agent_comparison",
+    "caseProvenance": "checked_replay",
+    "automaticPositiveAcceptance": false,
+    "superiorityEstablished": false,
+    "maxCallsPerCaseArm": 3,
+    "reason": "attempt_budget_exhausted",
+    "cases": [],
+    "attempts": [
+      {
+        "caseId": "checked_context",
+        "arm": "baseline",
+        "role": "baseline",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00006923,
+        "latencyMs": 4113.740041,
+        "evidenceHash": "afa0773476d94176f076e45db1b747dbc930aedbaa7ce8da90c83d4d6741f2b9",
+        "reachedBridge": true
+      }
+    ],
+    "total": {
+      "attemptedCalls": 1,
+      "unattemptedCalls": 27,
+      "completedCalls": 1,
+      "failedCalls": 0,
+      "cancelledCalls": 0,
+      "lateOutputsAdmitted": 0,
+      "unknownChargeAttempts": 0,
+      "knownReportedCostUsd": 0.00006923,
+      "reportedCostUsd": null,
+      "uniqueSupportedEvidenceIds": null,
+      "unsupportedClaimsAdmitted": null,
+      "claimsAdmittedToCalculation": null,
+      "latencyMs": 4213.041958,
+      "latencyScope": "generation_and_checked_bridge",
+      "baseline": {
+        "attemptedCalls": 1,
+        "completedCalls": 1,
+        "failedCalls": 0,
+        "uniqueSupportedEvidenceIds": null,
+        "reportedCostUsd": null,
+        "latencyMs": 0
+      },
+      "roles": {
+        "attemptedCalls": 0,
+        "completedCalls": 0,
+        "failedCalls": 0,
+        "uniqueSupportedEvidenceIds": null,
+        "reportedCostUsd": null,
+        "latencyMs": 0
+      }
+    }
+  }
+}

@@ -38,6 +38,7 @@ Do not call a gate complete because tests pass. A gate closes only when its acce
 
 - General language generation may use an OpenRouter model selected by configuration.
 - OpenRouter's `typesafe/jev-router` is a model router that uses Jev to route requests. It is not the TypeSafe System One API and does not replace Jev's Choice, Score, and Noul interface.
+- The target live multi-agent investigation must use the actual Jev Decisions API to route or prioritize bounded research tasks, whether accessed through OpenRouter or direct TypeSafe. The existing post-research claim checker is an experiment, not this product role. If Jev is unavailable, disclose a degraded abstaining run; do not claim acceleration without a same-case, same-budget end-to-end comparison.
 - The direct TypeSafe experiment is optional and must sit behind a provider interface. The application must work when it is unavailable.
 - Vercel Hobby may host a personal hackathon demonstration within current plan limits. Recheck plan terms before commercial or SME production use.
 

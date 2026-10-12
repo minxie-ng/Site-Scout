@@ -1,0 +1,541 @@
+{
+  "observedAt": "2026-10-08T06:17:25.118Z",
+  "fixture": "synthetic_fixture",
+  "status": "evaluated",
+  "provider": "openrouter_jev",
+  "requestedModel": "typesafe/jev-1.13-20260917",
+  "total": 30,
+  "heldOut": 10,
+  "modelCalls": 20,
+  "measuredCostUsd": 0.0003702300000000001,
+  "latencyMs": 9774.113458,
+  "unsupportedAccepted": 0,
+  "heldOutUnsupportedAccepted": 0,
+  "supportedAccepted": 9,
+  "autoAcceptanceEnabled": false,
+  "baseline": {
+    "baseline": "conservative_precheck",
+    "total": 30,
+    "heldOut": 10,
+    "unsupportedAccepted": 0,
+    "acceptedSupported": 0,
+    "modelCalls": 0,
+    "measuredCostUsd": 0,
+    "latencyMs": null,
+    "results": [
+      {
+        "id": "t01",
+        "split": "tune",
+        "expected": "supported",
+        "verdict": "review"
+      },
+      {
+        "id": "t02",
+        "split": "tune",
+        "expected": "supported",
+        "verdict": "review"
+      },
+      {
+        "id": "t03",
+        "split": "tune",
+        "expected": "supported",
+        "verdict": "review"
+      },
+      {
+        "id": "t04",
+        "split": "tune",
+        "expected": "supported",
+        "verdict": "review"
+      },
+      {
+        "id": "t05",
+        "split": "tune",
+        "expected": "supported",
+        "verdict": "review"
+      },
+      {
+        "id": "t06",
+        "split": "tune",
+        "expected": "supported",
+        "verdict": "review"
+      },
+      {
+        "id": "t07",
+        "split": "tune",
+        "expected": "contradicted",
+        "verdict": "not_established"
+      },
+      {
+        "id": "t08",
+        "split": "tune",
+        "expected": "contradicted",
+        "verdict": "not_established"
+      },
+      {
+        "id": "t09",
+        "split": "tune",
+        "expected": "contradicted",
+        "verdict": "not_established"
+      },
+      {
+        "id": "t10",
+        "split": "tune",
+        "expected": "contradicted",
+        "verdict": "not_established"
+      },
+      {
+        "id": "t11",
+        "split": "tune",
+        "expected": "not_established",
+        "verdict": "review"
+      },
+      {
+        "id": "t12",
+        "split": "tune",
+        "expected": "not_established",
+        "verdict": "review"
+      },
+      {
+        "id": "t13",
+        "split": "tune",
+        "expected": "contradicted",
+        "verdict": "review"
+      },
+      {
+        "id": "t14",
+        "split": "tune",
+        "expected": "contradicted",
+        "verdict": "review"
+      },
+      {
+        "id": "t15",
+        "split": "tune",
+        "expected": "not_established",
+        "verdict": "review"
+      },
+      {
+        "id": "t16",
+        "split": "tune",
+        "expected": "not_established",
+        "verdict": "review"
+      },
+      {
+        "id": "t17",
+        "split": "tune",
+        "expected": "not_established",
+        "verdict": "not_established"
+      },
+      {
+        "id": "t18",
+        "split": "tune",
+        "expected": "not_established",
+        "verdict": "not_established"
+      },
+      {
+        "id": "t19",
+        "split": "tune",
+        "expected": "not_established",
+        "verdict": "review"
+      },
+      {
+        "id": "t20",
+        "split": "tune",
+        "expected": "not_established",
+        "verdict": "review"
+      },
+      {
+        "id": "h01",
+        "split": "held_out",
+        "expected": "supported",
+        "verdict": "review"
+      },
+      {
+        "id": "h02",
+        "split": "held_out",
+        "expected": "supported",
+        "verdict": "review"
+      },
+      {
+        "id": "h03",
+        "split": "held_out",
+        "expected": "supported",
+        "verdict": "review"
+      },
+      {
+        "id": "h04",
+        "split": "held_out",
+        "expected": "contradicted",
+        "verdict": "not_established"
+      },
+      {
+        "id": "h05",
+        "split": "held_out",
+        "expected": "contradicted",
+        "verdict": "review"
+      },
+      {
+        "id": "h06",
+        "split": "held_out",
+        "expected": "contradicted",
+        "verdict": "review"
+      },
+      {
+        "id": "h07",
+        "split": "held_out",
+        "expected": "not_established",
+        "verdict": "not_established"
+      },
+      {
+        "id": "h08",
+        "split": "held_out",
+        "expected": "not_established",
+        "verdict": "review"
+      },
+      {
+        "id": "h09",
+        "split": "held_out",
+        "expected": "not_established",
+        "verdict": "not_established"
+      },
+      {
+        "id": "h10",
+        "split": "held_out",
+        "expected": "not_established",
+        "verdict": "not_established"
+      }
+    ]
+  },
+  "results": [
+    {
+      "id": "t01",
+      "split": "tune",
+      "expected": "supported",
+      "rawSuggestion": "supported",
+      "finalVerdict": "review",
+      "servedModel": "typesafe/jev-1.13-20260917",
+      "reportedCostUsd": 0.000018228,
+      "latencyMs": 606.211875,
+      "reason": "unbenchmarked_positive"
+    },
+    {
+      "id": "t02",
+      "split": "tune",
+      "expected": "supported",
+      "rawSuggestion": "supported",
+      "finalVerdict": "review",
+      "servedModel": "typesafe/jev-1.13-20260917",
+      "reportedCostUsd": 0.0000189,
+      "latencyMs": 481.91825000000006,
+      "reason": "unbenchmarked_positive"
+    },
+    {
+      "id": "t03",
+      "split": "tune",
+      "expected": "supported",
+      "rawSuggestion": "supported",
+      "finalVerdict": "review",
+      "servedModel": "typesafe/jev-1.13-20260917",
+      "reportedCostUsd": 0.000018522,
+      "latencyMs": 459.69895900000006,
+      "reason": "unbenchmarked_positive"
+    },
+    {
+      "id": "t04",
+      "split": "tune",
+      "expected": "supported",
+      "rawSuggestion": "supported",
+      "finalVerdict": "review",
+      "servedModel": "typesafe/jev-1.13-20260917",
+      "reportedCostUsd": 0.000017892,
+      "latencyMs": 443.4026660000002,
+      "reason": "unbenchmarked_positive"
+    },
+    {
+      "id": "t05",
+      "split": "tune",
+      "expected": "supported",
+      "rawSuggestion": "supported",
+      "finalVerdict": "review",
+      "servedModel": "typesafe/jev-1.13-20260917",
+      "reportedCostUsd": 0.000018312,
+      "latencyMs": 432.2460000000001,
+      "reason": "unbenchmarked_positive"
+    },
+    {
+      "id": "t06",
+      "split": "tune",
+      "expected": "supported",
+      "rawSuggestion": "supported",
+      "finalVerdict": "review",
+      "servedModel": "typesafe/jev-1.13-20260917",
+      "reportedCostUsd": 0.00001911,
+      "latencyMs": 468.59691599999996,
+      "reason": "unbenchmarked_positive"
+    },
+    {
+      "id": "t07",
+      "split": "tune",
+      "expected": "contradicted",
+      "rawSuggestion": "not_established",
+      "finalVerdict": "not_established",
+      "servedModel": null,
+      "reportedCostUsd": 0,
+      "latencyMs": 0.05983299999979863,
+      "reason": "number_not_found"
+    },
+    {
+      "id": "t08",
+      "split": "tune",
+      "expected": "contradicted",
+      "rawSuggestion": "not_established",
+      "finalVerdict": "not_established",
+      "servedModel": null,
+      "reportedCostUsd": 0,
+      "latencyMs": 0.01187500000014552,
+      "reason": "number_not_found"
+    },
+    {
+      "id": "t09",
+      "split": "tune",
+      "expected": "contradicted",
+      "rawSuggestion": "not_established",
+      "finalVerdict": "not_established",
+      "servedModel": null,
+      "reportedCostUsd": 0,
+      "latencyMs": 0.02545799999961673,
+      "reason": "number_not_found"
+    },
+    {
+      "id": "t10",
+      "split": "tune",
+      "expected": "contradicted",
+      "rawSuggestion": "not_established",
+      "finalVerdict": "not_established",
+      "servedModel": null,
+      "reportedCostUsd": 0,
+      "latencyMs": 0.013082999999824096,
+      "reason": "number_not_found"
+    },
+    {
+      "id": "t11",
+      "split": "tune",
+      "expected": "not_established",
+      "rawSuggestion": "not_established",
+      "finalVerdict": "review",
+      "servedModel": "typesafe/jev-1.13-20260917",
+      "reportedCostUsd": 0.000018732,
+      "latencyMs": 916.8304170000001,
+      "reason": "low_confidence"
+    },
+    {
+      "id": "t12",
+      "split": "tune",
+      "expected": "not_established",
+      "rawSuggestion": "not_established",
+      "finalVerdict": "not_established",
+      "servedModel": "typesafe/jev-1.13-20260917",
+      "reportedCostUsd": 0.00001785,
+      "latencyMs": 497.15670899999986
+    },
+    {
+      "id": "t13",
+      "split": "tune",
+      "expected": "contradicted",
+      "rawSuggestion": "contradicted",
+      "finalVerdict": "contradicted",
+      "servedModel": "typesafe/jev-1.13-20260917",
+      "reportedCostUsd": 0.000017724,
+      "latencyMs": 450.2973750000001
+    },
+    {
+      "id": "t14",
+      "split": "tune",
+      "expected": "contradicted",
+      "rawSuggestion": "contradicted",
+      "finalVerdict": "review",
+      "servedModel": "typesafe/jev-1.13-20260917",
+      "reportedCostUsd": 0.000017682,
+      "latencyMs": 408.3655410000001,
+      "reason": "low_confidence"
+    },
+    {
+      "id": "t15",
+      "split": "tune",
+      "expected": "not_established",
+      "rawSuggestion": "not_established",
+      "finalVerdict": "not_established",
+      "servedModel": "typesafe/jev-1.13-20260917",
+      "reportedCostUsd": 0.000017976,
+      "latencyMs": 435.4198750000005
+    },
+    {
+      "id": "t16",
+      "split": "tune",
+      "expected": "not_established",
+      "rawSuggestion": "not_established",
+      "finalVerdict": "not_established",
+      "servedModel": "typesafe/jev-1.13-20260917",
+      "reportedCostUsd": 0.000017766,
+      "latencyMs": 511.8444579999996
+    },
+    {
+      "id": "t17",
+      "split": "tune",
+      "expected": "not_established",
+      "rawSuggestion": "not_established",
+      "finalVerdict": "not_established",
+      "servedModel": null,
+      "reportedCostUsd": 0,
+      "latencyMs": 0.030499999999847205,
+      "reason": "quote_not_found"
+    },
+    {
+      "id": "t18",
+      "split": "tune",
+      "expected": "not_established",
+      "rawSuggestion": "not_established",
+      "finalVerdict": "not_established",
+      "servedModel": null,
+      "reportedCostUsd": 0,
+      "latencyMs": 0.020958000000064203,
+      "reason": "quote_not_found"
+    },
+    {
+      "id": "t19",
+      "split": "tune",
+      "expected": "not_established",
+      "rawSuggestion": "not_established",
+      "finalVerdict": "not_established",
+      "servedModel": "typesafe/jev-1.13-20260917",
+      "reportedCostUsd": 0.000018144,
+      "latencyMs": 433.9780410000003
+    },
+    {
+      "id": "t20",
+      "split": "tune",
+      "expected": "not_established",
+      "rawSuggestion": "contradicted",
+      "finalVerdict": "contradicted",
+      "servedModel": "typesafe/jev-1.13-20260917",
+      "reportedCostUsd": 0.000017976,
+      "latencyMs": 473.7766249999995
+    },
+    {
+      "id": "h01",
+      "split": "held_out",
+      "expected": "supported",
+      "rawSuggestion": "supported",
+      "finalVerdict": "review",
+      "servedModel": "typesafe/jev-1.13-20260917",
+      "reportedCostUsd": 0.00001995,
+      "latencyMs": 443.88866700000017,
+      "reason": "unbenchmarked_positive"
+    },
+    {
+      "id": "h02",
+      "split": "held_out",
+      "expected": "supported",
+      "rawSuggestion": "supported",
+      "finalVerdict": "review",
+      "servedModel": "typesafe/jev-1.13-20260917",
+      "reportedCostUsd": 0.000018606,
+      "latencyMs": 442.5210420000003,
+      "reason": "unbenchmarked_positive"
+    },
+    {
+      "id": "h03",
+      "split": "held_out",
+      "expected": "supported",
+      "rawSuggestion": "supported",
+      "finalVerdict": "review",
+      "servedModel": "typesafe/jev-1.13-20260917",
+      "reportedCostUsd": 0.000019278,
+      "latencyMs": 422.8831659999996,
+      "reason": "unbenchmarked_positive"
+    },
+    {
+      "id": "h04",
+      "split": "held_out",
+      "expected": "contradicted",
+      "rawSuggestion": "not_established",
+      "finalVerdict": "not_established",
+      "servedModel": null,
+      "reportedCostUsd": 0,
+      "latencyMs": 0.018000000000029104,
+      "reason": "quote_not_found"
+    },
+    {
+      "id": "h05",
+      "split": "held_out",
+      "expected": "contradicted",
+      "rawSuggestion": "contradicted",
+      "finalVerdict": "contradicted",
+      "servedModel": "typesafe/jev-1.13-20260917",
+      "reportedCostUsd": 0.00002037,
+      "latencyMs": 459.57341599999927
+    },
+    {
+      "id": "h06",
+      "split": "held_out",
+      "expected": "contradicted",
+      "rawSuggestion": "contradicted",
+      "finalVerdict": "contradicted",
+      "servedModel": "typesafe/jev-1.13-20260917",
+      "reportedCostUsd": 0.000018354,
+      "latencyMs": 498.9182920000003
+    },
+    {
+      "id": "h07",
+      "split": "held_out",
+      "expected": "not_established",
+      "rawSuggestion": "not_established",
+      "finalVerdict": "not_established",
+      "servedModel": null,
+      "reportedCostUsd": 0,
+      "latencyMs": 0.01900000000023283,
+      "reason": "quote_not_found"
+    },
+    {
+      "id": "h08",
+      "split": "held_out",
+      "expected": "not_established",
+      "rawSuggestion": "not_established",
+      "finalVerdict": "not_established",
+      "servedModel": "typesafe/jev-1.13-20260917",
+      "reportedCostUsd": 0.000018858,
+      "latencyMs": 486.1532920000009
+    },
+    {
+      "id": "h09",
+      "split": "held_out",
+      "expected": "not_established",
+      "rawSuggestion": "not_established",
+      "finalVerdict": "not_established",
+      "servedModel": null,
+      "reportedCostUsd": 0,
+      "latencyMs": 0.007999999999810825,
+      "reason": "quote_not_found"
+    },
+    {
+      "id": "h10",
+      "split": "held_out",
+      "expected": "not_established",
+      "rawSuggestion": "not_established",
+      "finalVerdict": "not_established",
+      "servedModel": null,
+      "reportedCostUsd": 0,
+      "latencyMs": 0.01220899999862013,
+      "reason": "number_not_found"
+    }
+  ],
+  "costAccounting": {
+    "responseReportedCostUsd": 0.0003702300000000001,
+    "keyUsageBeforeAttemptsUsd": 0,
+    "keyUsageImmediatelyAfterTimedOutAttemptUsd": 0,
+    "keyUsageImmediatelyAfterCompletedRunUsd": 0.00016527,
+    "keyUsageDelayedAfterBothAttemptsUsd": 0.0005355,
+    "unattributedToSavedCaseResultsUsd": 0.00016527,
+    "interpretation": "The initial 5-second Vitest timeout produced no case report. Delayed account usage after both attempts exceeds the completed run response-cost sum by USD 0.00016527; this remainder may reflect requests from the timed-out attempt or accounting delay. Do not treat the saved response sum as total account spend for both attempts."
+  },
+  "fixtureSha256": "dadcad2f0ca311dd650701479fe9843c43ef612ae95f7711335a7ac09344db4b"
+}

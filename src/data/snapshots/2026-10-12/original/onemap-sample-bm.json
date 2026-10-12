@@ -1,0 +1,19 @@
+{
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "24 BEO CRESCENT SINGAPORE 160024",
+      "BLK_NO": "24",
+      "ROAD_NAME": "BEO CRESCENT",
+      "BUILDING": "NIL",
+      "ADDRESS": "24 BEO CRESCENT SINGAPORE 160024",
+      "POSTAL": "160024",
+      "X": "27459.12514970824",
+      "Y": "30104.10661824048",
+      "LATITUDE": "1.288525351711652",
+      "LONGITUDE": "103.8284585971421"
+    }
+  ]
+}

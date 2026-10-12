@@ -1,0 +1,19 @@
+{
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "248 BANGKIT ROAD SINGAPORE 670248",
+      "BLK_NO": "248",
+      "ROAD_NAME": "BANGKIT ROAD",
+      "BUILDING": "NIL",
+      "ADDRESS": "248 BANGKIT ROAD SINGAPORE 670248",
+      "POSTAL": "670248",
+      "X": "21431.86161262076",
+      "Y": "40370.65558653325",
+      "LATITUDE": "1.381371647494595",
+      "LONGITUDE": "103.7742989607422"
+    }
+  ]
+}

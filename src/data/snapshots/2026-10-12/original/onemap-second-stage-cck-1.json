@@ -1,0 +1,19 @@
+{
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "131 CHOA CHU KANG AVENUE 1 SINGAPORE 680131",
+      "BLK_NO": "131",
+      "ROAD_NAME": "CHOA CHU KANG AVENUE 1",
+      "BUILDING": "NIL",
+      "ADDRESS": "131 CHOA CHU KANG AVENUE 1 SINGAPORE 680131",
+      "POSTAL": "680131",
+      "X": "18834.06829391979",
+      "Y": "40384.20105407014",
+      "LATITUDE": "1.38149344880732",
+      "LONGITUDE": "103.7509558615819"
+    }
+  ]
+}

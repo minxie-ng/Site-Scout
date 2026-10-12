@@ -1,0 +1,1531 @@
+{
+  "observedAt": "2026-10-09T05:59:51.786Z",
+  "status": "ran",
+  "mode": "comparison",
+  "model": "qwen/qwen3.7-flash",
+  "tariff": {
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "retrievedAt": "2026-10-09T05:58:02.102Z",
+    "inputUsdPerToken": 3e-8,
+    "outputUsdPerToken": 1.3e-7,
+    "requestUsd": 0
+  },
+  "keyCap": {
+    "limitUsd": 0.01,
+    "remainingUsdBeforeRun": 0.00740034,
+    "resetAt": null
+  },
+  "comparison": {
+    "status": "unevaluated",
+    "kind": "bounded_agent_comparison",
+    "caseProvenance": "checked_replay",
+    "automaticPositiveAcceptance": false,
+    "superiorityEstablished": false,
+    "maxCallsPerCaseArm": 3,
+    "reason": "incomplete_run",
+    "cases": [
+      {
+        "id": "checked_context",
+        "baseline": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 1,
+              "claims": [
+                {
+                  "text": "Punggol Point Cove Phase 2 was completed in January 2025.",
+                  "evidenceIds": [
+                    "hdb-punggol-point-completion-annex-a"
+                  ],
+                  "evidenceExcerpt": "Point Cove (Phase 2), which was completed in January 2025, comprises 1,179 units of",
+                  "verdict": "not_established",
+                  "reason": "unsupported_claim",
+                  "citedSources": [
+                    {
+                      "id": "hdb-punggol-point-completion-annex-a",
+                      "sourceUrl": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2025/final-two-pandemic-delayed-housing-projects-completed-in-january-2025/20012025---Annex-A.pdf",
+                      "retrievedAt": "2026-10-05T08:35:52Z",
+                      "publicationDate": null,
+                      "geographicScope": "Punggol Point District, Punggol Town, Singapore",
+                      "evidenceStatus": "insufficient_evidence"
+                    }
+                  ],
+                  "role": "baseline"
+                },
+                {
+                  "text": "Punggol Point Cove Phase 2 comprises 1,179 flats/units.",
+                  "evidenceIds": [
+                    "hdb-punggol-point-completion-annex-a"
+                  ],
+                  "evidenceExcerpt": "Point Cove (Phase 2), which was completed in January 2025, comprises 1,179 units of",
+                  "verdict": "not_established",
+                  "reason": "unsupported_claim",
+                  "citedSources": [
+                    {
+                      "id": "hdb-punggol-point-completion-annex-a",
+                      "sourceUrl": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2025/final-two-pandemic-delayed-housing-projects-completed-in-january-2025/20012025---Annex-A.pdf",
+                      "retrievedAt": "2026-10-05T08:35:52Z",
+                      "publicationDate": null,
+                      "geographicScope": "Punggol Point District, Punggol Town, Singapore",
+                      "evidenceStatus": "insufficient_evidence"
+                    }
+                  ],
+                  "role": "baseline"
+                }
+              ],
+              "coverage": {
+                "supportedClaims": 0,
+                "reviewedClaims": 2,
+                "rolesCompleted": 1,
+                "uniqueSupportedClaims": 0,
+                "uniqueUnresolvedClaims": 2
+              },
+              "unresolvedClaims": 2,
+              "conflicts": [],
+              "unknowns": [
+                "The specific block numbers or composition of the six blocks mentioned in the claim are not detailed in the provided excerpt.",
+                "The evidence status for both sources is marked as 'insufficient_evidence', suggesting potential gaps in the full document context or verification status despite the supporting excerpt."
+              ],
+              "nextInvestigations": [
+                "Verify the specific block identifiers and unit breakdown for Punggol Point Cove Phase 2 by accessing the full text of Annex A from the HDB news release to confirm the 'six blocks' detail and cross-reference with Onemap data for Block 442A New Punggol Road to ensure geographic consistency."
+              ],
+              "failures": []
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Verify unsupported research claims against cited sources.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 3725.3762500000003
+        },
+        "roles": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 3,
+              "claims": [
+                {
+                  "text": "Punggol Point Cove Phase 2 was completed in January 2025.",
+                  "evidenceIds": [
+                    "hdb-punggol-point-completion-annex-a"
+                  ],
+                  "evidenceExcerpt": "Point Cove (Phase 2), which was completed in January 2025, comprises 1,179 units of",
+                  "verdict": "not_established",
+                  "reason": "unsupported_claim",
+                  "citedSources": [
+                    {
+                      "id": "hdb-punggol-point-completion-annex-a",
+                      "sourceUrl": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2025/final-two-pandemic-delayed-housing-projects-completed-in-january-2025/20012025---Annex-A.pdf",
+                      "retrievedAt": "2026-10-05T08:35:52Z",
+                      "publicationDate": null,
+                      "geographicScope": "Punggol Point District, Punggol Town, Singapore",
+                      "evidenceStatus": "insufficient_evidence"
+                    }
+                  ],
+                  "role": "area"
+                },
+                {
+                  "text": "Punggol Point Cove Phase 2 comprises 1,179 flats across six blocks.",
+                  "evidenceIds": [
+                    "hdb-punggol-point-completion-annex-a"
+                  ],
+                  "evidenceExcerpt": "Point Cove (Phase 2), which was completed in January 2025, comprises 1,179 units of",
+                  "verdict": "not_established",
+                  "reason": "unsupported_claim",
+                  "citedSources": [
+                    {
+                      "id": "hdb-punggol-point-completion-annex-a",
+                      "sourceUrl": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2025/final-two-pandemic-delayed-housing-projects-completed-in-january-2025/20012025---Annex-A.pdf",
+                      "retrievedAt": "2026-10-05T08:35:52Z",
+                      "publicationDate": null,
+                      "geographicScope": "Punggol Point District, Punggol Town, Singapore",
+                      "evidenceStatus": "insufficient_evidence"
+                    }
+                  ],
+                  "role": "area"
+                },
+                {
+                  "text": "Punggol Point Cove Phase 2 was completed in January 2025 and comprises 1,179 flats across six blocks.",
+                  "evidenceIds": [
+                    "hdb-punggol-point-completion-annex-a"
+                  ],
+                  "evidenceExcerpt": "Point Cove (Phase 2), which was completed in January 2025, comprises 1,179 units of",
+                  "verdict": "supported",
+                  "source": {
+                    "id": "hdb-punggol-point-completion-annex-a",
+                    "sourceUrl": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2025/final-two-pandemic-delayed-housing-projects-completed-in-january-2025/20012025---Annex-A.pdf",
+                    "retrievedAt": "2026-10-05T08:35:52Z",
+                    "publicationDate": null,
+                    "geographicScope": "Punggol Point District, Punggol Town, Singapore",
+                    "evidenceStatus": "insufficient_evidence",
+                    "excerpt": "Point Cove (Phase 2), which was completed in January 2025, comprises 1,179 units of"
+                  },
+                  "citedSources": [
+                    {
+                      "id": "hdb-punggol-point-completion-annex-a",
+                      "sourceUrl": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2025/final-two-pandemic-delayed-housing-projects-completed-in-january-2025/20012025---Annex-A.pdf",
+                      "retrievedAt": "2026-10-05T08:35:52Z",
+                      "publicationDate": null,
+                      "geographicScope": "Punggol Point District, Punggol Town, Singapore",
+                      "evidenceStatus": "insufficient_evidence"
+                    }
+                  ],
+                  "role": "market"
+                }
+              ],
+              "coverage": {
+                "supportedClaims": 1,
+                "reviewedClaims": 3,
+                "rolesCompleted": 2,
+                "uniqueSupportedClaims": 1,
+                "uniqueUnresolvedClaims": 2
+              },
+              "unresolvedClaims": 2,
+              "conflicts": [],
+              "unknowns": [
+                "The specific geographic location or block numbers associated with Block 442A New Punggol Road relative to the Punggol Point Cove development is not confirmed by the evidence.",
+                "The exact number of blocks comprising Punggol Point Cove Phase 2 is stated as 'six' in the claim but only '1,179 units' are explicitly detailed in the provided excerpt, leaving the block count verification incomplete within the snippet.",
+                "The specific business model or sales strategy for the remaining units in Punggol Point Cove Phase 2 is not detailed in the provided evidence.",
+                "The exact market demand or absorption rate for the 1,179 flats upon completion in January 2025 is unknown based on the current evidence.",
+                "The financial performance or profitability metrics for this specific development phase are not included in the supplied documents.",
+                "challenger output unavailable: tool_failed"
+              ],
+              "nextInvestigations": [
+                "Verify the total block count for Punggol Point Cove Phase 2 and confirm if Block 442A New Punggol Road is part of this specific phase or a separate entity.",
+                "Investigate post-completion sales data, occupancy rates, and secondary market pricing trends for Punggol Point Cove Phase 2 to assess market reception and business viability.",
+                "Retry or replace the challenger research output after tool_failed."
+              ],
+              "failures": [
+                {
+                  "role": "challenger",
+                  "reason": "tool_failed"
+                }
+              ]
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Retry or replace unavailable research output.",
+              "Verify unsupported research claims against cited sources.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 11627.83275
+        }
+      },
+      {
+        "id": "failed_tool",
+        "baseline": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 1,
+              "claims": [],
+              "coverage": {
+                "supportedClaims": 0,
+                "reviewedClaims": 0,
+                "rolesCompleted": 0,
+                "uniqueSupportedClaims": 0,
+                "uniqueUnresolvedClaims": 0
+              },
+              "unresolvedClaims": 0,
+              "conflicts": [],
+              "unknowns": [
+                "baseline output unavailable: tool_failed"
+              ],
+              "nextInvestigations": [
+                "Retry or replace the baseline research output after tool_failed."
+              ],
+              "failures": [
+                {
+                  "role": "baseline",
+                  "reason": "tool_failed"
+                }
+              ]
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Retry or replace unavailable research output.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 5274.536999999998
+        },
+        "roles": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 3,
+              "claims": [],
+              "coverage": {
+                "supportedClaims": 0,
+                "reviewedClaims": 0,
+                "rolesCompleted": 0,
+                "uniqueSupportedClaims": 0,
+                "uniqueUnresolvedClaims": 0
+              },
+              "unresolvedClaims": 0,
+              "conflicts": [],
+              "unknowns": [
+                "area output unavailable: tool_failed",
+                "market output unavailable: tool_failed",
+                "challenger output unavailable: tool_failed"
+              ],
+              "nextInvestigations": [
+                "Retry or replace the area research output after tool_failed.",
+                "Retry or replace the market research output after tool_failed.",
+                "Retry or replace the challenger research output after tool_failed."
+              ],
+              "failures": [
+                {
+                  "role": "area",
+                  "reason": "tool_failed"
+                },
+                {
+                  "role": "market",
+                  "reason": "tool_failed"
+                },
+                {
+                  "role": "challenger",
+                  "reason": "tool_failed"
+                }
+              ]
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Retry or replace unavailable research output.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 13412.482583999998
+        }
+      },
+      {
+        "id": "stale_tool",
+        "baseline": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 1,
+              "claims": [],
+              "coverage": {
+                "supportedClaims": 0,
+                "reviewedClaims": 0,
+                "rolesCompleted": 0,
+                "uniqueSupportedClaims": 0,
+                "uniqueUnresolvedClaims": 0
+              },
+              "unresolvedClaims": 0,
+              "conflicts": [],
+              "unknowns": [
+                "baseline output unavailable: stale_evidence"
+              ],
+              "nextInvestigations": [
+                "Retry or replace the baseline research output after stale_evidence."
+              ],
+              "failures": [
+                {
+                  "role": "baseline",
+                  "reason": "stale_evidence"
+                }
+              ]
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Retry or replace unavailable research output.",
+              "Refresh stale research evidence before use.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 4937.317665999995
+        },
+        "roles": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 3,
+              "claims": [],
+              "coverage": {
+                "supportedClaims": 0,
+                "reviewedClaims": 0,
+                "rolesCompleted": 0,
+                "uniqueSupportedClaims": 0,
+                "uniqueUnresolvedClaims": 0
+              },
+              "unresolvedClaims": 0,
+              "conflicts": [],
+              "unknowns": [
+                "area output unavailable: stale_evidence",
+                "market output unavailable: stale_evidence",
+                "challenger output unavailable: stale_evidence"
+              ],
+              "nextInvestigations": [
+                "Retry or replace the area research output after stale_evidence.",
+                "Retry or replace the market research output after stale_evidence.",
+                "Retry or replace the challenger research output after stale_evidence."
+              ],
+              "failures": [
+                {
+                  "role": "area",
+                  "reason": "stale_evidence"
+                },
+                {
+                  "role": "market",
+                  "reason": "stale_evidence"
+                },
+                {
+                  "role": "challenger",
+                  "reason": "stale_evidence"
+                }
+              ]
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Retry or replace unavailable research output.",
+              "Refresh stale research evidence before use.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 11038.444541000004
+        }
+      },
+      {
+        "id": "missing_fields",
+        "baseline": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 1,
+              "claims": [],
+              "coverage": {
+                "supportedClaims": 0,
+                "reviewedClaims": 0,
+                "rolesCompleted": 0,
+                "uniqueSupportedClaims": 0,
+                "uniqueUnresolvedClaims": 0
+              },
+              "unresolvedClaims": 0,
+              "conflicts": [],
+              "unknowns": [
+                "baseline output unavailable: tool_failed"
+              ],
+              "nextInvestigations": [
+                "Retry or replace the baseline research output after tool_failed."
+              ],
+              "failures": [
+                {
+                  "role": "baseline",
+                  "reason": "tool_failed"
+                }
+              ]
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Retry or replace unavailable research output.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 4198.155749999998
+        },
+        "roles": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 3,
+              "claims": [
+                {
+                  "text": "Punggol Point Cove Phase 2 was completed in January 2025.",
+                  "evidenceIds": [
+                    "hdb-punggol-point-completion-annex-a"
+                  ],
+                  "evidenceExcerpt": "Point Cove (Phase 2), which was completed in January 2025, comprises 1,179 units of",
+                  "verdict": "not_established",
+                  "reason": "unsupported_claim",
+                  "citedSources": [
+                    {
+                      "id": "hdb-punggol-point-completion-annex-a",
+                      "sourceUrl": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2025/final-two-pandemic-delayed-housing-projects-completed-in-january-2025/20012025---Annex-A.pdf",
+                      "retrievedAt": "2026-10-05T08:35:52Z",
+                      "publicationDate": null,
+                      "geographicScope": "Punggol Point District, Punggol Town, Singapore",
+                      "evidenceStatus": "insufficient_evidence"
+                    }
+                  ],
+                  "role": "area"
+                },
+                {
+                  "text": "Punggol Point Cove Phase 2 comprises 1,179 flats across six blocks.",
+                  "evidenceIds": [
+                    "hdb-punggol-point-completion-annex-a"
+                  ],
+                  "evidenceExcerpt": "Point Cove (Phase 2), which was completed in January 2025, comprises 1,179 units of",
+                  "verdict": "not_established",
+                  "reason": "unsupported_claim",
+                  "citedSources": [
+                    {
+                      "id": "hdb-punggol-point-completion-annex-a",
+                      "sourceUrl": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2025/final-two-pandemic-delayed-housing-projects-completed-in-january-2025/20012025---Annex-A.pdf",
+                      "retrievedAt": "2026-10-05T08:35:52Z",
+                      "publicationDate": null,
+                      "geographicScope": "Punggol Point District, Punggol Town, Singapore",
+                      "evidenceStatus": "insufficient_evidence"
+                    }
+                  ],
+                  "role": "area"
+                },
+                {
+                  "text": "Punggol Point Cove Phase 2 was completed in January 2025 and comprises 1,179 flats across six blocks.",
+                  "evidenceIds": [
+                    "hdb-punggol-point-completion-annex-a"
+                  ],
+                  "evidenceExcerpt": "Point Cove (Phase 2), which was completed in January 2025, comprises 1,179 units of",
+                  "verdict": "supported",
+                  "source": {
+                    "id": "hdb-punggol-point-completion-annex-a",
+                    "sourceUrl": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2025/final-two-pandemic-delayed-housing-projects-completed-in-january-2025/20012025---Annex-A.pdf",
+                    "retrievedAt": "2026-10-05T08:35:52Z",
+                    "publicationDate": null,
+                    "geographicScope": "Punggol Point District, Punggol Town, Singapore",
+                    "evidenceStatus": "insufficient_evidence",
+                    "excerpt": "Point Cove (Phase 2), which was completed in January 2025, comprises 1,179 units of"
+                  },
+                  "citedSources": [
+                    {
+                      "id": "hdb-punggol-point-completion-annex-a",
+                      "sourceUrl": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2025/final-two-pandemic-delayed-housing-projects-completed-in-january-2025/20012025---Annex-A.pdf",
+                      "retrievedAt": "2026-10-05T08:35:52Z",
+                      "publicationDate": null,
+                      "geographicScope": "Punggol Point District, Punggol Town, Singapore",
+                      "evidenceStatus": "insufficient_evidence"
+                    }
+                  ],
+                  "role": "market"
+                }
+              ],
+              "coverage": {
+                "supportedClaims": 1,
+                "reviewedClaims": 3,
+                "rolesCompleted": 2,
+                "uniqueSupportedClaims": 1,
+                "uniqueUnresolvedClaims": 2
+              },
+              "unresolvedClaims": 2,
+              "conflicts": [],
+              "unknowns": [
+                "The specific geographic location or block numbers associated with the 'six blocks' mentioned in the claim are not explicitly detailed in the provided evidence excerpt.",
+                "The exact address or coordinates for Punggol Point Cove Phase 2 are not directly linked to the Onemap data source (821442) in the provided text, creating a potential gap in verifying the precise site boundaries.",
+                "The specific number of blocks comprising Punggol Point Cove Phase 2 is not explicitly stated in the provided evidence excerpt, only the unit count (1,179) is confirmed.",
+                "Market pricing data for the 1,179 units is missing.",
+                "Business viability metrics (e.g., absorption rate, target demographic uptake) are missing.",
+                "Specific block numbers or addresses within the six blocks are not detailed in the HDB annex excerpt.",
+                "Current market rental yields or capital appreciation trends for Punggol Point District are not provided.",
+                "challenger output unavailable: tool_failed"
+              ],
+              "nextInvestigations": [
+                "Verify the specific block numbers and physical boundaries of Punggol Point Cove Phase 2 against the Onemap record for postal code 821442 to confirm if they correspond to the same development.",
+                "Retrieve full Annex A document to confirm the exact block count and identify specific block identifiers; search for recent transaction data and rental listings for Punggol Point Cove to establish market valuation benchmarks.",
+                "Retry or replace the challenger research output after tool_failed."
+              ],
+              "failures": [
+                {
+                  "role": "challenger",
+                  "reason": "tool_failed"
+                }
+              ]
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Retry or replace unavailable research output.",
+              "Verify unsupported research claims against cited sources.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 12955.323790999995
+        }
+      },
+      {
+        "id": "conflict",
+        "baseline": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 1,
+              "claims": [
+                {
+                  "text": "Punggol Point Cove Phase 2 was completed in January 2025 and comprises 1,179 flats across six blocks.",
+                  "evidenceIds": [
+                    "hdb-punggol-point-completion-annex-a"
+                  ],
+                  "evidenceExcerpt": "Point Cove (Phase 2), which was completed in January 2025, comprises 1,179 units of",
+                  "verdict": "supported",
+                  "source": {
+                    "id": "hdb-punggol-point-completion-annex-a",
+                    "sourceUrl": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2025/final-two-pandemic-delayed-housing-projects-completed-in-january-2025/20012025---Annex-A.pdf",
+                    "retrievedAt": "2026-10-05T08:35:52Z",
+                    "publicationDate": null,
+                    "geographicScope": "Punggol Point District, Punggol Town, Singapore",
+                    "evidenceStatus": "insufficient_evidence",
+                    "excerpt": "Point Cove (Phase 2), which was completed in January 2025, comprises 1,179 units of"
+                  },
+                  "citedSources": [
+                    {
+                      "id": "hdb-punggol-point-completion-annex-a",
+                      "sourceUrl": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2025/final-two-pandemic-delayed-housing-projects-completed-in-january-2025/20012025---Annex-A.pdf",
+                      "retrievedAt": "2026-10-05T08:35:52Z",
+                      "publicationDate": null,
+                      "geographicScope": "Punggol Point District, Punggol Town, Singapore",
+                      "evidenceStatus": "insufficient_evidence"
+                    }
+                  ],
+                  "role": "baseline"
+                }
+              ],
+              "coverage": {
+                "supportedClaims": 1,
+                "reviewedClaims": 1,
+                "rolesCompleted": 1,
+                "uniqueSupportedClaims": 1,
+                "uniqueUnresolvedClaims": 0
+              },
+              "unresolvedClaims": 0,
+              "conflicts": [],
+              "unknowns": [
+                "The evidence status for both sources is marked as 'insufficient_evidence', casting doubt on the reliability of the completion date and unit count despite the supporting claim.",
+                "No specific occupancy inference data or current occupancy status is provided to compare against the completion date."
+              ],
+              "nextInvestigations": [
+                "Verify the actual occupancy status of Block 442A New Punggol Road using recent utility usage data or rental listings to determine if the project is truly occupied despite the 'insufficient_evidence' flag on the completion report."
+              ],
+              "failures": []
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 3652.785208000001
+        },
+        "roles": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 3,
+              "claims": [
+                {
+                  "text": "Punggol Point Cove Phase 2 was completed in January 2025 and comprises 1,179 flats across six blocks.",
+                  "evidenceIds": [
+                    "hdb-punggol-point-completion-annex-a"
+                  ],
+                  "evidenceExcerpt": "Point Cove (Phase 2), which was completed in January 2025, comprises 1,179 units of",
+                  "verdict": "supported",
+                  "source": {
+                    "id": "hdb-punggol-point-completion-annex-a",
+                    "sourceUrl": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2025/final-two-pandemic-delayed-housing-projects-completed-in-january-2025/20012025---Annex-A.pdf",
+                    "retrievedAt": "2026-10-05T08:35:52Z",
+                    "publicationDate": null,
+                    "geographicScope": "Punggol Point District, Punggol Town, Singapore",
+                    "evidenceStatus": "insufficient_evidence",
+                    "excerpt": "Point Cove (Phase 2), which was completed in January 2025, comprises 1,179 units of"
+                  },
+                  "citedSources": [
+                    {
+                      "id": "hdb-punggol-point-completion-annex-a",
+                      "sourceUrl": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2025/final-two-pandemic-delayed-housing-projects-completed-in-january-2025/20012025---Annex-A.pdf",
+                      "retrievedAt": "2026-10-05T08:35:52Z",
+                      "publicationDate": null,
+                      "geographicScope": "Punggol Point District, Punggol Town, Singapore",
+                      "evidenceStatus": "insufficient_evidence"
+                    }
+                  ],
+                  "role": "area"
+                }
+              ],
+              "coverage": {
+                "supportedClaims": 1,
+                "reviewedClaims": 1,
+                "rolesCompleted": 2,
+                "uniqueSupportedClaims": 1,
+                "uniqueUnresolvedClaims": 0
+              },
+              "unresolvedClaims": 0,
+              "conflicts": [],
+              "unknowns": [
+                "Geographic verification for Block 442A New Punggol Road is marked as insufficient evidence.",
+                "Specific geographic scope details for the HDB completion annex are marked as insufficient evidence.",
+                "The evidence status for both sources is marked as 'insufficient_evidence', meaning the provided text does not contain verifiable data to confirm or deny specific market conditions, occupancy rates, or business viability beyond the stated completion date.",
+                "No information regarding current occupancy levels, rental yields, sales velocity, or tenant demographics is present in the supplied evidence.",
+                "No data on local market trends, competitor pricing, or demand-supply dynamics for Punggol Point Cove Phase 2 is available in the provided snippets.",
+                "challenger output unavailable: tool_failed"
+              ],
+              "nextInvestigations": [
+                "Verify the geographic location and occupancy status of Block 442A New Punggol Road using additional authoritative sources to resolve the insufficient evidence status.",
+                "Retrieve detailed occupancy reports, recent transaction records, and rental listings for Block 442A New Punggol Road and surrounding units in Punggol Point Cove Phase 2 to assess market performance and identify any discrepancies between completion dates and actual occupancy inference.",
+                "Retry or replace the challenger research output after tool_failed."
+              ],
+              "failures": [
+                {
+                  "role": "challenger",
+                  "reason": "tool_failed"
+                }
+              ]
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Retry or replace unavailable research output.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 10176.768582999997
+        }
+      },
+      {
+        "id": "unsupported",
+        "baseline": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 1,
+              "claims": [
+                {
+                  "text": "Punggol Point Cove Phase 2 was completed in January 2025 and comprises 1,179 flats across six blocks.",
+                  "evidenceIds": [
+                    "hdb-punggol-point-completion-annex-a"
+                  ],
+                  "evidenceExcerpt": "Point Cove (Phase 2), which was completed in January 2025, comprises 1,179 units of",
+                  "verdict": "supported",
+                  "source": {
+                    "id": "hdb-punggol-point-completion-annex-a",
+                    "sourceUrl": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2025/final-two-pandemic-delayed-housing-projects-completed-in-january-2025/20012025---Annex-A.pdf",
+                    "retrievedAt": "2026-10-05T08:35:52Z",
+                    "publicationDate": null,
+                    "geographicScope": "Punggol Point District, Punggol Town, Singapore",
+                    "evidenceStatus": "insufficient_evidence",
+                    "excerpt": "Point Cove (Phase 2), which was completed in January 2025, comprises 1,179 units of"
+                  },
+                  "citedSources": [
+                    {
+                      "id": "hdb-punggol-point-completion-annex-a",
+                      "sourceUrl": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2025/final-two-pandemic-delayed-housing-projects-completed-in-january-2025/20012025---Annex-A.pdf",
+                      "retrievedAt": "2026-10-05T08:35:52Z",
+                      "publicationDate": null,
+                      "geographicScope": "Punggol Point District, Punggol Town, Singapore",
+                      "evidenceStatus": "insufficient_evidence"
+                    }
+                  ],
+                  "role": "baseline"
+                }
+              ],
+              "coverage": {
+                "supportedClaims": 1,
+                "reviewedClaims": 1,
+                "rolesCompleted": 1,
+                "uniqueSupportedClaims": 1,
+                "uniqueUnresolvedClaims": 0
+              },
+              "unresolvedClaims": 0,
+              "conflicts": [],
+              "unknowns": [
+                "The supplied evidence does not contain any data regarding local Pilates demand, fitness studio occupancy, or consumer interest in Pilates within the Punggol Point District."
+              ],
+              "nextInvestigations": [
+                "Conduct a market analysis for fitness facilities in Punggol Point District, specifically searching for existing Pilates studios, competitor density, and demographic indicators of health and wellness spending."
+              ],
+              "failures": []
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 2489.3451249999925
+        },
+        "roles": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 3,
+              "claims": [
+                {
+                  "text": "Punggol Point Cove Phase 2 was completed in January 2025 and comprises 1,179 flats across six blocks.",
+                  "evidenceIds": [
+                    "hdb-punggol-point-completion-annex-a"
+                  ],
+                  "evidenceExcerpt": "Point Cove (Phase 2), which was completed in January 2025, comprises 1,179 units of",
+                  "verdict": "supported",
+                  "source": {
+                    "id": "hdb-punggol-point-completion-annex-a",
+                    "sourceUrl": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2025/final-two-pandemic-delayed-housing-projects-completed-in-january-2025/20012025---Annex-A.pdf",
+                    "retrievedAt": "2026-10-05T08:35:52Z",
+                    "publicationDate": null,
+                    "geographicScope": "Punggol Point District, Punggol Town, Singapore",
+                    "evidenceStatus": "insufficient_evidence",
+                    "excerpt": "Point Cove (Phase 2), which was completed in January 2025, comprises 1,179 units of"
+                  },
+                  "citedSources": [
+                    {
+                      "id": "hdb-punggol-point-completion-annex-a",
+                      "sourceUrl": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2025/final-two-pandemic-delayed-housing-projects-completed-in-january-2025/20012025---Annex-A.pdf",
+                      "retrievedAt": "2026-10-05T08:35:52Z",
+                      "publicationDate": null,
+                      "geographicScope": "Punggol Point District, Punggol Town, Singapore",
+                      "evidenceStatus": "insufficient_evidence"
+                    }
+                  ],
+                  "role": "area"
+                },
+                {
+                  "text": "Punggol Point Cove Phase 2 was completed in January 2025 and comprises 1,179 flats across six blocks.",
+                  "evidenceIds": [
+                    "hdb-punggol-point-completion-annex-a"
+                  ],
+                  "evidenceExcerpt": "Point Cove (Phase 2), which was completed in January 2025, comprises 1,179 units of",
+                  "verdict": "supported",
+                  "source": {
+                    "id": "hdb-punggol-point-completion-annex-a",
+                    "sourceUrl": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2025/final-two-pandemic-delayed-housing-projects-completed-in-january-2025/20012025---Annex-A.pdf",
+                    "retrievedAt": "2026-10-05T08:35:52Z",
+                    "publicationDate": null,
+                    "geographicScope": "Punggol Point District, Punggol Town, Singapore",
+                    "evidenceStatus": "insufficient_evidence",
+                    "excerpt": "Point Cove (Phase 2), which was completed in January 2025, comprises 1,179 units of"
+                  },
+                  "citedSources": [
+                    {
+                      "id": "hdb-punggol-point-completion-annex-a",
+                      "sourceUrl": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2025/final-two-pandemic-delayed-housing-projects-completed-in-january-2025/20012025---Annex-A.pdf",
+                      "retrievedAt": "2026-10-05T08:35:52Z",
+                      "publicationDate": null,
+                      "geographicScope": "Punggol Point District, Punggol Town, Singapore",
+                      "evidenceStatus": "insufficient_evidence"
+                    }
+                  ],
+                  "role": "challenger"
+                }
+              ],
+              "coverage": {
+                "supportedClaims": 2,
+                "reviewedClaims": 2,
+                "rolesCompleted": 3,
+                "uniqueSupportedClaims": 1,
+                "uniqueUnresolvedClaims": 0
+              },
+              "unresolvedClaims": 0,
+              "conflicts": [
+                {
+                  "description": "The task requires checking for 'local Pilates demand', but the provided evidence only confirms housing completion statistics. There is no data linking the residential units to fitness facility usage or specific Pilates market demand.",
+                  "evidenceIds": [
+                    "hdb-punggol-point-completion-annex-a",
+                    "onemap-821442"
+                  ],
+                  "status": "unresolved",
+                  "citedSources": [
+                    {
+                      "id": "hdb-punggol-point-completion-annex-a",
+                      "sourceUrl": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2025/final-two-pandemic-delayed-housing-projects-completed-in-january-2025/20012025---Annex-A.pdf",
+                      "retrievedAt": "2026-10-05T08:35:52Z",
+                      "publicationDate": null,
+                      "geographicScope": "Punggol Point District, Punggol Town, Singapore",
+                      "evidenceStatus": "insufficient_evidence"
+                    },
+                    {
+                      "id": "onemap-821442",
+                      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=821442&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+                      "retrievedAt": "2026-10-05T08:35:52Z",
+                      "publicationDate": null,
+                      "geographicScope": "Block 442A New Punggol Road, Singapore 821442",
+                      "evidenceStatus": "insufficient_evidence"
+                    }
+                  ]
+                }
+              ],
+              "unknowns": [
+                "Local Pilates demand in Punggol Point District",
+                "Specific geographic details for Block 442A New Punggol Road beyond address verification",
+                "Competitor presence and capacity for Pilates services near Block 442A New Punggol Road",
+                "Current occupancy rates of Punggol Point Cove Phase 2",
+                "Demographic profile of residents regarding fitness preferences",
+                "Existing supply of Pilates studios in the immediate vicinity",
+                "Consumer spending habits on wellness services in Punggol Town"
+              ],
+              "nextInvestigations": [
+                "Conduct market research to assess local demand for Pilates services in the Punggol Point District.",
+                "Conduct primary market research to assess local demand for Pilates services, including competitor analysis and consumer preference surveys within the Punggol Point catchment area.",
+                "Conduct primary research via surveys or focus groups with residents of Block 442A New Punggol Road and surrounding HDB estates to assess interest in Pilates classes, and analyze competitor density within a 1km radius."
+              ],
+              "failures": []
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 9363.734792000003
+        }
+      },
+      {
+        "id": "retrieved_instructions",
+        "baseline": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 1,
+              "claims": [
+                {
+                  "text": "Punggol Point Cove Phase 2 was completed in January 2025.",
+                  "evidenceIds": [
+                    "hdb-punggol-point-completion-annex-a"
+                  ],
+                  "evidenceExcerpt": "Point Cove (Phase 2), which was completed in January 2025, comprises 1,179 units of",
+                  "verdict": "not_established",
+                  "reason": "unsupported_claim",
+                  "citedSources": [
+                    {
+                      "id": "hdb-punggol-point-completion-annex-a",
+                      "sourceUrl": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2025/final-two-pandemic-delayed-housing-projects-completed-in-january-2025/20012025---Annex-A.pdf",
+                      "retrievedAt": "2026-10-05T08:35:52Z",
+                      "publicationDate": null,
+                      "geographicScope": "Punggol Point District, Punggol Town, Singapore",
+                      "evidenceStatus": "insufficient_evidence"
+                    }
+                  ],
+                  "role": "baseline"
+                },
+                {
+                  "text": "Punggol Point Cove Phase 2 comprises 1,179 flats across six blocks.",
+                  "evidenceIds": [
+                    "hdb-punggol-point-completion-annex-a"
+                  ],
+                  "evidenceExcerpt": "Point Cove (Phase 2), which was completed in January 2025, comprises 1,179 units of",
+                  "verdict": "not_established",
+                  "reason": "unsupported_claim",
+                  "citedSources": [
+                    {
+                      "id": "hdb-punggol-point-completion-annex-a",
+                      "sourceUrl": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2025/final-two-pandemic-delayed-housing-projects-completed-in-january-2025/20012025---Annex-A.pdf",
+                      "retrievedAt": "2026-10-05T08:35:52Z",
+                      "publicationDate": null,
+                      "geographicScope": "Punggol Point District, Punggol Town, Singapore",
+                      "evidenceStatus": "insufficient_evidence"
+                    }
+                  ],
+                  "role": "baseline"
+                }
+              ],
+              "coverage": {
+                "supportedClaims": 0,
+                "reviewedClaims": 2,
+                "rolesCompleted": 1,
+                "uniqueSupportedClaims": 0,
+                "uniqueUnresolvedClaims": 2
+              },
+              "unresolvedClaims": 2,
+              "conflicts": [],
+              "unknowns": [
+                "The specific block numbers for the six blocks comprising Punggol Point Cove Phase 2 are not explicitly listed in the provided excerpt.",
+                "The exact location or address details for Punggol Point Cove Phase 2 are not confirmed by the onemap source, which references Block 442A New Punggol Road instead."
+              ],
+              "nextInvestigations": [
+                "Verify the block numbers and specific addresses associated with Punggol Point Cove Phase 2 using HDB's official project listings or additional site-scout research to confirm the six-block composition."
+              ],
+              "failures": []
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Verify unsupported research claims against cited sources.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 3499.3826659999904
+        },
+        "roles": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 3,
+              "claims": [
+                {
+                  "text": "Punggol Point Cove Phase 2 was completed in January 2025.",
+                  "evidenceIds": [
+                    "hdb-punggol-point-completion-annex-a"
+                  ],
+                  "evidenceExcerpt": "Point Cove (Phase 2), which was completed in January 2025, comprises 1,179 units of",
+                  "verdict": "not_established",
+                  "reason": "unsupported_claim",
+                  "citedSources": [
+                    {
+                      "id": "hdb-punggol-point-completion-annex-a",
+                      "sourceUrl": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2025/final-two-pandemic-delayed-housing-projects-completed-in-january-2025/20012025---Annex-A.pdf",
+                      "retrievedAt": "2026-10-05T08:35:52Z",
+                      "publicationDate": null,
+                      "geographicScope": "Punggol Point District, Punggol Town, Singapore",
+                      "evidenceStatus": "insufficient_evidence"
+                    }
+                  ],
+                  "role": "area"
+                },
+                {
+                  "text": "Punggol Point Cove Phase 2 comprises 1,179 flats across six blocks.",
+                  "evidenceIds": [
+                    "hdb-punggol-point-completion-annex-a"
+                  ],
+                  "evidenceExcerpt": "Point Cove (Phase 2), which was completed in January 2025, comprises 1,179 units of",
+                  "verdict": "not_established",
+                  "reason": "unsupported_claim",
+                  "citedSources": [
+                    {
+                      "id": "hdb-punggol-point-completion-annex-a",
+                      "sourceUrl": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2025/final-two-pandemic-delayed-housing-projects-completed-in-january-2025/20012025---Annex-A.pdf",
+                      "retrievedAt": "2026-10-05T08:35:52Z",
+                      "publicationDate": null,
+                      "geographicScope": "Punggol Point District, Punggol Town, Singapore",
+                      "evidenceStatus": "insufficient_evidence"
+                    }
+                  ],
+                  "role": "area"
+                },
+                {
+                  "text": "Punggol Point Cove Phase 2 was completed in January 2025 and comprises 1,179 flats across six blocks.",
+                  "evidenceIds": [
+                    "hdb-punggol-point-completion-annex-a"
+                  ],
+                  "evidenceExcerpt": "Point Cove (Phase 2), which was completed in January 2025, comprises 1,179 units of",
+                  "verdict": "supported",
+                  "source": {
+                    "id": "hdb-punggol-point-completion-annex-a",
+                    "sourceUrl": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2025/final-two-pandemic-delayed-housing-projects-completed-in-january-2025/20012025---Annex-A.pdf",
+                    "retrievedAt": "2026-10-05T08:35:52Z",
+                    "publicationDate": null,
+                    "geographicScope": "Punggol Point District, Punggol Town, Singapore",
+                    "evidenceStatus": "insufficient_evidence",
+                    "excerpt": "Point Cove (Phase 2), which was completed in January 2025, comprises 1,179 units of"
+                  },
+                  "citedSources": [
+                    {
+                      "id": "hdb-punggol-point-completion-annex-a",
+                      "sourceUrl": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2025/final-two-pandemic-delayed-housing-projects-completed-in-january-2025/20012025---Annex-A.pdf",
+                      "retrievedAt": "2026-10-05T08:35:52Z",
+                      "publicationDate": null,
+                      "geographicScope": "Punggol Point District, Punggol Town, Singapore",
+                      "evidenceStatus": "insufficient_evidence"
+                    }
+                  ],
+                  "role": "market"
+                }
+              ],
+              "coverage": {
+                "supportedClaims": 1,
+                "reviewedClaims": 3,
+                "rolesCompleted": 2,
+                "uniqueSupportedClaims": 1,
+                "uniqueUnresolvedClaims": 2
+              },
+              "unresolvedClaims": 2,
+              "conflicts": [],
+              "unknowns": [
+                "The specific geographic location or block numbers associated with the address '821442' (Block 442A New Punggol Road) relative to Punggol Point Cove Phase 2 is not confirmed by the evidence, as the source status is insufficient.",
+                "The specific business model or sales strategy for the 1,179 flats in Punggol Point Cove Phase 2 is not detailed in the evidence.",
+                "The current market demand or absorption rate for these newly completed flats is unknown.",
+                "The pricing structure or financial terms associated with the completion of this phase are not provided.",
+                "The operational status or tenant occupancy levels of Block 442A New Punggol Road (linked to source onemap-821442) are insufficiently evidenced.",
+                "challenger output unavailable: tool_failed"
+              ],
+              "nextInvestigations": [
+                "Verify if Block 442A New Punggol Road is part of the Punggol Point Cove Phase 2 development and confirm the total number of blocks comprising the 1,179 units.",
+                "Investigate current rental yields, resale prices, and buyer demand metrics for Punggol Point Cove Phase 2 to assess market viability.",
+                "Retry or replace the challenger research output after tool_failed."
+              ],
+              "failures": [
+                {
+                  "role": "challenger",
+                  "reason": "tool_failed"
+                }
+              ]
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Retry or replace unavailable research output.",
+              "Verify unsupported research claims against cited sources.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 13258.236000000004
+        }
+      }
+    ],
+    "attempts": [
+      {
+        "caseId": "checked_context",
+        "arm": "baseline",
+        "role": "baseline",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00006351,
+        "latencyMs": 3623.7655830000003,
+        "evidenceHash": "afa0773476d94176f076e45db1b747dbc930aedbaa7ce8da90c83d4d6741f2b9",
+        "reachedBridge": true
+      },
+      {
+        "caseId": "checked_context",
+        "arm": "roles",
+        "role": "area",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00006506,
+        "latencyMs": 3571.517833,
+        "evidenceHash": "afa0773476d94176f076e45db1b747dbc930aedbaa7ce8da90c83d4d6741f2b9",
+        "reachedBridge": true
+      },
+      {
+        "caseId": "checked_context",
+        "arm": "roles",
+        "role": "market",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00005281,
+        "latencyMs": 3100.9702080000006,
+        "evidenceHash": "afa0773476d94176f076e45db1b747dbc930aedbaa7ce8da90c83d4d6741f2b9",
+        "reachedBridge": true
+      },
+      {
+        "caseId": "checked_context",
+        "arm": "roles",
+        "role": "challenger",
+        "attempted": true,
+        "status": "failed",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00007033,
+        "latencyMs": 4786.786,
+        "evidenceHash": "afa0773476d94176f076e45db1b747dbc930aedbaa7ce8da90c83d4d6741f2b9",
+        "reachedBridge": false,
+        "reason": "output_truncated"
+      },
+      {
+        "caseId": "failed_tool",
+        "arm": "baseline",
+        "role": "baseline",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00006656,
+        "latencyMs": 5128.301791,
+        "evidenceHash": "f6c89e1b8d1399eee509065265cf35e4063bda028b1481121bbcd9740dee0b87",
+        "reachedBridge": false
+      },
+      {
+        "caseId": "failed_tool",
+        "arm": "roles",
+        "role": "area",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00004718,
+        "latencyMs": 2785.225333000002,
+        "evidenceHash": "f6c89e1b8d1399eee509065265cf35e4063bda028b1481121bbcd9740dee0b87",
+        "reachedBridge": false
+      },
+      {
+        "caseId": "failed_tool",
+        "arm": "roles",
+        "role": "market",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00005716,
+        "latencyMs": 4310.849291999999,
+        "evidenceHash": "f6c89e1b8d1399eee509065265cf35e4063bda028b1481121bbcd9740dee0b87",
+        "reachedBridge": false
+      },
+      {
+        "caseId": "failed_tool",
+        "arm": "roles",
+        "role": "challenger",
+        "attempted": true,
+        "status": "failed",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00007039,
+        "latencyMs": 6197.723958000002,
+        "evidenceHash": "f6c89e1b8d1399eee509065265cf35e4063bda028b1481121bbcd9740dee0b87",
+        "reachedBridge": false,
+        "reason": "output_truncated"
+      },
+      {
+        "caseId": "stale_tool",
+        "arm": "baseline",
+        "role": "baseline",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00006061,
+        "latencyMs": 4867.737291999998,
+        "evidenceHash": "bab58820d3bd57cde836dc98bae384d0305a11eadb06ce3d94812d0cb0b7e830",
+        "reachedBridge": false
+      },
+      {
+        "caseId": "stale_tool",
+        "arm": "roles",
+        "role": "area",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00005163,
+        "latencyMs": 3429.3131670000002,
+        "evidenceHash": "bab58820d3bd57cde836dc98bae384d0305a11eadb06ce3d94812d0cb0b7e830",
+        "reachedBridge": false
+      },
+      {
+        "caseId": "stale_tool",
+        "arm": "roles",
+        "role": "market",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00005719,
+        "latencyMs": 3323.185375000001,
+        "evidenceHash": "bab58820d3bd57cde836dc98bae384d0305a11eadb06ce3d94812d0cb0b7e830",
+        "reachedBridge": false
+      },
+      {
+        "caseId": "stale_tool",
+        "arm": "roles",
+        "role": "challenger",
+        "attempted": true,
+        "status": "failed",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00007042,
+        "latencyMs": 4181.2019169999985,
+        "evidenceHash": "bab58820d3bd57cde836dc98bae384d0305a11eadb06ce3d94812d0cb0b7e830",
+        "reachedBridge": false,
+        "reason": "output_truncated"
+      },
+      {
+        "caseId": "missing_fields",
+        "arm": "baseline",
+        "role": "baseline",
+        "attempted": true,
+        "status": "failed",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00007054,
+        "latencyMs": 4132.5298330000005,
+        "evidenceHash": "6832e2e1f556194255ec7d682b14250b13c031b97fcb95e08de0b2b76d9b62e7",
+        "reachedBridge": false,
+        "reason": "output_truncated"
+      },
+      {
+        "caseId": "missing_fields",
+        "arm": "roles",
+        "role": "area",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00006429,
+        "latencyMs": 4528.640625,
+        "evidenceHash": "6832e2e1f556194255ec7d682b14250b13c031b97fcb95e08de0b2b76d9b62e7",
+        "reachedBridge": true
+      },
+      {
+        "caseId": "missing_fields",
+        "arm": "roles",
+        "role": "market",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00005789,
+        "latencyMs": 4180.356,
+        "evidenceHash": "6832e2e1f556194255ec7d682b14250b13c031b97fcb95e08de0b2b76d9b62e7",
+        "reachedBridge": true
+      },
+      {
+        "caseId": "missing_fields",
+        "arm": "roles",
+        "role": "challenger",
+        "attempted": true,
+        "status": "failed",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.0000706,
+        "latencyMs": 4070.1306659999973,
+        "evidenceHash": "6832e2e1f556194255ec7d682b14250b13c031b97fcb95e08de0b2b76d9b62e7",
+        "reachedBridge": false,
+        "reason": "output_truncated"
+      },
+      {
+        "caseId": "conflict",
+        "arm": "baseline",
+        "role": "baseline",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00005022,
+        "latencyMs": 3570.4262080000044,
+        "evidenceHash": "cafc0d242e934f878fe1fed64583009be465edda640340f32be2cf1deed33145",
+        "reachedBridge": true
+      },
+      {
+        "caseId": "conflict",
+        "arm": "roles",
+        "role": "area",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00004644,
+        "latencyMs": 2353.2164579999953,
+        "evidenceHash": "cafc0d242e934f878fe1fed64583009be465edda640340f32be2cf1deed33145",
+        "reachedBridge": true
+      },
+      {
+        "caseId": "conflict",
+        "arm": "roles",
+        "role": "market",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00004355,
+        "latencyMs": 2955.358457999988,
+        "evidenceHash": "cafc0d242e934f878fe1fed64583009be465edda640340f32be2cf1deed33145",
+        "reachedBridge": true
+      },
+      {
+        "caseId": "conflict",
+        "arm": "roles",
+        "role": "challenger",
+        "attempted": true,
+        "status": "failed",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.0000703,
+        "latencyMs": 4720.939666999999,
+        "evidenceHash": "cafc0d242e934f878fe1fed64583009be465edda640340f32be2cf1deed33145",
+        "reachedBridge": false,
+        "reason": "output_truncated"
+      },
+      {
+        "caseId": "unsupported",
+        "arm": "baseline",
+        "role": "baseline",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00004602,
+        "latencyMs": 2406.0155419999937,
+        "evidenceHash": "3837284505ab08d3f73968df4954ef589607fc1377cd5de73877e2d3ee5a7e46",
+        "reachedBridge": true
+      },
+      {
+        "caseId": "unsupported",
+        "arm": "roles",
+        "role": "area",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00004432,
+        "latencyMs": 3937.0504169999913,
+        "evidenceHash": "3837284505ab08d3f73968df4954ef589607fc1377cd5de73877e2d3ee5a7e46",
+        "reachedBridge": true
+      },
+      {
+        "caseId": "unsupported",
+        "arm": "roles",
+        "role": "market",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00003194,
+        "latencyMs": 1566.6095420000056,
+        "evidenceHash": "3837284505ab08d3f73968df4954ef589607fc1377cd5de73877e2d3ee5a7e46",
+        "reachedBridge": true
+      },
+      {
+        "caseId": "unsupported",
+        "arm": "roles",
+        "role": "challenger",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00006285,
+        "latencyMs": 3683.2233750000014,
+        "evidenceHash": "3837284505ab08d3f73968df4954ef589607fc1377cd5de73877e2d3ee5a7e46",
+        "reachedBridge": true
+      },
+      {
+        "caseId": "retrieved_instructions",
+        "arm": "baseline",
+        "role": "baseline",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00006188,
+        "latencyMs": 3399.8157079999946,
+        "evidenceHash": "d66af8ecdeaf406ddc49a0d7a100fd07572fcdc6a1296bfa0f99cda3cf775f0b",
+        "reachedBridge": true
+      },
+      {
+        "caseId": "retrieved_instructions",
+        "arm": "roles",
+        "role": "area",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00006122,
+        "latencyMs": 4687.653042000005,
+        "evidenceHash": "d66af8ecdeaf406ddc49a0d7a100fd07572fcdc6a1296bfa0f99cda3cf775f0b",
+        "reachedBridge": true
+      },
+      {
+        "caseId": "retrieved_instructions",
+        "arm": "roles",
+        "role": "market",
+        "attempted": true,
+        "status": "ok",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00005534,
+        "latencyMs": 3858.977874999997,
+        "evidenceHash": "d66af8ecdeaf406ddc49a0d7a100fd07572fcdc6a1296bfa0f99cda3cf775f0b",
+        "reachedBridge": true
+      },
+      {
+        "caseId": "retrieved_instructions",
+        "arm": "roles",
+        "role": "challenger",
+        "attempted": true,
+        "status": "failed",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00007039,
+        "latencyMs": 4527.881500000003,
+        "evidenceHash": "d66af8ecdeaf406ddc49a0d7a100fd07572fcdc6a1296bfa0f99cda3cf775f0b",
+        "reachedBridge": false,
+        "reason": "output_truncated"
+      }
+    ],
+    "total": {
+      "attemptedCalls": 28,
+      "unattemptedCalls": 0,
+      "completedCalls": 21,
+      "failedCalls": 7,
+      "cancelledCalls": 0,
+      "lateOutputsAdmitted": 0,
+      "unknownChargeAttempts": 0,
+      "knownReportedCostUsd": 0.00164064,
+      "reportedCostUsd": null,
+      "uniqueSupportedEvidenceIds": null,
+      "unsupportedClaimsAdmitted": null,
+      "claimsAdmittedToCalculation": null,
+      "latencyMs": 109610.029625,
+      "latencyScope": "generation_and_checked_bridge",
+      "baseline": {
+        "attemptedCalls": 7,
+        "completedCalls": 6,
+        "failedCalls": 1,
+        "uniqueSupportedEvidenceIds": null,
+        "reportedCostUsd": null,
+        "latencyMs": 27776.899664999975
+      },
+      "roles": {
+        "attemptedCalls": 21,
+        "completedCalls": 15,
+        "failedCalls": 6,
+        "uniqueSupportedEvidenceIds": null,
+        "reportedCostUsd": null,
+        "latencyMs": 81832.823041
+      }
+    }
+  }
+}

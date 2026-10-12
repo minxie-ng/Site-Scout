@@ -1,0 +1,19 @@
+{
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "104 BUKIT BATOK CENTRAL SINGAPORE 650104",
+      "BLK_NO": "104",
+      "ROAD_NAME": "BUKIT BATOK CENTRAL",
+      "BUILDING": "NIL",
+      "ADDRESS": "104 BUKIT BATOK CENTRAL SINGAPORE 650104",
+      "POSTAL": "650104",
+      "X": "18422.43833480123",
+      "Y": "36790.69891589694",
+      "LATITUDE": "1.348995002555493",
+      "LONGITUDE": "103.7472582186053"
+    }
+  ]
+}

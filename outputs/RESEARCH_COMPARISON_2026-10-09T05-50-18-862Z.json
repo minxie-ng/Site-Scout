@@ -1,0 +1,1135 @@
+{
+  "observedAt": "2026-10-09T05:50:18.862Z",
+  "status": "ran",
+  "model": "qwen/qwen3.7-flash",
+  "tariff": {
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "retrievedAt": "2026-10-09T05:48:14.024Z",
+    "inputUsdPerToken": 3e-8,
+    "outputUsdPerToken": 1.3e-7,
+    "requestUsd": 0
+  },
+  "keyCap": {
+    "limitUsd": 0.01,
+    "remainingUsdBeforeRun": 0.00943868,
+    "resetAt": null
+  },
+  "comparison": {
+    "status": "unevaluated",
+    "kind": "bounded_agent_comparison",
+    "caseProvenance": "checked_replay",
+    "automaticPositiveAcceptance": false,
+    "superiorityEstablished": false,
+    "maxCallsPerCaseArm": 3,
+    "reason": "incomplete_run",
+    "cases": [
+      {
+        "id": "checked_context",
+        "baseline": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 1,
+              "claims": [],
+              "coverage": {
+                "supportedClaims": 0,
+                "reviewedClaims": 0,
+                "rolesCompleted": 0,
+                "uniqueSupportedClaims": 0,
+                "uniqueUnresolvedClaims": 0
+              },
+              "unresolvedClaims": 0,
+              "conflicts": [],
+              "unknowns": [
+                "baseline output unavailable: tool_failed"
+              ],
+              "nextInvestigations": [
+                "Retry or replace the baseline research output after tool_failed."
+              ],
+              "failures": [
+                {
+                  "role": "baseline",
+                  "reason": "tool_failed"
+                }
+              ]
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Retry or replace unavailable research output.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 4130.576333
+        },
+        "roles": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 3,
+              "claims": [],
+              "coverage": {
+                "supportedClaims": 0,
+                "reviewedClaims": 0,
+                "rolesCompleted": 0,
+                "uniqueSupportedClaims": 0,
+                "uniqueUnresolvedClaims": 0
+              },
+              "unresolvedClaims": 0,
+              "conflicts": [],
+              "unknowns": [
+                "area output unavailable: tool_failed",
+                "market output unavailable: tool_failed",
+                "challenger output unavailable: tool_failed"
+              ],
+              "nextInvestigations": [
+                "Retry or replace the area research output after tool_failed.",
+                "Retry or replace the market research output after tool_failed.",
+                "Retry or replace the challenger research output after tool_failed."
+              ],
+              "failures": [
+                {
+                  "role": "area",
+                  "reason": "tool_failed"
+                },
+                {
+                  "role": "market",
+                  "reason": "tool_failed"
+                },
+                {
+                  "role": "challenger",
+                  "reason": "tool_failed"
+                }
+              ]
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Retry or replace unavailable research output.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 13717.197041000001
+        }
+      },
+      {
+        "id": "failed_tool",
+        "baseline": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 1,
+              "claims": [],
+              "coverage": {
+                "supportedClaims": 0,
+                "reviewedClaims": 0,
+                "rolesCompleted": 0,
+                "uniqueSupportedClaims": 0,
+                "uniqueUnresolvedClaims": 0
+              },
+              "unresolvedClaims": 0,
+              "conflicts": [],
+              "unknowns": [
+                "baseline output unavailable: tool_failed"
+              ],
+              "nextInvestigations": [
+                "Retry or replace the baseline research output after tool_failed."
+              ],
+              "failures": [
+                {
+                  "role": "baseline",
+                  "reason": "tool_failed"
+                }
+              ]
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Retry or replace unavailable research output.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 5118.613125
+        },
+        "roles": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 3,
+              "claims": [],
+              "coverage": {
+                "supportedClaims": 0,
+                "reviewedClaims": 0,
+                "rolesCompleted": 0,
+                "uniqueSupportedClaims": 0,
+                "uniqueUnresolvedClaims": 0
+              },
+              "unresolvedClaims": 0,
+              "conflicts": [],
+              "unknowns": [
+                "area output unavailable: tool_failed",
+                "market output unavailable: tool_failed",
+                "challenger output unavailable: tool_failed"
+              ],
+              "nextInvestigations": [
+                "Retry or replace the area research output after tool_failed.",
+                "Retry or replace the market research output after tool_failed.",
+                "Retry or replace the challenger research output after tool_failed."
+              ],
+              "failures": [
+                {
+                  "role": "area",
+                  "reason": "tool_failed"
+                },
+                {
+                  "role": "market",
+                  "reason": "tool_failed"
+                },
+                {
+                  "role": "challenger",
+                  "reason": "tool_failed"
+                }
+              ]
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Retry or replace unavailable research output.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 15566.34675
+        }
+      },
+      {
+        "id": "stale_tool",
+        "baseline": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 1,
+              "claims": [],
+              "coverage": {
+                "supportedClaims": 0,
+                "reviewedClaims": 0,
+                "rolesCompleted": 0,
+                "uniqueSupportedClaims": 0,
+                "uniqueUnresolvedClaims": 0
+              },
+              "unresolvedClaims": 0,
+              "conflicts": [],
+              "unknowns": [
+                "baseline output unavailable: stale_evidence"
+              ],
+              "nextInvestigations": [
+                "Retry or replace the baseline research output after stale_evidence."
+              ],
+              "failures": [
+                {
+                  "role": "baseline",
+                  "reason": "stale_evidence"
+                }
+              ]
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Retry or replace unavailable research output.",
+              "Refresh stale research evidence before use.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 5016.977874999997
+        },
+        "roles": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 3,
+              "claims": [],
+              "coverage": {
+                "supportedClaims": 0,
+                "reviewedClaims": 0,
+                "rolesCompleted": 0,
+                "uniqueSupportedClaims": 0,
+                "uniqueUnresolvedClaims": 0
+              },
+              "unresolvedClaims": 0,
+              "conflicts": [],
+              "unknowns": [
+                "area output unavailable: stale_evidence",
+                "market output unavailable: stale_evidence",
+                "challenger output unavailable: stale_evidence"
+              ],
+              "nextInvestigations": [
+                "Retry or replace the area research output after stale_evidence.",
+                "Retry or replace the market research output after stale_evidence.",
+                "Retry or replace the challenger research output after stale_evidence."
+              ],
+              "failures": [
+                {
+                  "role": "area",
+                  "reason": "stale_evidence"
+                },
+                {
+                  "role": "market",
+                  "reason": "stale_evidence"
+                },
+                {
+                  "role": "challenger",
+                  "reason": "stale_evidence"
+                }
+              ]
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Retry or replace unavailable research output.",
+              "Refresh stale research evidence before use.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 13150.072833999999
+        }
+      },
+      {
+        "id": "missing_fields",
+        "baseline": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 1,
+              "claims": [],
+              "coverage": {
+                "supportedClaims": 0,
+                "reviewedClaims": 0,
+                "rolesCompleted": 0,
+                "uniqueSupportedClaims": 0,
+                "uniqueUnresolvedClaims": 0
+              },
+              "unresolvedClaims": 0,
+              "conflicts": [],
+              "unknowns": [
+                "baseline output unavailable: tool_failed"
+              ],
+              "nextInvestigations": [
+                "Retry or replace the baseline research output after tool_failed."
+              ],
+              "failures": [
+                {
+                  "role": "baseline",
+                  "reason": "tool_failed"
+                }
+              ]
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Retry or replace unavailable research output.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 4357.695082999999
+        },
+        "roles": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 3,
+              "claims": [],
+              "coverage": {
+                "supportedClaims": 0,
+                "reviewedClaims": 0,
+                "rolesCompleted": 0,
+                "uniqueSupportedClaims": 0,
+                "uniqueUnresolvedClaims": 0
+              },
+              "unresolvedClaims": 0,
+              "conflicts": [],
+              "unknowns": [
+                "area output unavailable: tool_failed",
+                "market output unavailable: tool_failed",
+                "challenger output unavailable: tool_failed"
+              ],
+              "nextInvestigations": [
+                "Retry or replace the area research output after tool_failed.",
+                "Retry or replace the market research output after tool_failed.",
+                "Retry or replace the challenger research output after tool_failed."
+              ],
+              "failures": [
+                {
+                  "role": "area",
+                  "reason": "tool_failed"
+                },
+                {
+                  "role": "market",
+                  "reason": "tool_failed"
+                },
+                {
+                  "role": "challenger",
+                  "reason": "tool_failed"
+                }
+              ]
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Retry or replace unavailable research output.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 12701.081625000006
+        }
+      },
+      {
+        "id": "conflict",
+        "baseline": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 1,
+              "claims": [],
+              "coverage": {
+                "supportedClaims": 0,
+                "reviewedClaims": 0,
+                "rolesCompleted": 0,
+                "uniqueSupportedClaims": 0,
+                "uniqueUnresolvedClaims": 0
+              },
+              "unresolvedClaims": 0,
+              "conflicts": [],
+              "unknowns": [
+                "baseline output unavailable: tool_failed"
+              ],
+              "nextInvestigations": [
+                "Retry or replace the baseline research output after tool_failed."
+              ],
+              "failures": [
+                {
+                  "role": "baseline",
+                  "reason": "tool_failed"
+                }
+              ]
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Retry or replace unavailable research output.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 4639.318458000009
+        },
+        "roles": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 3,
+              "claims": [],
+              "coverage": {
+                "supportedClaims": 0,
+                "reviewedClaims": 0,
+                "rolesCompleted": 0,
+                "uniqueSupportedClaims": 0,
+                "uniqueUnresolvedClaims": 0
+              },
+              "unresolvedClaims": 0,
+              "conflicts": [],
+              "unknowns": [
+                "area output unavailable: tool_failed",
+                "market output unavailable: tool_failed",
+                "challenger output unavailable: tool_failed"
+              ],
+              "nextInvestigations": [
+                "Retry or replace the area research output after tool_failed.",
+                "Retry or replace the market research output after tool_failed.",
+                "Retry or replace the challenger research output after tool_failed."
+              ],
+              "failures": [
+                {
+                  "role": "area",
+                  "reason": "tool_failed"
+                },
+                {
+                  "role": "market",
+                  "reason": "tool_failed"
+                },
+                {
+                  "role": "challenger",
+                  "reason": "tool_failed"
+                }
+              ]
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Retry or replace unavailable research output.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 11639.604291999989
+        }
+      },
+      {
+        "id": "unsupported",
+        "baseline": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 1,
+              "claims": [],
+              "coverage": {
+                "supportedClaims": 0,
+                "reviewedClaims": 0,
+                "rolesCompleted": 0,
+                "uniqueSupportedClaims": 0,
+                "uniqueUnresolvedClaims": 0
+              },
+              "unresolvedClaims": 0,
+              "conflicts": [],
+              "unknowns": [
+                "baseline output unavailable: tool_failed"
+              ],
+              "nextInvestigations": [
+                "Retry or replace the baseline research output after tool_failed."
+              ],
+              "failures": [
+                {
+                  "role": "baseline",
+                  "reason": "tool_failed"
+                }
+              ]
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Retry or replace unavailable research output.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 4096.410875000001
+        },
+        "roles": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 3,
+              "claims": [],
+              "coverage": {
+                "supportedClaims": 0,
+                "reviewedClaims": 0,
+                "rolesCompleted": 0,
+                "uniqueSupportedClaims": 0,
+                "uniqueUnresolvedClaims": 0
+              },
+              "unresolvedClaims": 0,
+              "conflicts": [],
+              "unknowns": [
+                "area output unavailable: tool_failed",
+                "market output unavailable: tool_failed",
+                "challenger output unavailable: tool_failed"
+              ],
+              "nextInvestigations": [
+                "Retry or replace the area research output after tool_failed.",
+                "Retry or replace the market research output after tool_failed.",
+                "Retry or replace the challenger research output after tool_failed."
+              ],
+              "failures": [
+                {
+                  "role": "area",
+                  "reason": "tool_failed"
+                },
+                {
+                  "role": "market",
+                  "reason": "tool_failed"
+                },
+                {
+                  "role": "challenger",
+                  "reason": "tool_failed"
+                }
+              ]
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Retry or replace unavailable research output.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 13363.200582999998
+        }
+      },
+      {
+        "id": "retrieved_instructions",
+        "baseline": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 1,
+              "claims": [],
+              "coverage": {
+                "supportedClaims": 0,
+                "reviewedClaims": 0,
+                "rolesCompleted": 0,
+                "uniqueSupportedClaims": 0,
+                "uniqueUnresolvedClaims": 0
+              },
+              "unresolvedClaims": 0,
+              "conflicts": [],
+              "unknowns": [
+                "baseline output unavailable: tool_failed"
+              ],
+              "nextInvestigations": [
+                "Retry or replace the baseline research output after tool_failed."
+              ],
+              "failures": [
+                {
+                  "role": "baseline",
+                  "reason": "tool_failed"
+                }
+              ]
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Retry or replace unavailable research output.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 3791.025999999998
+        },
+        "roles": {
+          "decision": {
+            "clusterId": "punggol-point-cove-442a-442b-443a",
+            "outcome": "insufficient_evidence",
+            "basis": "reviewed_gate2_snapshot",
+            "reasonCode": "missing_local_decision_evidence",
+            "investigation": {
+              "decision": "insufficient_evidence",
+              "maxCalls": 3,
+              "callsUsed": 3,
+              "claims": [],
+              "coverage": {
+                "supportedClaims": 0,
+                "reviewedClaims": 0,
+                "rolesCompleted": 0,
+                "uniqueSupportedClaims": 0,
+                "uniqueUnresolvedClaims": 0
+              },
+              "unresolvedClaims": 0,
+              "conflicts": [],
+              "unknowns": [
+                "area output unavailable: tool_failed",
+                "market output unavailable: tool_failed",
+                "challenger output unavailable: tool_failed"
+              ],
+              "nextInvestigations": [
+                "Retry or replace the area research output after tool_failed.",
+                "Retry or replace the market research output after tool_failed.",
+                "Retry or replace the challenger research output after tool_failed."
+              ],
+              "failures": [
+                {
+                  "role": "area",
+                  "reason": "tool_failed"
+                },
+                {
+                  "role": "market",
+                  "reason": "tool_failed"
+                },
+                {
+                  "role": "challenger",
+                  "reason": "tool_failed"
+                }
+              ]
+            },
+            "nextInvestigations": [
+              "Verify the phase-to-block relationship with an official source.",
+              "Retry or replace unavailable research output.",
+              "Resolve cited conflicts and missing local decision evidence."
+            ]
+          },
+          "latencyMs": 13263.963583999997
+        }
+      }
+    ],
+    "attempts": [
+      {
+        "caseId": "checked_context",
+        "arm": "baseline",
+        "role": "baseline",
+        "attempted": true,
+        "status": "failed",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00007015,
+        "latencyMs": 4053.739875,
+        "evidenceHash": "afa0773476d94176f076e45db1b747dbc930aedbaa7ce8da90c83d4d6741f2b9",
+        "reachedBridge": false,
+        "reason": "invalid_response"
+      },
+      {
+        "caseId": "checked_context",
+        "arm": "roles",
+        "role": "area",
+        "attempted": true,
+        "status": "failed",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00007027,
+        "latencyMs": 3422.375750000001,
+        "evidenceHash": "afa0773476d94176f076e45db1b747dbc930aedbaa7ce8da90c83d4d6741f2b9",
+        "reachedBridge": false,
+        "reason": "invalid_response"
+      },
+      {
+        "caseId": "checked_context",
+        "arm": "roles",
+        "role": "market",
+        "attempted": true,
+        "status": "failed",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00007024,
+        "latencyMs": 4827.096083,
+        "evidenceHash": "afa0773476d94176f076e45db1b747dbc930aedbaa7ce8da90c83d4d6741f2b9",
+        "reachedBridge": false,
+        "reason": "invalid_response"
+      },
+      {
+        "caseId": "checked_context",
+        "arm": "roles",
+        "role": "challenger",
+        "attempted": true,
+        "status": "failed",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00007021,
+        "latencyMs": 5189.719750000002,
+        "evidenceHash": "afa0773476d94176f076e45db1b747dbc930aedbaa7ce8da90c83d4d6741f2b9",
+        "reachedBridge": false,
+        "reason": "invalid_response"
+      },
+      {
+        "caseId": "failed_tool",
+        "arm": "baseline",
+        "role": "baseline",
+        "attempted": true,
+        "status": "failed",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00007021,
+        "latencyMs": 5043.508791,
+        "evidenceHash": "f6c89e1b8d1399eee509065265cf35e4063bda028b1481121bbcd9740dee0b87",
+        "reachedBridge": false,
+        "reason": "invalid_response"
+      },
+      {
+        "caseId": "failed_tool",
+        "arm": "roles",
+        "role": "area",
+        "attempted": true,
+        "status": "failed",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00007033,
+        "latencyMs": 4954.973332999998,
+        "evidenceHash": "f6c89e1b8d1399eee509065265cf35e4063bda028b1481121bbcd9740dee0b87",
+        "reachedBridge": false,
+        "reason": "invalid_response"
+      },
+      {
+        "caseId": "failed_tool",
+        "arm": "roles",
+        "role": "market",
+        "attempted": true,
+        "status": "failed",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.0000703,
+        "latencyMs": 4706.338040999999,
+        "evidenceHash": "f6c89e1b8d1399eee509065265cf35e4063bda028b1481121bbcd9740dee0b87",
+        "reachedBridge": false,
+        "reason": "invalid_response"
+      },
+      {
+        "caseId": "failed_tool",
+        "arm": "roles",
+        "role": "challenger",
+        "attempted": true,
+        "status": "failed",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00007027,
+        "latencyMs": 5806.067333999999,
+        "evidenceHash": "f6c89e1b8d1399eee509065265cf35e4063bda028b1481121bbcd9740dee0b87",
+        "reachedBridge": false,
+        "reason": "invalid_response"
+      },
+      {
+        "caseId": "stale_tool",
+        "arm": "baseline",
+        "role": "baseline",
+        "attempted": true,
+        "status": "failed",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00007024,
+        "latencyMs": 4945.667416999997,
+        "evidenceHash": "bab58820d3bd57cde836dc98bae384d0305a11eadb06ce3d94812d0cb0b7e830",
+        "reachedBridge": false,
+        "reason": "invalid_response"
+      },
+      {
+        "caseId": "stale_tool",
+        "arm": "roles",
+        "role": "area",
+        "attempted": true,
+        "status": "failed",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00007036,
+        "latencyMs": 4936.101415999998,
+        "evidenceHash": "bab58820d3bd57cde836dc98bae384d0305a11eadb06ce3d94812d0cb0b7e830",
+        "reachedBridge": false,
+        "reason": "invalid_response"
+      },
+      {
+        "caseId": "stale_tool",
+        "arm": "roles",
+        "role": "market",
+        "attempted": true,
+        "status": "failed",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00007033,
+        "latencyMs": 3976.793666999998,
+        "evidenceHash": "bab58820d3bd57cde836dc98bae384d0305a11eadb06ce3d94812d0cb0b7e830",
+        "reachedBridge": false,
+        "reason": "invalid_response"
+      },
+      {
+        "caseId": "stale_tool",
+        "arm": "roles",
+        "role": "challenger",
+        "attempted": true,
+        "status": "failed",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.0000703,
+        "latencyMs": 4107.244708999999,
+        "evidenceHash": "bab58820d3bd57cde836dc98bae384d0305a11eadb06ce3d94812d0cb0b7e830",
+        "reachedBridge": false,
+        "reason": "invalid_response"
+      },
+      {
+        "caseId": "missing_fields",
+        "arm": "baseline",
+        "role": "baseline",
+        "attempted": true,
+        "status": "failed",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00007042,
+        "latencyMs": 4274.875042,
+        "evidenceHash": "6832e2e1f556194255ec7d682b14250b13c031b97fcb95e08de0b2b76d9b62e7",
+        "reachedBridge": false,
+        "reason": "invalid_response"
+      },
+      {
+        "caseId": "missing_fields",
+        "arm": "roles",
+        "role": "area",
+        "attempted": true,
+        "status": "failed",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00007054,
+        "latencyMs": 3919.6844169999968,
+        "evidenceHash": "6832e2e1f556194255ec7d682b14250b13c031b97fcb95e08de0b2b76d9b62e7",
+        "reachedBridge": false,
+        "reason": "invalid_response"
+      },
+      {
+        "caseId": "missing_fields",
+        "arm": "roles",
+        "role": "market",
+        "attempted": true,
+        "status": "failed",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00007051,
+        "latencyMs": 4436.792333000005,
+        "evidenceHash": "6832e2e1f556194255ec7d682b14250b13c031b97fcb95e08de0b2b76d9b62e7",
+        "reachedBridge": false,
+        "reason": "invalid_response"
+      },
+      {
+        "caseId": "missing_fields",
+        "arm": "roles",
+        "role": "challenger",
+        "attempted": true,
+        "status": "failed",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00007048,
+        "latencyMs": 4246.500792000006,
+        "evidenceHash": "6832e2e1f556194255ec7d682b14250b13c031b97fcb95e08de0b2b76d9b62e7",
+        "reachedBridge": false,
+        "reason": "invalid_response"
+      },
+      {
+        "caseId": "conflict",
+        "arm": "baseline",
+        "role": "baseline",
+        "attempted": true,
+        "status": "failed",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00007012,
+        "latencyMs": 4562.730792000002,
+        "evidenceHash": "cafc0d242e934f878fe1fed64583009be465edda640340f32be2cf1deed33145",
+        "reachedBridge": false,
+        "reason": "invalid_response"
+      },
+      {
+        "caseId": "conflict",
+        "arm": "roles",
+        "role": "area",
+        "attempted": true,
+        "status": "failed",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00007024,
+        "latencyMs": 4000.0491249999905,
+        "evidenceHash": "cafc0d242e934f878fe1fed64583009be465edda640340f32be2cf1deed33145",
+        "reachedBridge": false,
+        "reason": "invalid_response"
+      },
+      {
+        "caseId": "conflict",
+        "arm": "roles",
+        "role": "market",
+        "attempted": true,
+        "status": "failed",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00007021,
+        "latencyMs": 3755.992750000005,
+        "evidenceHash": "cafc0d242e934f878fe1fed64583009be465edda640340f32be2cf1deed33145",
+        "reachedBridge": false,
+        "reason": "invalid_response"
+      },
+      {
+        "caseId": "conflict",
+        "arm": "roles",
+        "role": "challenger",
+        "attempted": true,
+        "status": "failed",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00007018,
+        "latencyMs": 3769.5631670000002,
+        "evidenceHash": "cafc0d242e934f878fe1fed64583009be465edda640340f32be2cf1deed33145",
+        "reachedBridge": false,
+        "reason": "invalid_response"
+      },
+      {
+        "caseId": "unsupported",
+        "arm": "baseline",
+        "role": "baseline",
+        "attempted": true,
+        "status": "failed",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00007021,
+        "latencyMs": 4031.091499999995,
+        "evidenceHash": "3837284505ab08d3f73968df4954ef589607fc1377cd5de73877e2d3ee5a7e46",
+        "reachedBridge": false,
+        "reason": "invalid_response"
+      },
+      {
+        "caseId": "unsupported",
+        "arm": "roles",
+        "role": "area",
+        "attempted": true,
+        "status": "failed",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00007033,
+        "latencyMs": 4779.829249999995,
+        "evidenceHash": "3837284505ab08d3f73968df4954ef589607fc1377cd5de73877e2d3ee5a7e46",
+        "reachedBridge": false,
+        "reason": "invalid_response"
+      },
+      {
+        "caseId": "unsupported",
+        "arm": "roles",
+        "role": "market",
+        "attempted": true,
+        "status": "failed",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.0000703,
+        "latencyMs": 4143.2880409999925,
+        "evidenceHash": "3837284505ab08d3f73968df4954ef589607fc1377cd5de73877e2d3ee5a7e46",
+        "reachedBridge": false,
+        "reason": "invalid_response"
+      },
+      {
+        "caseId": "unsupported",
+        "arm": "roles",
+        "role": "challenger",
+        "attempted": true,
+        "status": "failed",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00007027,
+        "latencyMs": 4345.005334000001,
+        "evidenceHash": "3837284505ab08d3f73968df4954ef589607fc1377cd5de73877e2d3ee5a7e46",
+        "reachedBridge": false,
+        "reason": "invalid_response"
+      },
+      {
+        "caseId": "retrieved_instructions",
+        "arm": "baseline",
+        "role": "baseline",
+        "attempted": true,
+        "status": "failed",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00007021,
+        "latencyMs": 3710.3422500000015,
+        "evidenceHash": "d66af8ecdeaf406ddc49a0d7a100fd07572fcdc6a1296bfa0f99cda3cf775f0b",
+        "reachedBridge": false,
+        "reason": "invalid_response"
+      },
+      {
+        "caseId": "retrieved_instructions",
+        "arm": "roles",
+        "role": "area",
+        "attempted": true,
+        "status": "failed",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00007033,
+        "latencyMs": 5072.3300829999935,
+        "evidenceHash": "d66af8ecdeaf406ddc49a0d7a100fd07572fcdc6a1296bfa0f99cda3cf775f0b",
+        "reachedBridge": false,
+        "reason": "invalid_response"
+      },
+      {
+        "caseId": "retrieved_instructions",
+        "arm": "roles",
+        "role": "market",
+        "attempted": true,
+        "status": "failed",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.0000703,
+        "latencyMs": 4077.686415999997,
+        "evidenceHash": "d66af8ecdeaf406ddc49a0d7a100fd07572fcdc6a1296bfa0f99cda3cf775f0b",
+        "reachedBridge": false,
+        "reason": "invalid_response"
+      },
+      {
+        "caseId": "retrieved_instructions",
+        "arm": "roles",
+        "role": "challenger",
+        "attempted": true,
+        "status": "failed",
+        "requestedModel": "qwen/qwen3.7-flash",
+        "servedModel": "qwen/qwen3.7-flash",
+        "reportedCostUsd": 0.00007027,
+        "latencyMs": 3970.7422499999957,
+        "evidenceHash": "d66af8ecdeaf406ddc49a0d7a100fd07572fcdc6a1296bfa0f99cda3cf775f0b",
+        "reachedBridge": false,
+        "reason": "invalid_response"
+      }
+    ],
+    "total": {
+      "attemptedCalls": 28,
+      "unattemptedCalls": 0,
+      "completedCalls": 0,
+      "failedCalls": 28,
+      "cancelledCalls": 0,
+      "lateOutputsAdmitted": 0,
+      "unknownChargeAttempts": 0,
+      "knownReportedCostUsd": 0.00196813,
+      "reportedCostUsd": null,
+      "uniqueSupportedEvidenceIds": null,
+      "unsupportedClaimsAdmitted": null,
+      "claimsAdmittedToCalculation": null,
+      "latencyMs": 124552.450125,
+      "latencyScope": "generation_and_checked_bridge",
+      "baseline": {
+        "attemptedCalls": 7,
+        "completedCalls": 0,
+        "failedCalls": 7,
+        "uniqueSupportedEvidenceIds": null,
+        "reportedCostUsd": null,
+        "latencyMs": 31150.617749000005
+      },
+      "roles": {
+        "attemptedCalls": 21,
+        "completedCalls": 0,
+        "failedCalls": 21,
+        "uniqueSupportedEvidenceIds": null,
+        "reportedCostUsd": null,
+        "latencyMs": 93401.46670899999
+      }
+    }
+  }
+}

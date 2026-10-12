@@ -1,0 +1,24 @@
+{
+  "mode": "replay",
+  "source": "outputs/RESEARCH_COMPARISON_2026-10-10T08-53-09-894Z.json",
+  "observedAt": "2026-10-10T08:53:09.894Z",
+  "caseId": "checked_context",
+  "evaluation": "unevaluated",
+  "outcome": "insufficient_evidence",
+  "elapsedMs": 13386.039165999999,
+  "roles": { "area": "ok", "market": "invalid_output", "challenger": "ok" },
+  "events": [
+    { "stage": "source", "status": "running", "atMs": 0 },
+    { "stage": "source", "status": "complete", "atMs": 0 },
+    { "stage": "area", "status": "running", "atMs": 0 },
+    { "stage": "area", "status": "complete", "atMs": 7799.167958 },
+    { "stage": "market", "status": "running", "atMs": 7799.167958 },
+    { "stage": "market", "status": "failed", "atMs": 10085.565249 },
+    { "stage": "challenger", "status": "running", "atMs": 10085.565249 },
+    { "stage": "challenger", "status": "complete", "atMs": 12992.271874 },
+    { "stage": "validation", "status": "running", "atMs": 12992.271874 },
+    { "stage": "validation", "status": "complete", "atMs": 13386.039165999999 },
+    { "stage": "result", "status": "running", "atMs": 13386.039165999999 },
+    { "stage": "result", "status": "abstained", "atMs": 13386.039165999999 }
+  ]
+}

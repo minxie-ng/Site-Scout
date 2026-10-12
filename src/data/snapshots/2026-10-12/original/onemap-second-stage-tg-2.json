@@ -1,0 +1,19 @@
+{
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "PLANTATION ACRES",
+      "BLK_NO": "111C",
+      "ROAD_NAME": "PLANTATION CRESCENT",
+      "BUILDING": "PLANTATION ACRES",
+      "ADDRESS": "111C PLANTATION CRESCENT PLANTATION ACRES SINGAPORE 693111",
+      "POSTAL": "693111",
+      "X": "16885.56163602602",
+      "Y": "37496.10042082891",
+      "LATITUDE": "1.355373862022495",
+      "LONGITUDE": "103.7334481760405"
+    }
+  ]
+}

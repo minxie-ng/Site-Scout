@@ -1,0 +1,19 @@
+{
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "ALKAFF OASIS",
+      "BLK_NO": "111B",
+      "ROAD_NAME": "ALKAFF CRESCENT",
+      "BUILDING": "ALKAFF OASIS",
+      "ADDRESS": "111B ALKAFF CRESCENT ALKAFF OASIS SINGAPORE 342111",
+      "POSTAL": "342111",
+      "X": "32452.91220367141",
+      "Y": "35243.66095230728",
+      "LATITUDE": "1.335005345068894",
+      "LONGITUDE": "103.8733305547711"
+    }
+  ]
+}

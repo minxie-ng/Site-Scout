@@ -1,0 +1,19 @@
+{
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "BISHAN GREEN",
+      "BLK_NO": "147",
+      "ROAD_NAME": "BISHAN STREET 11",
+      "BUILDING": "BISHAN GREEN",
+      "ADDRESS": "147 BISHAN STREET 11 BISHAN GREEN SINGAPORE 570147",
+      "POSTAL": "570147",
+      "X": "30424.74405666813",
+      "Y": "36224.62139403448",
+      "LATITUDE": "1.343877032917545",
+      "LONGITUDE": "103.8551063777005"
+    }
+  ]
+}

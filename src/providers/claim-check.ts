@@ -13,6 +13,7 @@ export type ClaimCheckResult = {
   confidence?: number;
   suggestion?: Exclude<ClaimVerdict, 'review'>;
   reason?: string;
+  reportedCostUsd?: number | null;
 };
 
 export interface ClaimCheckProvider {

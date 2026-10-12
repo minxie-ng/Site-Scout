@@ -1,0 +1,19 @@
+{
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "262 WATERLOO STREET SINGAPORE 180262",
+      "BLK_NO": "262",
+      "ROAD_NAME": "WATERLOO STREET",
+      "BUILDING": "NIL",
+      "ADDRESS": "262 WATERLOO STREET SINGAPORE 180262",
+      "POSTAL": "180262",
+      "X": "30063.05130673293",
+      "Y": "31211.38921875507",
+      "LATITUDE": "1.29853916273522",
+      "LONGITUDE": "103.8518560129039"
+    }
+  ]
+}

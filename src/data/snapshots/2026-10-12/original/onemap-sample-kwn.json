@@ -1,0 +1,19 @@
+{
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "AH HOOD GARDENS",
+      "BLK_NO": "101",
+      "ROAD_NAME": "AH HOOD ROAD",
+      "BUILDING": "AH HOOD GARDENS",
+      "ADDRESS": "101 AH HOOD ROAD AH HOOD GARDENS SINGAPORE 320101",
+      "POSTAL": "320101",
+      "X": "29242.26625018381",
+      "Y": "34402.31249351613",
+      "LATITUDE": "1.327396789724657",
+      "LONGITUDE": "103.8444810220202"
+    }
+  ]
+}

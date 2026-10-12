@@ -1,0 +1,19 @@
+{
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "979A BUANGKOK CRESCENT SINGAPORE 531979",
+      "BLK_NO": "979A",
+      "ROAD_NAME": "BUANGKOK CRESCENT",
+      "BUILDING": "NIL",
+      "ADDRESS": "979A BUANGKOK CRESCENT SINGAPORE 531979",
+      "POSTAL": "531979",
+      "X": "33081.22415060643",
+      "Y": "40161.34942206182",
+      "LATITUDE": "1.379479054847024",
+      "LONGITUDE": "103.8789771314456"
+    }
+  ]
+}

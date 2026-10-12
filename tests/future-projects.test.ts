@@ -98,4 +98,23 @@ describe("Gate 3 future-project identity boundary", () => {
     ]);
     expect(result.projects.map(project => project.canonicalProjectId)).toEqual(["hdb:B", "hdb:a"]);
   });
+
+  it("rejects impossible milestone chronology regardless of input order", () => {
+    expect(() => reconcileSyntheticProjectMilestones([
+      { ...base, recordId: "completion", milestone: "projected_completion", month: "2027-05" },
+      { ...base, recordId: "sale", milestone: "land_sale", month: "2028-01" },
+    ])).toThrow(/chronology|before|order/i);
+    expect(() => reconcileSyntheticProjectMilestones([
+      { ...base, recordId: "occupancy", milestone: "occupancy_start", month: "2027-04" },
+      { ...base, recordId: "completion", milestone: "projected_completion", month: "2027-05" },
+    ])).toThrow(/chronology|before|order/i);
+  });
+
+  it("allows partial or same-month synthetic milestones without inventing missing dates", () => {
+    const result = reconcileSyntheticProjectMilestones([
+      { ...base, recordId: "occupancy", milestone: "occupancy_start", month: "2027-05" },
+      { ...base, recordId: "completion", milestone: "projected_completion", month: "2027-05" },
+    ]);
+    expect(result.projects[0]!.milestones.map(item => item.milestone)).toEqual(["projected_completion", "occupancy_start"]);
+  });
 });

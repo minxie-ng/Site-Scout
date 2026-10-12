@@ -1,0 +1,19 @@
+{
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "7A COMMONWEALTH AVENUE SINGAPORE 141007",
+      "BLK_NO": "7A",
+      "ROAD_NAME": "COMMONWEALTH AVENUE",
+      "BUILDING": "NIL",
+      "ADDRESS": "7A COMMONWEALTH AVENUE SINGAPORE 141007",
+      "POSTAL": "141007",
+      "X": "23724.28178842086",
+      "Y": "32123.95370303467",
+      "LATITUDE": "1.306791846958362",
+      "LONGITUDE": "103.7948992263722"
+    }
+  ]
+}
