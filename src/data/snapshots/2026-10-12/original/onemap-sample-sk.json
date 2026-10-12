@@ -1,0 +1,19 @@
+{
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "ANCHORVALE COVE",
+      "BLK_NO": "334A",
+      "ROAD_NAME": "ANCHORVALE CRESCENT",
+      "BUILDING": "ANCHORVALE COVE",
+      "ADDRESS": "334A ANCHORVALE CRESCENT ANCHORVALE COVE SINGAPORE 541334",
+      "POSTAL": "541334",
+      "X": "34243.98073122744",
+      "Y": "42252.05207092874",
+      "LATITUDE": "1.398386386033142",
+      "LONGITUDE": "103.8894258010518"
+    }
+  ]
+}

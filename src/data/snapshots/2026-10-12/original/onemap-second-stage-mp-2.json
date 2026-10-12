@@ -1,0 +1,19 @@
+{
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "MARINE CRESCENT VILLE",
+      "BLK_NO": "29",
+      "ROAD_NAME": "MARINE CRESCENT",
+      "BUILDING": "MARINE CRESCENT VILLE",
+      "ADDRESS": "29 MARINE CRESCENT MARINE CRESCENT VILLE SINGAPORE 440029",
+      "POSTAL": "440029",
+      "X": "36889.76309060864",
+      "Y": "31688.17458444834",
+      "LATITUDE": "1.302849836278813",
+      "LONGITUDE": "103.9131971658237"
+    }
+  ]
+}

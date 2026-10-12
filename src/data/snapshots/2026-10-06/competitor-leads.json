@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "retrievedOn": "2026-10-06",
+  "decisionUse": "research_only_no_cluster_score",
+  "outlets": [
+    {
+      "id": "am-pilates-punggol",
+      "operator": "am Pilates",
+      "address": "#12-111/112, 88 Punggol Way, Singapore 829913",
+      "geographicRole": "punggol_lead",
+      "service": "group_reformer",
+      "evidenceStatus": "research_only",
+      "coordinate": null,
+      "normalPrice": null,
+      "priceEffectiveDate": null,
+      "linkedClusterIds": [],
+      "source": {
+        "url": "https://www.ampilates.sg/contact",
+        "supportingUrls": ["https://www.punggoldigitaldistrict.sg/shop/stores/am%20Pilates"],
+        "retrievedOn": "2026-10-06",
+        "publicationDate": null,
+        "accessNote": "Operator and mall pages directly returned HTTP 200; unit-number presentation differs.",
+        "rightsNote": "No operator reuse licence verified; mall directory terms restrict reproduction."
+      },
+      "limitation": "Mall #12-111 and operator #12-111/112 differ; no outlet point, regular tariff, route, or catchment verified."
+    },
+    {
+      "id": "elevate-oasis",
+      "operator": "Elevate Yoga+Pilates",
+      "address": "#03-09, 681 Punggol Drive, Singapore 820681",
+      "geographicRole": "punggol_lead",
+      "service": "group_reformer",
+      "evidenceStatus": "research_only",
+      "coordinate": null,
+      "normalPrice": null,
+      "priceEffectiveDate": null,
+      "linkedClusterIds": [],
+      "source": {
+        "url": "https://elevateyogapilates.rezerv.co/",
+        "supportingUrls": [],
+        "retrievedOn": "2026-10-06",
+        "publicationDate": null,
+        "accessNote": "Operator booking page was readable through a public web reader.",
+        "rightsNote": "No republication or automated-use licence verified for the booking page."
+      },
+      "limitation": "Reformer class and address are listed, but schedule, normal tariff, outlet point, and block catchment are unverified."
+    },
+    {
+      "id": "root-rise-fernvale",
+      "operator": "Root & Rise",
+      "address": "#02-08/09/10, 61 Fernvale Link, Singapore 799956",
+      "geographicRole": "regional_comparator",
+      "service": "group_reformer",
+      "evidenceStatus": "research_only",
+      "coordinate": null,
+      "normalPrice": null,
+      "priceEffectiveDate": null,
+      "linkedClusterIds": [],
+      "source": {
+        "url": "https://www.root8rise.com/faq",
+        "supportingUrls": ["https://www.root8rise.com/ourstory"],
+        "retrievedOn": "2026-10-06",
+        "publicationDate": null,
+        "accessNote": "Operator FAQ and story pages directly returned HTTP 200.",
+        "rightsNote": "No operator page reproduction or automated-use licence verified."
+      },
+      "limitation": "Fernvale is outside the Punggol candidate groups; the Lentor promotion is not a Fernvale price."
+    },
+    {
+      "id": "tirisula-kovan-1",
+      "operator": "Tirisula Pilates",
+      "address": "#02-01, 1021 Upper Serangoon Road, Singapore 534759",
+      "geographicRole": "regional_comparator",
+      "service": "group_reformer",
+      "evidenceStatus": "research_only",
+      "coordinate": null,
+      "normalPrice": null,
+      "priceEffectiveDate": null,
+      "linkedClusterIds": [],
+      "source": {
+        "url": "https://tirisulapilates.com/locations",
+        "supportingUrls": [],
+        "retrievedOn": "2026-10-06",
+        "publicationDate": null,
+        "accessNote": "Direct DNS failed in this session; official operator page was read through a web reader.",
+        "rightsNote": "No operator page reproduction or automated-use licence verified."
+      },
+      "limitation": "Kovan is outside Punggol; seven Reformer places are published capacity, not utilisation or customer overlap."
+    },
+    {
+      "id": "tirisula-kovan-2",
+      "operator": "Tirisula Pilates",
+      "address": "#02-01, 1022A Upper Serangoon Road, Singapore 534760",
+      "geographicRole": "regional_comparator",
+      "service": "hybrid_reformer",
+      "evidenceStatus": "research_only",
+      "coordinate": null,
+      "normalPrice": null,
+      "priceEffectiveDate": null,
+      "linkedClusterIds": [],
+      "source": {
+        "url": "https://tirisulapilates.com/locations",
+        "supportingUrls": [],
+        "retrievedOn": "2026-10-06",
+        "publicationDate": null,
+        "accessNote": "Direct DNS failed in this session; official operator page was read through a web reader.",
+        "rightsNote": "No operator page reproduction or automated-use licence verified."
+      },
+      "limitation": "Second Kovan premises under the same brand; hybrid self-access and instructor-led service is not identical to group classes."
+    },
+    {
+      "id": "sg-pilates-kovan",
+      "operator": "SG Pilates",
+      "address": "#01-45, 988 Upper Serangoon Road, Singapore 534733",
+      "geographicRole": "regional_comparator",
+      "service": "group_reformer",
+      "evidenceStatus": "research_only",
+      "coordinate": null,
+      "normalPrice": null,
+      "priceEffectiveDate": null,
+      "linkedClusterIds": [],
+      "source": {
+        "url": "https://sgpilates.sg/",
+        "supportingUrls": [],
+        "retrievedOn": "2026-10-06",
+        "publicationDate": null,
+        "accessNote": "Operator page was readable through the public web search index.",
+        "rightsNote": "No operator page reproduction or automated-use licence verified."
+      },
+      "limitation": "Kovan #01-45 is Reformer; adjacent #01-44 is Wunda Chair and is not counted as another Reformer outlet."
+    },
+    {
+      "id": "pilates-fitness-serangoon",
+      "operator": "Pilates Fitness",
+      "address": "85A Serangoon Garden Way, Singapore 555981",
+      "geographicRole": "regional_comparator",
+      "service": "group_reformer",
+      "evidenceStatus": "research_only",
+      "coordinate": null,
+      "normalPrice": null,
+      "priceEffectiveDate": null,
+      "linkedClusterIds": [],
+      "source": {
+        "url": "https://pilatesfitness.com.sg/classes/",
+        "supportingUrls": [],
+        "retrievedOn": "2026-10-06",
+        "publicationDate": null,
+        "accessNote": "Operator class page was readable through the public web search index.",
+        "rightsNote": "No operator page reproduction or automated-use licence verified."
+      },
+      "limitation": "Serangoon Gardens is outside Punggol; published group size does not establish occupancy or overlap."
+    },
+    {
+      "id": "kove-hougang",
+      "operator": "Kove Pilates",
+      "address": "371 Hougang Street 31, Singapore 530371",
+      "geographicRole": "regional_comparator",
+      "service": "private_reformer",
+      "evidenceStatus": "research_only",
+      "coordinate": null,
+      "normalPrice": null,
+      "priceEffectiveDate": null,
+      "linkedClusterIds": [],
+      "source": {
+        "url": "https://www.kovepilates.com/studio",
+        "supportingUrls": ["https://www.kovepilates.com/faqs"],
+        "retrievedOn": "2026-10-06",
+        "publicationDate": null,
+        "accessNote": "Operator studio and FAQ pages were readable through the public web index.",
+        "rightsNote": "No operator page reproduction or automated-use licence verified."
+      },
+      "limitation": "Home-based private sessions are an adjacent substitute, not equivalent to group Reformer capacity."
+    }
+  ]
+}

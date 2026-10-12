@@ -1,0 +1,19 @@
+{
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "LEW LIAN GARDENS",
+      "BLK_NO": "2",
+      "ROAD_NAME": "LORONG LEW LIAN",
+      "BUILDING": "LEW LIAN GARDENS",
+      "ADDRESS": "2 LORONG LEW LIAN LEW LIAN GARDENS SINGAPORE 531002",
+      "POSTAL": "531002",
+      "X": "32714.35802716203",
+      "Y": "36968.92273654789",
+      "LATITUDE": "1.350607956128488",
+      "LONGITUDE": "103.8756800638624"
+    }
+  ]
+}

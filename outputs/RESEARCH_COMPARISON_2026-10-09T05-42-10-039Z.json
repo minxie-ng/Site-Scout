@@ -1,0 +1,74 @@
+{
+  "observedAt": "2026-10-09T05:42:10.039Z",
+  "status": "ran",
+  "model": "openai/gpt-oss-20b",
+  "tariff": {
+    "sourceUrl": "https://openrouter.ai/api/v1/models",
+    "retrievedAt": "2026-10-09T05:42:01.640Z",
+    "inputUsdPerToken": 1.8e-8,
+    "outputUsdPerToken": 9e-8,
+    "requestUsd": 0
+  },
+  "keyCap": {
+    "limitUsd": 0.01,
+    "remainingUsdBeforeRun": 0.0094645,
+    "resetAt": null
+  },
+  "comparison": {
+    "status": "unevaluated",
+    "kind": "bounded_agent_comparison",
+    "caseProvenance": "checked_replay",
+    "automaticPositiveAcceptance": false,
+    "superiorityEstablished": false,
+    "maxCallsPerCaseArm": 3,
+    "reason": "timed_out",
+    "cases": [],
+    "attempts": [
+      {
+        "caseId": "checked_context",
+        "arm": "baseline",
+        "role": "baseline",
+        "attempted": true,
+        "status": "timed_out",
+        "requestedModel": "openai/gpt-oss-20b",
+        "servedModel": null,
+        "reportedCostUsd": null,
+        "latencyMs": 8010.578667000001,
+        "evidenceHash": "5626d119ea5fc7ec5e1af1d8308b34aaf6a5653fdf9ade4a24de0c1405b61a36",
+        "reachedBridge": false
+      }
+    ],
+    "total": {
+      "attemptedCalls": 1,
+      "unattemptedCalls": 27,
+      "completedCalls": 0,
+      "failedCalls": 1,
+      "cancelledCalls": 0,
+      "lateOutputsAdmitted": 0,
+      "unknownChargeAttempts": 1,
+      "knownReportedCostUsd": 0,
+      "reportedCostUsd": null,
+      "uniqueSupportedEvidenceIds": null,
+      "unsupportedClaimsAdmitted": null,
+      "claimsAdmittedToCalculation": null,
+      "latencyMs": 8042.795667,
+      "latencyScope": "generation_and_checked_bridge",
+      "baseline": {
+        "attemptedCalls": 1,
+        "completedCalls": 0,
+        "failedCalls": 1,
+        "uniqueSupportedEvidenceIds": null,
+        "reportedCostUsd": null,
+        "latencyMs": 0
+      },
+      "roles": {
+        "attemptedCalls": 0,
+        "completedCalls": 0,
+        "failedCalls": 0,
+        "uniqueSupportedEvidenceIds": null,
+        "reportedCostUsd": null,
+        "latencyMs": 0
+      }
+    }
+  }
+}

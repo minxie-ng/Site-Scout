@@ -1,0 +1,159 @@
+{
+  "id": "punggol-sapphire-267a-267b-267c",
+  "schemaVersion": 1,
+  "evidenceStatus": "candidate_cluster",
+  "name": "Punggol Sapphire: Blocks 267A, 267B, 267C",
+  "selection": {
+    "provenance": "derived_value",
+    "sourceIds": [
+      "onemap-267a",
+      "onemap-267b",
+      "onemap-267c"
+    ],
+    "rule": "Manually selected these three named blocks because their OneMap residential-building address points are within 100 metres of each other pairwise and share the Punggol Sapphire building label and Punggol Field.",
+    "maxPairwiseMetres": 100,
+    "limitation": "This is a non-exhaustive sample of nearby block address points, not a pedestrian catchment, full precinct boundary, approved premises, or claim about local Pilates demand."
+  },
+  "members": [
+    {
+      "blockId": "267A",
+      "roadName": "PUNGGOL FIELD",
+      "buildingName": "PUNGGOL SAPPHIRE",
+      "postalCode": "821267",
+      "latitude": 1.404559094024332,
+      "longitude": 103.8975048896151,
+      "provenance": "observed_fact",
+      "sourceId": "onemap-267a",
+      "hdbResidentialEvidence": {
+        "sourceId": "hdb-property-267a",
+        "street": "PUNGGOL FIELD",
+        "residential": "Y",
+        "totalDwellingUnits": 89,
+        "yearCompleted": 2011
+      }
+    },
+    {
+      "blockId": "267B",
+      "roadName": "PUNGGOL FIELD",
+      "buildingName": "PUNGGOL SAPPHIRE",
+      "postalCode": "822267",
+      "latitude": 1.404432738983831,
+      "longitude": 103.8979324283428,
+      "provenance": "observed_fact",
+      "sourceId": "onemap-267b",
+      "hdbResidentialEvidence": {
+        "sourceId": "hdb-property-267b",
+        "street": "PUNGGOL FIELD",
+        "residential": "Y",
+        "totalDwellingUnits": 89,
+        "yearCompleted": 2011
+      }
+    },
+    {
+      "blockId": "267C",
+      "roadName": "PUNGGOL FIELD",
+      "buildingName": "PUNGGOL SAPPHIRE",
+      "postalCode": "823267",
+      "latitude": 1.404290801956713,
+      "longitude": 103.8983192907335,
+      "provenance": "observed_fact",
+      "sourceId": "onemap-267c",
+      "hdbResidentialEvidence": {
+        "sourceId": "hdb-property-267c",
+        "street": "PUNGGOL FIELD",
+        "residential": "Y",
+        "totalDwellingUnits": 58,
+        "yearCompleted": 2011
+      }
+    }
+  ],
+  "linkedDevelopmentIds": [],
+  "linkedCompetitorIds": [],
+  "sources": [
+    {
+      "id": "onemap-267a",
+      "publisher": "Singapore Land Authority",
+      "title": "OneMap Search API response for Block 267A Punggol Field",
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=267A%20PUNGGOL%20FIELD&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-06T04:21:12Z",
+      "publicationDate": null,
+      "geographicScope": "Block 267A Punggol Field, Singapore 821267",
+      "accessStatus": "public_response_with_auth_warning",
+      "licenceAccessNote": "The response includes an authentication-token warning and is only a dated replay. OneMap Search documentation requires a token; the linked open-data licence requires conspicuous attribution and licence link.",
+      "snapshotPath": "src/data/snapshots/2026-10-06/original/onemap-267a.json",
+      "snapshotSha256": "3f4732e6841b75865a3bd8ff4e002cfb23b867de43680ab1c817840ca1561f52"
+    },
+    {
+      "id": "onemap-267b",
+      "publisher": "Singapore Land Authority",
+      "title": "OneMap Search API response for Block 267B Punggol Field",
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=267B%20PUNGGOL%20FIELD&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-06T04:21:27Z",
+      "publicationDate": null,
+      "geographicScope": "Block 267B Punggol Field, Singapore 822267",
+      "accessStatus": "public_response_with_auth_warning",
+      "licenceAccessNote": "The response includes an authentication-token warning and is only a dated replay. OneMap Search documentation requires a token; the linked open-data licence requires conspicuous attribution and licence link.",
+      "snapshotPath": "src/data/snapshots/2026-10-06/original/onemap-267b.json",
+      "snapshotSha256": "801625a8352f2289fa2ff5526f7c20692429bfa4d1260cd3d0377ac82fc2abe4"
+    },
+    {
+      "id": "onemap-267c",
+      "publisher": "Singapore Land Authority",
+      "title": "OneMap Search API response for Block 267C Punggol Field",
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=267C%20PUNGGOL%20FIELD&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-06T04:21:32Z",
+      "publicationDate": null,
+      "geographicScope": "Block 267C Punggol Field, Singapore 823267",
+      "accessStatus": "public_response_with_auth_warning",
+      "licenceAccessNote": "The response includes an authentication-token warning and is only a dated replay. OneMap Search documentation requires a token; the linked open-data licence requires conspicuous attribution and licence link.",
+      "snapshotPath": "src/data/snapshots/2026-10-06/original/onemap-267c.json",
+      "snapshotSha256": "21d72f7069ad4c67d8a0b1add14f4ab99dc8fce8e37c011691bd0a160330bfb3"
+    }
+  ],
+  "hdbSources": [
+    {
+      "id": "hdb-property-267a",
+      "publisher": "Housing & Development Board",
+      "title": "HDB Property Information API response for block 267A",
+      "sourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&filters=%7B%22blk_no%22%3A%22267A%22%7D",
+      "retrievedAt": "2026-10-06T04:21:51Z",
+      "publicationDate": null,
+      "geographicScope": "Block 267A Punggol Field, Singapore; query may include same-number blocks on other streets",
+      "accessStatus": "public_no_auth",
+      "licenceAccessNote": "HDB Property Information is under the Singapore Open Data Licence, requiring conspicuous attribution and licence link. The 6 July 2026 catalogue update is not a row-specific effective date.",
+      "snapshotPath": "src/data/snapshots/2026-10-06/original/hdb-property-267a.json",
+      "snapshotSha256": "ef9603edaf293ce06df065dda46a1a57300d5fb69a9f999f4a291b21485b66cc"
+    },
+    {
+      "id": "hdb-property-267b",
+      "publisher": "Housing & Development Board",
+      "title": "HDB Property Information API response for block 267B",
+      "sourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&filters=%7B%22blk_no%22%3A%22267B%22%7D",
+      "retrievedAt": "2026-10-06T04:21:51Z",
+      "publicationDate": null,
+      "geographicScope": "Block 267B Punggol Field, Singapore; query may include same-number blocks on other streets",
+      "accessStatus": "public_no_auth",
+      "licenceAccessNote": "HDB Property Information is under the Singapore Open Data Licence, requiring conspicuous attribution and licence link. The 6 July 2026 catalogue update is not a row-specific effective date.",
+      "snapshotPath": "src/data/snapshots/2026-10-06/original/hdb-property-267b.json",
+      "snapshotSha256": "d378b2c2eefc131daa0bc1c3aca72b8f627181f3fc01ae308d1cdbcf2c5c68e8"
+    },
+    {
+      "id": "hdb-property-267c",
+      "publisher": "Housing & Development Board",
+      "title": "HDB Property Information API response for block 267C",
+      "sourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&filters=%7B%22blk_no%22%3A%22267C%22%7D",
+      "retrievedAt": "2026-10-06T04:21:51Z",
+      "publicationDate": null,
+      "geographicScope": "Block 267C Punggol Field, Singapore; query may include same-number blocks on other streets",
+      "accessStatus": "public_no_auth",
+      "licenceAccessNote": "HDB Property Information is under the Singapore Open Data Licence, requiring conspicuous attribution and licence link. The 6 July 2026 catalogue update is not a row-specific effective date.",
+      "snapshotPath": "src/data/snapshots/2026-10-06/original/hdb-property-267c.json",
+      "snapshotSha256": "9a1869e6bfecf8e36708e62d0a59958ee967dca075e2ff6ca3f01ea13161b7e6"
+    }
+  ],
+  "fallback": {
+    "trigger": "OneMap Search or the HDB Property Information API is unavailable, rate-limited, or needs credentials.",
+    "action": "Load these SHA-256-verified 6 October 2026 responses and label all identity and point claims as a dated replay.",
+    "limitation": "The replay does not prove current occupancy, walking access, competitor overlap, local demand, or any future development status."
+  }
+}

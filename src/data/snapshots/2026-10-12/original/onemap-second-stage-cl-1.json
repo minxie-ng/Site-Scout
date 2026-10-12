@@ -1,0 +1,19 @@
+{
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "411 COMMONWEALTH AVENUE WEST SINGAPORE 120411",
+      "BLK_NO": "411",
+      "ROAD_NAME": "COMMONWEALTH AVENUE WEST",
+      "BUILDING": "NIL",
+      "ADDRESS": "411 COMMONWEALTH AVENUE WEST SINGAPORE 120411",
+      "POSTAL": "120411",
+      "X": "20905.67577989865",
+      "Y": "32575.96999068372",
+      "LATITUDE": "1.310879201888743",
+      "LONGITUDE": "103.7695726218889"
+    }
+  ]
+}

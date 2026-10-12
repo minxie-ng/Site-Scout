@@ -1,0 +1,19 @@
+{
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "109C EDGEDALE PLAINS SINGAPORE 823109",
+      "BLK_NO": "109C",
+      "ROAD_NAME": "EDGEDALE PLAINS",
+      "BUILDING": "NIL",
+      "ADDRESS": "109C EDGEDALE PLAINS SINGAPORE 823109",
+      "POSTAL": "823109",
+      "X": "36453.67787190061",
+      "Y": "41896.76296696812",
+      "LATITUDE": "1.395172719890946",
+      "LONGITUDE": "103.9092816056409"
+    }
+  ]
+}

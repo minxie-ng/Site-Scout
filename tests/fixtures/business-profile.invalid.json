@@ -1,0 +1,105 @@
+{
+  "id": "invalid-demo-profile",
+  "version": 1,
+  "status": "approved_synthetic_demo",
+  "currency": "SGD",
+  "business": {
+    "category": {
+      "value": "pilates_studio",
+      "provenance": "synthetic_assumption",
+      "ownerEditable": true
+    },
+    "format": {
+      "value": "group_reformer",
+      "provenance": "synthetic_assumption",
+      "ownerEditable": true
+    },
+    "expansionDecision": {
+      "value": "investigate_second_outlet",
+      "provenance": "synthetic_assumption",
+      "ownerEditable": true
+    },
+    "existingOutlet": {
+      "value": "synthetic_central_singapore_outlet",
+      "coordinates": null,
+      "provenance": "synthetic_assumption",
+      "ownerEditable": true
+    },
+    "targetCustomerStatement": {
+      "value": "Adults seeking convenient classes",
+      "provenance": "synthetic_assumption",
+      "ownerEditable": true
+    }
+  },
+  "capacity": {
+    "weeksPerMonth": {
+      "value": 4.33,
+      "unit": "weeks",
+      "provenance": "synthetic_assumption",
+      "ownerEditable": true
+    }
+  },
+  "economics": {
+    "instructorCostPerScheduledClass": {
+      "value": 65,
+      "unit": "SGD_per_scheduled_class",
+      "provenance": "synthetic_assumption",
+      "ownerEditable": true
+    },
+    "otherFixedMonthlyCosts": {
+      "value": 5000,
+      "unit": "SGD_per_month",
+      "provenance": "synthetic_assumption",
+      "ownerEditable": true
+    },
+    "openingInvestmentExpected": {
+      "value": 200000,
+      "unit": "SGD",
+      "provenance": "synthetic_assumption",
+      "ownerEditable": true
+    },
+    "minimumOperatingRunwayMonths": {
+      "value": 9,
+      "unit": "months",
+      "provenance": "synthetic_assumption",
+      "ownerEditable": true
+    }
+  },
+  "timing": {
+    "investigationStart": {
+      "value": "now",
+      "provenance": "synthetic_assumption",
+      "ownerEditable": true
+    }
+  },
+  "decisionPolicy": {
+    "allowedOutcomes": [
+      "investigate",
+      "wait",
+      "no_go",
+      "insufficient_evidence"
+    ],
+    "maximumBaseBreakEvenUtilisation": {
+      "value": 0.7,
+      "unit": "ratio",
+      "provenance": "synthetic_assumption",
+      "ownerEditable": true
+    },
+    "maximumStressBreakEvenUtilisation": {
+      "value": 0.85,
+      "unit": "ratio",
+      "provenance": "synthetic_assumption",
+      "ownerEditable": true
+    },
+    "futureDependentOutcome": {
+      "value": "wait",
+      "provenance": "synthetic_assumption",
+      "ownerEditable": true
+    },
+    "missingDecisionCriticalEvidenceOutcome": {
+      "value": "insufficient_evidence",
+      "provenance": "synthetic_assumption",
+      "ownerEditable": false
+    }
+  }
+}

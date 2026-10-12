@@ -1,0 +1,19 @@
+{
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "115 ALJUNIED AVENUE 2 SINGAPORE 380115",
+      "BLK_NO": "115",
+      "ROAD_NAME": "ALJUNIED AVENUE 2",
+      "BUILDING": "NIL",
+      "ADDRESS": "115 ALJUNIED AVENUE 2 SINGAPORE 380115",
+      "POSTAL": "380115",
+      "X": "34005.11433930229",
+      "Y": "33730.42136952095",
+      "LATITUDE": "1.321319879990876",
+      "LONGITUDE": "103.8872776828413"
+    }
+  ]
+}

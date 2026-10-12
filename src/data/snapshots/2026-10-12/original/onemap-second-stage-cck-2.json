@@ -1,0 +1,19 @@
+{
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "132 CHOA CHU KANG AVENUE 1 SINGAPORE 680132",
+      "BLK_NO": "132",
+      "ROAD_NAME": "CHOA CHU KANG AVENUE 1",
+      "BUILDING": "NIL",
+      "ADDRESS": "132 CHOA CHU KANG AVENUE 1 SINGAPORE 680132",
+      "POSTAL": "680132",
+      "X": "18816.27483593952",
+      "Y": "40336.49329376221",
+      "LATITUDE": "1.381061991769741",
+      "LONGITUDE": "103.7507959891187"
+    }
+  ]
+}

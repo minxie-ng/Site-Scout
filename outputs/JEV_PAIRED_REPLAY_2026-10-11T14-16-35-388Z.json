@@ -1,0 +1,25 @@
+{
+  "observedAt": "2026-10-11T14:16:35.388Z",
+  "kind": "same_path_fixed_role_replay",
+  "roleCallsPerArm": 3,
+  "sourceClaimEntriesPerArm": 3,
+  "uniqueCandidateClaims": 1,
+  "withoutJev": {
+    "status": "benchmark_without_jev",
+    "elapsedMs": 114.37241699999998,
+    "outcome": "insufficient_evidence",
+    "externalCalls": 0,
+    "externalCostUsd": 0
+  },
+  "withJev": {
+    "status": "jev_assisted",
+    "elapsedMs": 1232.813666,
+    "outcome": "insufficient_evidence",
+    "attemptedChecks": 1,
+    "checkedClaims": 1,
+    "reportedCostUsd": 0.000079506,
+    "unknownChargeChecks": 0,
+    "reviewRequired": true
+  },
+  "interpretation": "Fixed local role outputs; one sequential sample per arm; no live role-generation or product latency claim."
+}

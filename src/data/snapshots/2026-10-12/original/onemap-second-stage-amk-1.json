@@ -1,0 +1,19 @@
+{
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "206 ANG MO KIO AVENUE 1 SINGAPORE 560206",
+      "BLK_NO": "206",
+      "ROAD_NAME": "ANG MO KIO AVENUE 1",
+      "BUILDING": "NIL",
+      "ADDRESS": "206 ANG MO KIO AVENUE 1 SINGAPORE 560206",
+      "POSTAL": "560206",
+      "X": "29117.57078364398",
+      "Y": "38740.63555441238",
+      "LATITUDE": "1.36663104579549",
+      "LONGITUDE": "103.8433607253154"
+    }
+  ]
+}

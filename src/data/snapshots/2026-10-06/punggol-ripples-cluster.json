@@ -1,0 +1,159 @@
+{
+  "id": "punggol-ripples-211a-211b-211c",
+  "schemaVersion": 1,
+  "evidenceStatus": "candidate_cluster",
+  "name": "Punggol Ripples: Blocks 211A, 211B, 211C",
+  "selection": {
+    "provenance": "derived_value",
+    "sourceIds": [
+      "onemap-211a",
+      "onemap-211b",
+      "onemap-211c"
+    ],
+    "rule": "Manually selected these three named blocks because their OneMap residential-building address points are within 125 metres of each other pairwise and share the Punggol Ripples building label and Punggol Walk.",
+    "maxPairwiseMetres": 125,
+    "limitation": "This is a non-exhaustive sample of nearby block address points, not a pedestrian catchment, full precinct boundary, approved premises, or claim about local Pilates demand."
+  },
+  "members": [
+    {
+      "blockId": "211A",
+      "roadName": "PUNGGOL WALK",
+      "buildingName": "PUNGGOL RIPPLES",
+      "postalCode": "821211",
+      "latitude": 1.401759847011012,
+      "longitude": 103.899944347349,
+      "provenance": "observed_fact",
+      "sourceId": "onemap-211a",
+      "hdbResidentialEvidence": {
+        "sourceId": "hdb-property-211a",
+        "street": "PUNGGOL WALK",
+        "residential": "Y",
+        "totalDwellingUnits": 112,
+        "yearCompleted": 2013
+      }
+    },
+    {
+      "blockId": "211B",
+      "roadName": "PUNGGOL WALK",
+      "buildingName": "PUNGGOL RIPPLES",
+      "postalCode": "822211",
+      "latitude": 1.40116989540272,
+      "longitude": 103.8999208781727,
+      "provenance": "observed_fact",
+      "sourceId": "onemap-211b",
+      "hdbResidentialEvidence": {
+        "sourceId": "hdb-property-211b",
+        "street": "PUNGGOL WALK",
+        "residential": "Y",
+        "totalDwellingUnits": 129,
+        "yearCompleted": 2013
+      }
+    },
+    {
+      "blockId": "211C",
+      "roadName": "PUNGGOL WALK",
+      "buildingName": "PUNGGOL RIPPLES",
+      "postalCode": "823211",
+      "latitude": 1.400760492755734,
+      "longitude": 103.8996135596005,
+      "provenance": "observed_fact",
+      "sourceId": "onemap-211c",
+      "hdbResidentialEvidence": {
+        "sourceId": "hdb-property-211c",
+        "street": "PUNGGOL WALK",
+        "residential": "Y",
+        "totalDwellingUnits": 119,
+        "yearCompleted": 2013
+      }
+    }
+  ],
+  "linkedDevelopmentIds": [],
+  "linkedCompetitorIds": [],
+  "sources": [
+    {
+      "id": "onemap-211a",
+      "publisher": "Singapore Land Authority",
+      "title": "OneMap Search API response for Block 211A Punggol Walk",
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=211A%20PUNGGOL%20WALK&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-06T04:53:00Z",
+      "publicationDate": null,
+      "geographicScope": "Block 211A Punggol Walk, Singapore 821211",
+      "accessStatus": "public_response_with_auth_warning",
+      "licenceAccessNote": "The response includes an authentication-token warning and is only a dated replay. OneMap Search documentation requires a token; the linked open-data licence requires conspicuous attribution and licence link.",
+      "snapshotPath": "src/data/snapshots/2026-10-06/original/onemap-211a.json",
+      "snapshotSha256": "69c09eec349be9db9a87c87b09e29d219fced544a8d946e58cf21be7a8bb6601"
+    },
+    {
+      "id": "onemap-211b",
+      "publisher": "Singapore Land Authority",
+      "title": "OneMap Search API response for Block 211B Punggol Walk",
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=211B%20PUNGGOL%20WALK&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-06T04:53:00Z",
+      "publicationDate": null,
+      "geographicScope": "Block 211B Punggol Walk, Singapore 822211",
+      "accessStatus": "public_response_with_auth_warning",
+      "licenceAccessNote": "The response includes an authentication-token warning and is only a dated replay. OneMap Search documentation requires a token; the linked open-data licence requires conspicuous attribution and licence link.",
+      "snapshotPath": "src/data/snapshots/2026-10-06/original/onemap-211b.json",
+      "snapshotSha256": "8eee61b9e9dcb5806edd21b67b17492d82a500746397e837f2e8e73a5afa58d5"
+    },
+    {
+      "id": "onemap-211c",
+      "publisher": "Singapore Land Authority",
+      "title": "OneMap Search API response for Block 211C Punggol Walk",
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=211C%20PUNGGOL%20WALK&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-06T04:53:00Z",
+      "publicationDate": null,
+      "geographicScope": "Block 211C Punggol Walk, Singapore 823211",
+      "accessStatus": "public_response_with_auth_warning",
+      "licenceAccessNote": "The response includes an authentication-token warning and is only a dated replay. OneMap Search documentation requires a token; the linked open-data licence requires conspicuous attribution and licence link.",
+      "snapshotPath": "src/data/snapshots/2026-10-06/original/onemap-211c.json",
+      "snapshotSha256": "7452433aca88224c2dc28cdccf3ddc3de2fc8e36ad50db9c5b7f7c0c879ef83b"
+    }
+  ],
+  "hdbSources": [
+    {
+      "id": "hdb-property-211a",
+      "publisher": "Housing & Development Board",
+      "title": "HDB Property Information API response for block 211A",
+      "sourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&filters=%7B%22blk_no%22%3A%22211A%22%7D",
+      "retrievedAt": "2026-10-06T04:53:00Z",
+      "publicationDate": null,
+      "geographicScope": "Block 211A Punggol Walk, Singapore; query may include same-number blocks on other streets",
+      "accessStatus": "public_no_auth",
+      "licenceAccessNote": "HDB Property Information is under the Singapore Open Data Licence, requiring conspicuous attribution and licence link. The 6 July 2026 catalogue update is not a row-specific effective date.",
+      "snapshotPath": "src/data/snapshots/2026-10-06/original/hdb-property-211a.json",
+      "snapshotSha256": "5f4219ba25d50e4cdc91a3bed1d4ddee1a20b507ec7c1f2dffc0185172a06595"
+    },
+    {
+      "id": "hdb-property-211b",
+      "publisher": "Housing & Development Board",
+      "title": "HDB Property Information API response for block 211B",
+      "sourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&filters=%7B%22blk_no%22%3A%22211B%22%7D",
+      "retrievedAt": "2026-10-06T04:53:00Z",
+      "publicationDate": null,
+      "geographicScope": "Block 211B Punggol Walk, Singapore; query may include same-number blocks on other streets",
+      "accessStatus": "public_no_auth",
+      "licenceAccessNote": "HDB Property Information is under the Singapore Open Data Licence, requiring conspicuous attribution and licence link. The 6 July 2026 catalogue update is not a row-specific effective date.",
+      "snapshotPath": "src/data/snapshots/2026-10-06/original/hdb-property-211b.json",
+      "snapshotSha256": "7e8ee73e0e95f0fb96f8b5c121cc6db0cb1684a8640aa8393e856f16d8f58c04"
+    },
+    {
+      "id": "hdb-property-211c",
+      "publisher": "Housing & Development Board",
+      "title": "HDB Property Information API response for block 211C",
+      "sourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&filters=%7B%22blk_no%22%3A%22211C%22%7D",
+      "retrievedAt": "2026-10-06T04:53:00Z",
+      "publicationDate": null,
+      "geographicScope": "Block 211C Punggol Walk, Singapore; query may include same-number blocks on other streets",
+      "accessStatus": "public_no_auth",
+      "licenceAccessNote": "HDB Property Information is under the Singapore Open Data Licence, requiring conspicuous attribution and licence link. The 6 July 2026 catalogue update is not a row-specific effective date.",
+      "snapshotPath": "src/data/snapshots/2026-10-06/original/hdb-property-211c.json",
+      "snapshotSha256": "7fe3d2c708ebfe6c2091dcafbb6d374763a3896d59d24ec06214e6d3ab3f63c6"
+    }
+  ],
+  "fallback": {
+    "trigger": "OneMap Search or the HDB Property Information API is unavailable, rate-limited, or needs credentials.",
+    "action": "Load these SHA-256-verified 6 October 2026 responses and label all identity and point claims as a dated replay.",
+    "limitation": "The replay does not prove current occupancy, walking access, competitor overlap, local demand, or any future development status."
+  }
+}

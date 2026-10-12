@@ -1,0 +1,19 @@
+{
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "BRAS BASAH COMPLEX",
+      "BLK_NO": "232",
+      "ROAD_NAME": "BAIN STREET",
+      "BUILDING": "BRAS BASAH COMPLEX",
+      "ADDRESS": "232 BAIN STREET BRAS BASAH COMPLEX SINGAPORE 180232",
+      "POSTAL": "180232",
+      "X": "30229.04589338787",
+      "Y": "31024.95554046705",
+      "LATITUDE": "1.296853110800151",
+      "LONGITUDE": "103.853347534791"
+    }
+  ]
+}

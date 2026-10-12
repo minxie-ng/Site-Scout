@@ -1,0 +1,509 @@
+{
+  "type": "FeatureCollection",
+  "schemaVersion": 1,
+  "snapshotDate": "2026-10-06",
+  "decision": "insufficient_evidence",
+  "clusters": [
+    {
+      "id": "punggol-point-cove-442a-442b-443a",
+      "name": "Punggol Point Cove: Blocks 442A, 442B, 443A",
+      "evidenceStatus": "candidate_cluster",
+      "selection": {
+        "provenance": "derived_value",
+        "sourceIds": [
+          "onemap-821442",
+          "onemap-442b-new-punggol-road",
+          "onemap-443a-new-punggol-road"
+        ],
+        "rule": "Manually selected these three named blocks because their OneMap address points are within 125 metres of each other pairwise and share the Punggol Point Cove building label and New Punggol Road.",
+        "maxPairwiseMetres": 125,
+        "limitation": "This is a non-exhaustive sample of nearby block address points, not a pedestrian catchment, full precinct boundary, or proof that any block belongs to Punggol Point Cove Phase 2."
+      }
+    },
+    {
+      "id": "punggol-sapphire-267a-267b-267c",
+      "name": "Punggol Sapphire: Blocks 267A, 267B, 267C",
+      "evidenceStatus": "candidate_cluster",
+      "selection": {
+        "provenance": "derived_value",
+        "sourceIds": [
+          "onemap-267a",
+          "onemap-267b",
+          "onemap-267c"
+        ],
+        "rule": "Manually selected these three named blocks because their OneMap residential-building address points are within 100 metres of each other pairwise and share the Punggol Sapphire building label and Punggol Field.",
+        "maxPairwiseMetres": 100,
+        "limitation": "This is a non-exhaustive sample of nearby block address points, not a pedestrian catchment, full precinct boundary, approved premises, or claim about local Pilates demand."
+      }
+    },
+    {
+      "id": "punggol-ripples-211a-211b-211c",
+      "name": "Punggol Ripples: Blocks 211A, 211B, 211C",
+      "evidenceStatus": "candidate_cluster",
+      "selection": {
+        "provenance": "derived_value",
+        "sourceIds": [
+          "onemap-211a",
+          "onemap-211b",
+          "onemap-211c"
+        ],
+        "rule": "Manually selected these three named blocks because their OneMap residential-building address points are within 125 metres of each other pairwise and share the Punggol Ripples building label and Punggol Walk.",
+        "maxPairwiseMetres": 125,
+        "limitation": "This is a non-exhaustive sample of nearby block address points, not a pedestrian catchment, full precinct boundary, approved premises, or claim about local Pilates demand."
+      }
+    }
+  ],
+  "overlapWarning": "Punggol Sapphire and Punggol Ripples anchors are 413 m apart straight-line and may share a customer catchment.",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "punggol-point-cove-442a-442b-443a:442A",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9128224429809,
+          1.419635402182583
+        ]
+      },
+      "properties": {
+        "clusterId": "punggol-point-cove-442a-442b-443a",
+        "clusterName": "Punggol Point Cove: Blocks 442A, 442B, 443A",
+        "blockId": "442A",
+        "roadName": "NEW PUNGGOL ROAD",
+        "postalCode": "821442",
+        "coordinateProvenance": "observed_fact",
+        "clusterProvenance": "derived_value",
+        "clusterEvidenceStatus": "candidate_cluster",
+        "residential": "Y",
+        "publishedDwellingUnits": 194,
+        "yearCompleted": 2025,
+        "oneMapSource": {
+          "id": "onemap-821442",
+          "url": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=821442&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-05T08:35:52Z",
+          "publicationDate": null,
+          "geographicScope": "Block 442A New Punggol Road, Singapore 821442",
+          "accessStatus": "public_response_with_auth_warning",
+          "licenceAccessNote": "OneMap Search requires token-based authentication according to its API docs. This stored response includes an authentication warning; use only as a dated replay until account access is verified. The linked open-data licence requires conspicuous attribution and a current licence link.",
+          "snapshotPath": "src/data/snapshots/2026-10-05/original/onemap-821442.json",
+          "snapshotSha256": "d3ea050f819e5d181404c6a40c776d86c71bf93153d2380df92c50ef5ffc7ad5",
+          "evidenceStatus": "dated_replay"
+        },
+        "hdbSource": {
+          "id": "hdb-property-442a",
+          "url": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&filters=%7B%22blk_no%22%3A%22442A%22%7D",
+          "retrievedAt": "2026-10-06T04:03:06Z",
+          "publicationDate": null,
+          "geographicScope": "Block 442A New Punggol Road, Singapore; response also includes same-number blocks on other streets",
+          "accessStatus": "public_no_auth",
+          "licenceAccessNote": "HDB Property Information on data.gov.sg is under the Singapore Open Data Licence, requiring conspicuous source attribution and licence link. Data are a dated table replay; 6 July 2026 catalogue update is not a row-level effective date.",
+          "snapshotPath": "src/data/snapshots/2026-10-06/original/hdb-property-442a.json",
+          "snapshotSha256": "c5022fbd8207675c944bbd2e12368f70e832e9f9261ea30668cf0d2e496cd8b6",
+          "evidenceStatus": "dated_replay"
+        },
+        "linkedDevelopmentIds": [],
+        "linkedCompetitorIds": []
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "punggol-point-cove-442a-442b-443a:442B",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9128831725031,
+          1.419030120414359
+        ]
+      },
+      "properties": {
+        "clusterId": "punggol-point-cove-442a-442b-443a",
+        "clusterName": "Punggol Point Cove: Blocks 442A, 442B, 443A",
+        "blockId": "442B",
+        "roadName": "NEW PUNGGOL ROAD",
+        "postalCode": "822442",
+        "coordinateProvenance": "observed_fact",
+        "clusterProvenance": "derived_value",
+        "clusterEvidenceStatus": "candidate_cluster",
+        "residential": "Y",
+        "publishedDwellingUnits": 129,
+        "yearCompleted": 2024,
+        "oneMapSource": {
+          "id": "onemap-442b-new-punggol-road",
+          "url": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=442B%20New%20Punggol%20Road&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-06T03:50:15Z",
+          "publicationDate": null,
+          "geographicScope": "Block 442B New Punggol Road, Singapore 822442",
+          "accessStatus": "public_response_without_token_for_one_request",
+          "licenceAccessNote": "OneMap Search requires token-based authentication according to its API docs. This one response returned data without an inline warning, but other requests were rate-limited; stable anonymous access is unproven. The linked open-data licence requires conspicuous attribution and a current licence link.",
+          "snapshotPath": "src/data/snapshots/2026-10-06/original/onemap-442b.json",
+          "snapshotSha256": "c53f2846ece9ea249003f0907f6960dc8d74846e0aeb14032725557e4b61cb9b",
+          "evidenceStatus": "dated_replay"
+        },
+        "hdbSource": {
+          "id": "hdb-property-442b",
+          "url": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&filters=%7B%22blk_no%22%3A%22442B%22%7D",
+          "retrievedAt": "2026-10-06T04:03:21Z",
+          "publicationDate": null,
+          "geographicScope": "Block 442B New Punggol Road, Singapore; response also includes same-number blocks on other streets",
+          "accessStatus": "public_no_auth",
+          "licenceAccessNote": "HDB Property Information on data.gov.sg is under the Singapore Open Data Licence, requiring conspicuous source attribution and licence link. Data are a dated table replay; 6 July 2026 catalogue update is not a row-level effective date.",
+          "snapshotPath": "src/data/snapshots/2026-10-06/original/hdb-property-442b.json",
+          "snapshotSha256": "499b445301cc93c1c5f4cb0d30c25cb930f7b210036b9ef8e1dcaffdc58563b4",
+          "evidenceStatus": "dated_replay"
+        },
+        "linkedDevelopmentIds": [],
+        "linkedCompetitorIds": []
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "punggol-point-cove-442a-442b-443a:443A",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9123514239558,
+          1.418699970052094
+        ]
+      },
+      "properties": {
+        "clusterId": "punggol-point-cove-442a-442b-443a",
+        "clusterName": "Punggol Point Cove: Blocks 442A, 442B, 443A",
+        "blockId": "443A",
+        "roadName": "NEW PUNGGOL ROAD",
+        "postalCode": "821443",
+        "coordinateProvenance": "observed_fact",
+        "clusterProvenance": "derived_value",
+        "clusterEvidenceStatus": "candidate_cluster",
+        "residential": "Y",
+        "publishedDwellingUnits": 188,
+        "yearCompleted": 2024,
+        "oneMapSource": {
+          "id": "onemap-443a-new-punggol-road",
+          "url": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=443A%20New%20Punggol%20Road&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-06T03:50:15Z",
+          "publicationDate": null,
+          "geographicScope": "Block 443A New Punggol Road, Singapore 821443",
+          "accessStatus": "public_response_without_token_for_one_request",
+          "licenceAccessNote": "OneMap Search requires token-based authentication according to its API docs. This one response returned data without an inline warning, but other requests were rate-limited; stable anonymous access is unproven. The linked open-data licence requires conspicuous attribution and a current licence link.",
+          "snapshotPath": "src/data/snapshots/2026-10-06/original/onemap-443a.json",
+          "snapshotSha256": "3033f51fe25a7fd53ba9d8afe99be442426707329101af99311397b553a5c8f3",
+          "evidenceStatus": "dated_replay"
+        },
+        "hdbSource": {
+          "id": "hdb-property-443a",
+          "url": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&filters=%7B%22blk_no%22%3A%22443A%22%7D",
+          "retrievedAt": "2026-10-06T04:03:21Z",
+          "publicationDate": null,
+          "geographicScope": "Block 443A New Punggol Road, Singapore; response also includes same-number blocks on other streets",
+          "accessStatus": "public_no_auth",
+          "licenceAccessNote": "HDB Property Information on data.gov.sg is under the Singapore Open Data Licence, requiring conspicuous source attribution and licence link. Data are a dated table replay; 6 July 2026 catalogue update is not a row-level effective date.",
+          "snapshotPath": "src/data/snapshots/2026-10-06/original/hdb-property-443a.json",
+          "snapshotSha256": "010ec6e779598d89cbce42aff223c10076912c35e21d34f3413e1361d457b956",
+          "evidenceStatus": "dated_replay"
+        },
+        "linkedDevelopmentIds": [],
+        "linkedCompetitorIds": []
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "punggol-sapphire-267a-267b-267c:267A",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.8975048896151,
+          1.404559094024332
+        ]
+      },
+      "properties": {
+        "clusterId": "punggol-sapphire-267a-267b-267c",
+        "clusterName": "Punggol Sapphire: Blocks 267A, 267B, 267C",
+        "blockId": "267A",
+        "roadName": "PUNGGOL FIELD",
+        "postalCode": "821267",
+        "coordinateProvenance": "observed_fact",
+        "clusterProvenance": "derived_value",
+        "clusterEvidenceStatus": "candidate_cluster",
+        "residential": "Y",
+        "publishedDwellingUnits": 89,
+        "yearCompleted": 2011,
+        "oneMapSource": {
+          "id": "onemap-267a",
+          "url": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=267A%20PUNGGOL%20FIELD&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-06T04:21:12Z",
+          "publicationDate": null,
+          "geographicScope": "Block 267A Punggol Field, Singapore 821267",
+          "accessStatus": "public_response_with_auth_warning",
+          "licenceAccessNote": "The response includes an authentication-token warning and is only a dated replay. OneMap Search documentation requires a token; the linked open-data licence requires conspicuous attribution and licence link.",
+          "snapshotPath": "src/data/snapshots/2026-10-06/original/onemap-267a.json",
+          "snapshotSha256": "3f4732e6841b75865a3bd8ff4e002cfb23b867de43680ab1c817840ca1561f52",
+          "evidenceStatus": "dated_replay"
+        },
+        "hdbSource": {
+          "id": "hdb-property-267a",
+          "url": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&filters=%7B%22blk_no%22%3A%22267A%22%7D",
+          "retrievedAt": "2026-10-06T04:21:51Z",
+          "publicationDate": null,
+          "geographicScope": "Block 267A Punggol Field, Singapore; query may include same-number blocks on other streets",
+          "accessStatus": "public_no_auth",
+          "licenceAccessNote": "HDB Property Information is under the Singapore Open Data Licence, requiring conspicuous attribution and licence link. The 6 July 2026 catalogue update is not a row-specific effective date.",
+          "snapshotPath": "src/data/snapshots/2026-10-06/original/hdb-property-267a.json",
+          "snapshotSha256": "ef9603edaf293ce06df065dda46a1a57300d5fb69a9f999f4a291b21485b66cc",
+          "evidenceStatus": "dated_replay"
+        },
+        "linkedDevelopmentIds": [],
+        "linkedCompetitorIds": []
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "punggol-sapphire-267a-267b-267c:267B",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.8979324283428,
+          1.404432738983831
+        ]
+      },
+      "properties": {
+        "clusterId": "punggol-sapphire-267a-267b-267c",
+        "clusterName": "Punggol Sapphire: Blocks 267A, 267B, 267C",
+        "blockId": "267B",
+        "roadName": "PUNGGOL FIELD",
+        "postalCode": "822267",
+        "coordinateProvenance": "observed_fact",
+        "clusterProvenance": "derived_value",
+        "clusterEvidenceStatus": "candidate_cluster",
+        "residential": "Y",
+        "publishedDwellingUnits": 89,
+        "yearCompleted": 2011,
+        "oneMapSource": {
+          "id": "onemap-267b",
+          "url": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=267B%20PUNGGOL%20FIELD&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-06T04:21:27Z",
+          "publicationDate": null,
+          "geographicScope": "Block 267B Punggol Field, Singapore 822267",
+          "accessStatus": "public_response_with_auth_warning",
+          "licenceAccessNote": "The response includes an authentication-token warning and is only a dated replay. OneMap Search documentation requires a token; the linked open-data licence requires conspicuous attribution and licence link.",
+          "snapshotPath": "src/data/snapshots/2026-10-06/original/onemap-267b.json",
+          "snapshotSha256": "801625a8352f2289fa2ff5526f7c20692429bfa4d1260cd3d0377ac82fc2abe4",
+          "evidenceStatus": "dated_replay"
+        },
+        "hdbSource": {
+          "id": "hdb-property-267b",
+          "url": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&filters=%7B%22blk_no%22%3A%22267B%22%7D",
+          "retrievedAt": "2026-10-06T04:21:51Z",
+          "publicationDate": null,
+          "geographicScope": "Block 267B Punggol Field, Singapore; query may include same-number blocks on other streets",
+          "accessStatus": "public_no_auth",
+          "licenceAccessNote": "HDB Property Information is under the Singapore Open Data Licence, requiring conspicuous attribution and licence link. The 6 July 2026 catalogue update is not a row-specific effective date.",
+          "snapshotPath": "src/data/snapshots/2026-10-06/original/hdb-property-267b.json",
+          "snapshotSha256": "d378b2c2eefc131daa0bc1c3aca72b8f627181f3fc01ae308d1cdbcf2c5c68e8",
+          "evidenceStatus": "dated_replay"
+        },
+        "linkedDevelopmentIds": [],
+        "linkedCompetitorIds": []
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "punggol-sapphire-267a-267b-267c:267C",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.8983192907335,
+          1.404290801956713
+        ]
+      },
+      "properties": {
+        "clusterId": "punggol-sapphire-267a-267b-267c",
+        "clusterName": "Punggol Sapphire: Blocks 267A, 267B, 267C",
+        "blockId": "267C",
+        "roadName": "PUNGGOL FIELD",
+        "postalCode": "823267",
+        "coordinateProvenance": "observed_fact",
+        "clusterProvenance": "derived_value",
+        "clusterEvidenceStatus": "candidate_cluster",
+        "residential": "Y",
+        "publishedDwellingUnits": 58,
+        "yearCompleted": 2011,
+        "oneMapSource": {
+          "id": "onemap-267c",
+          "url": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=267C%20PUNGGOL%20FIELD&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-06T04:21:32Z",
+          "publicationDate": null,
+          "geographicScope": "Block 267C Punggol Field, Singapore 823267",
+          "accessStatus": "public_response_with_auth_warning",
+          "licenceAccessNote": "The response includes an authentication-token warning and is only a dated replay. OneMap Search documentation requires a token; the linked open-data licence requires conspicuous attribution and licence link.",
+          "snapshotPath": "src/data/snapshots/2026-10-06/original/onemap-267c.json",
+          "snapshotSha256": "21d72f7069ad4c67d8a0b1add14f4ab99dc8fce8e37c011691bd0a160330bfb3",
+          "evidenceStatus": "dated_replay"
+        },
+        "hdbSource": {
+          "id": "hdb-property-267c",
+          "url": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&filters=%7B%22blk_no%22%3A%22267C%22%7D",
+          "retrievedAt": "2026-10-06T04:21:51Z",
+          "publicationDate": null,
+          "geographicScope": "Block 267C Punggol Field, Singapore; query may include same-number blocks on other streets",
+          "accessStatus": "public_no_auth",
+          "licenceAccessNote": "HDB Property Information is under the Singapore Open Data Licence, requiring conspicuous attribution and licence link. The 6 July 2026 catalogue update is not a row-specific effective date.",
+          "snapshotPath": "src/data/snapshots/2026-10-06/original/hdb-property-267c.json",
+          "snapshotSha256": "9a1869e6bfecf8e36708e62d0a59958ee967dca075e2ff6ca3f01ea13161b7e6",
+          "evidenceStatus": "dated_replay"
+        },
+        "linkedDevelopmentIds": [],
+        "linkedCompetitorIds": []
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "punggol-ripples-211a-211b-211c:211A",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.899944347349,
+          1.401759847011012
+        ]
+      },
+      "properties": {
+        "clusterId": "punggol-ripples-211a-211b-211c",
+        "clusterName": "Punggol Ripples: Blocks 211A, 211B, 211C",
+        "blockId": "211A",
+        "roadName": "PUNGGOL WALK",
+        "postalCode": "821211",
+        "coordinateProvenance": "observed_fact",
+        "clusterProvenance": "derived_value",
+        "clusterEvidenceStatus": "candidate_cluster",
+        "residential": "Y",
+        "publishedDwellingUnits": 112,
+        "yearCompleted": 2013,
+        "oneMapSource": {
+          "id": "onemap-211a",
+          "url": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=211A%20PUNGGOL%20WALK&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-06T04:53:00Z",
+          "publicationDate": null,
+          "geographicScope": "Block 211A Punggol Walk, Singapore 821211",
+          "accessStatus": "public_response_with_auth_warning",
+          "licenceAccessNote": "The response includes an authentication-token warning and is only a dated replay. OneMap Search documentation requires a token; the linked open-data licence requires conspicuous attribution and licence link.",
+          "snapshotPath": "src/data/snapshots/2026-10-06/original/onemap-211a.json",
+          "snapshotSha256": "69c09eec349be9db9a87c87b09e29d219fced544a8d946e58cf21be7a8bb6601",
+          "evidenceStatus": "dated_replay"
+        },
+        "hdbSource": {
+          "id": "hdb-property-211a",
+          "url": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&filters=%7B%22blk_no%22%3A%22211A%22%7D",
+          "retrievedAt": "2026-10-06T04:53:00Z",
+          "publicationDate": null,
+          "geographicScope": "Block 211A Punggol Walk, Singapore; query may include same-number blocks on other streets",
+          "accessStatus": "public_no_auth",
+          "licenceAccessNote": "HDB Property Information is under the Singapore Open Data Licence, requiring conspicuous attribution and licence link. The 6 July 2026 catalogue update is not a row-specific effective date.",
+          "snapshotPath": "src/data/snapshots/2026-10-06/original/hdb-property-211a.json",
+          "snapshotSha256": "5f4219ba25d50e4cdc91a3bed1d4ddee1a20b507ec7c1f2dffc0185172a06595",
+          "evidenceStatus": "dated_replay"
+        },
+        "linkedDevelopmentIds": [],
+        "linkedCompetitorIds": []
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "punggol-ripples-211a-211b-211c:211B",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.8999208781727,
+          1.40116989540272
+        ]
+      },
+      "properties": {
+        "clusterId": "punggol-ripples-211a-211b-211c",
+        "clusterName": "Punggol Ripples: Blocks 211A, 211B, 211C",
+        "blockId": "211B",
+        "roadName": "PUNGGOL WALK",
+        "postalCode": "822211",
+        "coordinateProvenance": "observed_fact",
+        "clusterProvenance": "derived_value",
+        "clusterEvidenceStatus": "candidate_cluster",
+        "residential": "Y",
+        "publishedDwellingUnits": 129,
+        "yearCompleted": 2013,
+        "oneMapSource": {
+          "id": "onemap-211b",
+          "url": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=211B%20PUNGGOL%20WALK&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-06T04:53:00Z",
+          "publicationDate": null,
+          "geographicScope": "Block 211B Punggol Walk, Singapore 822211",
+          "accessStatus": "public_response_with_auth_warning",
+          "licenceAccessNote": "The response includes an authentication-token warning and is only a dated replay. OneMap Search documentation requires a token; the linked open-data licence requires conspicuous attribution and licence link.",
+          "snapshotPath": "src/data/snapshots/2026-10-06/original/onemap-211b.json",
+          "snapshotSha256": "8eee61b9e9dcb5806edd21b67b17492d82a500746397e837f2e8e73a5afa58d5",
+          "evidenceStatus": "dated_replay"
+        },
+        "hdbSource": {
+          "id": "hdb-property-211b",
+          "url": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&filters=%7B%22blk_no%22%3A%22211B%22%7D",
+          "retrievedAt": "2026-10-06T04:53:00Z",
+          "publicationDate": null,
+          "geographicScope": "Block 211B Punggol Walk, Singapore; query may include same-number blocks on other streets",
+          "accessStatus": "public_no_auth",
+          "licenceAccessNote": "HDB Property Information is under the Singapore Open Data Licence, requiring conspicuous attribution and licence link. The 6 July 2026 catalogue update is not a row-specific effective date.",
+          "snapshotPath": "src/data/snapshots/2026-10-06/original/hdb-property-211b.json",
+          "snapshotSha256": "7e8ee73e0e95f0fb96f8b5c121cc6db0cb1684a8640aa8393e856f16d8f58c04",
+          "evidenceStatus": "dated_replay"
+        },
+        "linkedDevelopmentIds": [],
+        "linkedCompetitorIds": []
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "punggol-ripples-211a-211b-211c:211C",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.8996135596005,
+          1.400760492755734
+        ]
+      },
+      "properties": {
+        "clusterId": "punggol-ripples-211a-211b-211c",
+        "clusterName": "Punggol Ripples: Blocks 211A, 211B, 211C",
+        "blockId": "211C",
+        "roadName": "PUNGGOL WALK",
+        "postalCode": "823211",
+        "coordinateProvenance": "observed_fact",
+        "clusterProvenance": "derived_value",
+        "clusterEvidenceStatus": "candidate_cluster",
+        "residential": "Y",
+        "publishedDwellingUnits": 119,
+        "yearCompleted": 2013,
+        "oneMapSource": {
+          "id": "onemap-211c",
+          "url": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=211C%20PUNGGOL%20WALK&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-06T04:53:00Z",
+          "publicationDate": null,
+          "geographicScope": "Block 211C Punggol Walk, Singapore 823211",
+          "accessStatus": "public_response_with_auth_warning",
+          "licenceAccessNote": "The response includes an authentication-token warning and is only a dated replay. OneMap Search documentation requires a token; the linked open-data licence requires conspicuous attribution and licence link.",
+          "snapshotPath": "src/data/snapshots/2026-10-06/original/onemap-211c.json",
+          "snapshotSha256": "7452433aca88224c2dc28cdccf3ddc3de2fc8e36ad50db9c5b7f7c0c879ef83b",
+          "evidenceStatus": "dated_replay"
+        },
+        "hdbSource": {
+          "id": "hdb-property-211c",
+          "url": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&filters=%7B%22blk_no%22%3A%22211C%22%7D",
+          "retrievedAt": "2026-10-06T04:53:00Z",
+          "publicationDate": null,
+          "geographicScope": "Block 211C Punggol Walk, Singapore; query may include same-number blocks on other streets",
+          "accessStatus": "public_no_auth",
+          "licenceAccessNote": "HDB Property Information is under the Singapore Open Data Licence, requiring conspicuous attribution and licence link. The 6 July 2026 catalogue update is not a row-specific effective date.",
+          "snapshotPath": "src/data/snapshots/2026-10-06/original/hdb-property-211c.json",
+          "snapshotSha256": "7fe3d2c708ebfe6c2091dcafbb6d374763a3896d59d24ec06214e6d3ab3f63c6",
+          "evidenceStatus": "dated_replay"
+        },
+        "linkedDevelopmentIds": [],
+        "linkedCompetitorIds": []
+      }
+    }
+  ]
+}

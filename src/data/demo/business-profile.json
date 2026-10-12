@@ -1,0 +1,155 @@
+{
+  "id": "demo-reformer-pilates-v1",
+  "version": 1,
+  "status": "approved_synthetic_demo",
+  "currency": "SGD",
+  "business": {
+    "category": {
+      "value": "pilates_studio",
+      "provenance": "synthetic_assumption",
+      "ownerEditable": true
+    },
+    "format": {
+      "value": "group_reformer",
+      "provenance": "synthetic_assumption",
+      "ownerEditable": true
+    },
+    "expansionDecision": {
+      "value": "investigate_second_outlet",
+      "provenance": "synthetic_assumption",
+      "ownerEditable": true
+    },
+    "existingOutlet": {
+      "value": "synthetic_central_singapore_outlet",
+      "coordinates": null,
+      "provenance": "synthetic_assumption",
+      "ownerEditable": true
+    },
+    "targetCustomerStatement": {
+      "value": "Adults seeking convenient, recurring group reformer classes near home or a regular travel route",
+      "provenance": "synthetic_assumption",
+      "ownerEditable": true
+    }
+  },
+  "capacity": {
+    "sellableSeatsPerClass": {
+      "value": 10,
+      "unit": "seat_visits",
+      "provenance": "synthetic_assumption",
+      "ownerEditable": true
+    },
+    "scheduledClassesPerWeek": {
+      "value": 30,
+      "unit": "classes",
+      "provenance": "synthetic_assumption",
+      "ownerEditable": true
+    },
+    "weeksPerMonth": {
+      "value": 4.33,
+      "unit": "weeks",
+      "provenance": "synthetic_assumption",
+      "ownerEditable": true
+    }
+  },
+  "economics": {
+    "averageRealisedRevenuePerPaidVisit": {
+      "value": 35,
+      "unit": "SGD_per_paid_visit",
+      "provenance": "synthetic_assumption",
+      "ownerEditable": true
+    },
+    "variableCostPerPaidVisit": {
+      "value": 3,
+      "unit": "SGD_per_paid_visit",
+      "provenance": "synthetic_assumption",
+      "ownerEditable": true
+    },
+    "instructorCostPerScheduledClass": {
+      "value": 65,
+      "unit": "SGD_per_scheduled_class",
+      "provenance": "synthetic_assumption",
+      "ownerEditable": true
+    },
+    "otherFixedMonthlyCosts": {
+      "value": 5000,
+      "unit": "SGD_per_month",
+      "provenance": "synthetic_assumption",
+      "ownerEditable": true
+    },
+    "monthlyRent": {
+      "low": 10000,
+      "base": 13000,
+      "high": 16000,
+      "unit": "SGD_per_month",
+      "provenance": "synthetic_assumption",
+      "ownerEditable": true
+    },
+    "openingInvestmentExpected": {
+      "value": 200000,
+      "unit": "SGD",
+      "provenance": "synthetic_assumption",
+      "ownerEditable": true
+    },
+    "openingInvestmentMaximum": {
+      "value": 250000,
+      "unit": "SGD",
+      "provenance": "synthetic_assumption",
+      "ownerEditable": true
+    },
+    "minimumOperatingRunwayMonths": {
+      "value": 9,
+      "unit": "months",
+      "provenance": "synthetic_assumption",
+      "ownerEditable": true
+    }
+  },
+  "timing": {
+    "investigationStart": {
+      "value": "2026-10-05",
+      "provenance": "synthetic_assumption",
+      "ownerEditable": true
+    },
+    "earliestOpeningMonths": {
+      "value": 18,
+      "unit": "months_from_analysis",
+      "provenance": "synthetic_assumption",
+      "ownerEditable": true
+    },
+    "latestOpeningMonths": {
+      "value": 30,
+      "unit": "months_from_analysis",
+      "provenance": "synthetic_assumption",
+      "ownerEditable": true
+    }
+  },
+  "decisionPolicy": {
+    "allowedOutcomes": [
+      "investigate",
+      "wait",
+      "no_go",
+      "insufficient_evidence"
+    ],
+    "maximumBaseBreakEvenUtilisation": {
+      "value": 0.7,
+      "unit": "ratio",
+      "provenance": "synthetic_assumption",
+      "ownerEditable": true
+    },
+    "maximumStressBreakEvenUtilisation": {
+      "value": 0.85,
+      "unit": "ratio",
+      "provenance": "synthetic_assumption",
+      "ownerEditable": true
+    },
+    "futureDependentOutcome": {
+      "value": "wait",
+      "provenance": "synthetic_assumption",
+      "ownerEditable": true
+    },
+    "missingDecisionCriticalEvidenceOutcome": {
+      "value": "insufficient_evidence",
+      "provenance": "synthetic_assumption",
+      "ownerEditable": false
+    }
+  }
+}

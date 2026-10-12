@@ -1,0 +1,19 @@
+{
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "CHAMPIONS BLISS",
+      "BLK_NO": "562A",
+      "ROAD_NAME": "CHAMPIONS WAY",
+      "BUILDING": "CHAMPIONS BLISS",
+      "ADDRESS": "562A CHAMPIONS WAY CHAMPIONS BLISS SINGAPORE 731562",
+      "POSTAL": "731562",
+      "X": "23377.30173027981",
+      "Y": "45382.64008525386",
+      "LATITUDE": "1.426698592512911",
+      "LONGITUDE": "103.7917793858843"
+    }
+  ]
+}

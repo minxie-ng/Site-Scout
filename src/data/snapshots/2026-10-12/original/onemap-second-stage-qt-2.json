@@ -1,0 +1,19 @@
+{
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "7 GHIM MOH ROAD SINGAPORE 270007",
+      "BLK_NO": "7",
+      "ROAD_NAME": "GHIM MOH ROAD",
+      "BUILDING": "NIL",
+      "ADDRESS": "7 GHIM MOH ROAD SINGAPORE 270007",
+      "POSTAL": "270007",
+      "X": "22870.84405478928",
+      "Y": "32621.15579232015",
+      "LATITUDE": "1.311288236009037",
+      "LONGITUDE": "103.7872306036112"
+    }
+  ]
+}

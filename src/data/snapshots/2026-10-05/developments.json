@@ -1,0 +1,77 @@
+{
+  "id": "hdb-punggol-point-cove-phase-2-completion-2025-01",
+  "schemaVersion": 1,
+  "evidenceStatus": "insufficient_evidence",
+  "development": {
+    "name": "Punggol Point Cove (Phase 2)",
+    "area": "Punggol Point District, Punggol Town",
+    "country": "Singapore"
+  },
+  "status": {
+    "value": "completed",
+    "effectiveDate": "2025-01",
+    "precision": "month"
+  },
+  "unitCount": 1179,
+  "location": {
+    "kind": "candidate_representative_block",
+    "label": "Block 442A New Punggol Road, Punggol Point Cove",
+    "latitude": 1.419635402182583,
+    "longitude": 103.9128224429809,
+    "limitation": "Block 442A is identified as Punggol Point Cove by OneMap, but the checked-in sources do not establish whether it belongs to Phase 1 or Phase 2. This is a candidate point only; do not use it as the Phase 2 location.",
+    "provenance": "derived_value",
+    "relationshipEvidenceStatus": "not_established",
+    "sourceIds": [
+      "hdb-punggol-point-completion-annex-a",
+      "onemap-821442"
+    ]
+  },
+  "decisionClaims": [
+    {
+      "claim": "Punggol Point Cove Phase 2 was completed in January 2025 and comprises 1,179 flats across six blocks.",
+      "support": "supported",
+      "sourceIds": [
+        "hdb-punggol-point-completion-annex-a"
+      ],
+      "evidenceExcerpt": "Point Cove (Phase 2), which was completed in January 2025, comprises 1,179 units of"
+    }
+  ],
+  "sources": [
+    {
+      "id": "hdb-punggol-point-completion-annex-a",
+      "publisher": "Housing & Development Board",
+      "title": "Annex A \u2014 About Punggol Point District",
+      "sourceUrl": "https://www.hdb.gov.sg/-/media/hdb-pulse/news/2025/final-two-pandemic-delayed-housing-projects-completed-in-january-2025/20012025---Annex-A.pdf",
+      "retrievedAt": "2026-10-05T08:35:52Z",
+      "publicationDate": null,
+      "publicationDateNote": "The annex itself is undated. The 19 January 2025 parent release has not been snapshotted, so its date is not used as the annex publication date.",
+      "geographicScope": "Punggol Point District, Punggol Town, Singapore",
+      "accessStatus": "public_no_auth",
+      "licenceAccessNote": "Public HDB PDF retrieved without authentication. No explicit open-data licence was identified in the document; retain the snapshot for internal evidence and cite the source rather than assuming redistribution rights.",
+      "snapshotPath": "src/data/snapshots/2026-10-05/original/hdb-punggol-point-completion-annex-a.pdf",
+      "snapshotSha256": "bccb9d44ac47abd603604809a9e3f0eda36470db54e8dbf67fcc7bd3107fd8b2",
+      "extractionPath": "src/data/snapshots/2026-10-05/extractions/hdb-punggol-point-completion-annex-a.txt",
+      "extractionSha256": "e7f104692ed3bf0392ae0ba8d23910b7cbf46657277326cfd7ddedfdb4f027d6",
+      "extractionNote": "Plain text extracted from the five-page PDF using PyMuPDF; checked against page 5. The original PDF remains the source of truth."
+    },
+    {
+      "id": "onemap-821442",
+      "publisher": "Singapore Land Authority",
+      "title": "OneMap Search API response for postal code 821442",
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=821442&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-05T08:35:52Z",
+      "publicationDate": null,
+      "publicationDateNote": "The API response provides no publication or effective date; retrievedAt dates this coordinate snapshot.",
+      "geographicScope": "Block 442A New Punggol Road, Singapore 821442",
+      "accessStatus": "public_response_with_auth_warning",
+      "licenceAccessNote": "The endpoint returned one result together with an authentication-token warning. Treat this as a dated snapshot, not proof of stable unauthenticated access. Verify OneMap account, token, terms, quota, attribution, and retention requirements before live use.",
+      "snapshotPath": "src/data/snapshots/2026-10-05/original/onemap-821442.json",
+      "snapshotSha256": "d3ea050f819e5d181404c6a40c776d86c71bf93153d2380df92c50ef5ffc7ad5"
+    }
+  ],
+  "fallback": {
+    "trigger": "The HDB document or OneMap endpoint is unavailable, quota-limited, or requires an account/token that is not configured.",
+    "action": "Load these hash-verified checked-in snapshots and label the result as a 5 October 2026 replay; do not describe the coordinate or development status as live.",
+    "limitation": "The HDB annex confirms completion and unit count, but the OneMap block-to-Phase 2 join is unresolved. The record remains insufficient evidence for mapped Phase 2 analysis."
+  }
+}

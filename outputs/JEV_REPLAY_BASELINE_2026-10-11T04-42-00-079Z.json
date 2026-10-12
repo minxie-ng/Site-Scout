@@ -1,0 +1,11 @@
+{
+  "observedAt": "2026-10-11T04:42:00.079Z",
+  "kind": "fixed_role_replay_without_jev",
+  "repetitions": 5,
+  "medianElapsedMs": 87.028708,
+  "minElapsedMs": 85.87408300000001,
+  "maxElapsedMs": 98.661167,
+  "outcome": "insufficient_evidence",
+  "externalCalls": 0,
+  "externalCostUsd": 0
+}

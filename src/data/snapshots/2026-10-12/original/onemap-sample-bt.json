@@ -1,0 +1,19 @@
+{
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "FARRER GARDENS",
+      "BLK_NO": "8",
+      "ROAD_NAME": "EMPRESS ROAD",
+      "BUILDING": "FARRER GARDENS",
+      "ADDRESS": "8 EMPRESS ROAD FARRER GARDENS SINGAPORE 260008",
+      "POSTAL": "260008",
+      "X": "24890.01816123538",
+      "Y": "33187.67453058064",
+      "LATITUDE": "1.316411900981759",
+      "LONGITUDE": "103.805373811937"
+    }
+  ]
+}

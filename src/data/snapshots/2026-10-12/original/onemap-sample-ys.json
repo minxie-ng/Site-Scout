@@ -1,0 +1,19 @@
+{
+  "found": 1,
+  "totalNumPages": 1,
+  "pageNum": 1,
+  "results": [
+    {
+      "SEARCHVAL": "VISTA SPRING @ YISHUN",
+      "BLK_NO": "431A",
+      "ROAD_NAME": "YISHUN AVENUE 1",
+      "BUILDING": "VISTA SPRING @ YISHUN",
+      "ADDRESS": "431A YISHUN AVENUE 1 VISTA SPRING @ YISHUN SINGAPORE 761431",
+      "POSTAL": "761431",
+      "X": "29554.62118781637",
+      "Y": "44598.43110237271",
+      "LATITUDE": "1.419606824978973",
+      "LONGITUDE": "103.8472882371097"
+    }
+  ]
+}

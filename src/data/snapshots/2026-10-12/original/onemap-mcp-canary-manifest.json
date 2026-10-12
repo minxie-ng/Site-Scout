@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "requestsMade": 3,
+  "outcome": "insufficient_evidence",
+  "selected": null,
+  "sourceUrl": "https://public-onemap-gateway-hoaiixjtvz.gateway.bedrock-agentcore.ap-southeast-1.amazonaws.com/mcp",
+  "documentationUrl": "https://www.onemap.gov.sg/apidocs/mcp",
+  "retrievedAt": "2026-10-12T14:15:13.682Z",
+  "geographicScope": "442A NEW PUNGGOL ROAD, Singapore",
+  "evidenceStatus": "research_only_unverified",
+  "sha256": "781b4f6fcb68de3ad76ccde78d82a01bb23ddf5eacd8af9fa389349c767f9979",
+  "rawPath": "src/data/snapshots/2026-10-12/original/onemap-mcp-canary.json",
+  "tool": "address___search",
+  "reviewStatus": "reviewed_address_identity_only"
+}
