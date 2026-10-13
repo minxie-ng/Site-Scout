@@ -53,7 +53,7 @@ it('withholds the map for missing, duplicate or unsupported source points', () =
 
 it('renders source attribution, dates, coverage and abstaining labels for the selected group', () => {
   const view = priorityMapView(validatePriorityMapFeed(feed()), 1);
-  expect(view.overview).toContain('Sengkang');
+  expect(view.overview).toContain('Serangoon');
   expect(view.overview).toContain('role="group"');
   expect(view.overview).not.toContain('role="img"');
   expect(view.overview).toContain('data-priority="1"');

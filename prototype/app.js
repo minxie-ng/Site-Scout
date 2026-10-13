@@ -5,6 +5,7 @@ import { applyProgress, createProgress, progressModeLabel } from "./research-pro
 import { buildStudyMemo } from "./study-memo.mjs";
 import { mountOwnerIntake } from "./owner-intake.mjs";
 import { mountPriorityMap, verifyPriorityMapFeed } from "./priority-map.mjs";
+import { nationalExplorerView } from "./national-explorer.mjs";
 import { buildOwnerJourney, ownerJourneyMemo } from "./owner-journey.mjs";
 
 const svgNS = "http://www.w3.org/2000/svg";
@@ -277,6 +278,7 @@ try {
     renderOwnerJourney();
   });
   checkedPriorityFeed = checked;
+  document.querySelector('#national-explorer-content').innerHTML = nationalExplorerView(checked);
   if (!replayAvailable) {
     document.querySelector('#status-card').textContent = 'Checked sample available · location decision withheld';
     document.querySelector('#snapshot-pill').textContent = 'CHECKED SAMPLE · 12 OCT 2026';
@@ -290,5 +292,6 @@ try {
   document.querySelector('#priority-choices').textContent = '';
   document.querySelector('#priority-detail').textContent = 'The dated map snapshot could not be verified. Restore the local snapshot and reload.';
   document.querySelector('#priority-coverage').textContent = 'Coverage unavailable · no sampled area is shown.';
+  document.querySelector('#national-explorer-content').textContent = 'Islandwide sample unavailable until the dated evidence feed is restored.';
   console.error(error);
 }

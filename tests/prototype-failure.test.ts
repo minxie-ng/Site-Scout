@@ -12,7 +12,7 @@ describe("prototype replay failure", () => {
       '#research-progress', '#study-memo', '#intro-actions', '#scenario', '#owner-intake', '#owner-form',
       '#owner-status', '#sample-replay-link', '#owner-journey', '#owner-utilisation', '#owner-journey-result',
       '#owner-journey-memo', '#copy-owner-memo', '#owner-copy-status', '#priority-map', '#priority-overview',
-      '#priority-local', '#priority-choices', '#priority-detail', '#priority-coverage'];
+      '#priority-local', '#priority-choices', '#priority-detail', '#priority-coverage', '#national-explorer-content'];
     for (const selector of selectors) nodes.set(selector, { textContent: '', innerHTML: '', hidden: false,
       value: '', disabled: false, setAttribute: vi.fn(), addEventListener: vi.fn(),
       querySelectorAll: () => [], querySelector: (key: string) => key.startsWith('#priority-') ?
@@ -25,7 +25,7 @@ describe("prototype replay failure", () => {
     vi.resetModules();
     await import(String('../prototype/app.js'));
     expect(nodes.get('#priority-detail').innerHTML).toContain('Insufficient evidence');
-    expect(nodes.get('#priority-choices').innerHTML).toContain('Sengkang');
+    expect(nodes.get('#priority-choices').innerHTML).toContain('Serangoon');
     expect(nodes.get('#owner-intake').hidden).toBe(false);
     expect(nodes.get('#status-card').textContent).toContain('Checked sample');
     expect(nodes.get('#snapshot-pill').textContent).toContain('CHECKED SAMPLE');
@@ -35,7 +35,7 @@ describe("prototype replay failure", () => {
       (block: any) => { block.latitude = 1.5; },
       (block: any) => { block.units = 99999; },
     ]) {
-      const selectors = ["#point-map", "#inspection", "#cluster-cards", "#selection-title", "#intro-summary", "#sources", "#factor-readiness", "#factor-grid", "#status-card", "#map-title", "#map-scale-note", "#snapshot-pill", "#compare-instruction", "#map-tag", "#map-north", "#map-footer", "#study-path", "#research-progress", "#study-memo", "#intro-actions", "#scenario", "#owner-intake", "#owner-form", "#owner-status", "#sample-replay-link", "#owner-journey", "#owner-utilisation", "#owner-journey-result", "#owner-journey-memo", "#copy-owner-memo", "#owner-copy-status", "#priority-overview", "#priority-local", "#priority-choices", "#priority-detail", "#priority-coverage"];
+      const selectors = ["#point-map", "#inspection", "#cluster-cards", "#selection-title", "#intro-summary", "#sources", "#factor-readiness", "#factor-grid", "#status-card", "#map-title", "#map-scale-note", "#snapshot-pill", "#compare-instruction", "#map-tag", "#map-north", "#map-footer", "#study-path", "#research-progress", "#study-memo", "#intro-actions", "#scenario", "#owner-intake", "#owner-form", "#owner-status", "#sample-replay-link", "#owner-journey", "#owner-utilisation", "#owner-journey-result", "#owner-journey-memo", "#copy-owner-memo", "#owner-copy-status", "#priority-overview", "#priority-local", "#priority-choices", "#priority-detail", "#priority-coverage", "#national-explorer-content"];
       const element = () => ({ textContent: '', innerHTML: '', hidden: false, setAttribute: vi.fn(),
         replaceChildren: vi.fn(), append: vi.fn(), addEventListener: vi.fn(), querySelectorAll: () => [], querySelector: () => ({ checked: false, addEventListener: vi.fn() }) });
       const nodes = new Map(selectors.map(selector => [selector, element()]));
@@ -53,7 +53,7 @@ describe("prototype replay failure", () => {
     }
   });
   it('withholds all evidence visuals when a block citation changes before rendering', async () => {
-    const selectors = ["#point-map", "#inspection", "#cluster-cards", "#selection-title", "#intro-summary", "#sources", "#factor-readiness", "#factor-grid", "#status-card", "#map-title", "#map-scale-note", "#snapshot-pill", "#compare-instruction", "#map-tag", "#map-north", "#map-footer", "#study-path", "#research-progress", "#study-memo", "#intro-actions", "#scenario", "#owner-intake", "#owner-form", "#owner-status", "#sample-replay-link", "#owner-journey", "#owner-utilisation", "#owner-journey-result", "#owner-journey-memo", "#copy-owner-memo", "#owner-copy-status", "#priority-overview", "#priority-local", "#priority-choices", "#priority-detail", "#priority-coverage"];
+    const selectors = ["#point-map", "#inspection", "#cluster-cards", "#selection-title", "#intro-summary", "#sources", "#factor-readiness", "#factor-grid", "#status-card", "#map-title", "#map-scale-note", "#snapshot-pill", "#compare-instruction", "#map-tag", "#map-north", "#map-footer", "#study-path", "#research-progress", "#study-memo", "#intro-actions", "#scenario", "#owner-intake", "#owner-form", "#owner-status", "#sample-replay-link", "#owner-journey", "#owner-utilisation", "#owner-journey-result", "#owner-journey-memo", "#copy-owner-memo", "#owner-copy-status", "#priority-overview", "#priority-local", "#priority-choices", "#priority-detail", "#priority-coverage", "#national-explorer-content"];
     const element = () => ({ textContent: '', innerHTML: '', hidden: false, setAttribute: vi.fn(),
       replaceChildren: vi.fn(), append: vi.fn(), addEventListener: vi.fn(), querySelectorAll: () => [], querySelector: () => ({ checked: false, addEventListener: vi.fn() }) });
     const nodes = new Map(selectors.map(selector => [selector, element()]));
@@ -71,7 +71,7 @@ describe("prototype replay failure", () => {
   });
   it("shows an unavailable state instead of empty evidence visuals", async () => {
     const nodes = new Map<string, any>();
-    for (const selector of ["#point-map", "#inspection", "#cluster-cards", "#selection-title", "#intro-summary", "#sources", "#factor-readiness", "#factor-grid", "#status-card", "#map-title", "#map-scale-note", "#snapshot-pill", "#compare-instruction", "#map-tag", "#map-north", "#map-footer", "#study-path", "#research-progress", "#study-memo", "#intro-actions", "#scenario", "#owner-intake", "#owner-form", "#owner-status", "#sample-replay-link", "#owner-journey", "#owner-utilisation", "#owner-journey-result", "#owner-journey-memo", "#copy-owner-memo", "#owner-copy-status", "#priority-overview", "#priority-local", "#priority-choices", "#priority-detail", "#priority-coverage"]) {
+    for (const selector of ["#point-map", "#inspection", "#cluster-cards", "#selection-title", "#intro-summary", "#sources", "#factor-readiness", "#factor-grid", "#status-card", "#map-title", "#map-scale-note", "#snapshot-pill", "#compare-instruction", "#map-tag", "#map-north", "#map-footer", "#study-path", "#research-progress", "#study-memo", "#intro-actions", "#scenario", "#owner-intake", "#owner-form", "#owner-status", "#sample-replay-link", "#owner-journey", "#owner-utilisation", "#owner-journey-result", "#owner-journey-memo", "#copy-owner-memo", "#owner-copy-status", "#priority-overview", "#priority-local", "#priority-choices", "#priority-detail", "#priority-coverage", "#national-explorer-content"]) {
       nodes.set(selector, { textContent: "", innerHTML: "", hidden: false, setAttribute: vi.fn(), addEventListener: vi.fn(), querySelectorAll: () => [], querySelector: () => ({ checked: false, addEventListener: vi.fn() }) });
     }
     vi.stubGlobal("document", { querySelector: (selector: string) => nodes.get(selector) });

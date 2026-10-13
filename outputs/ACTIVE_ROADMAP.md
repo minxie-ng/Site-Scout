@@ -1,12 +1,12 @@
 # Site Scout — active delivery roadmap
 
-Updated 13 October 2026. Deadline: **19 October 2026, 11:45 pm SGT**. This is the working queue; `SITE_SCOUT_BRIEF.md` remains the product contract and `IMPLEMENTATION_PLAN.md` keeps acceptance history. Gate 5 is open. Do not mark it closed merely to submit.
+Updated 13 October 2026. Deadline: **19 October 2026, 11:45 pm SGT**. This is the working queue; `SITE_SCOUT_BRIEF.md` remains the product contract and `IMPLEMENTATION_PLAN.md` keeps acceptance history. Gate 5 is open. Do not mark it closed merely to submit. The user reprioritized visible Singapore-wide discovery and required Jev routing ahead of judging screenshots.
 
 ## What exists
 
 - Reviewed source published to GitHub `main`; the static prototype is deployed at https://sitescoutsg.vercel.app/ with automatic production builds from `main` and project root `prototype` verified on 13 October.
 - Blank owner intake now leads the page and connects deterministic class economics to one selected group from the interactive map of three sampled Singapore block groups. The abstaining Punggol replay is a separate, optional synthetic example.
-- A 27-town coverage manifest and 89 checked address points produce 20 sampled three-block groups; **10,727 HDB leads remain unprobed and all 27 whole towns unassessed**. The three shown groups are investigation priorities, not Singapore's best sites.
+- A 27-town coverage manifest and 89 checked address points produce 20 sampled three-block groups. The page now exposes every town code, checked point and group with dated links, while keeping the top three owner journey intact. **10,727 HDB leads remain unprobed, one probe was unresolved, and all 27 whole towns remain unassessed**. The three shown groups are investigation priorities, not Singapore's best sites.
 - Bounded area/market/challenger research and a OneMap MCP canary. Jev Decisions is wired for a routing demonstration, but its one paid live canary accepted no task and was slower than fixed scripted roles. All real-site outcomes remain `insufficient_evidence`.
 
 ## Submission-critical work, in order
@@ -24,4 +24,4 @@ Updated 13 October 2026. Deadline: **19 October 2026, 11:45 pm SGT**. This is th
 
 Do not start more provider integrations, scraping families, an MCP server, a Next.js rewrite, MapLibre migration, or cosmetic polish before the four submission-critical steps. The 24 MB `src` tree is mostly retained source originals; `node_modules` is ignored. Keep those evidence files for auditability. The long implementation plan is history, not another queue.
 
-**Exact next minor task:** capture the deployed owner-screening walkthrough and Devpost screenshots at https://sitescoutsg.vercel.app/ . Show an abstention case and cite the sampled evidence limits. `sitescout.vercel.app` and `site-scout.vercel.app` are assigned to other projects; do not force a reassignment. Keep Gate 5 open.
+**Exact next minor task:** design and run one resumable, rate-limited, authenticated OneMap Search batch for the ten HDB codes whose current three-point sample yields no ≤125 m group. Snapshot and validate each exact block/street response, then recompute group coverage and disclose any still-unassessed codes. This is the next evidence-coverage step, not proof of exhaustive 10,817-block search. After that, repair the Jev Decisions task-selection canary and compare its bounded end-to-end run against the fixed workflow; then capture Devpost judging proof. Keep Gate 5 open.

@@ -1,4 +1,4 @@
-const names = { PG: 'Punggol', SGN: 'Sengkang', CL: 'Clementi' };
+const names = { PG: 'Punggol', SGN: 'Serangoon', CL: 'Clementi' };
 const escape = value => String(value).replace(/[&<>"']/g, char =>
   ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
 const exactUrl = (value, host) => {
@@ -9,7 +9,7 @@ const dated = value => typeof value === 'string' && /^2026-10-(05|06|12)T/.test(
   Number.isFinite(Date.parse(value));
 const datedDay = value => value === '2026-10-12';
 // Pin the reviewed replay bytes so a changed coordinate cannot appear as checked evidence.
-const reviewedFeedSha256 = '15b25b9e73b88502797b720b14f1cf280ec3ea001fefacc0cb166547a56dae5c';
+const reviewedFeedSha256 = '3efcfc1f3ab42d5759fb3bce6f90295f0d789ba6b8231f142dbac96c58c14560';
 const verifiedFeeds = new WeakSet();
 const freezeEvidence = value => {
   if (value && typeof value === 'object') {
@@ -39,8 +39,54 @@ export function validatePriorityMapFeed(feed) {
     feed.priorities.length !== 3 || !feed.coverage ||
     feed.coverage.checkedPointCount !== 89 || feed.coverage.eligibleGroupCount !== 20 ||
     feed.coverage.townsWithEligibleGroups !== 17 || feed.coverage.unprobedLeadCount !== 10727 ||
-    feed.coverage.unresolvedSampledLeadCount !== 1)
+    feed.coverage.unresolvedSampledLeadCount !== 1 || !Array.isArray(feed.townCoverage) ||
+    feed.townCoverage.length !== 27 || !Array.isArray(feed.checkedPoints) ||
+    feed.checkedPoints.length !== feed.coverage.checkedPointCount || !Array.isArray(feed.sampledGroups) ||
+    feed.sampledGroups.length !== feed.coverage.eligibleGroupCount)
     throw new Error('Priority map evidence unavailable');
+  const townCodes = new Set();
+  for (const town of feed.townCoverage) {
+    if (!/^[A-Z]{2,3}$/.test(town.code) || townCodes.has(town.code) || town.status !== 'unassessed' ||
+      !Number.isSafeInteger(town.totalHdbLeads) || town.totalHdbLeads <= 0 ||
+      !Number.isSafeInteger(town.checkedAddressPointCount) || town.checkedAddressPointCount < 0 ||
+      town.checkedAddressPointCount > town.totalHdbLeads ||
+      !Number.isSafeInteger(town.eligibleGroupCount) || town.eligibleGroupCount < 0)
+      throw new Error('Town coverage invalid');
+    townCodes.add(town.code);
+  }
+  if (feed.townCoverage.reduce((sum, town) => sum + town.checkedAddressPointCount, 0) !== 89 ||
+    feed.townCoverage.reduce((sum, town) => sum + town.totalHdbLeads, 0) !== 10817)
+    throw new Error('Town coverage incomplete');
+  const pointIds = new Set();
+  for (const point of feed.checkedPoints) {
+    const id = `${point.townCode}:${point.block}:${point.street}`;
+    if (!townCodes.has(point.townCode) || pointIds.has(id) ||
+      !/^[0-9A-Z]{1,5}$/.test(point.block) || !/^[A-Z0-9 .'-]{4,80}$/.test(point.street) ||
+      !Number.isFinite(point.latitude) || point.latitude < 1.1 || point.latitude > 1.5 ||
+      !Number.isFinite(point.longitude) || point.longitude < 103.5 || point.longitude > 104.1 ||
+      !exactUrl(point.sourceUrl, 'www.onemap.gov.sg') || !dated(point.retrievedAt) ||
+      !exactUrl(point.hdbSourceUrl, 'data.gov.sg') || !datedDay(point.hdbRetrievedDate) ||
+      !['checked_replay', 'checked_api_replay'].includes(point.evidenceStatus))
+      throw new Error('Checked point invalid');
+    pointIds.add(id);
+  }
+  if (feed.townCoverage.some(town => town.checkedAddressPointCount !==
+    feed.checkedPoints.filter(point => point.townCode === town.code).length))
+    throw new Error('Town point count mismatch');
+  for (const group of feed.sampledGroups) {
+    if (!townCodes.has(group.townCode) || group.outcome !== 'insufficient_evidence' ||
+      !Number.isFinite(group.maxPairwiseMetres) || group.maxPairwiseMetres > 125 ||
+      group.maxPairwiseMetres < 0 || !Array.isArray(group.members) || group.members.length !== 3 ||
+      new Set(group.members.map(member => `${member.block}:${member.street}`)).size !== 3 ||
+      group.members.some(member => !/^[0-9A-Z]{1,5}$/.test(member.block) ||
+        !/^[A-Z0-9 .'-]{4,80}$/.test(member.street) ||
+        !exactUrl(member.sourceUrl, 'www.onemap.gov.sg') || !dated(member.retrievedAt) ||
+        !exactUrl(member.hdbSourceUrl, 'data.gov.sg') || !datedDay(member.hdbRetrievedDate)))
+      throw new Error('Sampled group invalid');
+  }
+  if (feed.townCoverage.some(town => town.eligibleGroupCount !==
+    feed.sampledGroups.filter(group => group.townCode === town.code).length))
+    throw new Error('Town group count mismatch');
   const ids = new Set();
   feed.priorities.forEach((priority, index) => {
     if (priority.investigationPriority !== index + 1 ||
