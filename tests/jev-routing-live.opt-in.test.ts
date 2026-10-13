@@ -39,6 +39,8 @@ it.skipIf(process.env.RUN_LIVE_JEV_ROUTING !== '1')('measures one capped Jev rou
       supportedClaims: result.fixed.decision.investigation.coverage.uniqueSupportedClaims },
     routed: { elapsedMs: result.routed.elapsedMs, callsUsed: result.routed.callsUsed,
       status: result.routed.status, selectedTask: result.routed.selectedTask,
+      routingConfidence: result.routed.routingConfidence,
+      degradedReason: result.routed.degradedReason,
       outcome: result.routed.decision.outcome, reportedCostUsd: result.routed.reportedCostUsd,
       supportedClaims: result.routed.decision.investigation.coverage.uniqueSupportedClaims } };
   const path = `outputs/JEV_ROUTING_CANARY_${report.recordedAt.replace(/[:.]/g, '-')}.json`;

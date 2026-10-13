@@ -1,0 +1,27 @@
+{
+  "kind": "bounded_routing_demonstration",
+  "snapshotDate": "2026-10-06",
+  "recordedAt": "2026-10-13T12:06:05.030Z",
+  "caseId": "punggol-point-cove-442a-442b-443a",
+  "sameCaseAndEvidence": true,
+  "maxRoleCallsPerArm": 3,
+  "jevRequests": 1,
+  "speedBenefitEstablished": false,
+  "fixed": {
+    "elapsedMs": 79.19525000000002,
+    "callsUsed": 3,
+    "outcome": "insufficient_evidence",
+    "reportedCostUsd": 0,
+    "supportedClaims": 1
+  },
+  "routed": {
+    "elapsedMs": 778.47075,
+    "callsUsed": 3,
+    "status": "degraded",
+    "selectedTask": null,
+    "degradedReason": "confidence_below_threshold",
+    "outcome": "insufficient_evidence",
+    "reportedCostUsd": 0.000022092,
+    "supportedClaims": 1
+  }
+}

@@ -24,6 +24,7 @@ it('routes the checked three-role workflow through actual Jev Decisions transpor
   const result = await runJevRoutedResearch(snapshot, snapshot.clusters[0].id, runners,
     { benchmarkApiKey: 'dedicated', generalApiKey: 'general', fetcher: network });
   expect(result).toMatchObject({ status: 'jev_routed', selectedTask: 'market',
+    routingConfidence: 0.9, degradedReason: null,
     kind: 'bounded_routing_demonstration',
     decision: { outcome: 'insufficient_evidence' }, reportedCostUsd: 0.00001, callsUsed: 3 });
   expect(Object.values(runners).every(run => run.mock.calls.length === 1)).toBe(true);
@@ -89,7 +90,25 @@ it('discloses a degraded abstaining run when Jev cannot select an allowed task',
   const result = await runJevRoutedResearch(snapshot, snapshot.clusters[0].id, runners,
     { benchmarkApiKey: 'dedicated', generalApiKey: 'general', fetcher: network });
   expect(result).toMatchObject({ status: 'degraded', selectedTask: null,
+    degradedReason: 'invalid_answer',
     decision: { outcome: 'insufficient_evidence' } });
+});
+
+it('uses a valid low-confidence Choice only to order work while all roles still run', async () => {
+  const snapshot = input();
+  const network = vi.fn(async (url: string | URL | Request) => String(url).endsWith('/key') ?
+    new Response(JSON.stringify({ data: { limit: 0.1, limit_remaining: 0.09, usage: 0.01, limit_reset: null } })) :
+    new Response(JSON.stringify({ model: 'typesafe/jev-1.13-20260917', usage: { cost: 0.00001 },
+      answers: { research_priority: { type: 'choice', choice: 'area', confidence: 0.7,
+        probabilities: { area: 0.7, market: 0.2, challenger: 0.1 } } } }))) as unknown as typeof fetch;
+  const runners = roles();
+  const result = await runJevRoutedResearch(snapshot, snapshot.clusters[0].id, runners,
+    { benchmarkApiKey: 'dedicated', generalApiKey: 'general', fetcher: network });
+  expect(result).toMatchObject({ status: 'jev_routed', selectedTask: 'area',
+    routingConfidence: 0.7, degradedReason: null, reportedCostUsd: 0.00001,
+    decision: { outcome: 'insufficient_evidence' } });
+  expect(network).toHaveBeenCalledTimes(2);
+  expect(Object.values(runners).every(run => run.mock.calls.length === 1)).toBe(true);
 });
 
 it('uses fixed bounded research with explicit degraded status when the Jev key is unavailable', async () => {
@@ -97,7 +116,7 @@ it('uses fixed bounded research with explicit degraded status when the Jev key i
   const result = await runJevRoutedResearch(snapshot, snapshot.clusters[0].id, runners,
     { benchmarkApiKey: '', generalApiKey: 'general', fetcher: network });
   expect(result).toMatchObject({ status: 'degraded', selectedTask: null, callsUsed: 3,
-    reportedCostUsd: 0, decision: { outcome: 'insufficient_evidence' } });
+    degradedReason: 'missing_key', reportedCostUsd: 0, decision: { outcome: 'insufficient_evidence' } });
   expect(network).not.toHaveBeenCalled();
 });
 

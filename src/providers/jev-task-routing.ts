@@ -56,7 +56,8 @@ export async function runJevRoutedResearch(input: Input, clusterId: string, runn
   const safeRequest = { maxCalls: 3, assignments: tasks.map(role => ({ role, run: () => { throw new Error('unavailable'); } })) };
   if (!parseDevelopmentRecord(input.development).success) return { status: 'invalid_source' as const,
     kind: 'bounded_routing_demonstration' as const,
-    selectedTask: null, decision: decideReviewedClusterWithInvestigation(input, clusterId, safeRequest),
+    selectedTask: null, routingConfidence: null, degradedReason: 'invalid_source' as const,
+    decision: decideReviewedClusterWithInvestigation(input, clusterId, safeRequest),
     callsUsed: 0, reportedCostUsd: 0, elapsedMs: performance.now() - started };
   decideReviewedCluster(input, clusterId);
   const comparison = assembleGate2Comparison(input);
@@ -66,9 +67,13 @@ export async function runJevRoutedResearch(input: Input, clusterId: string, runn
     tasks.some(role => typeof runners?.[role] !== 'function')) {
     throw new Error('Invalid Jev routing configuration');
   }
-  let selectedTask: Task | null = null; let reportedCostUsd: number | null = 0;
+  let selectedTask: Task | null = null; let routingConfidence: number | null = null;
+  let reportedCostUsd: number | null = 0;
+  let degradedReason: 'missing_key' | 'account_cap' | 'transport_unavailable' | 'response_unavailable' |
+    'billing_unverified' | 'invalid_answer' | 'inconsistent_probabilities' | null = 'missing_key';
   try {
     if (!options.benchmarkApiKey?.trim()) throw new Error('jev_unavailable');
+    degradedReason = 'account_cap';
     const gate = createOpenRouterChatSpendGate({ apiKey: options.benchmarkApiKey,
       forbiddenApiKeys: [options.generalApiKey], maxAccountLimitUsd: 0.1,
       maxRequestCostUsd: reserveUsd, maxTotalAttempts: 1, fetcher: options.fetcher });
@@ -77,6 +82,7 @@ export async function runJevRoutedResearch(input: Input, clusterId: string, runn
     const reservation = await gate.reserve(cap.keyId, reserveUsd);
     if (!reservation) throw new Error('cap_unavailable');
     reportedCostUsd = null; // After dispatch, a timeout may still be billed.
+    degradedReason = 'transport_unavailable';
     const controller = new AbortController();
     const body = { model, state: { evidenceScope: 'Checked historical development replay only; no current premises or demand proof.',
       clusterId: cluster.id, publishedDwellingUnits: cluster.publishedDwellingUnits,
@@ -91,24 +97,32 @@ export async function runJevRoutedResearch(input: Input, clusterId: string, runn
       headers: { Authorization: `Bearer ${options.benchmarkApiKey}`, 'Content-Type': 'application/json' },
       body: JSON.stringify(body), signal: controller.signal }), 8_000, () => controller.abort()); }
     catch { controller.abort(); throw new Error('jev_unavailable'); }
+    degradedReason = 'response_unavailable';
     const raw = await within(readSmall(response), 8_000, () => controller.abort());
+    degradedReason = 'billing_unverified';
     const cost = z.object({ usage: z.object({ cost: z.number().finite().nonnegative() }) }).safeParse(raw);
     if (cost.success) reportedCostUsd = cost.data.usage.cost;
     if (cost.success && cost.data.usage.cost <= reserveUsd) await gate.settle(reservation, cost.data.usage.cost);
     if (!response.ok || !cost.success || cost.data.usage.cost > reserveUsd) throw new Error('jev_unavailable');
+    degradedReason = 'invalid_answer';
     const parsed = answerSchema.safeParse(raw);
     if (!parsed.success) throw new Error('jev_unavailable');
     const answer = parsed.data.answers.research_priority;
     const values = Object.values(answer.probabilities);
-    if (answer.confidence < 0.8 || Math.abs(values.reduce((sum, value) => sum + value, 0) - 1) > 0.01 ||
+    degradedReason = 'inconsistent_probabilities';
+    if (Math.abs(values.reduce((sum, value) => sum + value, 0) - 1) > 0.01 ||
       answer.probabilities[answer.choice] !== Math.max(...values) ||
       values.filter(value => value === Math.max(...values)).length !== 1) throw new Error('jev_unavailable');
+    // Low confidence can order work because all roles still run; it cannot waive the decision gate.
     selectedTask = answer.choice;
+    routingConfidence = answer.confidence;
+    degradedReason = null;
   } catch { /* Preserve a degraded, abstaining research run. */ }
   const order = selectedTask ? [selectedTask, ...tasks.filter(task => task !== selectedTask)] : tasks;
   const run = await runRoles(input, clusterId, runners, order, selectedTask !== null);
   return { kind: 'bounded_routing_demonstration' as const,
-    status: selectedTask ? 'jev_routed' as const : 'degraded' as const, selectedTask,
+    status: selectedTask ? 'jev_routed' as const : 'degraded' as const,
+    selectedTask, routingConfidence, degradedReason,
     ...run, reportedCostUsd, elapsedMs: performance.now() - started };
 }
 
