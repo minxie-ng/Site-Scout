@@ -24,4 +24,4 @@ Updated 13 October 2026. Deadline: **19 October 2026, 11:45 pm SGT**. This is th
 
 Do not start more provider integrations, scraping families, an MCP server, a Next.js rewrite, MapLibre migration, or cosmetic polish before the four submission-critical steps. The 24 MB `src` tree is mostly retained source originals; `node_modules` is ignored. Keep those evidence files for auditability. The long implementation plan is history, not another queue.
 
-**Exact next minor task:** deploy the reviewed static prototype, then verify the owner path and snapshot-failure behavior on desktop and mobile. Record the working URL and deployed SHA; keep Gate 5 open.
+**Exact next minor task:** confirm an available clean Vercel alias, verify that a GitHub `main` push automatically deploys the configured `prototype` root, then capture the deployed walkthrough and Devpost screenshots. Keep Gate 5 open.
