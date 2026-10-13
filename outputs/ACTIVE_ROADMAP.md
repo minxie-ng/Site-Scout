@@ -4,7 +4,7 @@ Updated 13 October 2026. Deadline: **19 October 2026, 11:45 pm SGT**. This is th
 
 ## What exists
 
-- Published GitHub source and a local static prototype; **no deployed product URL yet**.
+- Reviewed source published to GitHub `main` at `e3cb58d` and a local static prototype; **no deployed product URL yet**.
 - Blank owner intake now leads the page and connects deterministic class economics to one selected group from the interactive map of three sampled Singapore block groups. The abstaining Punggol replay is a separate, optional synthetic example.
 - A 27-town coverage manifest and 89 checked address points produce 20 sampled three-block groups; **10,727 HDB leads remain unprobed and all 27 whole towns unassessed**. The three shown groups are investigation priorities, not Singapore's best sites.
 - Bounded area/market/challenger research and a OneMap MCP canary. Jev Decisions is wired for a routing demonstration, but its one paid live canary accepted no task and was slower than fixed scripted roles. All real-site outcomes remain `insufficient_evidence`.
@@ -12,7 +12,7 @@ Updated 13 October 2026. Deadline: **19 October 2026, 11:45 pm SGT**. This is th
 ## Submission-critical work, in order
 
 1. **Done 13 October — connect one honest product journey.** Confirmed owner-entered estimates now connect a selected checked sampled block group, class-only utilisation scenario, abstaining decision, and copyable dated-source memo. Browser and failure paths were checked; sequential independent reviews approved this bounded slice. Gate 5 remains open.
-2. **By 15 October — freeze and publish.** The blank owner intake now leads and the synthetic Punggol study is secondary; sequential independent reviews approved the reorder. Delivery checks passed locally; commit and push the reviewed branch to GitHub. Keep replay/live labels precise.
+2. **Done 13 October — freeze and publish.** The blank owner intake leads and the synthetic Punggol study is secondary. Sequential independent reviews approved the reorder; credential and dependency checks passed. The reviewed build was committed and pushed to the feature branch and GitHub `main`. Keep replay/live labels precise.
 3. **By 17 October — deploy and verify.** Publish a working personal hackathon demo, test the primary path and snapshot fallback on desktop and mobile, and record the URL and commit SHA. A static deploy is enough if it honestly labels live provider features as unavailable; do not move keys into browser code.
 4. **By 18 October — prepare judging proof.** Show one short business-area screening journey, one failure/abstention case, source links and dates, deterministic economics, and the multi-agent/Jev experiment's measured limitation. Capture images and submit the GitHub URL, deployed URL and Devpost story. Keep 19 October as submission buffer.
 
@@ -24,4 +24,4 @@ Updated 13 October 2026. Deadline: **19 October 2026, 11:45 pm SGT**. This is th
 
 Do not start more provider integrations, scraping families, an MCP server, a Next.js rewrite, MapLibre migration, or cosmetic polish before the four submission-critical steps. The 24 MB `src` tree is mostly retained source originals; `node_modules` is ignored. Keep those evidence files for auditability. The long implementation plan is history, not another queue.
 
-**Exact next minor task:** commit and push the reviewed branch after the clean delivery check, then deploy the static prototype and verify the owner path plus snapshot-failure behavior on desktop and mobile. Do not call Gate 5 closed or claim a deployed URL before one works.
+**Exact next minor task:** deploy the reviewed static prototype, then verify the owner path and snapshot-failure behavior on desktop and mobile. Record the working URL and deployed SHA; keep Gate 5 open.
