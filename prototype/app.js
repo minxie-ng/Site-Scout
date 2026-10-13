@@ -19,6 +19,7 @@ let checkedPriorityFeed = null;
 let confirmedOwner = null;
 let selectedPriority = 0;
 let ownerConfirmationCurrent = () => false;
+let replayAvailable = false;
 
 const journeyResult = document.querySelector("#owner-journey-result");
 const journeyMemo = document.querySelector("#owner-journey-memo");
@@ -43,6 +44,12 @@ function renderOwnerJourney() {
   } catch {
     journeyResult.textContent = "Scenario or checked area unavailable. Review the inputs and source snapshot; no location decision is available.";
   }
+}
+function mountOwnerForm(feed) {
+  ownerConfirmationCurrent = mountOwnerIntake(document.querySelector("#owner-form"), document.querySelector("#owner-status"), feed, {
+    onConfirmed: values => { confirmedOwner = values; renderOwnerJourney(); },
+    onInvalidated: () => { confirmedOwner = null; renderOwnerJourney(); }
+  });
 }
 document.querySelector("#owner-utilisation").addEventListener("input", renderOwnerJourney);
 copyOwnerMemo.addEventListener("click", async () => {
@@ -228,30 +235,27 @@ try {
   factorGrid.innerHTML = factorCards(feed.factors);
   clusters = feed.clusters;
   select(0);
-  ownerConfirmationCurrent = mountOwnerIntake(document.querySelector("#owner-form"), document.querySelector("#owner-status"), feed, {
-    onConfirmed: values => { confirmedOwner = values; renderOwnerJourney(); },
-    onInvalidated: () => { confirmedOwner = null; renderOwnerJourney(); }
-  });
   startScenario(feed);
   startProgressReplay().catch(() => {
     document.querySelector("#progress-stage").textContent = "Recorded run unavailable";
     document.querySelector("#progress-next").disabled = true;
   });
+  mountOwnerForm(feed);
+  replayAvailable = true;
 } catch (error) {
+  mountOwnerForm(null);
   title.textContent = "Evidence unavailable";
   inspection.textContent = "The dated block snapshot could not be loaded. Start the local server from the repository root and reload this page.";
   map.innerHTML = '<text x="380" y="260" text-anchor="middle" fill="#607580" font-size="22">Evidence unavailable</text>';
   cards.textContent = "Evidence unavailable. Restore the local snapshot to compare candidate blocks.";
-  document.querySelector("#intro-summary").textContent = "The dated block snapshot could not be loaded, so this preview cannot show or compare verified points.";
+  document.querySelector("#intro-summary").textContent = "The optional Punggol replay could not be loaded. Enter your figures and inspect the separately checked sampled map if available; no location decision is established.";
   document.querySelector("#status-card").textContent = "Decision withheld · evidence unavailable";
   document.querySelector("#sources").hidden = true;
   document.querySelector("#factor-readiness").hidden = true;
   document.querySelector("#study-path").hidden = true;
   document.querySelector("#research-progress").hidden = true;
-  document.querySelector("#intro-actions").hidden = true;
+  document.querySelector("#sample-replay-link").hidden = true;
   document.querySelector("#scenario").hidden = true;
-  document.querySelector("#owner-intake").hidden = true;
-  document.querySelector("#owner-journey").hidden = true;
   document.querySelector("#study-memo").hidden = true;
   document.querySelector("#map-title").textContent = "Evidence unavailable";
   document.querySelector("#map-scale-note").textContent = "No points loaded · no map comparison available";
@@ -273,6 +277,10 @@ try {
     renderOwnerJourney();
   });
   checkedPriorityFeed = checked;
+  if (!replayAvailable) {
+    document.querySelector('#status-card').textContent = 'Checked sample available · location decision withheld';
+    document.querySelector('#snapshot-pill').textContent = 'CHECKED SAMPLE · 12 OCT 2026';
+  }
   renderOwnerJourney();
 } catch (error) {
   checkedPriorityFeed = null;

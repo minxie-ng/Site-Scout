@@ -106,7 +106,7 @@ export function mountOwnerIntake(root, status, feed, { onConfirmed, onInvalidate
       return;
     }
     try {
-      const comparison = screenOwnerAreas(feed, values);
+      const comparison = feed === null ? { economics: runOwnerEconomics(values), candidates: [] } : screenOwnerAreas(feed, values);
       const economics = comparison.economics;
       const visits = economics.requiredPaidVisitsPerMonth.toLocaleString('en-SG');
       const utilisation = (economics.breakEvenAverageUtilisation * 100).toFixed(1);
@@ -115,7 +115,8 @@ export function mountOwnerIntake(root, status, feed, { onConfirmed, onInvalidate
         'This is a required utilisation, not a demand forecast.';
       const areas = comparison.candidates.map(candidate =>
         `<li><strong>${candidate.name}</strong> · Blocks ${candidate.blocks.join(', ')}: insufficient evidence</li>`).join('');
-      status.innerHTML = `<strong>Business inputs confirmed for this session</strong><p>Confirmed calculation snapshot: S$${values.priceSgd} per paid visit, ${values.seats} seats, ${values.classesPerWeek} classes per week, and S$${values.rentCeilingSgd} assumed monthly rent ceiling. If form values change, reconfirm before using this snapshot.</p><p>At that rent ceiling, class-only break-even is ${visits} paid visits per month (${utilisation}% of available seat visits). ${capacityNote} This screen assumes scheduled classes with paid seat visits; it does not model other business formats. The model uses 4.33 weeks per month; business format, opening budget, runway, opening horizon, target customers and existing outlet do not affect this calculation.</p><p>Owner economics beside the dated area snapshot ${feed.snapshotDate}. No area-specific fit is established: premises rent, permitted use, demand and local competition are unverified for all three reviewed block groups.</p><ul>${areas}</ul><p>No personalized area recommendation yet; your figures are not saved or sent.</p>`;
+      const areaNote = feed === null ? 'Punggol replay unavailable. The independently checked sample map may still load; no area-specific fit is established.' : `Owner economics beside the dated area snapshot ${feed.snapshotDate}. No area-specific fit is established: premises rent, permitted use, demand and local competition are unverified for all three reviewed block groups.`;
+      status.innerHTML = `<strong>Business inputs confirmed for this session</strong><p>Confirmed calculation snapshot: S$${values.priceSgd} per paid visit, ${values.seats} seats, ${values.classesPerWeek} classes per week, and S$${values.rentCeilingSgd} assumed monthly rent ceiling. If form values change, reconfirm before using this snapshot.</p><p>At that rent ceiling, class-only break-even is ${visits} paid visits per month (${utilisation}% of available seat visits). ${capacityNote} This screen assumes scheduled classes with paid seat visits; it does not model other business formats. The model uses 4.33 weeks per month; business format, opening budget, runway, opening horizon, target customers and existing outlet do not affect this calculation.</p><p>${areaNote}</p>${areas ? `<ul>${areas}</ul>` : ''}<p>No personalized area recommendation yet; your figures are not saved or sent.</p>`;
       onConfirmed?.(values);
     } catch (cause) {
       onInvalidated?.();

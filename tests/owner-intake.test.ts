@@ -158,6 +158,27 @@ it('exposes confirmation freshness for later map changes and memo copying', () =
   expect(current()).toBe(false);
 });
 
+it('keeps confirmed class economics available when the separate Punggol replay is missing', () => {
+  const handlers = new Map<string, (event?: any) => void>();
+  const fields = Object.entries(complete).map(([name, value]) => ({ name,
+    type: name === 'confirmed' ? 'checkbox' : 'text', value: String(value), checked: value === true,
+    checkValidity: () => true, reportValidity() {} }));
+  const root = { addEventListener: (name: string, handler: (event: any) => void) => handlers.set(name, handler),
+    querySelector: (selector: string) => selector === '.owner-submit' ?
+      { addEventListener: (_: string, handler: () => void) => handlers.set('click', handler) } :
+      fields.find(field => field.name === 'confirmed'),
+    querySelectorAll: () => fields };
+  const status = { innerHTML: '' };
+  let confirmed = false;
+  mountOwnerIntake(root, status, null, { onConfirmed: () => { confirmed = true; } });
+  handlers.get('input')!({ target: { name: 'confirmed' } });
+  handlers.get('click')!();
+  expect(confirmed).toBe(true);
+  expect(status.innerHTML).toContain('break-even');
+  expect(status.innerHTML).toContain('Punggol replay unavailable');
+  expect(status.innerHTML).not.toContain('Punggol Point Cove');
+});
+
 it('identifies invalid area evidence without blaming valid owner estimates', () => {
   const handlers = new Map<string, (event?: any) => void>();
   const fields = Object.entries(complete).map(([name, value]) => ({ name,

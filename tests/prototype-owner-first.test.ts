@@ -13,4 +13,8 @@ it('starts with blank owner input before sampled research and keeps the Punggol 
   expect(page).not.toContain('class="profile-panel"');
   expect(page).toContain('name="businessFormat" type="text" placeholder="Group reformer Pilates" required');
   expect(page).not.toContain('name="businessFormat" type="text" value=');
+  const app = readFileSync('prototype/app.js', 'utf8');
+  expect(app).toContain('mountOwnerForm(null)');
+  expect(app).not.toContain('document.querySelector("#owner-intake").hidden = true');
+  expect(app).not.toContain('document.querySelector("#owner-journey").hidden = true');
 });
