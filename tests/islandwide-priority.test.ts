@@ -6,9 +6,9 @@ it('orders only checked few-block investigation areas by sourced housing-stock p
   const result = buildIslandwideInvestigationOrder();
   expect(result.priorities.map(item => [item.townCode, item.members.map(member => member.block),
     item.publishedDwellingUnits])).toEqual([
-    ['PG', ['442A', '442B', '443A'], 511],
-    ['SGN', ['1', '2', '3'], 460],
-    ['CL', ['410', '411', '412'], 390],
+    ['QT', ['1', '2', '3'], 658],
+    ['AMK', ['208', '217', '218'], 582],
+    ['MP', ['30', '31', '34'], 528],
   ]);
   expect(result.priorities.map(item => item.investigationPriority)).toEqual([1, 2, 3]);
   expect(result.priorities.every(item => item.evidenceKind === 'derived_value' &&
@@ -20,9 +20,9 @@ it('orders only checked few-block investigation areas by sourced housing-stock p
       member.sourceUrl.startsWith('https://www.onemap.gov.sg/') && member.retrievedAt))).toBe(true);
   expect(result.towns).toHaveLength(27);
   expect(result.towns.every(town => town.status === 'unassessed')).toBe(true);
-  expect(result.towns.filter(town => town.eligibleGroupCount === 0)).toHaveLength(10);
-  expect(result.coverage).toMatchObject({ checkedPointCount: 89, eligibleGroupCount: 20,
-    townsWithEligibleGroups: 17, unprobedLeadCount: 10_727, unresolvedSampledLeadCount: 1 });
+  expect(result.towns.filter(town => town.eligibleGroupCount === 0).map(town => town.code)).toEqual(['KWN']);
+  expect(result.coverage).toMatchObject({ checkedPointCount: 162, eligibleGroupCount: 86,
+    townsWithEligibleGroups: 26, unprobedLeadCount: 10_647, unresolvedSampledLeadCount: 8 });
   expect(result.selectionScope).toBe('sampled_groups_research_triage');
   expect(result.screeningRule).toContain('one group per town');
   expect(result.screeningRule).toContain('withhold');

@@ -13,20 +13,20 @@ const feed = async () => verifyPriorityMapFeed(readFileSync('prototype/priority-
 it('connects confirmed owner economics to a selected checked block group and dated memo without a site approval', async () => {
   const snapshot = await feed();
   const result = buildOwnerJourney(snapshot, owner, 1, 60);
-  expect(result).toMatchObject({ area: 'Serangoon', blocks: ['1', '2', '3'],
+  expect(result).toMatchObject({ area: 'Ang Mo Kio', blocks: ['208', '217', '218'],
     utilisationPercent: 60, outcome: 'insufficient_evidence',
     profileStatus: 'owner_confirmed_estimate', areaStatus: 'checked_sample_replay' });
   expect(result.economicCondition).toBe('below_class_only_break_even');
   expect(result.sources).toHaveLength(3);
   const memo = ownerJourneyMemo(result);
-  expect(memo).toContain('Serangoon');
+  expect(memo).toContain('Ang Mo Kio');
   expect(memo).toContain('OneMap');
   expect(memo).toContain('HDB');
   expect(memo).toContain('retrieved');
   expect(memo).toContain('checked address replay');
   expect(memo).toContain('checked housing-record replay');
   expect(memo).toContain('derived housing-stock proxy');
-  expect(memo).toContain('10,727');
+  expect(memo).toContain('10,647');
   expect(memo).toContain('27 whole towns');
   expect(memo).toContain('insufficient_evidence');
   expect(memo).toContain('permitted Pilates use');

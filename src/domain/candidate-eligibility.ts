@@ -5,11 +5,16 @@ import { haversineDistanceMeters } from '../engine/spatial';
 import { loadHdbBlockLeads } from './hdb-block-leads';
 import { planOneMapProbes, reviewOneMapSearch } from '../providers/onemap-search';
 import { planSecondStageOneMapProbes } from '../providers/onemap-second-stage';
+import { planThirdStageOneMapProbes } from '../providers/onemap-third-stage';
 
 const manifestPath = 'src/data/snapshots/2026-10-12/onemap-town-sample.json';
 const manifestSha256 = 'ea4e5c8d78199756579244f709a9e5b85b657813ba0053f3e5c3bef96f8c09a0';
 const secondStageManifestPath = 'src/data/snapshots/2026-10-12/onemap-second-stage.json';
 const secondStageManifestSha256 = 'baae0214697c303c247c385ff26acde5d53e757ae55388536be2875c241cc2da';
+const thirdStageManifestPath = 'src/data/snapshots/2026-10-13/onemap-third-stage.json';
+const thirdStageManifestSha256 = 'f1f757ab241914a322dafeaa25684f8b02fb3f761d251cdfd26dce687bfbd58f';
+const thirdStageBatchPath = 'src/data/snapshots/2026-10-13/original/onemap-third-stage-batch.jsonl';
+const thirdStageBatchSha256 = 'c0b23ed90f7de2a479e6e99f5d379353abeab93339de338b8f3b123730caa5a3';
 const maxPairwiseMetres = 125;
 type Point = { townCode: string; block: string; street: string; latitude: number; longitude: number;
   publishedDwellingUnits: number;
@@ -19,7 +24,7 @@ type Point = { townCode: string; block: string; street: string; latitude: number
   evidenceStatus: 'checked_replay' | 'checked_api_replay' };
 type Entry = { townCode?: unknown; block?: unknown; street?: unknown; sourceUrl?: unknown;
   retrievedAt?: unknown; httpStatus?: unknown; rawPath?: unknown; sha256?: unknown;
-  reviewStatus?: unknown; outcome?: unknown };
+  reviewStatus?: unknown; outcome?: unknown; rawIndex?: unknown };
 type LocatedBlock = { townCode: string; block: string; street: string; latitude: number; longitude: number };
 
 function sha256(bytes: Buffer) { return createHash('sha256').update(bytes).digest('hex'); }
@@ -49,7 +54,7 @@ export function eligibleTriples<T extends LocatedBlock>(points: readonly T[]) {
 }
 
 /** Eligibility is a straight-line evidence filter, not a market catchment or rank. */
-export function loadCandidateEligibility() {
+export function loadCandidateEligibility(throughStage: 2 | 3 = 3) {
   const inventory = loadHdbBlockLeads();
   const plan = planOneMapProbes(inventory);
   const manifestBytes = readFileSync(resolve(manifestPath));
@@ -139,6 +144,66 @@ export function loadCandidateEligibility() {
       hdbGeographicScope: inventory.geographicScope, hdbEvidenceStatus: inventory.evidenceStatus,
       coordinateKind: 'address_point', evidenceStatus: 'checked_api_replay' });
   }
+  const unresolvedSecond = second.entries.filter(entry => entry.reviewStatus !== 'address_point');
+  let thirdUnresolvedCount = 0;
+  if (throughStage === 3) {
+  const baseGroups = eligibleTriples(points);
+  const thirdPlan = planThirdStageOneMapProbes(inventory, points, baseGroups,
+    unresolvedSecond.map(entry => `${entry.townCode}:${entry.block}:${entry.street}`));
+  const thirdBytes = readFileSync(resolve(thirdStageManifestPath));
+  if (sha256(thirdBytes) !== thirdStageManifestSha256)
+    throw new Error('Third-stage OneMap manifest integrity failure');
+  const third = JSON.parse(thirdBytes.toString('utf8')) as { schemaVersion?: unknown;
+    requestCeiling?: unknown; runStatus?: unknown; requestsMade?: unknown; selectionRule?: unknown;
+    proximityStatus?: unknown; geographicScope?: unknown; selected?: unknown; outcome?: unknown;
+    batchSha256?: unknown; entries?: Entry[] };
+  if (third.schemaVersion !== 1 || third.requestCeiling !== 80 || third.runStatus !== 'complete' ||
+    third.requestsMade !== 80 || third.selectionRule !== thirdPlan.selectionRule ||
+    third.proximityStatus !== 'unverified' || third.geographicScope !==
+      'Eight additional exact HDB block-and-street searches in each of ten Singapore HDB codes without a checked three-block witness' ||
+    third.selected !== null || third.outcome !== 'insufficient_evidence' ||
+    third.batchSha256 !== thirdStageBatchSha256 || !Array.isArray(third.entries) || third.entries.length !== 80)
+    throw new Error('Incomplete third-stage OneMap manifest');
+  const thirdRoot = realpathSync(resolve('src/data/snapshots/2026-10-13/original'));
+  const batchFile = realpathSync(resolve(thirdStageBatchPath));
+  if (!batchFile.startsWith(thirdRoot + sep)) throw new Error('Third-stage OneMap batch outside snapshot directory');
+  const batchBytes = readFileSync(batchFile);
+  if (sha256(batchBytes) !== thirdStageBatchSha256 || batchBytes.length > 5_120_000)
+    throw new Error('Third-stage OneMap batch integrity failure');
+  const rows = batchBytes.toString('utf8').trimEnd().split('\n');
+  if (rows.length !== 80) throw new Error('Incomplete third-stage OneMap batch');
+  for (const [index, entry] of third.entries.entries()) {
+    const lead = thirdPlan.probes[index];
+    if (entry.townCode !== lead.townCode || entry.block !== lead.block || entry.street !== lead.street ||
+      entry.rawPath !== thirdStageBatchPath || entry.rawIndex !== index || entry.httpStatus !== 200 ||
+      !['address_point', 'not_found', 'ambiguous'].includes(String(entry.reviewStatus)) ||
+      entry.outcome !== 'insufficient_evidence' || typeof entry.sha256 !== 'string' ||
+      !/^[a-f0-9]{64}$/.test(entry.sha256) || typeof entry.retrievedAt !== 'string' ||
+      !/^2026-10-13T\d{2}:\d{2}:\d{2}\.\d{3}Z$/.test(entry.retrievedAt) ||
+      Number.isNaN(Date.parse(entry.retrievedAt)) || new Date(entry.retrievedAt).toISOString() !== entry.retrievedAt)
+      throw new Error('Invalid third-stage OneMap entry');
+    const row = JSON.parse(rows[index]) as { sourceUrl?: unknown; retrievedAt?: unknown;
+      httpStatus?: unknown; sha256?: unknown; bodyBase64?: unknown };
+    if (row.sourceUrl !== entry.sourceUrl || row.retrievedAt !== entry.retrievedAt ||
+      row.httpStatus !== 200 || row.sha256 !== entry.sha256 || typeof row.bodyBase64 !== 'string' ||
+      !/^[A-Za-z0-9+/]*={0,2}$/.test(row.bodyBase64))
+      throw new Error('Third-stage OneMap batch row mismatch');
+    const raw = Buffer.from(row.bodyBase64, 'base64');
+    if (raw.length > 64_000 || raw.toString('base64') !== row.bodyBase64 || sha256(raw) !== entry.sha256)
+      throw new Error('Third-stage OneMap raw response integrity failure');
+    const reviewed = reviewOneMapSearch(lead, JSON.parse(raw.toString('utf8')), entry.retrievedAt.slice(0, 10));
+    if (entry.sourceUrl !== reviewed.sourceUrl || reviewed.status !== entry.reviewStatus)
+      throw new Error('Third-stage OneMap address review mismatch');
+    if (reviewed.status === 'address_point') points.push({ townCode: lead.townCode,
+      block: lead.block, street: lead.street, publishedDwellingUnits: lead.publishedDwellingUnits,
+      latitude: reviewed.coordinate.latitude, longitude: reviewed.coordinate.longitude,
+      sourceUrl: reviewed.sourceUrl, retrievedAt: entry.retrievedAt, geographicScope: reviewed.geographicScope,
+      hdbSourceUrl: inventory.sourceUrl, hdbRetrievedDate: inventory.retrievedDate,
+      hdbGeographicScope: inventory.geographicScope, hdbEvidenceStatus: inventory.evidenceStatus,
+      coordinateKind: 'address_point', evidenceStatus: 'checked_api_replay' });
+  }
+  thirdUnresolvedCount = third.entries.filter(entry => entry.reviewStatus !== 'address_point').length;
+  }
   const ids = new Set(points.map(point => `${point.townCode}\0${point.block}\0${point.street}`));
   if (ids.size !== points.length) throw new Error('Duplicate checked block identity');
   const groups = eligibleTriples(points).map(group => ({ ...group,
@@ -147,7 +212,7 @@ export function loadCandidateEligibility() {
     `${member.townCode}\0${member.block}\0${member.street}`)));
   const ungroupedCheckedPointCount = points.filter(point => !groupedIds.has(
     `${point.townCode}\0${point.block}\0${point.street}`)).length;
-  const unresolvedSampledLeadCount = second.entries.filter(entry => entry.reviewStatus === 'not_found').length;
+  const unresolvedSampledLeadCount = unresolvedSecond.length + thirdUnresolvedCount;
   const uncheckedHdbLeadCount = inventory.leads.length - points.length;
   return { checkedAddressPointCount: points.length, checkedPoints: points, ungroupedCheckedPointCount,
     unsampledHdbLeadCount: uncheckedHdbLeadCount - unresolvedSampledLeadCount,

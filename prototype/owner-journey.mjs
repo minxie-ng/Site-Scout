@@ -1,7 +1,7 @@
 import { runOwnerEconomics } from './owner-intake.mjs';
 import { isVerifiedPriorityMapFeed } from './priority-map.mjs';
 
-const towns = { PG: 'Punggol', SGN: 'Serangoon', CL: 'Clementi' };
+const towns = { QT: 'Queenstown', AMK: 'Ang Mo Kio', MP: 'Marine Parade' };
 
 /** Join only a hash-verified sampled area to confirmed operator estimates. */
 export function buildOwnerJourney(feed, owner, selected, utilisationPercent) {

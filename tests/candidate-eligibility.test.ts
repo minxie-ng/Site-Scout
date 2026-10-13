@@ -3,16 +3,16 @@ import { eligibleTriples, loadCandidateEligibility } from '../src/domain/candida
 
 it('derives only multi-block investigation groups from integrity-checked address points', () => {
   const result = loadCandidateEligibility();
-  expect(result.checkedAddressPointCount).toBe(89);
-  expect(result.checkedPoints).toHaveLength(89);
-  expect(result.ungroupedCheckedPointCount).toBe(29);
-  expect(result.unsampledHdbLeadCount).toBe(10_727);
-  expect(result.unresolvedSampledLeadCount).toBe(1);
-  expect(result.uncheckedHdbLeadCount).toBe(10_728);
+  expect(result.checkedAddressPointCount).toBe(162);
+  expect(result.checkedPoints).toHaveLength(162);
+  expect(result.ungroupedCheckedPointCount).toBe(34);
+  expect(result.unsampledHdbLeadCount).toBe(10_647);
+  expect(result.unresolvedSampledLeadCount).toBe(8);
+  expect(result.uncheckedHdbLeadCount).toBe(10_655);
   expect(result.towns).toHaveLength(27);
   expect(result.towns.every(town => town.status === 'unassessed')).toBe(true);
-  expect(result.groups).toHaveLength(20);
-  expect(new Set(result.groups.map(group => group.townCode)).size).toBe(17);
+  expect(result.groups).toHaveLength(86);
+  expect(new Set(result.groups.map(group => group.townCode)).size).toBe(26);
   expect(result.groups.some(group => group.members.map(member => member.block).sort().join(',') ===
     '442A,442B,443A')).toBe(true);
   expect(result.groups.every(group => group.members.length >= 3 &&
@@ -25,7 +25,9 @@ it('derives only multi-block investigation groups from integrity-checked address
     ['checked_replay', 'checked_api_replay'].includes(member.evidenceStatus) &&
     member.sourceUrl.startsWith('https://www.onemap.gov.sg/') && member.retrievedAt &&
     member.hdbSourceUrl.startsWith('https://data.gov.sg/') && member.hdbRetrievedDate === '2026-10-12')).toBe(true);
-  expect(result.checkedPoints.filter(point => point.evidenceStatus === 'checked_api_replay')).toHaveLength(80);
+  expect(result.checkedPoints.filter(point => point.evidenceStatus === 'checked_api_replay')).toHaveLength(153);
+  expect(result.checkedPoints.some(point => point.townCode === 'KWN' && point.block === '102' &&
+    point.street === 'TOWNER RD')).toBe(false);
   expect(result.checkedPoints.some(point => point.townCode === 'KWN' && point.block === '101' &&
     point.street === 'JLN RAJAH')).toBe(false);
   expect(result.checkedPoints.every(point => point.geographicScope === `${point.block} ${point.street}, Singapore` &&

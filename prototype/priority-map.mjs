@@ -1,15 +1,15 @@
-const names = { PG: 'Punggol', SGN: 'Serangoon', CL: 'Clementi' };
+const names = { QT: 'Queenstown', AMK: 'Ang Mo Kio', MP: 'Marine Parade' };
 const escape = value => String(value).replace(/[&<>"']/g, char =>
   ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
 const exactUrl = (value, host) => {
   try { const url = new URL(value); return url.protocol === 'https:' && url.hostname === host; }
   catch { return false; }
 };
-const dated = value => typeof value === 'string' && /^2026-10-(05|06|12)T/.test(value) &&
+const dated = value => typeof value === 'string' && /^2026-10-(05|06|12|13)T/.test(value) &&
   Number.isFinite(Date.parse(value));
 const datedDay = value => value === '2026-10-12';
 // Pin the reviewed replay bytes so a changed coordinate cannot appear as checked evidence.
-const reviewedFeedSha256 = '3efcfc1f3ab42d5759fb3bce6f90295f0d789ba6b8231f142dbac96c58c14560';
+const reviewedFeedSha256 = '6ddbf0f78f9df63f4c1df2da606916d37b31075eea0fe7b87899c8e81bc22ba2';
 const verifiedFeeds = new WeakSet();
 const freezeEvidence = value => {
   if (value && typeof value === 'object') {
@@ -33,13 +33,13 @@ export const isVerifiedPriorityMapFeed = feed => feed !== null && typeof feed ==
 
 /** The browser only plots reviewed snapshot points; it does not rank sites. */
 export function validatePriorityMapFeed(feed) {
-  if (!feed || feed.snapshotDate !== '2026-10-12' ||
+  if (!feed || feed.snapshotDate !== '2026-10-13' ||
     feed.selectionScope !== 'sampled_groups_research_triage' ||
     feed.outcome !== 'insufficient_evidence' || !Array.isArray(feed.priorities) ||
     feed.priorities.length !== 3 || !feed.coverage ||
-    feed.coverage.checkedPointCount !== 89 || feed.coverage.eligibleGroupCount !== 20 ||
-    feed.coverage.townsWithEligibleGroups !== 17 || feed.coverage.unprobedLeadCount !== 10727 ||
-    feed.coverage.unresolvedSampledLeadCount !== 1 || !Array.isArray(feed.townCoverage) ||
+    feed.coverage.checkedPointCount !== 162 || feed.coverage.eligibleGroupCount !== 86 ||
+    feed.coverage.townsWithEligibleGroups !== 26 || feed.coverage.unprobedLeadCount !== 10647 ||
+    feed.coverage.unresolvedSampledLeadCount !== 8 || !Array.isArray(feed.townCoverage) ||
     feed.townCoverage.length !== 27 || !Array.isArray(feed.checkedPoints) ||
     feed.checkedPoints.length !== feed.coverage.checkedPointCount || !Array.isArray(feed.sampledGroups) ||
     feed.sampledGroups.length !== feed.coverage.eligibleGroupCount)
@@ -54,7 +54,7 @@ export function validatePriorityMapFeed(feed) {
       throw new Error('Town coverage invalid');
     townCodes.add(town.code);
   }
-  if (feed.townCoverage.reduce((sum, town) => sum + town.checkedAddressPointCount, 0) !== 89 ||
+  if (feed.townCoverage.reduce((sum, town) => sum + town.checkedAddressPointCount, 0) !== 162 ||
     feed.townCoverage.reduce((sum, town) => sum + town.totalHdbLeads, 0) !== 10817)
     throw new Error('Town coverage incomplete');
   const pointIds = new Set();
@@ -147,7 +147,7 @@ export function priorityMapView(feed, selected) {
   }).join('')}<text class="axis-label" x="37" y="241">WGS84 address points · magnified view</text></svg>`;
   const choices = feed.priorities.map((item, index) => `<button type="button" data-priority="${index}" aria-pressed="${index === selected}"><span>0${index + 1} · ${names[item.townCode]}</span><small>${item.members.map(m => escape(m.block)).join(' · ')} · ${item.publishedDwellingUnits} published homes</small></button>`).join('');
   const detail = `<span class="candidate-index">INVESTIGATION PRIORITY 0${selected + 1} · DERIVED HOUSING-STOCK ORDER</span><h3>${names[priority.townCode]}</h3><p class="priority-map-status">Insufficient evidence for an outlet decision</p><p>${priority.publishedDwellingUnits} published dwellings across three checked HDB blocks. This is housing stock, not occupied homes, Pilates demand or a national site ranking.</p><ul>${priority.members.map(member => `<li><strong>Block ${escape(member.block)} ${escape(member.street)}</strong><span>Checked address replay · ${member.publishedDwellingUnits} published dwellings</span><span><a href="${escape(member.sourceUrl)}" target="_blank" rel="noopener noreferrer">OneMap address</a> retrieved <time datetime="${escape(member.retrievedAt)}">${escape(member.retrievedAt.slice(0, 10))}</time> · <a href="${escape(member.hdbSourceUrl)}" target="_blank" rel="noopener noreferrer">HDB housing record</a> retrieved <time datetime="${escape(member.hdbRetrievedDate)}">${escape(member.hdbRetrievedDate.slice(0, 10))}</time></span></li>`).join('')}</ul>`;
-  const coverage = `${feed.coverage.checkedPointCount} checked address points · ${feed.coverage.eligibleGroupCount} sampled three-block groups · ${feed.coverage.unprobedLeadCount.toLocaleString('en-SG')} HDB leads unprobed · 27 whole towns unassessed. One sampled lead was not found. No national winner established.`;
+  const coverage = `${feed.coverage.checkedPointCount} checked address points · ${feed.coverage.eligibleGroupCount} sampled three-block groups in ${feed.coverage.townsWithEligibleGroups} of 27 HDB codes · ${feed.coverage.unprobedLeadCount.toLocaleString('en-SG')} HDB leads unprobed · ${feed.coverage.unresolvedSampledLeadCount} unresolved probes · 27 whole towns unassessed. No national winner established.`;
   return { overview, local, choices, detail, coverage };
 }
 

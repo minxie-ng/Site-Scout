@@ -1,57 +1,57 @@
 {
-  "snapshotDate": "2026-10-12",
+  "snapshotDate": "2026-10-13",
   "selectionScope": "sampled_groups_research_triage",
   "outcome": "insufficient_evidence",
   "coverage": {
-    "checkedPointCount": 89,
-    "eligibleGroupCount": 20,
-    "townsWithEligibleGroups": 17,
-    "unprobedLeadCount": 10727,
-    "unresolvedSampledLeadCount": 1
+    "checkedPointCount": 162,
+    "eligibleGroupCount": 86,
+    "townsWithEligibleGroups": 26,
+    "unprobedLeadCount": 10647,
+    "unresolvedSampledLeadCount": 8
   },
   "priorities": [
     {
       "investigationPriority": 1,
-      "townCode": "PG",
-      "publishedDwellingUnits": 511,
-      "maxPairwiseMetres": 116.45013691605979,
+      "townCode": "QT",
+      "publishedDwellingUnits": 658,
+      "maxPairwiseMetres": 104.77373507190113,
       "evidenceKind": "derived_value",
       "outcome": "insufficient_evidence",
       "siteRank": null,
       "members": [
         {
-          "block": "442A",
-          "street": "NEW PUNGGOL RD",
-          "latitude": 1.419635402182583,
-          "longitude": 103.9128224429809,
-          "publishedDwellingUnits": 194,
-          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=821442&returnGeom=Y&getAddrDetails=Y&pageNum=1",
-          "retrievedAt": "2026-10-05T08:35:52Z",
-          "evidenceStatus": "checked_replay",
+          "block": "1",
+          "street": "GHIM MOH RD",
+          "latitude": 1.312879756843084,
+          "longitude": 103.786855017635,
+          "publishedDwellingUnits": 220,
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=1+GHIM+MOH+RD&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:43:43.893Z",
+          "evidenceStatus": "checked_api_replay",
           "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
           "hdbRetrievedDate": "2026-10-12"
         },
         {
-          "block": "442B",
-          "street": "NEW PUNGGOL RD",
-          "latitude": 1.419030120414359,
-          "longitude": 103.9128831725031,
-          "publishedDwellingUnits": 129,
-          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=442B%20New%20Punggol%20Road&returnGeom=Y&getAddrDetails=Y&pageNum=1",
-          "retrievedAt": "2026-10-06T03:50:15Z",
-          "evidenceStatus": "checked_replay",
+          "block": "2",
+          "street": "GHIM MOH RD",
+          "latitude": 1.312378729863553,
+          "longitude": 103.7869714515989,
+          "publishedDwellingUnits": 219,
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=2+GHIM+MOH+RD&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:43:43.576Z",
+          "evidenceStatus": "checked_api_replay",
           "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
           "hdbRetrievedDate": "2026-10-12"
         },
         {
-          "block": "443A",
-          "street": "NEW PUNGGOL RD",
-          "latitude": 1.418699970052094,
-          "longitude": 103.9123514239558,
-          "publishedDwellingUnits": 188,
-          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=443A%20New%20Punggol%20Road&returnGeom=Y&getAddrDetails=Y&pageNum=1",
-          "retrievedAt": "2026-10-06T03:50:15Z",
-          "evidenceStatus": "checked_replay",
+          "block": "3",
+          "street": "GHIM MOH RD",
+          "latitude": 1.311998912862663,
+          "longitude": 103.7871897011481,
+          "publishedDwellingUnits": 219,
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=3+GHIM+MOH+RD&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:43:43.253Z",
+          "evidenceStatus": "checked_api_replay",
           "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
           "hdbRetrievedDate": "2026-10-12"
         }
@@ -59,45 +59,45 @@
     },
     {
       "investigationPriority": 2,
-      "townCode": "SGN",
-      "publishedDwellingUnits": 460,
-      "maxPairwiseMetres": 97.93261178617921,
+      "townCode": "AMK",
+      "publishedDwellingUnits": 582,
+      "maxPairwiseMetres": 114.02454429898307,
       "evidenceKind": "derived_value",
       "outcome": "insufficient_evidence",
       "siteRank": null,
       "members": [
         {
-          "block": "1",
-          "street": "LOR LEW LIAN",
-          "latitude": 1.350867126469491,
-          "longitude": 103.8753439396719,
-          "publishedDwellingUnits": 179,
-          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=1+LOR+LEW+LIAN&returnGeom=Y&getAddrDetails=Y&pageNum=1",
-          "retrievedAt": "2026-10-12T06:16:05.070Z",
+          "block": "208",
+          "street": "ANG MO KIO AVE 1",
+          "latitude": 1.365444952253527,
+          "longitude": 103.8427150474743,
+          "publishedDwellingUnits": 152,
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=208+ANG+MO+KIO+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:20.415Z",
           "evidenceStatus": "checked_api_replay",
           "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
           "hdbRetrievedDate": "2026-10-12"
         },
         {
-          "block": "2",
-          "street": "LOR LEW LIAN",
-          "latitude": 1.350607956128488,
-          "longitude": 103.8756800638624,
-          "publishedDwellingUnits": 164,
-          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=2+LOR+LEW+LIAN&returnGeom=Y&getAddrDetails=Y&pageNum=1",
-          "retrievedAt": "2026-10-12T11:51:45.776Z",
+          "block": "217",
+          "street": "ANG MO KIO AVE 1",
+          "latitude": 1.365525911020137,
+          "longitude": 103.8418125946364,
+          "publishedDwellingUnits": 240,
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=217+ANG+MO+KIO+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:21.398Z",
           "evidenceStatus": "checked_api_replay",
           "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
           "hdbRetrievedDate": "2026-10-12"
         },
         {
-          "block": "3",
-          "street": "LOR LEW LIAN",
-          "latitude": 1.35047535991421,
-          "longitude": 103.8761329572104,
-          "publishedDwellingUnits": 117,
-          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=3+LOR+LEW+LIAN&returnGeom=Y&getAddrDetails=Y&pageNum=1",
-          "retrievedAt": "2026-10-12T11:51:45.840Z",
+          "block": "218",
+          "street": "ANG MO KIO AVE 1",
+          "latitude": 1.36511908595886,
+          "longitude": 103.8417424784885,
+          "publishedDwellingUnits": 190,
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=218+ANG+MO+KIO+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:21.720Z",
           "evidenceStatus": "checked_api_replay",
           "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
           "hdbRetrievedDate": "2026-10-12"
@@ -106,45 +106,45 @@
     },
     {
       "investigationPriority": 3,
-      "townCode": "CL",
-      "publishedDwellingUnits": 390,
-      "maxPairwiseMetres": 123.25055017816429,
+      "townCode": "MP",
+      "publishedDwellingUnits": 528,
+      "maxPairwiseMetres": 107.02298334180874,
       "evidenceKind": "derived_value",
       "outcome": "insufficient_evidence",
       "siteRank": null,
       "members": [
         {
-          "block": "410",
-          "street": "C'WEALTH AVE WEST",
-          "latitude": 1.311441232302383,
-          "longitude": 103.7696919984378,
-          "publishedDwellingUnits": 130,
-          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=410+C%27WEALTH+AVE+WEST&returnGeom=Y&getAddrDetails=Y&pageNum=1",
-          "retrievedAt": "2026-10-12T06:16:04.228Z",
+          "block": "30",
+          "street": "MARINE CRES",
+          "latitude": 1.304222794767664,
+          "longitude": 103.911164021354,
+          "publishedDwellingUnits": 203,
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=30+MARINE+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:43:39.369Z",
           "evidenceStatus": "checked_api_replay",
           "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
           "hdbRetrievedDate": "2026-10-12"
         },
         {
-          "block": "411",
-          "street": "C'WEALTH AVE WEST",
-          "latitude": 1.310879201888743,
-          "longitude": 103.7695726218889,
-          "publishedDwellingUnits": 130,
-          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=411+C%27WEALTH+AVE+WEST&returnGeom=Y&getAddrDetails=Y&pageNum=1",
-          "retrievedAt": "2026-10-12T11:51:44.518Z",
+          "block": "31",
+          "street": "MARINE CRES",
+          "latitude": 1.303705566385137,
+          "longitude": 103.9114447875902,
+          "publishedDwellingUnits": 199,
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=31+MARINE+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:43:39.658Z",
           "evidenceStatus": "checked_api_replay",
           "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
           "hdbRetrievedDate": "2026-10-12"
         },
         {
-          "block": "412",
-          "street": "C'WEALTH AVE WEST",
-          "latitude": 1.31090863920106,
-          "longitude": 103.7706643316696,
-          "publishedDwellingUnits": 130,
-          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=412+C%27WEALTH+AVE+WEST&returnGeom=Y&getAddrDetails=Y&pageNum=1",
-          "retrievedAt": "2026-10-12T11:51:44.579Z",
+          "block": "34",
+          "street": "MARINE CRES",
+          "latitude": 1.304149640025478,
+          "longitude": 103.9121239666986,
+          "publishedDwellingUnits": 126,
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=34+MARINE+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:43:40.608Z",
           "evidenceStatus": "checked_api_replay",
           "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
           "hdbRetrievedDate": "2026-10-12"
@@ -155,9 +155,9 @@
   "townCoverage": [
     {
       "code": "AMK",
-      "checkedAddressPointCount": 3,
+      "checkedAddressPointCount": 11,
       "totalHdbLeads": 392,
-      "eligibleGroupCount": 0,
+      "eligibleGroupCount": 4,
       "status": "unassessed"
     },
     {
@@ -176,16 +176,16 @@
     },
     {
       "code": "BH",
-      "checkedAddressPointCount": 3,
+      "checkedAddressPointCount": 11,
       "totalHdbLeads": 238,
-      "eligibleGroupCount": 0,
+      "eligibleGroupCount": 18,
       "status": "unassessed"
     },
     {
       "code": "BM",
-      "checkedAddressPointCount": 3,
+      "checkedAddressPointCount": 8,
       "totalHdbLeads": 426,
-      "eligibleGroupCount": 0,
+      "eligibleGroupCount": 7,
       "status": "unassessed"
     },
     {
@@ -197,9 +197,9 @@
     },
     {
       "code": "BT",
-      "checkedAddressPointCount": 3,
+      "checkedAddressPointCount": 11,
       "totalHdbLeads": 27,
-      "eligibleGroupCount": 0,
+      "eligibleGroupCount": 14,
       "status": "unassessed"
     },
     {
@@ -218,16 +218,16 @@
     },
     {
       "code": "CT",
-      "checkedAddressPointCount": 3,
+      "checkedAddressPointCount": 11,
       "totalHdbLeads": 79,
-      "eligibleGroupCount": 0,
+      "eligibleGroupCount": 5,
       "status": "unassessed"
     },
     {
       "code": "GL",
-      "checkedAddressPointCount": 3,
+      "checkedAddressPointCount": 11,
       "totalHdbLeads": 310,
-      "eligibleGroupCount": 0,
+      "eligibleGroupCount": 3,
       "status": "unassessed"
     },
     {
@@ -239,9 +239,9 @@
     },
     {
       "code": "JE",
-      "checkedAddressPointCount": 3,
+      "checkedAddressPointCount": 11,
       "totalHdbLeads": 234,
-      "eligibleGroupCount": 0,
+      "eligibleGroupCount": 6,
       "status": "unassessed"
     },
     {
@@ -253,16 +253,16 @@
     },
     {
       "code": "KWN",
-      "checkedAddressPointCount": 2,
+      "checkedAddressPointCount": 6,
       "totalHdbLeads": 315,
       "eligibleGroupCount": 0,
       "status": "unassessed"
     },
     {
       "code": "MP",
-      "checkedAddressPointCount": 3,
+      "checkedAddressPointCount": 11,
       "totalHdbLeads": 59,
-      "eligibleGroupCount": 0,
+      "eligibleGroupCount": 6,
       "status": "unassessed"
     },
     {
@@ -281,9 +281,9 @@
     },
     {
       "code": "QT",
-      "checkedAddressPointCount": 3,
+      "checkedAddressPointCount": 11,
       "totalHdbLeads": 242,
-      "eligibleGroupCount": 0,
+      "eligibleGroupCount": 3,
       "status": "unassessed"
     },
     {
@@ -344,6 +344,130 @@
     }
   ],
   "sampledGroups": [
+    {
+      "townCode": "AMK",
+      "maxPairwiseMetres": 119.65727442268253,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "207",
+          "street": "ANG MO KIO AVE 1",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=207+ANG+MO+KIO+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T11:51:43.552Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "208",
+          "street": "ANG MO KIO AVE 1",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=208+ANG+MO+KIO+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:20.415Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "217",
+          "street": "ANG MO KIO AVE 1",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=217+ANG+MO+KIO+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:21.398Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "AMK",
+      "maxPairwiseMetres": 114.02454429898307,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "208",
+          "street": "ANG MO KIO AVE 1",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=208+ANG+MO+KIO+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:20.415Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "217",
+          "street": "ANG MO KIO AVE 1",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=217+ANG+MO+KIO+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:21.398Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "218",
+          "street": "ANG MO KIO AVE 1",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=218+ANG+MO+KIO+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:21.720Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "AMK",
+      "maxPairwiseMetres": 116.69359959161753,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "215",
+          "street": "ANG MO KIO AVE 1",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=215+ANG+MO+KIO+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:20.736Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "216",
+          "street": "ANG MO KIO AVE 1",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=216+ANG+MO+KIO+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:21.060Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "217",
+          "street": "ANG MO KIO AVE 1",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=217+ANG+MO+KIO+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:21.398Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "AMK",
+      "maxPairwiseMetres": 122.70805822667562,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "216",
+          "street": "ANG MO KIO AVE 1",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=216+ANG+MO+KIO+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:21.060Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "217",
+          "street": "ANG MO KIO AVE 1",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=217+ANG+MO+KIO+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:21.398Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "218",
+          "street": "ANG MO KIO AVE 1",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=218+ANG+MO+KIO+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:21.720Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
     {
       "townCode": "BB",
       "maxPairwiseMetres": 121.66856321676983,
@@ -407,6 +531,781 @@
       ]
     },
     {
+      "townCode": "BH",
+      "maxPairwiseMetres": 90.24448255712764,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "145",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=145+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T06:16:03.870Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "146",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=146+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T11:51:43.915Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "148",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=148+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:23.012Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BH",
+      "maxPairwiseMetres": 110.72783752712526,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "145",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=145+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T06:16:03.870Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "148",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=148+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:23.012Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "150",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=150+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:23.671Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BH",
+      "maxPairwiseMetres": 94.48849815682532,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "145",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=145+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T06:16:03.870Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "152",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=152+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:41.922Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "152B",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=152B+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:42.243Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BH",
+      "maxPairwiseMetres": 109.08987916765594,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "146",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=146+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T11:51:43.915Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "147",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=147+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T11:51:43.988Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "148",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=148+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:23.012Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BH",
+      "maxPairwiseMetres": 88.19298651495092,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "147",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=147+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T11:51:43.988Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "148",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=148+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:23.012Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "149",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=149+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:23.339Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BH",
+      "maxPairwiseMetres": 73.25712963396492,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "147",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=147+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T11:51:43.988Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "148",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=148+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:23.012Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "150",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=150+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:23.671Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BH",
+      "maxPairwiseMetres": 114.16655146271175,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "147",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=147+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T11:51:43.988Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "148",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=148+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:23.012Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "150A",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=150A+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:23.996Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BH",
+      "maxPairwiseMetres": 73.25712963396492,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "147",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=147+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T11:51:43.988Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "149",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=149+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:23.339Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "150",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=150+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:23.671Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BH",
+      "maxPairwiseMetres": 103.37008865935302,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "147",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=147+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T11:51:43.988Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "149",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=149+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:23.339Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "150A",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=150A+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:23.996Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BH",
+      "maxPairwiseMetres": 103.37008865935302,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "147",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=147+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T11:51:43.988Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "150",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=150+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:23.671Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "150A",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=150A+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:23.996Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BH",
+      "maxPairwiseMetres": 88.19298651495092,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "148",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=148+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:23.012Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "149",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=149+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:23.339Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "150",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=150+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:23.671Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BH",
+      "maxPairwiseMetres": 114.16655146271175,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "148",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=148+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:23.012Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "149",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=149+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:23.339Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "150A",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=150A+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:23.996Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BH",
+      "maxPairwiseMetres": 114.16655146271175,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "148",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=148+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:23.012Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "150",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=150+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:23.671Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "150A",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=150A+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:23.996Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BH",
+      "maxPairwiseMetres": 58.342749050033326,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "149",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=149+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:23.339Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "150",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=150+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:23.671Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "150A",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=150A+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:23.996Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BH",
+      "maxPairwiseMetres": 88.28021274007752,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "149",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=149+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:23.339Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "150",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=150+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:23.671Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "151",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=151+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:24.316Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BH",
+      "maxPairwiseMetres": 88.28021274007752,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "149",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=149+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:23.339Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "150A",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=150A+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:23.996Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "151",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=151+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:24.316Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BH",
+      "maxPairwiseMetres": 70.87497446914708,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "150",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=150+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:23.671Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "150A",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=150A+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:23.996Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "151",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=151+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:24.316Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BH",
+      "maxPairwiseMetres": 122.75275052324372,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "150A",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=150A+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:23.996Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "151",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=151+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:24.316Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "156A",
+          "street": "BISHAN ST 11",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=156A+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:42.533Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BM",
+      "maxPairwiseMetres": 91.95033766188952,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "36",
+          "street": "BEO CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=36+BEO+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T11:51:44.060Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "38",
+          "street": "BEO CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=38+BEO+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T11:51:44.124Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "40",
+          "street": "BEO CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=40+BEO+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:42.848Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BM",
+      "maxPairwiseMetres": 99.87779710505644,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "36",
+          "street": "BEO CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=36+BEO+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T11:51:44.060Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "38",
+          "street": "BEO CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=38+BEO+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T11:51:44.124Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "42",
+          "street": "BEO CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=42+BEO+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:43.162Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BM",
+      "maxPairwiseMetres": 114.18710499268352,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "36",
+          "street": "BEO CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=36+BEO+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T11:51:44.060Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "38",
+          "street": "BEO CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=38+BEO+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T11:51:44.124Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "44",
+          "street": "BEO CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=44+BEO+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:43.483Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BM",
+      "maxPairwiseMetres": 99.87779710505644,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "36",
+          "street": "BEO CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=36+BEO+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T11:51:44.060Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "40",
+          "street": "BEO CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=40+BEO+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:42.848Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "42",
+          "street": "BEO CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=42+BEO+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:43.162Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BM",
+      "maxPairwiseMetres": 113.49195973130567,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "36",
+          "street": "BEO CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=36+BEO+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T11:51:44.060Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "42",
+          "street": "BEO CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=42+BEO+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:43.162Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "44",
+          "street": "BEO CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=44+BEO+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:43.483Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BM",
+      "maxPairwiseMetres": 89.88218986033165,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "38",
+          "street": "BEO CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=38+BEO+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T11:51:44.124Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "40",
+          "street": "BEO CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=40+BEO+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:42.848Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "42",
+          "street": "BEO CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=42+BEO+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:43.162Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BM",
+      "maxPairwiseMetres": 114.18710499268352,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "38",
+          "street": "BEO CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=38+BEO+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T11:51:44.124Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "42",
+          "street": "BEO CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=42+BEO+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:43.162Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "44",
+          "street": "BEO CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=44+BEO+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:43.483Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
       "townCode": "BP",
       "maxPairwiseMetres": 117.15992590135485,
       "outcome": "insufficient_evidence",
@@ -432,6 +1331,440 @@
           "street": "BANGKIT RD",
           "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=249+BANGKIT+RD&returnGeom=Y&getAddrDetails=Y&pageNum=1",
           "retrievedAt": "2026-10-12T11:51:44.251Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BT",
+      "maxPairwiseMetres": 103.91546046544491,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "3",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=3+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:47.278Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "4",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=4+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:46.656Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "5",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=5+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:46.025Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BT",
+      "maxPairwiseMetres": 112.17996398343747,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "3",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=3+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:47.278Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "4",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=4+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:46.656Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "6",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=6+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:45.416Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BT",
+      "maxPairwiseMetres": 112.17996398343747,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "3",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=3+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:47.278Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "5",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=5+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:46.025Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "6",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=6+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:45.416Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BT",
+      "maxPairwiseMetres": 103.15416568587395,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "4",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=4+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:46.656Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "5",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=5+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:46.025Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "6",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=6+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:45.416Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BT",
+      "maxPairwiseMetres": 86.57599383952045,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "4",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=4+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:46.656Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "5",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=5+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:46.025Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "8",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=8+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T11:51:44.315Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BT",
+      "maxPairwiseMetres": 116.60317066468586,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "4",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=4+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:46.656Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "5",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=5+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:46.025Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "9",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=9+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:45.738Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BT",
+      "maxPairwiseMetres": 116.60317066468586,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "4",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=4+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:46.656Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "8",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=8+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T11:51:44.315Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "9",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=9+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:45.738Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BT",
+      "maxPairwiseMetres": 107.93408957438568,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "5",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=5+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:46.025Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "6",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=6+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:45.416Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "7",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=7+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T11:51:44.350Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BT",
+      "maxPairwiseMetres": 109.76829583786807,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "5",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=5+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:46.025Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "8",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=8+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T11:51:44.315Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "9",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=9+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:45.738Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BT",
+      "maxPairwiseMetres": 106.1314418977779,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "8",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=8+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T11:51:44.315Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "9",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=9+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:45.738Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "10",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=10+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:46.364Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BT",
+      "maxPairwiseMetres": 109.58669798467558,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "9",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=9+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:45.738Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "10",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=10+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:46.364Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "11",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=11+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:46.967Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BT",
+      "maxPairwiseMetres": 109.56173200298517,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "9",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=9+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:45.738Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "10",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=10+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:46.364Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "12",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=12+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:47.592Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BT",
+      "maxPairwiseMetres": 109.58669798467558,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "9",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=9+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:45.738Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "11",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=11+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:46.967Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "12",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=12+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:47.592Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "BT",
+      "maxPairwiseMetres": 109.56173200298517,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "10",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=10+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:46.364Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "11",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=11+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:46.967Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "12",
+          "street": "TOH YI DR",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=12+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:47.592Z",
           "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
           "hdbRetrievedDate": "2026-10-12"
         }
@@ -500,6 +1833,254 @@
       ]
     },
     {
+      "townCode": "CT",
+      "maxPairwiseMetres": 70.763374427326,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "262",
+          "street": "WATERLOO ST",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=262+WATERLOO+ST&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T11:51:44.716Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "263",
+          "street": "WATERLOO ST",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=263+WATERLOO+ST&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:47.914Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "264",
+          "street": "WATERLOO ST",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=264+WATERLOO+ST&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:48.242Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "CT",
+      "maxPairwiseMetres": 44.29847819129583,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "269A",
+          "street": "QUEEN ST",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=269A+QUEEN+ST&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:48.565Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "269B",
+          "street": "QUEEN ST",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=269B+QUEEN+ST&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:48.914Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "269C",
+          "street": "QUEEN ST",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=269C+QUEEN+ST&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:49.243Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "CT",
+      "maxPairwiseMetres": 86.62113236570706,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "269A",
+          "street": "QUEEN ST",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=269A+QUEEN+ST&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:48.565Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "269B",
+          "street": "QUEEN ST",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=269B+QUEEN+ST&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:48.914Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "271",
+          "street": "QUEEN ST",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=271+QUEEN+ST&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:49.537Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "CT",
+      "maxPairwiseMetres": 51.98896865509809,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "269A",
+          "street": "QUEEN ST",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=269A+QUEEN+ST&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:48.565Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "269C",
+          "street": "QUEEN ST",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=269C+QUEEN+ST&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:49.243Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "271",
+          "street": "QUEEN ST",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=271+QUEEN+ST&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:49.537Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "CT",
+      "maxPairwiseMetres": 86.62113236570706,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "269B",
+          "street": "QUEEN ST",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=269B+QUEEN+ST&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:48.914Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "269C",
+          "street": "QUEEN ST",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=269C+QUEEN+ST&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:49.243Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "271",
+          "street": "QUEEN ST",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=271+QUEEN+ST&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:49.537Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "GL",
+      "maxPairwiseMetres": 113.72240693954222,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "109",
+          "street": "ALJUNIED CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=109+ALJUNIED+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:51.781Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "110",
+          "street": "ALJUNIED CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=110+ALJUNIED+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:51.492Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "111",
+          "street": "ALJUNIED CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=111+ALJUNIED+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:51.181Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "GL",
+      "maxPairwiseMetres": 94.72681342547064,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "110",
+          "street": "ALJUNIED CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=110+ALJUNIED+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:51.492Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "111",
+          "street": "ALJUNIED CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=111+ALJUNIED+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:51.181Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "112",
+          "street": "ALJUNIED CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=112+ALJUNIED+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:50.859Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "GL",
+      "maxPairwiseMetres": 118.51037060551023,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "112",
+          "street": "ALJUNIED CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=112+ALJUNIED+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:50.859Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "113",
+          "street": "ALJUNIED AVE 2",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=113+ALJUNIED+AVE+2&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T06:16:04.362Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "119",
+          "street": "ALJUNIED AVE 2",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=119+ALJUNIED+AVE+2&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:50.524Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
       "townCode": "HG",
       "maxPairwiseMetres": 78.29224249562505,
       "outcome": "insufficient_evidence",
@@ -531,6 +2112,192 @@
       ]
     },
     {
+      "townCode": "JE",
+      "maxPairwiseMetres": 93.37011152001243,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "329",
+          "street": "JURONG EAST AVE 1",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=329+JURONG+EAST+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:53.045Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "330",
+          "street": "JURONG EAST AVE 1",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=330+JURONG+EAST+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:53.365Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "331",
+          "street": "JURONG EAST AVE 1",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=331+JURONG+EAST+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:53.686Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "JE",
+      "maxPairwiseMetres": 116.71462330810382,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "330",
+          "street": "JURONG EAST AVE 1",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=330+JURONG+EAST+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:53.365Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "331",
+          "street": "JURONG EAST AVE 1",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=331+JURONG+EAST+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:53.686Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "332",
+          "street": "JURONG EAST AVE 1",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=332+JURONG+EAST+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:53.975Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "JE",
+      "maxPairwiseMetres": 93.54531838181033,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "331",
+          "street": "JURONG EAST AVE 1",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=331+JURONG+EAST+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:53.686Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "332",
+          "street": "JURONG EAST AVE 1",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=332+JURONG+EAST+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:53.975Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "333",
+          "street": "JURONG EAST AVE 1",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=333+JURONG+EAST+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:54.303Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "JE",
+      "maxPairwiseMetres": 123.76332254641153,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "331",
+          "street": "JURONG EAST AVE 1",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=331+JURONG+EAST+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:53.686Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "333",
+          "street": "JURONG EAST AVE 1",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=333+JURONG+EAST+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:54.303Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "334",
+          "street": "JURONG EAST AVE 1",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=334+JURONG+EAST+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:54.621Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "JE",
+      "maxPairwiseMetres": 109.01480121359147,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "333",
+          "street": "JURONG EAST AVE 1",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=333+JURONG+EAST+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:54.303Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "334",
+          "street": "JURONG EAST AVE 1",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=334+JURONG+EAST+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:54.621Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "336",
+          "street": "JURONG EAST AVE 1",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=336+JURONG+EAST+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:55.263Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "JE",
+      "maxPairwiseMetres": 93.96851957641489,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "334",
+          "street": "JURONG EAST AVE 1",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=334+JURONG+EAST+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:54.621Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "335",
+          "street": "JURONG EAST AVE 1",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=335+JURONG+EAST+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:54.944Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "336",
+          "street": "JURONG EAST AVE 1",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=336+JURONG+EAST+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:42:55.263Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
       "townCode": "JW",
       "maxPairwiseMetres": 75.46004222512084,
       "outcome": "insufficient_evidence",
@@ -556,6 +2323,192 @@
           "street": "BOON LAY AVE",
           "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=183C+BOON+LAY+AVE&returnGeom=Y&getAddrDetails=Y&pageNum=1",
           "retrievedAt": "2026-10-12T11:51:45.131Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "MP",
+      "maxPairwiseMetres": 94.79057677269465,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "28",
+          "street": "MARINE CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=28+MARINE+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T11:51:45.265Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "29",
+          "street": "MARINE CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=29+MARINE+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T11:51:45.329Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "35",
+          "street": "MARINE CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=35+MARINE+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:43:40.925Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "MP",
+      "maxPairwiseMetres": 114.73758826824847,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "29",
+          "street": "MARINE CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=29+MARINE+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T11:51:45.329Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "33",
+          "street": "MARINE CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=33+MARINE+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:43:40.293Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "35",
+          "street": "MARINE CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=35+MARINE+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:43:40.925Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "MP",
+      "maxPairwiseMetres": 107.02298334180874,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "30",
+          "street": "MARINE CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=30+MARINE+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:43:39.369Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "31",
+          "street": "MARINE CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=31+MARINE+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:43:39.658Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "34",
+          "street": "MARINE CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=34+MARINE+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:43:40.608Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "MP",
+      "maxPairwiseMetres": 113.6251228383754,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "31",
+          "street": "MARINE CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=31+MARINE+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:43:39.658Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "32",
+          "street": "MARINE CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=32+MARINE+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:43:39.974Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "34",
+          "street": "MARINE CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=34+MARINE+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:43:40.608Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "MP",
+      "maxPairwiseMetres": 88.54331001421349,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "32",
+          "street": "MARINE CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=32+MARINE+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:43:39.974Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "33",
+          "street": "MARINE CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=33+MARINE+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:43:40.293Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "35",
+          "street": "MARINE CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=35+MARINE+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:43:40.925Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "MP",
+      "maxPairwiseMetres": 113.6251228383754,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "32",
+          "street": "MARINE CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=32+MARINE+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:43:39.974Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "34",
+          "street": "MARINE CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=34+MARINE+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:43:40.608Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "35",
+          "street": "MARINE CRES",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=35+MARINE+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:43:40.925Z",
           "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
           "hdbRetrievedDate": "2026-10-12"
         }
@@ -711,6 +2664,99 @@
           "street": "CHANGI VILLAGE RD",
           "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=5+CHANGI+VILLAGE+RD&returnGeom=Y&getAddrDetails=Y&pageNum=1",
           "retrievedAt": "2026-10-12T11:51:45.565Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "QT",
+      "maxPairwiseMetres": 104.77373507190113,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "1",
+          "street": "GHIM MOH RD",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=1+GHIM+MOH+RD&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:43:43.893Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "2",
+          "street": "GHIM MOH RD",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=2+GHIM+MOH+RD&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:43:43.576Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "3",
+          "street": "GHIM MOH RD",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=3+GHIM+MOH+RD&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:43:43.253Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "QT",
+      "maxPairwiseMetres": 124.63266931847723,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "2",
+          "street": "GHIM MOH RD",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=2+GHIM+MOH+RD&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:43:43.576Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "3",
+          "street": "GHIM MOH RD",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=3+GHIM+MOH+RD&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:43:43.253Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "7",
+          "street": "GHIM MOH RD",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=7+GHIM+MOH+RD&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T11:51:45.662Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "townCode": "QT",
+      "maxPairwiseMetres": 103.84418197784736,
+      "outcome": "insufficient_evidence",
+      "members": [
+        {
+          "block": "4",
+          "street": "GHIM MOH RD",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=4+GHIM+MOH+RD&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:43:42.917Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "5",
+          "street": "GHIM MOH RD",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=5+GHIM+MOH+RD&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:43:42.523Z",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "6",
+          "street": "GHIM MOH RD",
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=6+GHIM+MOH+RD&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-13T03:43:41.882Z",
           "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
           "hdbRetrievedDate": "2026-10-12"
         }
@@ -2030,6 +4076,882 @@
       "longitude": 103.8465045009097,
       "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=431C+YISHUN+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
       "retrievedAt": "2026-10-12T11:51:46.434Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "AMK",
+      "block": "208",
+      "street": "ANG MO KIO AVE 1",
+      "latitude": 1.365444952253527,
+      "longitude": 103.8427150474743,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=208+ANG+MO+KIO+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:20.415Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "AMK",
+      "block": "215",
+      "street": "ANG MO KIO AVE 1",
+      "latitude": 1.366558301661224,
+      "longitude": 103.8416240829776,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=215+ANG+MO+KIO+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:20.736Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "AMK",
+      "block": "216",
+      "street": "ANG MO KIO AVE 1",
+      "latitude": 1.366196788310536,
+      "longitude": 103.8415050119028,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=216+ANG+MO+KIO+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:21.060Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "AMK",
+      "block": "217",
+      "street": "ANG MO KIO AVE 1",
+      "latitude": 1.365525911020137,
+      "longitude": 103.8418125946364,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=217+ANG+MO+KIO+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:21.398Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "AMK",
+      "block": "218",
+      "street": "ANG MO KIO AVE 1",
+      "latitude": 1.36511908595886,
+      "longitude": 103.8417424784885,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=218+ANG+MO+KIO+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:21.720Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "AMK",
+      "block": "219",
+      "street": "ANG MO KIO AVE 1",
+      "latitude": 1.365981980045068,
+      "longitude": 103.8406540396118,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=219+ANG+MO+KIO+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:22.041Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "AMK",
+      "block": "220",
+      "street": "ANG MO KIO AVE 1",
+      "latitude": 1.365588335930647,
+      "longitude": 103.8405188832536,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=220+ANG+MO+KIO+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:22.363Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "AMK",
+      "block": "221",
+      "street": "ANG MO KIO AVE 1",
+      "latitude": 1.366379382941187,
+      "longitude": 103.839482297653,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=221+ANG+MO+KIO+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:22.687Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "BH",
+      "block": "148",
+      "street": "BISHAN ST 11",
+      "latitude": 1.344233608074601,
+      "longitude": 103.8547636320335,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=148+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:23.012Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "BH",
+      "block": "149",
+      "street": "BISHAN ST 11",
+      "latitude": 1.344279408504657,
+      "longitude": 103.8555556650983,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=149+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:23.339Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "BH",
+      "block": "150",
+      "street": "BISHAN ST 11",
+      "latitude": 1.34452706951364,
+      "longitude": 103.8552136103803,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=150+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:23.671Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "BH",
+      "block": "150A",
+      "street": "BISHAN ST 11",
+      "latitude": 1.344559833295198,
+      "longitude": 103.8557374195955,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=150A+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:23.996Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "BH",
+      "block": "151",
+      "street": "BISHAN ST 11",
+      "latitude": 1.345073219446833,
+      "longitude": 103.8555423212302,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=151+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:24.316Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "BH",
+      "block": "152",
+      "street": "BISHAN ST 11",
+      "latitude": 1.3456572029422,
+      "longitude": 103.8546414476256,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=152+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:41.922Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "BH",
+      "block": "152B",
+      "street": "BISHAN ST 11",
+      "latitude": 1.345334200677305,
+      "longitude": 103.8540981823485,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=152B+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:42.243Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "BH",
+      "block": "156A",
+      "street": "BISHAN ST 11",
+      "latitude": 1.34473077142922,
+      "longitude": 103.8565920947262,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=156A+BISHAN+ST+11&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:42.533Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "BM",
+      "block": "40",
+      "street": "BEO CRES",
+      "latitude": 1.289057891544808,
+      "longitude": 103.8275130182517,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=40+BEO+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:42.848Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "BM",
+      "block": "42",
+      "street": "BEO CRES",
+      "latitude": 1.2890626839897,
+      "longitude": 103.8267044978873,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=42+BEO+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:43.162Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "BM",
+      "block": "44",
+      "street": "BEO CRES",
+      "latitude": 1.288809162864093,
+      "longitude": 103.8262950859298,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=44+BEO+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:43.483Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "BM",
+      "block": "24",
+      "street": "TELOK BLANGAH CRES",
+      "latitude": 1.275409490627689,
+      "longitude": 103.8206605418259,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=24+TELOK+BLANGAH+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:43.799Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "BM",
+      "block": "24",
+      "street": "TIONG BAHRU RD",
+      "latitude": 1.285726545486511,
+      "longitude": 103.8312704931287,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=24+TIONG+BAHRU+RD&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:44.137Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "BT",
+      "block": "6",
+      "street": "TOH YI DR",
+      "latitude": 1.337773027684864,
+      "longitude": 103.7751307126253,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=6+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:45.416Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "BT",
+      "block": "9",
+      "street": "TOH YI DR",
+      "latitude": 1.338304797510816,
+      "longitude": 103.7735415936429,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=9+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:45.738Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "BT",
+      "block": "5",
+      "street": "TOH YI DR",
+      "latitude": 1.338192541674556,
+      "longitude": 103.7745226278868,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=5+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:46.025Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "BT",
+      "block": "10",
+      "street": "TOH YI DR",
+      "latitude": 1.33753956576434,
+      "longitude": 103.7731610663885,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=10+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:46.364Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "BT",
+      "block": "4",
+      "street": "TOH YI DR",
+      "latitude": 1.338512067233299,
+      "longitude": 103.7745698235268,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=4+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:46.656Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "BT",
+      "block": "11",
+      "street": "TOH YI DR",
+      "latitude": 1.33800261167657,
+      "longitude": 103.7726032723898,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=11+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:46.967Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "BT",
+      "block": "3",
+      "street": "TOH YI DR",
+      "latitude": 1.338774304298587,
+      "longitude": 103.7752542004534,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=3+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:47.278Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "BT",
+      "block": "12",
+      "street": "TOH YI DR",
+      "latitude": 1.338402749972982,
+      "longitude": 103.7726858016656,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=12+TOH+YI+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:47.592Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "CT",
+      "block": "263",
+      "street": "WATERLOO ST",
+      "latitude": 1.298608860846808,
+      "longitude": 103.8522670430855,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=263+WATERLOO+ST&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:47.914Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "CT",
+      "block": "264",
+      "street": "WATERLOO ST",
+      "latitude": 1.299009418285962,
+      "longitude": 103.8522849031605,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=264+WATERLOO+ST&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:48.242Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "CT",
+      "block": "269A",
+      "street": "QUEEN ST",
+      "latitude": 1.300527361754511,
+      "longitude": 103.8538232831822,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=269A+QUEEN+ST&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:48.565Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "CT",
+      "block": "269B",
+      "street": "QUEEN ST",
+      "latitude": 1.30035670883377,
+      "longitude": 103.8534663603071,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=269B+QUEEN+ST&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:48.914Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "CT",
+      "block": "269C",
+      "street": "QUEEN ST",
+      "latitude": 1.300743072562714,
+      "longitude": 103.8535635156755,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=269C+QUEEN+ST&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:49.243Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "CT",
+      "block": "271",
+      "street": "QUEEN ST",
+      "latitude": 1.30093267323152,
+      "longitude": 103.8539910047731,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=271+QUEEN+ST&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:49.537Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "CT",
+      "block": "333",
+      "street": "KRETA AYER RD",
+      "latitude": 1.280748336812734,
+      "longitude": 103.8424634010201,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=333+KRETA+AYER+RD&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:49.849Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "CT",
+      "block": "334",
+      "street": "KRETA AYER RD",
+      "latitude": 1.281606412297002,
+      "longitude": 103.8423359259692,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=334+KRETA+AYER+RD&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:50.164Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "GL",
+      "block": "119",
+      "street": "ALJUNIED AVE 2",
+      "latitude": 1.320128872900264,
+      "longitude": 103.8860580912248,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=119+ALJUNIED+AVE+2&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:50.524Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "GL",
+      "block": "112",
+      "street": "ALJUNIED CRES",
+      "latitude": 1.32041804730607,
+      "longitude": 103.885098713079,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=112+ALJUNIED+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:50.859Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "GL",
+      "block": "111",
+      "street": "ALJUNIED CRES",
+      "latitude": 1.320397275547767,
+      "longitude": 103.8842468414531,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=111+ALJUNIED+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:51.181Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "GL",
+      "block": "110",
+      "street": "ALJUNIED CRES",
+      "latitude": 1.319976747312158,
+      "longitude": 103.8844393161629,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=110+ALJUNIED+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:51.492Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "GL",
+      "block": "109",
+      "street": "ALJUNIED CRES",
+      "latitude": 1.319392917858226,
+      "longitude": 103.8844398762067,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=109+ALJUNIED+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:51.781Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "GL",
+      "block": "120",
+      "street": "GEYLANG EAST CTRL",
+      "latitude": 1.318211530538797,
+      "longitude": 103.8847523333977,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=120+GEYLANG+EAST+CTRL&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:52.097Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "GL",
+      "block": "120",
+      "street": "PAYA LEBAR WAY",
+      "latitude": 1.322594152438592,
+      "longitude": 103.884296105282,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=120+PAYA+LEBAR+WAY&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:52.401Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "GL",
+      "block": "108",
+      "street": "ALJUNIED CRES",
+      "latitude": 1.319175152394765,
+      "longitude": 103.8853215943427,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=108+ALJUNIED+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:52.721Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "JE",
+      "block": "329",
+      "street": "JURONG EAST AVE 1",
+      "latitude": 1.3501398862341,
+      "longitude": 103.7299365873905,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=329+JURONG+EAST+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:53.045Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "JE",
+      "block": "330",
+      "street": "JURONG EAST AVE 1",
+      "latitude": 1.350554952594838,
+      "longitude": 103.7300291104097,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=330+JURONG+EAST+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:53.365Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "JE",
+      "block": "331",
+      "street": "JURONG EAST AVE 1",
+      "latitude": 1.350826504196296,
+      "longitude": 103.7304200929899,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=331+JURONG+EAST+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:53.686Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "JE",
+      "block": "332",
+      "street": "JURONG EAST AVE 1",
+      "latitude": 1.35159123927229,
+      "longitude": 103.7301960510501,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=332+JURONG+EAST+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:53.975Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "JE",
+      "block": "333",
+      "street": "JURONG EAST AVE 1",
+      "latitude": 1.351241583596432,
+      "longitude": 103.7309614316403,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=333+JURONG+EAST+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:54.303Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "JE",
+      "block": "334",
+      "street": "JURONG EAST AVE 1",
+      "latitude": 1.350782795219228,
+      "longitude": 103.7315325738867,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=334+JURONG+EAST+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:54.621Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "JE",
+      "block": "335",
+      "street": "JURONG EAST AVE 1",
+      "latitude": 1.350219534518499,
+      "longitude": 103.7321627459461,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=335+JURONG+EAST+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:54.944Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "JE",
+      "block": "336",
+      "street": "JURONG EAST AVE 1",
+      "latitude": 1.350410398414881,
+      "longitude": 103.7314814828172,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=336+JURONG+EAST+AVE+1&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:55.263Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "KWN",
+      "block": "101",
+      "street": "TOWNER RD",
+      "latitude": 1.319425390407265,
+      "longitude": 103.8610874626075,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=101+TOWNER+RD&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:55.580Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "KWN",
+      "block": "101",
+      "street": "WHAMPOA DR",
+      "latitude": 1.320417101876028,
+      "longitude": 103.8538139464019,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=101+WHAMPOA+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:55.891Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "KWN",
+      "block": "103",
+      "street": "TOWNER RD",
+      "latitude": 1.320643815122853,
+      "longitude": 103.8616340811473,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=103+TOWNER+RD&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:56.532Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "KWN",
+      "block": "100",
+      "street": "WHAMPOA DR",
+      "latitude": 1.320779477352012,
+      "longitude": 103.8543487399214,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=100+WHAMPOA+DR&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:42:56.933Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "MP",
+      "block": "30",
+      "street": "MARINE CRES",
+      "latitude": 1.304222794767664,
+      "longitude": 103.911164021354,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=30+MARINE+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:43:39.369Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "MP",
+      "block": "31",
+      "street": "MARINE CRES",
+      "latitude": 1.303705566385137,
+      "longitude": 103.9114447875902,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=31+MARINE+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:43:39.658Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "MP",
+      "block": "32",
+      "street": "MARINE CRES",
+      "latitude": 1.303178277126,
+      "longitude": 103.9118066428087,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=32+MARINE+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:43:39.974Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "MP",
+      "block": "33",
+      "street": "MARINE CRES",
+      "latitude": 1.302648966066279,
+      "longitude": 103.9121847845575,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=33+MARINE+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:43:40.293Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "MP",
+      "block": "34",
+      "street": "MARINE CRES",
+      "latitude": 1.304149640025478,
+      "longitude": 103.9121239666986,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=34+MARINE+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:43:40.608Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "MP",
+      "block": "35",
+      "street": "MARINE CRES",
+      "latitude": 1.303370404294007,
+      "longitude": 103.9125219225367,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=35+MARINE+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:43:40.925Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "MP",
+      "block": "43",
+      "street": "MARINE CRES",
+      "latitude": 1.305518880919203,
+      "longitude": 103.9130219674036,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=43+MARINE+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:43:41.241Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "MP",
+      "block": "44",
+      "street": "MARINE CRES",
+      "latitude": 1.304733485733545,
+      "longitude": 103.913087962182,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=44+MARINE+CRES&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:43:41.561Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "QT",
+      "block": "6",
+      "street": "GHIM MOH RD",
+      "latitude": 1.312284090032735,
+      "longitude": 103.7884038891797,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=6+GHIM+MOH+RD&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:43:41.882Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "QT",
+      "block": "8",
+      "street": "GHIM MOH RD",
+      "latitude": 1.310572275836812,
+      "longitude": 103.7876430698117,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=8+GHIM+MOH+RD&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:43:42.203Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "QT",
+      "block": "5",
+      "street": "GHIM MOH RD",
+      "latitude": 1.312693106276268,
+      "longitude": 103.7883088282241,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=5+GHIM+MOH+RD&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:43:42.523Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "QT",
+      "block": "4",
+      "street": "GHIM MOH RD",
+      "latitude": 1.31319369617182,
+      "longitude": 103.7881922370431,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=4+GHIM+MOH+RD&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:43:42.917Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "QT",
+      "block": "3",
+      "street": "GHIM MOH RD",
+      "latitude": 1.311998912862663,
+      "longitude": 103.7871897011481,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=3+GHIM+MOH+RD&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:43:43.253Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "QT",
+      "block": "2",
+      "street": "GHIM MOH RD",
+      "latitude": 1.312378729863553,
+      "longitude": 103.7869714515989,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=2+GHIM+MOH+RD&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:43:43.576Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "QT",
+      "block": "1",
+      "street": "GHIM MOH RD",
+      "latitude": 1.312879756843084,
+      "longitude": 103.786855017635,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=1+GHIM+MOH+RD&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:43:43.893Z",
+      "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+      "hdbRetrievedDate": "2026-10-12",
+      "evidenceStatus": "checked_api_replay"
+    },
+    {
+      "townCode": "QT",
+      "block": "13",
+      "street": "GHIM MOH RD",
+      "latitude": 1.30970737767412,
+      "longitude": 103.7890998627586,
+      "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=13+GHIM+MOH+RD&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "retrievedAt": "2026-10-13T03:43:44.209Z",
       "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
       "hdbRetrievedDate": "2026-10-12",
       "evidenceStatus": "checked_api_replay"

@@ -25,7 +25,7 @@ describe("prototype replay failure", () => {
     vi.resetModules();
     await import(String('../prototype/app.js'));
     expect(nodes.get('#priority-detail').innerHTML).toContain('Insufficient evidence');
-    expect(nodes.get('#priority-choices').innerHTML).toContain('Serangoon');
+    expect(nodes.get('#priority-choices').innerHTML).toContain('Ang Mo Kio');
     expect(nodes.get('#owner-intake').hidden).toBe(false);
     expect(nodes.get('#status-card').textContent).toContain('Checked sample');
     expect(nodes.get('#snapshot-pill').textContent).toContain('CHECKED SAMPLE');

@@ -9,7 +9,7 @@ it('exposes every checked town and three-block witness while retaining missing c
   const feed = await verifyPriorityMapFeed(readFileSync('prototype/priority-map.json', 'utf8'));
   expect(feed.townCoverage).toHaveLength(27);
   expect(feed.sampledGroups).toHaveLength(checked.groups.length);
-  expect(feed.checkedPoints).toHaveLength(89);
+  expect(feed.checkedPoints).toHaveLength(162);
   expect(feed.townCoverage.map((town: any) => town.code)).toEqual(checked.towns.map(town => town.code));
   expect(feed.checkedPoints.map((point: any) => [point.townCode, point.block, point.street,
     point.latitude, point.longitude, point.sourceUrl, point.retrievedAt])).toEqual(
@@ -19,7 +19,7 @@ it('exposes every checked town and three-block witness while retaining missing c
     .toEqual(checked.groups.map(group => group.members.map(member => member.block)));
   const view = nationalExplorerView(feed);
   expect(view).toContain('27 HDB town codes');
-  expect(view).toContain('10,727 unprobed leads');
+  expect(view).toContain('10,647 unprobed leads');
   expect(view).toContain('OneMap');
   expect(view).toContain('HDB');
   expect(view).toContain('retrieved 2026-10-12');

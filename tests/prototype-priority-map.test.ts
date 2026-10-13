@@ -17,7 +17,7 @@ it('withholds a plausible but altered coordinate in the deployed map feed', asyn
 it('binds the displayed three groups and nine block points to checked domain output', () => {
   const domain = buildIslandwideInvestigationOrder();
   const shown = validatePriorityMapFeed(feed());
-  expect(shown.snapshotDate).toBe('2026-10-12');
+  expect(shown.snapshotDate).toBe('2026-10-13');
   expect(shown.selectionScope).toBe('sampled_groups_research_triage');
   expect(shown.outcome).toBe('insufficient_evidence');
   expect(shown.coverage).toEqual(domain.coverage);
@@ -53,17 +53,17 @@ it('withholds the map for missing, duplicate or unsupported source points', () =
 
 it('renders source attribution, dates, coverage and abstaining labels for the selected group', () => {
   const view = priorityMapView(validatePriorityMapFeed(feed()), 1);
-  expect(view.overview).toContain('Serangoon');
+  expect(view.overview).toContain('Ang Mo Kio');
   expect(view.overview).toContain('role="group"');
   expect(view.overview).not.toContain('role="img"');
   expect(view.overview).toContain('data-priority="1"');
-  expect(view.detail).toContain('Block 1');
+  expect(view.detail).toContain('Block 208');
   expect(view.detail).toContain('OneMap');
   expect(view.detail).toContain('HDB');
   expect(view.detail).toContain('retrieved');
   expect(view.detail).toContain('Insufficient evidence');
   expect(view.coverage).toContain('27 whole towns unassessed');
-  expect(view.coverage).toContain('10,727');
+  expect(view.coverage).toContain('10,647');
   expect(view.choices.match(/aria-pressed=/g)).toHaveLength(3);
   expect(view.choices).toContain('aria-pressed="true"');
 });
@@ -79,7 +79,7 @@ it('changes the inspected three-block group by keyboard-compatible button select
   const initial = regions.get('#priority-detail')!.innerHTML;
   listeners.get('#priority-choices:click')!({ target: { closest: () => ({ dataset: { priority: '2' } }) } });
   expect(regions.get('#priority-detail')!.innerHTML).not.toBe(initial);
-  expect(regions.get('#priority-detail')!.innerHTML).toContain('Clementi');
+  expect(regions.get('#priority-detail')!.innerHTML).toContain('Marine Parade');
   expect(regions.get('#priority-choices')!.innerHTML).toContain('aria-pressed="true"');
 });
 
