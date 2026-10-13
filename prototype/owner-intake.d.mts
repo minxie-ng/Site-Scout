@@ -19,4 +19,5 @@ export function screenOwnerAreas(feed: unknown, input: Partial<OwnerIntake>): {
 };
 export function invalidateOwnerConfirmation(form: { querySelector(selector: string): { checked: boolean } },
   event: { target?: { name?: string } }): void;
-export function mountOwnerIntake(root: unknown, status: unknown, feed: unknown): void;
+export function mountOwnerIntake(root: unknown, status: unknown, feed: unknown,
+  callbacks?: { onConfirmed?: (values: OwnerIntake) => void; onInvalidated?: () => void }): () => boolean;

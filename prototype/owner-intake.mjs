@@ -12,6 +12,9 @@ const money = value => typeof value === 'number' && Number.isFinite(value) && va
 export function validateOwnerIntake(input) {
   const missing = [];
   for (const field of textFields) if (typeof input?.[field] !== 'string' || !input[field].trim()) missing.push(field);
+  if (typeof input?.businessFormat === 'string' &&
+    input.businessFormat.trim().toLowerCase() !== 'group reformer pilates' &&
+    !missing.includes('businessFormat')) missing.push('businessFormat');
   for (const field of positiveIntegers) if (!Number.isSafeInteger(input?.[field]) || input[field] <= 0) missing.push(field);
   for (const field of positiveMoney) if (!money(input?.[field]) || input[field] <= 0 ||
     field === 'priceSgd' && money(input?.variableCostSgd) && input[field] <= input.variableCostSgd) missing.push(field);
@@ -50,12 +53,13 @@ export function invalidateOwnerConfirmation(form, event) {
 }
 
 /** No form submission: inspect and display status only in this page's memory. */
-export function mountOwnerIntake(root, status, feed) {
+export function mountOwnerIntake(root, status, feed, { onConfirmed, onInvalidated } = {}) {
   const confirmation = root.querySelector('[name="confirmed"]');
   const fingerprint = () => JSON.stringify([...root.querySelectorAll('input')]
     .filter(field => field.name !== 'confirmed').map(field => [field.name, field.value]));
   let confirmedFingerprint = null;
   const pending = () => {
+    onInvalidated?.();
     status.innerHTML = '<strong>No personalized location result yet</strong><p>Confirm your current estimates. Area evidence and premises checks are still missing.</p>';
   };
   const changed = event => {
@@ -112,7 +116,9 @@ export function mountOwnerIntake(root, status, feed) {
       const areas = comparison.candidates.map(candidate =>
         `<li><strong>${candidate.name}</strong> · Blocks ${candidate.blocks.join(', ')}: insufficient evidence</li>`).join('');
       status.innerHTML = `<strong>Business inputs confirmed for this session</strong><p>Confirmed calculation snapshot: S$${values.priceSgd} per paid visit, ${values.seats} seats, ${values.classesPerWeek} classes per week, and S$${values.rentCeilingSgd} assumed monthly rent ceiling. If form values change, reconfirm before using this snapshot.</p><p>At that rent ceiling, class-only break-even is ${visits} paid visits per month (${utilisation}% of available seat visits). ${capacityNote} This screen assumes scheduled classes with paid seat visits; it does not model other business formats. The model uses 4.33 weeks per month; business format, opening budget, runway, opening horizon, target customers and existing outlet do not affect this calculation.</p><p>Owner economics beside the dated area snapshot ${feed.snapshotDate}. No area-specific fit is established: premises rent, permitted use, demand and local competition are unverified for all three reviewed block groups.</p><ul>${areas}</ul><p>No personalized area recommendation yet; your figures are not saved or sent.</p>`;
+      onConfirmed?.(values);
     } catch (cause) {
+      onInvalidated?.();
       confirmation.checked = false;
       confirmedFingerprint = null;
       status.innerHTML = cause instanceof RangeError ?
@@ -120,4 +126,5 @@ export function mountOwnerIntake(root, status, feed) {
         '<strong>Evidence unavailable</strong><p>The dated area snapshot failed validation. Restore the reviewed source before comparing areas. No personalized location result yet.</p>';
     }
   });
+  return () => confirmation.checked && confirmedFingerprint !== null && confirmedFingerprint === fingerprint();
 }

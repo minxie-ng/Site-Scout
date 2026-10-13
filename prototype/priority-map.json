@@ -1,0 +1,155 @@
+{
+  "snapshotDate": "2026-10-12",
+  "selectionScope": "sampled_groups_research_triage",
+  "outcome": "insufficient_evidence",
+  "coverage": {
+    "checkedPointCount": 89,
+    "eligibleGroupCount": 20,
+    "townsWithEligibleGroups": 17,
+    "unprobedLeadCount": 10727,
+    "unresolvedSampledLeadCount": 1
+  },
+  "priorities": [
+    {
+      "investigationPriority": 1,
+      "townCode": "PG",
+      "publishedDwellingUnits": 511,
+      "maxPairwiseMetres": 116.45013691605979,
+      "evidenceKind": "derived_value",
+      "outcome": "insufficient_evidence",
+      "siteRank": null,
+      "members": [
+        {
+          "block": "442A",
+          "street": "NEW PUNGGOL RD",
+          "latitude": 1.419635402182583,
+          "longitude": 103.9128224429809,
+          "publishedDwellingUnits": 194,
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=821442&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-05T08:35:52Z",
+          "evidenceStatus": "checked_replay",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "442B",
+          "street": "NEW PUNGGOL RD",
+          "latitude": 1.419030120414359,
+          "longitude": 103.9128831725031,
+          "publishedDwellingUnits": 129,
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=442B%20New%20Punggol%20Road&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-06T03:50:15Z",
+          "evidenceStatus": "checked_replay",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "443A",
+          "street": "NEW PUNGGOL RD",
+          "latitude": 1.418699970052094,
+          "longitude": 103.9123514239558,
+          "publishedDwellingUnits": 188,
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=443A%20New%20Punggol%20Road&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-06T03:50:15Z",
+          "evidenceStatus": "checked_replay",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "investigationPriority": 2,
+      "townCode": "SGN",
+      "publishedDwellingUnits": 460,
+      "maxPairwiseMetres": 97.93261178617921,
+      "evidenceKind": "derived_value",
+      "outcome": "insufficient_evidence",
+      "siteRank": null,
+      "members": [
+        {
+          "block": "1",
+          "street": "LOR LEW LIAN",
+          "latitude": 1.350867126469491,
+          "longitude": 103.8753439396719,
+          "publishedDwellingUnits": 179,
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=1+LOR+LEW+LIAN&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T06:16:05.070Z",
+          "evidenceStatus": "checked_api_replay",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "2",
+          "street": "LOR LEW LIAN",
+          "latitude": 1.350607956128488,
+          "longitude": 103.8756800638624,
+          "publishedDwellingUnits": 164,
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=2+LOR+LEW+LIAN&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T11:51:45.776Z",
+          "evidenceStatus": "checked_api_replay",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "3",
+          "street": "LOR LEW LIAN",
+          "latitude": 1.35047535991421,
+          "longitude": 103.8761329572104,
+          "publishedDwellingUnits": 117,
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=3+LOR+LEW+LIAN&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T11:51:45.840Z",
+          "evidenceStatus": "checked_api_replay",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "investigationPriority": 3,
+      "townCode": "CL",
+      "publishedDwellingUnits": 390,
+      "maxPairwiseMetres": 123.25055017816429,
+      "evidenceKind": "derived_value",
+      "outcome": "insufficient_evidence",
+      "siteRank": null,
+      "members": [
+        {
+          "block": "410",
+          "street": "C'WEALTH AVE WEST",
+          "latitude": 1.311441232302383,
+          "longitude": 103.7696919984378,
+          "publishedDwellingUnits": 130,
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=410+C%27WEALTH+AVE+WEST&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T06:16:04.228Z",
+          "evidenceStatus": "checked_api_replay",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "411",
+          "street": "C'WEALTH AVE WEST",
+          "latitude": 1.310879201888743,
+          "longitude": 103.7695726218889,
+          "publishedDwellingUnits": 130,
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=411+C%27WEALTH+AVE+WEST&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T11:51:44.518Z",
+          "evidenceStatus": "checked_api_replay",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        },
+        {
+          "block": "412",
+          "street": "C'WEALTH AVE WEST",
+          "latitude": 1.31090863920106,
+          "longitude": 103.7706643316696,
+          "publishedDwellingUnits": 130,
+          "sourceUrl": "https://www.onemap.gov.sg/api/common/elastic/search?searchVal=412+C%27WEALTH+AVE+WEST&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+          "retrievedAt": "2026-10-12T11:51:44.579Z",
+          "evidenceStatus": "checked_api_replay",
+          "hdbSourceUrl": "https://data.gov.sg/api/action/datastore_search?resource_id=d_17f5382f26140b1fdae0ba2ef6239d2f&fields=bldg_contract_town,blk_no,street,residential,total_dwelling_units&limit=15000",
+          "hdbRetrievedDate": "2026-10-12"
+        }
+      ]
+    }
+  ]
+}

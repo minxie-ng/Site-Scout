@@ -9,7 +9,7 @@ describe("prototype replay failure", () => {
       (block: any) => { block.latitude = 1.5; },
       (block: any) => { block.units = 99999; },
     ]) {
-      const selectors = ["#point-map", "#inspection", "#cluster-cards", "#selection-title", "#intro-summary", "#sources", "#factor-readiness", "#factor-grid", "#status-card", "#map-title", "#map-scale-note", "#snapshot-pill", "#compare-instruction", "#map-tag", "#map-north", "#map-footer", "#study-path", "#research-progress", "#study-memo", "#intro-actions", "#scenario", "#owner-intake"];
+      const selectors = ["#point-map", "#inspection", "#cluster-cards", "#selection-title", "#intro-summary", "#sources", "#factor-readiness", "#factor-grid", "#status-card", "#map-title", "#map-scale-note", "#snapshot-pill", "#compare-instruction", "#map-tag", "#map-north", "#map-footer", "#study-path", "#research-progress", "#study-memo", "#intro-actions", "#scenario", "#owner-intake", "#owner-journey", "#owner-utilisation", "#owner-journey-result", "#owner-journey-memo", "#copy-owner-memo", "#owner-copy-status", "#priority-overview", "#priority-local", "#priority-choices", "#priority-detail", "#priority-coverage"];
       const element = () => ({ textContent: '', innerHTML: '', hidden: false, setAttribute: vi.fn(),
         replaceChildren: vi.fn(), append: vi.fn(), addEventListener: vi.fn(), querySelectorAll: () => [] });
       const nodes = new Map(selectors.map(selector => [selector, element()]));
@@ -27,7 +27,7 @@ describe("prototype replay failure", () => {
     }
   });
   it('withholds all evidence visuals when a block citation changes before rendering', async () => {
-    const selectors = ["#point-map", "#inspection", "#cluster-cards", "#selection-title", "#intro-summary", "#sources", "#factor-readiness", "#factor-grid", "#status-card", "#map-title", "#map-scale-note", "#snapshot-pill", "#compare-instruction", "#map-tag", "#map-north", "#map-footer", "#study-path", "#research-progress", "#study-memo", "#intro-actions", "#scenario", "#owner-intake"];
+    const selectors = ["#point-map", "#inspection", "#cluster-cards", "#selection-title", "#intro-summary", "#sources", "#factor-readiness", "#factor-grid", "#status-card", "#map-title", "#map-scale-note", "#snapshot-pill", "#compare-instruction", "#map-tag", "#map-north", "#map-footer", "#study-path", "#research-progress", "#study-memo", "#intro-actions", "#scenario", "#owner-intake", "#owner-journey", "#owner-utilisation", "#owner-journey-result", "#owner-journey-memo", "#copy-owner-memo", "#owner-copy-status", "#priority-overview", "#priority-local", "#priority-choices", "#priority-detail", "#priority-coverage"];
     const element = () => ({ textContent: '', innerHTML: '', hidden: false, setAttribute: vi.fn(),
       replaceChildren: vi.fn(), append: vi.fn(), addEventListener: vi.fn(), querySelectorAll: () => [] });
     const nodes = new Map(selectors.map(selector => [selector, element()]));
@@ -45,8 +45,8 @@ describe("prototype replay failure", () => {
   });
   it("shows an unavailable state instead of empty evidence visuals", async () => {
     const nodes = new Map<string, any>();
-    for (const selector of ["#point-map", "#inspection", "#cluster-cards", "#selection-title", "#intro-summary", "#sources", "#factor-readiness", "#factor-grid", "#status-card", "#map-title", "#map-scale-note", "#snapshot-pill", "#compare-instruction", "#map-tag", "#map-north", "#map-footer", "#study-path", "#research-progress", "#study-memo", "#intro-actions", "#scenario", "#owner-intake"]) {
-      nodes.set(selector, { textContent: "", innerHTML: "", hidden: false, setAttribute: vi.fn() });
+    for (const selector of ["#point-map", "#inspection", "#cluster-cards", "#selection-title", "#intro-summary", "#sources", "#factor-readiness", "#factor-grid", "#status-card", "#map-title", "#map-scale-note", "#snapshot-pill", "#compare-instruction", "#map-tag", "#map-north", "#map-footer", "#study-path", "#research-progress", "#study-memo", "#intro-actions", "#scenario", "#owner-intake", "#owner-journey", "#owner-utilisation", "#owner-journey-result", "#owner-journey-memo", "#copy-owner-memo", "#owner-copy-status", "#priority-overview", "#priority-local", "#priority-choices", "#priority-detail", "#priority-coverage"]) {
+      nodes.set(selector, { textContent: "", innerHTML: "", hidden: false, setAttribute: vi.fn(), addEventListener: vi.fn() });
     }
     vi.stubGlobal("document", { querySelector: (selector: string) => nodes.get(selector) });
     vi.stubGlobal("fetch", vi.fn().mockRejectedValue(new Error("offline")));

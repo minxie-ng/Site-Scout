@@ -34,6 +34,15 @@ it('accepts complete confirmed owner estimates without treating them as a locati
   expect(validateOwnerIntake(complete)).toEqual({ ready: true, missing: [] });
 });
 
+it('does not apply the Pilates class model to tuition or food businesses', () => {
+  for (const businessFormat of ['Tuition centre', 'Cafe and takeaway']) {
+    const otherBusiness = { ...complete, businessFormat };
+    expect(validateOwnerIntake(otherBusiness).ready).toBe(false);
+    expect(() => runOwnerEconomics(otherBusiness)).toThrow();
+  }
+  expect(readFileSync(resolve('prototype/index.html'), 'utf8')).toContain('Current calculation supports group reformer Pilates only');
+});
+
 it('blocks missing and unconfirmed critical values without using synthetic defaults', () => {
   const result = validateOwnerIntake({ ...complete, targetCustomers: '', rentCeilingSgd: undefined,
     confirmed: false });
@@ -129,6 +138,24 @@ it('rejects a valid silent autofill change after confirmation', () => {
   expect(confirmation.checked).toBe(false);
   expect(status.innerHTML).toContain('No personalized location result yet');
   expect(status.innerHTML).not.toContain('break-even');
+});
+
+it('exposes confirmation freshness for later map changes and memo copying', () => {
+  const handlers = new Map<string, (event?: any) => void>();
+  const fields = Object.entries(complete).map(([name, value]) => ({ name,
+    type: name === 'confirmed' ? 'checkbox' : 'text', value: String(value), checked: value === true,
+    checkValidity: () => true, reportValidity() {} }));
+  const root = { addEventListener: (name: string, handler: (event: any) => void) => handlers.set(name, handler),
+    querySelector: (selector: string) => selector === '.owner-submit' ?
+      { addEventListener: (_: string, handler: () => void) => handlers.set('click', handler) } :
+      fields.find(field => field.name === 'confirmed'),
+    querySelectorAll: () => fields };
+  const current = mountOwnerIntake(root, { innerHTML: '' }, feed);
+  handlers.get('input')!({ target: { name: 'confirmed' } });
+  handlers.get('click')!();
+  expect(current()).toBe(true);
+  fields.find(field => field.name === 'priceSgd')!.value = '36';
+  expect(current()).toBe(false);
 });
 
 it('identifies invalid area evidence without blaming valid owner estimates', () => {

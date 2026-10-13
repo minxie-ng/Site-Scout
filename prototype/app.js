@@ -4,6 +4,8 @@ import { economicResultLabel, occupancyTimingLabel, runPreviewScenario, sampleIn
 import { applyProgress, createProgress, progressModeLabel } from "./research-progress.mjs";
 import { buildStudyMemo } from "./study-memo.mjs";
 import { mountOwnerIntake } from "./owner-intake.mjs";
+import { mountPriorityMap, verifyPriorityMapFeed } from "./priority-map.mjs";
+import { buildOwnerJourney, ownerJourneyMemo } from "./owner-journey.mjs";
 
 const svgNS = "http://www.w3.org/2000/svg";
 const map = document.querySelector("#point-map");
@@ -13,6 +15,46 @@ const title = document.querySelector("#selection-title");
 const factorGrid = document.querySelector("#factor-grid");
 let clusters = [];
 let selected = 0;
+let checkedPriorityFeed = null;
+let confirmedOwner = null;
+let selectedPriority = 0;
+let ownerConfirmationCurrent = () => false;
+
+const journeyResult = document.querySelector("#owner-journey-result");
+const journeyMemo = document.querySelector("#owner-journey-memo");
+const copyOwnerMemo = document.querySelector("#copy-owner-memo");
+function renderOwnerJourney() {
+  if (confirmedOwner && !ownerConfirmationCurrent()) confirmedOwner = null;
+  journeyMemo.value = "";
+  copyOwnerMemo.disabled = true;
+  document.querySelector("#owner-copy-status").textContent = "";
+  if (!confirmedOwner || !checkedPriorityFeed) {
+    journeyResult.textContent = checkedPriorityFeed ? "Confirm your inputs to inspect this sampled area." : "Checked area map unavailable; no owner-area comparison can be shown.";
+    return;
+  }
+  try {
+    const field = document.querySelector("#owner-utilisation");
+    if (!field.value.trim() || !field.checkValidity()) throw new Error("Invalid utilisation");
+    const result = buildOwnerJourney(checkedPriorityFeed, confirmedOwner, selectedPriority,
+      Number(field.value));
+    journeyResult.textContent = `${result.area} · Blocks ${result.blocks.join(", ")} · ${result.snapshotDate}. At ${result.utilisationPercent}% assumed utilisation, class-only economics are ${result.economicCondition.replaceAll("_", " ")} at your rent ceiling. Real outcome: insufficient evidence. ${result.coverage.unprobedLeadCount.toLocaleString("en-SG")} HDB leads unprobed; 27 whole towns unassessed. Premises, rent, use, access, competition and demand remain unchecked.`;
+    journeyMemo.value = ownerJourneyMemo(result);
+    copyOwnerMemo.disabled = false;
+  } catch {
+    journeyResult.textContent = "Scenario or checked area unavailable. Review the inputs and source snapshot; no location decision is available.";
+  }
+}
+document.querySelector("#owner-utilisation").addEventListener("input", renderOwnerJourney);
+copyOwnerMemo.addEventListener("click", async () => {
+  renderOwnerJourney();
+  if (copyOwnerMemo.disabled || !journeyMemo.value) return;
+  try {
+    await navigator.clipboard.writeText(journeyMemo.value);
+    document.querySelector("#owner-copy-status").textContent = "Memo copied.";
+  } catch {
+    document.querySelector("#owner-copy-status").textContent = "Copy unavailable; select the memo text to copy it.";
+  }
+});
 
 function safe(value) {
   return String(value).replace(/[&<>"']/g, char => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[char]);
@@ -186,7 +228,10 @@ try {
   factorGrid.innerHTML = factorCards(feed.factors);
   clusters = feed.clusters;
   select(0);
-  mountOwnerIntake(document.querySelector("#owner-form"), document.querySelector("#owner-status"), feed);
+  ownerConfirmationCurrent = mountOwnerIntake(document.querySelector("#owner-form"), document.querySelector("#owner-status"), feed, {
+    onConfirmed: values => { confirmedOwner = values; renderOwnerJourney(); },
+    onInvalidated: () => { confirmedOwner = null; renderOwnerJourney(); }
+  });
   startScenario(feed);
   startProgressReplay().catch(() => {
     document.querySelector("#progress-stage").textContent = "Recorded run unavailable";
@@ -206,6 +251,7 @@ try {
   document.querySelector("#intro-actions").hidden = true;
   document.querySelector("#scenario").hidden = true;
   document.querySelector("#owner-intake").hidden = true;
+  document.querySelector("#owner-journey").hidden = true;
   document.querySelector("#study-memo").hidden = true;
   document.querySelector("#map-title").textContent = "Evidence unavailable";
   document.querySelector("#map-scale-note").textContent = "No points loaded · no map comparison available";
@@ -215,5 +261,26 @@ try {
   document.querySelector("#map-north").hidden = true;
   document.querySelector("#map-footer").hidden = true;
   map.setAttribute("aria-label", "Block evidence could not be loaded");
+  console.error(error);
+}
+
+try {
+  const response = await fetch('./priority-map.json');
+  if (!response.ok) throw new Error('Priority map feed unavailable');
+  const checked = await verifyPriorityMapFeed(await response.text());
+  mountPriorityMap(document.querySelector('#priority-map'), checked, index => {
+    selectedPriority = index;
+    renderOwnerJourney();
+  });
+  checkedPriorityFeed = checked;
+  renderOwnerJourney();
+} catch (error) {
+  checkedPriorityFeed = null;
+  renderOwnerJourney();
+  document.querySelector('#priority-overview').textContent = 'Checked map unavailable';
+  document.querySelector('#priority-local').textContent = '';
+  document.querySelector('#priority-choices').textContent = '';
+  document.querySelector('#priority-detail').textContent = 'The dated map snapshot could not be verified. Restore the local snapshot and reload.';
+  document.querySelector('#priority-coverage').textContent = 'Coverage unavailable · no sampled area is shown.';
   console.error(error);
 }
