@@ -4,7 +4,7 @@ Updated 13 October 2026. Deadline: **19 October 2026, 11:45 pm SGT**. This is th
 
 ## What exists
 
-- Reviewed source published to GitHub `main` at `50ab44f`; the static prototype is deployed at https://site-scout-green.vercel.app/ .
+- Reviewed source published to GitHub `main`; the static prototype is deployed at https://site-scout-green.vercel.app/ with automatic production builds from `main` and project root `prototype` verified on 13 October.
 - Blank owner intake now leads the page and connects deterministic class economics to one selected group from the interactive map of three sampled Singapore block groups. The abstaining Punggol replay is a separate, optional synthetic example.
 - A 27-town coverage manifest and 89 checked address points produce 20 sampled three-block groups; **10,727 HDB leads remain unprobed and all 27 whole towns unassessed**. The three shown groups are investigation priorities, not Singapore's best sites.
 - Bounded area/market/challenger research and a OneMap MCP canary. Jev Decisions is wired for a routing demonstration, but its one paid live canary accepted no task and was slower than fixed scripted roles. All real-site outcomes remain `insufficient_evidence`.
@@ -24,4 +24,4 @@ Updated 13 October 2026. Deadline: **19 October 2026, 11:45 pm SGT**. This is th
 
 Do not start more provider integrations, scraping families, an MCP server, a Next.js rewrite, MapLibre migration, or cosmetic polish before the four submission-critical steps. The 24 MB `src` tree is mostly retained source originals; `node_modules` is ignored. Keep those evidence files for auditability. The long implementation plan is history, not another queue.
 
-**Exact next minor task:** confirm an available clean Vercel alias, verify that a GitHub `main` push automatically deploys the configured `prototype` root, then capture the deployed walkthrough and Devpost screenshots. Keep Gate 5 open.
+**Exact next minor task:** assign and verify the user's chosen available Vercel alias, then capture the deployed walkthrough and Devpost screenshots. `sitescout.vercel.app` and `site-scout.vercel.app` are assigned to other projects; do not force a reassignment. Keep Gate 5 open.
