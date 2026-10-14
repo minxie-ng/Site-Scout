@@ -121,10 +121,10 @@ it('rejects a valid silent autofill change after confirmation', () => {
   handlers.get('click')!();
   expect(status.innerHTML).toContain('Business inputs confirmed');
   expect(status.innerHTML).toContain('break-even');
-  expect(status.innerHTML).toContain('Punggol Point Cove');
-  expect(status.innerHTML).toContain('Punggol Sapphire');
-  expect(status.innerHTML).toContain('Punggol Ripples');
-  expect(status.innerHTML.match(/insufficient evidence/g)).toHaveLength(3);
+  expect(status.innerHTML).toContain('Select a checked sample group below');
+  expect(status.innerHTML).not.toContain('Punggol Point Cove');
+  expect(status.innerHTML).not.toContain('Punggol Sapphire');
+  expect(status.innerHTML).not.toContain('Punggol Ripples');
   expect(status.innerHTML).toContain('Confirmed calculation snapshot');
   expect(status.innerHTML).toContain('opening horizon');
   expect(status.innerHTML).toContain('business format');
