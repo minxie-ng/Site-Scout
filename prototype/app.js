@@ -7,6 +7,7 @@ import { mountOwnerIntake } from "./owner-intake.mjs";
 import { mountPriorityMap, verifyPriorityMapFeed } from "./priority-map.mjs";
 import { nationalExplorerView } from "./national-explorer.mjs";
 import { buildOwnerJourney, ownerJourneyMemo } from "./owner-journey.mjs";
+import { requestLiveInvestigation } from "./live-investigation.mjs";
 
 const svgNS = "http://www.w3.org/2000/svg";
 const map = document.querySelector("#point-map");
@@ -25,8 +26,22 @@ let replayAvailable = false;
 const journeyResult = document.querySelector("#owner-journey-result");
 const journeyMemo = document.querySelector("#owner-journey-memo");
 const copyOwnerMemo = document.querySelector("#copy-owner-memo");
+const liveButton = document.querySelector("#run-live-investigation");
+const liveAccessCode = document.querySelector("#live-access-code");
+const liveProgress = document.querySelector("#live-investigation-progress");
+const liveStatus = document.querySelector("#live-investigation-status");
+let liveController = null;
+let liveRunning = false;
+function resetLiveInvestigation() {
+  liveController?.abort();
+  liveController = null;
+  liveRunning = false;
+  liveProgress.value = 0;
+  liveStatus.textContent = "Confirm your inputs and select a checked group to start.";
+}
 function renderOwnerJourney() {
   if (confirmedOwner && !ownerConfirmationCurrent()) confirmedOwner = null;
+  liveButton.disabled = liveRunning || !confirmedOwner || !checkedPriorityFeed || liveAccessCode.value.length < 8;
   journeyMemo.value = "";
   copyOwnerMemo.disabled = true;
   document.querySelector("#owner-copy-status").textContent = "";
@@ -48,10 +63,49 @@ function renderOwnerJourney() {
 }
 function mountOwnerForm(feed) {
   ownerConfirmationCurrent = mountOwnerIntake(document.querySelector("#owner-form"), document.querySelector("#owner-status"), feed, {
-    onConfirmed: values => { confirmedOwner = values; renderOwnerJourney(); },
-    onInvalidated: () => { confirmedOwner = null; renderOwnerJourney(); }
+    onConfirmed: values => { resetLiveInvestigation(); confirmedOwner = values; renderOwnerJourney(); },
+    onInvalidated: () => { resetLiveInvestigation(); confirmedOwner = null; renderOwnerJourney(); }
   });
 }
+liveAccessCode.addEventListener("input", () => { resetLiveInvestigation(); renderOwnerJourney(); });
+liveButton.addEventListener("click", async () => {
+  if (liveRunning || !confirmedOwner || !ownerConfirmationCurrent() || !checkedPriorityFeed) return;
+  liveRunning = true;
+  liveController = new AbortController();
+  const controller = liveController;
+  liveButton.disabled = true;
+  liveProgress.value = 0;
+  liveStatus.textContent = "Checking the dated group snapshot…";
+  const completed = new Set();
+  const labels = { source: "Dated sources", route: "Jev work order", area: "Area role",
+    market: "Market role", challenger: "Challenger role", result: "Decision" };
+  try {
+    const groupBytes = new TextEncoder().encode(JSON.stringify(checkedPriorityFeed.priorities[selectedPriority]));
+    const digestBytes = new Uint8Array(await crypto.subtle.digest("SHA-256", groupBytes));
+    const groupDigest = Array.from(digestBytes, byte => byte.toString(16).padStart(2, "0")).join("");
+    if (controller !== liveController) return;
+    const result = await requestLiveInvestigation(selectedPriority, { groupDigest,
+      accessCode: liveAccessCode.value, signal: controller.signal, onEvent: event => {
+      if (controller !== liveController) return;
+      if (["done", "failed", "degraded"].includes(event.status)) completed.add(event.stage);
+      liveProgress.value = completed.size;
+      liveStatus.textContent = `${labels[event.stage]}: ${event.status.replaceAll("_", " ")} · ${completed.size}/6 stages reported. No time estimate yet.`;
+    } });
+    if (controller !== liveController) return;
+    const route = result.selectedTask ?
+      `Jev selected ${result.selectedTask} first (${Math.round(result.routingConfidence * 100)}% routing confidence, not business success).` :
+      "Jev unavailable; investigation degraded.";
+    const cost = result.unknownChargeCalls ? `At least US$${result.knownCostUsd.toFixed(6)} reported; ${result.unknownChargeCalls} call charges unknown.` :
+      `US$${result.knownCostUsd.toFixed(6)} provider-reported.`;
+    liveStatus.textContent = `${route} ${result.status === "degraded" ? "Investigation degraded. " : ""}${result.roleCalls}/3 roles attempted, ${result.roleFailures} failed, ${completed.size}/6 stages reported in ${(result.elapsedMs / 1000).toFixed(1)}s. ${cost} Outcome: insufficient evidence. ${result.nextStep}`;
+  } catch (error) {
+    if (controller === liveController) liveStatus.textContent = error?.message === "Demo access code required or invalid" ?
+      "Demo access code required or invalid. The checked map and local scenario remain usable." :
+      "Live investigation unavailable. The checked map and local scenario remain usable; location decision is still insufficient evidence.";
+  } finally {
+    if (controller === liveController) { liveRunning = false; liveController = null; renderOwnerJourney(); }
+  }
+});
 document.querySelector("#owner-utilisation").addEventListener("input", renderOwnerJourney);
 copyOwnerMemo.addEventListener("click", async () => {
   renderOwnerJourney();
@@ -274,6 +328,7 @@ try {
   if (!response.ok) throw new Error('Priority map feed unavailable');
   const checked = await verifyPriorityMapFeed(await response.text());
   mountPriorityMap(document.querySelector('#priority-map'), checked, index => {
+    resetLiveInvestigation();
     selectedPriority = index;
     renderOwnerJourney();
   });
@@ -281,7 +336,7 @@ try {
   document.querySelector('#national-explorer-content').innerHTML = nationalExplorerView(checked);
   if (!replayAvailable) {
     document.querySelector('#status-card').textContent = 'Checked sample available · location decision withheld';
-    document.querySelector('#snapshot-pill').textContent = 'CHECKED SAMPLE · 12 OCT 2026';
+    document.querySelector('#snapshot-pill').textContent = 'CHECKED SAMPLE · 13 OCT 2026';
   }
   renderOwnerJourney();
 } catch (error) {

@@ -1,0 +1,35 @@
+{
+  "kind": "owner_live_same_case_comparison",
+  "recordedAt": "2026-10-13T12:36:43.275Z",
+  "snapshotDate": "2026-10-13",
+  "area": "Queenstown",
+  "groupDigest": "b03bb099b72e66c49ad7a1983d50a3f841ae9e071bf92392de8dba48986c99ce",
+  "precheckedEvidenceCount": 3,
+  "maxRoleCallsPerArm": 3,
+  "calls": {
+    "key": 2,
+    "jev": 1,
+    "chat": 6
+  },
+  "fixed": {
+    "status": "fixed",
+    "elapsedMs": 3735.231416,
+    "roleCalls": 3,
+    "roleFailures": 0,
+    "knownCostUsd": 0.000069572,
+    "unknownChargeCalls": 0,
+    "outcome": "insufficient_evidence"
+  },
+  "routed": {
+    "status": "jev_routed",
+    "selectedTask": "challenger",
+    "routingConfidence": 0.13,
+    "elapsedMs": 10096.444959,
+    "roleCalls": 3,
+    "roleFailures": 0,
+    "knownCostUsd": 0.000089138,
+    "unknownChargeCalls": 0,
+    "outcome": "insufficient_evidence"
+  },
+  "speedBenefitEstablished": false
+}
